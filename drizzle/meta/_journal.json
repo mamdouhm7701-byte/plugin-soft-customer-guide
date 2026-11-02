@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793651235446,
+      "tag": "0000_living_azazel",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793651615722,
+      "tag": "0001_groovy_puff_adder",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793651819245,
+      "tag": "0002_many_timeslip",
+      "breakpoints": true
+    }
+  ]
+}

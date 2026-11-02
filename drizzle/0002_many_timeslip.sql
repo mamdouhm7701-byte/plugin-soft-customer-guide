@@ -1,0 +1,2 @@
+ALTER TABLE `guide_feedback` ADD `vote_day` text DEFAULT '' NOT NULL;--> statement-breakpoint
+CREATE UNIQUE INDEX `guide_feedback_daily_unique` ON `guide_feedback` (`article_id`,`visitor_hash`,`vote_day`);

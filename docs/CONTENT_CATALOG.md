@@ -1,0 +1,450 @@
+# FAQ catalog v2
+
+Date: 2026-11-03. The local guide contains 390 editorial drafts and five separately published screenshot-backed articles (395 total). The 283 new drafts extend the preserved 107-answer first batch. This is broad initial guidance, not exhaustive or verified ERP business coverage.
+
+## Written coverage versus verification
+
+- 106 active inventoried screens have one overview/review guide and one specific business question each (212 new drafts).
+- 71 catalogued ERP reports have individual explanations of purpose, filters and reconciliation pitfalls (71 new drafts).
+- The removed audit/history screen is explicitly excluded based on the owner-confirmed removal record.
+- All 390 catalog articles remain private drafts; no publication or live ERP session occurred. Financial, tax, payroll, permission and specialized activity behavior remains subject to current UI and policy verification.
+- Published content remains the original five bounded navigation/support articles.
+- Curated questions never inflate observed customer question frequency.
+
+## Modules
+
+- settings: 51
+- products: 15
+- dealers: 20
+- sales: 59
+- purchases: 15
+- inventory: 33
+- finance: 23
+- accounting: 19
+- reports: 105
+- hr: 44
+- support: 6
+
+## Genuine screenshots
+
+Nine unique screenshots ship with the app: the original two unsaved general sales forms and seven historical ERP screenshots inspected during this task. Nineteen catalog drafts use applicable images (nine distinct screen contexts plus one report). Other steps explicitly have missing images. HR and specialized activity procedures do not have new verified screenshots.
+
+The seven added originals contain synthetic QA branch/counterparty names and were captured by earlier failed/probe tests. They show UI structure only. They MUST NOT be described as successful operation evidence or reused as a financial result. No screenshots were generated, retouched, cropped or staged. Original hashes, scope and dates are in `lib/screenshot-assets.json`. New browser capture was unavailable; the user explicitly instructed continuing with available content/images.
+
+- `erp-receipt-required-store.png` — 2026-11-03; source `screenshots/FAIL_SM_RequiredStore-2026-11-03_00-08-58-7a963718-49d2-4c26-bf14-499791e3fea8.png`; SHA-256 `f56892b479a5fcbb845d14df8c607118acd42bbf6f96405f5f0448986bd5bc6a`.
+- `erp-customer-report-filters.png` — 2026-11-02; source `screenshots/FAIL_inspectNativeReportDateInputsWithoutSaving-2026-11-02_12-27-07-e4a978eb-fc1e-4a5f-806e-358d81bb266c.png`; SHA-256 `2cc61e0af3edd784cfa8ebfe3a0ed5efa55b7586fb94f6cffd98eb108b948689`.
+- `erp-journal-list.png` — 2026-11-02; source `screenshots/FAIL_inspectSavedVoucherRowAndPrintedCells-2026-11-02_19-03-24-ac72d987-6239-4319-a7e9-3ea3ee755c94.png`; SHA-256 `919470110c750c244de3264cd5587b0b81d03c707f073124637a38a1fc18e377`.
+- `erp-customer-discount-list.png` — 2026-11-02; source `screenshots/FAIL_inspectOwnedOtherFinancialListColumns-2026-11-02_16-19-37-59f255ee-d8ce-4de4-bd5c-3dd2668950b9.png`; SHA-256 `bf5e3267d0fb0116f2f8b36ffd8a7c6629022a120845958a36d38b1865757a23`.
+- `erp-supplier-discount-list.png` — 2026-11-02; source `screenshots/FAIL_inspectOwnedOtherFinancialListColumns-2026-11-02_16-19-45-330b28e7-eba2-4ae1-a939-d7348059801e.png`; SHA-256 `7c8d63b3c911198be4508d922b3617209517fdafa7d5c28bdc920a920c227a3a`.
+- `erp-route-visit-panel.png` — 2026-11-02; source `screenshots/FAIL_expandedVisitShowsExactCustomerStatusTitleAndEnteredDates-2026-11-02_19-43-04-ce08efb8-58ee-4fd4-ba25-eb03121ab92b.png`; SHA-256 `ddb0576c28d1b2f660847ad97923e3f4dbb8a09066ad6440cb3ca1c9b2a33b6d`.
+- `erp-sales-list-filters.png` — 2026-11-02; source `screenshots/FAIL_savedPlanningDocumentMatchesItsVisibleRowWithoutStockOrCustomerDebt-2026-11-02_16-48-49-29f57ea5-83b3-4277-bfd3-e1ad4f315423.png`; SHA-256 `e7a2e6f62169e19a28a0dfd848a9bdfc4d7fc74eb6708b94461b981dce2a76db`.
+
+## Traceability and source limits
+
+`lib/catalog-coverage.json` maps every inventoried screen to draft article IDs, activity/module scope, image availability and explicit non-verification state. The admin answer library exposes the same map behind editor/reviewer/owner authorization. Its counts measure written guidance, not execution. `lib/screen-answer-spec.txt` and `lib/report-answer-spec.txt` contain authored screen/report-specific explanations. `scripts/expand-faq-catalog.py --erp-root <local-repository>` reproducibly builds the extended batch from those explanations and the referenced inventories. The existing 107 articles are preserved unchanged.
+
+ERP branch: TestCodeex; historical baseline: a033c5c843bbc8f592fe04cf4bc7ef3768cc9b1a; current HEAD: dec1f1fc7f303b915d393c4c4c90af28c26b80f4 with unrelated local changes. Relevant knowledge and inventories were read; this task does not advance the ERP analysis baseline, alter its source, execute ERP tests or imply whole-repository qualification. Source tests establish expectations, not backend implementation. Historical defects remain dated findings.
+
+## Import and preservation
+
+POST `/api/admin/catalog` requires same origin and owner/reviewer role. The entire shipped catalog is validated before writing. Each article/history pair is inserted atomically. Stable UUIDs and INSERT OR IGNORE preserve existing edits, archives, revisions and publications. Replays complete missing items without duplicates. GET catalog coverage is editor/reviewer/owner only; support cannot inspect the draft map or import the catalog.
+
+## Remaining before customer delivery
+
+- Replace or supplement historical UI-only examples with current, approved screenshots for each operational step.
+- Verify current environment labels, permissions, financial/stock effects and business policy; record a genuine verification date and reviewer note.
+- Review and publish only ready articles; incomplete drafts remain hidden from public routes and handover packs.
+- Browser desktop/mobile interaction and PDF layout QA remain pending. Publication stays deferred until the user resumes that phase.
+
+## Draft index
+
+- `settings-general-01` — إزاي أختار الفرع الصحيح؟ — `e16238a4-bf16-5366-a96e-bed973bdeda8`.
+- `settings-general-02` — ليه شاشة مش ظاهرة عندي؟ — `f0f5d0fa-4e87-5356-aa1f-763b3f164eda`.
+- `settings-general-03` — إزاي أطلب صلاحية لموظف؟ — `b2814d85-d688-5be5-8cad-09c253f0abc2`.
+- `settings-general-04` — إيه البيانات اللي أراجعها قبل بداية التشغيل؟ — `347bdd49-c7b8-55a3-a1ac-f5f5643ac8f1`.
+- `settings-general-05` — إيه الفرق بين الخزنة والبنك وطريقة الدفع؟ — `48519f1a-847e-5498-8d25-246813fa4ea7`.
+- `settings-general-06` — إزاي أتعامل مع رسالة حقل مطلوب؟ — `b6e924f5-f8f7-555e-94fc-3898b341628b`.
+- `settings-general-07` — هل أقدر أحذف تعريف مستخدم في حركات؟ — `c5ef544e-3a3c-5021-a06e-fbfdd9bb13dc`.
+- `products-general-01` — إزاي أبحث عن صنف بالاسم أو الباركود؟ — `02e8b540-cb30-528c-b312-8b87ebcc6b1c`.
+- `products-general-02` — إيه الفرق بين الوحدة الأساسية والوحدة الإضافية؟ — `b6c74407-1f41-558e-893e-3f4e94723580`.
+- `products-general-03` — ليه سعر الصنف مختلف في الفاتورة؟ — `40a83fe0-d02c-5dc8-9140-762370c82897`.
+- `products-general-04` — إزاي أراجع صنف معفى من الضريبة؟ — `73aa3020-26ed-5c46-ac72-f33aa00e78ba`.
+- `products-general-05` — ليه الصنف مش ظاهر للاختيار؟ — `016d2b47-996c-50da-8dbb-436125b813b0`.
+- `products-general-06` — إزاي أراجع مكونات صنف تصنيع؟ — `44554270-c6fe-5df5-9b5d-3fea0da5361f`.
+- `products-general-07` — إزاي أتجنب تكرار تعريف الأصناف؟ — `42d415c2-722a-567b-acd4-7300d4fc0a98`.
+- `dealers-general-01` — إيه الفرق بين العميل والمورد؟ — `2c3c55f7-ea9d-5caa-a3c3-2ed88323bcc8`.
+- `dealers-general-02` — ليه العميل مش ظاهر في الفاتورة؟ — `2ce4d164-646f-5b82-a3cf-2b67629aeefd`.
+- `dealers-general-03` — إزاي أراجع رصيد العميل؟ — `17dbcc9b-a784-5df2-8ab6-a0195109b6ef`.
+- `dealers-general-04` — إزاي أراجع رصيد المورد؟ — `912b77bc-4d8c-5f3d-b4a5-b1408b9b9b0f`.
+- `dealers-general-05` — إزاي أسجّل رصيد افتتاحي لطرف؟ — `63f1d717-1e99-5258-8578-747d7f3b0f19`.
+- `dealers-general-06` — إزاي أغيّر بيانات العميل بأمان؟ — `f1d21105-4809-5978-998c-56d3a3caf981`.
+- `sales-general-01` — إيه الفرق بين عرض السعر وأمر البيع والفاتورة؟ — `a9adac2f-94e5-5166-aaa2-2b54f03fe0ed`.
+- `sales-general-02` — هل أمر البيع بيخصم أو يحجز المخزون؟ — `cab624e6-0aad-5c3a-9050-03f1ccaba340`.
+- `sales-general-03` — ليه فاتورة البيع المحفوظة مش بتتعدل؟ — `a12138e9-7347-57ed-8e21-d657d15645d1`.
+- `sales-general-04` — إزاي أرجع جزء من فاتورة بيع؟ — `0be4597d-28d6-585b-8c42-beba2ed666fc`.
+- `sales-general-05` — إيه الفرق بين المرتجع المرتبط والحر؟ — `bd605178-fb02-5f29-93b1-edbfc64a559b`.
+- `sales-general-06` — إزاي أراجع إجمالي فاتورة قبل الحفظ؟ — `9b03c017-2108-5646-89e7-106b7da61a7a`.
+- `sales-general-07` — ليه الخصم اترفض؟ — `a1e75126-5b99-5bfa-8d86-0460d473e5e7`.
+- `sales-general-08` — ليه رصيد العميل اتغير من أمر بيع نقدي؟ — `efb5ad75-6cad-5c5c-9606-bb960934d488`.
+- `sales-general-09` — إزاي أراجع ضريبة فاتورة مختلطة؟ — `99fda4bd-1c95-54d2-bd0a-51c4afb13fdf`.
+- `sales-general-10` — إزاي أطبع نسخة من مستند بيع؟ — `c4b35f01-818b-5af8-9a94-7708f4e71e69`.
+- `sales-general-11` — إيه معنى مستند تحت المراجعة؟ — `5e0d14cc-429d-543e-a4ee-5feb64c005ac`.
+- `purchases-general-01` — إيه الفرق بين أمر الشراء وفاتورة الشراء؟ — `a936482f-1f41-5003-9e28-586186ce27cf`.
+- `purchases-general-02` — إزاي أراجع فاتورة مورد قبل الحفظ؟ — `74ebeac9-42ed-5d0c-8306-7ab796fb4848`.
+- `purchases-general-03` — إزاي أعمل مرتجع مشتريات مرتبط؟ — `64d3af52-fd8e-5020-86ad-68b16d4a4782`.
+- `purchases-general-04` — ليه مخزون الصنف ما زادش بعد أمر الشراء؟ — `f3530b63-445e-5c43-b146-f7bd30be76c9`.
+- `purchases-general-05` — إزاي أراجع دفعة مقدمة للمورد؟ — `4b2f8923-f740-558d-be74-480bb2dc3b38`.
+- `purchases-general-06` — إزاي أصحح بيانات فاتورة شراء؟ — `4c83f583-82af-5b33-9311-10fa82ce084e`.
+- `purchases-general-07` — ليه خصم المشتريات مش بيتحفظ؟ — `1d1c15fb-d5c9-5f5e-a21d-24537de6605b`.
+- `inventory-general-01` — إيه الفرق بين الإضافة والصرف والتالف؟ — `d5a960c0-8d8a-58d0-9310-7dbd1154e4ec`.
+- `inventory-general-02` — إزاي أراجع تحويل بين مخزنين؟ — `b9c38c30-8c3b-52be-a3e6-837d1c5385af`.
+- `inventory-general-03` — ليه رصيد المخزن مختلف عن المتوقع؟ — `dc7d3c7c-8b8e-551d-823f-e5efcb5f334a`.
+- `inventory-general-04` — إزاي أجهّز جرد مخزون؟ — `beba6c6f-dec5-5da0-bf2d-7cf618e74abd`.
+- `inventory-general-05` — إزاي أتعامل مع عجز أو زيادة الجرد؟ — `66d12683-991d-533a-b840-f37374007779`.
+- `inventory-general-06` — إزاي أراجع حركة تصنيع؟ — `fb12796b-bd5f-5d5c-ae46-7a37f66ff776`.
+- `inventory-general-07` — ليه كمية الصنف بالوحدة الإضافية مختلفة؟ — `c0d370aa-64da-5045-ba37-ad69b1083773`.
+- `inventory-general-08` — هل النظام بيسمح بمخزون سالب؟ — `230e4c0b-fc35-53d6-9bb3-a10193b0d743`.
+- `finance-general-01` — إيه الفرق بين تحصيل عميل وسداد مورد؟ — `700f8a11-8363-57a4-b898-53794afe2b3d`.
+- `finance-general-02` — إزاي أربط تحصيل بفاتورة عميل؟ — `fd847989-7a35-5a7c-86cf-bef20cc93efc`.
+- `finance-general-03` — ليه الفاتورة لسه عليها متبقي بعد التحصيل؟ — `eeae2494-8477-55cc-b542-ee1223e4c6ff`.
+- `finance-general-04` — إزاي أراجع مصروف أو إيراد آخر؟ — `a8c1890c-ddd0-5e8d-b5a0-a32e693c5a24`.
+- `finance-general-05` — إيه الفرق بين الخصم والتحصيل؟ — `e25a9bfa-1a3c-5965-be69-a2667bdce408`.
+- `finance-general-06` — إزاي أراجع حركة نقل نقدية؟ — `919c86c6-1bbe-52f7-bbc0-e3f3ea1e3a7f`.
+- `finance-general-07` — إزاي أصحح سند مالي غلط؟ — `b3fa20c2-1a1b-541b-8f1e-0c26169989bc`.
+- `accounting-general-01` — إيه الفرق بين حفظ المستند وترحيله؟ — `c90a04a8-186e-5ca0-ae06-9327bab9550f`.
+- `accounting-general-02` — ليه القيد مش متوازن؟ — `b7f11422-5644-5b66-bbf3-3ac9355affbd`.
+- `accounting-general-03` — إزاي أختار حساب في القيد؟ — `ca430a29-4654-5343-9327-c2fd0614ce4d`.
+- `accounting-general-04` — إيه الفرق بين الجرد الدوري والمستمر؟ — `1d138792-d01e-55fe-8689-d7be2be274ef`.
+- `accounting-general-05` — ليه قيد الضريبة مختلف عن المتوقع؟ — `f8a3cd8f-afe5-5e6e-8d69-824eeb4e650d`.
+- `accounting-general-06` — إزاي أراجع مركز تكلفة؟ — `5059ae48-cd33-5671-b96c-c15ec6e03b68`.
+- `accounting-general-07` — إزاي أتعامل مع إلغاء الترحيل؟ — `064f6b86-a0fa-5e77-84bb-4bd3b7ed65fd`.
+- `reports-general-01` — ليه التقرير فاضي؟ — `5807592f-673c-5a52-a45c-85349eb9fb90`.
+- `reports-general-02` — ليه نفس التقرير مختلف عند موظفين؟ — `e82e96f5-d281-5794-925d-a9434780be92`.
+- `reports-general-03` — إزاي أطابق تقرير حركة صنف؟ — `4895b0b4-8900-556b-a26a-cc0fbaf6aced`.
+- `reports-general-04` — إزاي أطابق كشف خزنة؟ — `24494b37-1c3d-56ec-a843-9161c4b09b0f`.
+- `reports-general-05` — ليه التصدير مختلف عن الشاشة؟ — `0efae02a-c94b-5a78-8895-2ee5b6ad7e2a`.
+- `reports-general-06` — إزاي أبعت تقرير للدعم؟ — `d953bdb7-1607-5db8-9588-2c54dd2117f3`.
+- `sales-restaurant-01` — إيه اللي أراجعه قبل استخدام كاشير المطعم؟ — `ec92c7c7-5739-5c99-80e8-bd8379c95fa7`.
+- `sales-restaurant-02` — إزاي أراجع طلب مرتبط بترابيزة؟ — `9b4a4c05-ae6c-59f9-954c-e24d66a2e14c`.
+- `sales-restaurant-03` — ليه إجمالي طلب المطعم مختلف؟ — `f6363304-c9fd-5baf-89b0-f0d6b4f4ea02`.
+- `sales-restaurant-04` — إزاي أراجع ضريبة إضافية في المطعم؟ — `6c096cc3-de4b-54d7-908a-94d907773dd4`.
+- `sales-restaurant-05` — إزاي أراجع مرتجع كاشير؟ — `6bf90de3-ce94-5563-a919-e47b97012d8e`.
+- `sales-restaurant-06` — الطلب مش ظاهر في المطبخ، أعمل إيه؟ — `607c4145-ef97-5f35-b3c0-7740605c9575`.
+- `sales-construction-01` — إزاي أراجع عقد مقاولات قبل الفوترة؟ — `abe1e88f-48bd-5c92-b157-0f3bfb2b6d3e`.
+- `sales-construction-02` — إزاي أراجع فاتورة مرتبطة بعقد؟ — `18c78df6-1072-5c3c-869e-c7f82c70d20f`.
+- `sales-construction-03` — ليه الكمية المتبقية في العقد مختلفة؟ — `084cdeab-db14-57c1-af31-cf1ac574f451`.
+- `sales-construction-04` — هل أقدر أفوتر العقد على مراحل؟ — `b0c1e79c-d85c-5ee4-8b2a-30430365b969`.
+- `sales-construction-05` — إزاي أتعامل مع احتجاز أو شروط مالية بالعقد؟ — `043929b5-e169-5ed4-8e69-e920aeba2aa3`.
+- `inventory-concrete-01` — إيه البيانات المطلوبة لتشغيل نشاط الخرسانة؟ — `1fd28fd3-9960-5e7b-910d-b2ae9054a57c`.
+- `inventory-concrete-02` — إزاي أراجع حجز خرسانة؟ — `20d00712-51bd-5541-aefb-8d5be55f5ccd`.
+- `inventory-concrete-03` — إزاي أطابق الصرف والبيع في الخرسانة؟ — `919835ff-f2d8-5c4d-aa47-94778fd3c03b`.
+- `inventory-concrete-04` — إزاي أراجع تقرير تشغيل الخرسانة؟ — `883f94a8-069d-583d-ad4f-37e1a89880ce`.
+- `inventory-concrete-05` — ليه تعديل مستند خرسانة تحت المراجعة مش ظاهر؟ — `f352f073-d9e6-5005-a2b1-bb29fc61e002`.
+- `sales-cars-01` — إزاي أتأكد إني ببيع العربية الصحيحة؟ — `b8342f30-2a11-5a85-bc32-492522a86b84`.
+- `sales-cars-02` — ليه عربية مش ظاهرة في البيع؟ — `cc7ccaa3-0e89-5e5d-8d70-27b1ef163047`.
+- `sales-cars-03` — إزاي أراجع مرتجع سيارة؟ — `815d824c-7d79-568a-966d-1dc33b7c74e5`.
+- `sales-cars-04` — إزاي أراجع ألوان السيارات؟ — `2c64d94d-e52b-5897-9547-c3dda4cc8b7d`.
+- `sales-cars-05` — هل المعرض بيدعم التمويل والأقساط بنفس القواعد؟ — `7742ee8b-ba3e-50dd-89a7-61a7966e0818`.
+- `hr-hr-01` — إزاي أدخل مساحة الموارد البشرية؟ — `29a9456b-9c26-577e-8782-3408e549a8bc`.
+- `hr-hr-02` — إيه اللي أراجعه في ملف الموظف؟ — `bee46d4a-0583-5980-beb3-947d2221994d`.
+- `hr-hr-03` — إزاي أراجع ربط الموظف بحساب مالي؟ — `8b21577b-28c4-57d5-9af1-14cdcd249e54`.
+- `hr-hr-04` — إيه الفرق بين الاستحقاق والاستقطاع؟ — `b2a0ff3c-db72-5a3d-816a-d72c317c5784`.
+- `hr-hr-05` — إزاي أراجع بند محسوب بنسبة؟ — `3c59816d-4a13-5a88-93f9-9e8c8a8ff2db`.
+- `hr-hr-06` — إزاي أراجع بند بالأيام أو الساعات؟ — `5b41c918-3938-5117-99e1-90668af01d02`.
+- `hr-hr-07` — إزاي أراجع راتب موظف بدأ وسط الشهر؟ — `2f0c4c15-7562-5c43-9330-fce6a8a761e4`.
+- `hr-hr-08` — هل الإجازة أو الغياب بيخصموا تلقائيًا؟ — `6b43326c-3d56-535f-98e7-899fa20d7890`.
+- `hr-hr-09` — إزاي أراجع سلفة وأقساطها؟ — `ec3079cf-89ea-55a1-8897-4a57c5b5c61c`.
+- `hr-hr-10` — إزاي أراجع كشف الرواتب قبل الاعتماد؟ — `7b5ddd2e-dbff-56f8-8dd9-5092d35f2383`.
+- `hr-hr-11` — ليه موظف مش ظاهر في تقرير الرواتب؟ — `aeebe7c2-326c-5b60-9cda-e9e53dd2157a`.
+- `hr-hr-12` — إزاي أراجع رصيد إجازة؟ — `bbcc8ce7-b090-5e81-b7ab-25e7c96dd44b`.
+- `hr-hr-13` — إزاي أجهّز استيراد بيانات موظفين؟ — `eb78c02f-9105-591d-b8cd-a74aad0488c4`.
+- `hr-hr-14` — إزاي أحافظ على خصوصية مستندات الموظفين؟ — `7f2e9f0b-c77c-5429-9127-cbc9494781c0`.
+- `support-general-01` — إيه اللي أبعتُه للدعم عشان المشكلة تتحل أسرع؟ — `9da03a5a-eb65-5671-9f13-48b15cdddc80`.
+- `support-general-02` — ضغطت حفظ ومش عارف العملية اتحفظت ولا لأ؟ — `8e3ae4fe-e8c8-5fd5-9de9-a3b2f9e6fb9c`.
+- `support-general-03` — إزاي أصور المشكلة بدون كشف بيانات العميل؟ — `994b87e1-ff68-55c1-baeb-5001d1627071`.
+- `support-general-04` — إيه اللي أستلمه بعد التدريب؟ — `f14138ca-a4aa-5b7d-b718-ac328205424e`.
+- `support-general-05` — إزاي أبعت شرح جاهز للعميل؟ — `fb050c14-a7d7-50bb-8074-1add47364d60`.
+- `support-general-06` — المشكلة رجعت بعد ما اتبعت الشرح، أعمل إيه؟ — `3c8710b2-42dc-518e-9fd8-2049bedc3fcd`.
+- `expanded-screen-#/-overview` — إيه استخدام شاشة «الصفحة الرئيسية» وإيه اللي أراجعه فيها؟ — `c81ca4ab-3a90-5051-a0b6-f2ddd744bb92`.
+- `expanded-screen-#/-business` — ليه اختصار ظاهر لزميلي ومش ظاهر عندي؟ — `52cc8f81-23fb-5e0c-8325-98541cd07164`.
+- `expanded-screen-#/Items-overview` — إيه استخدام شاشة «قائمة الاصناف» وإيه اللي أراجعه فيها؟ — `ad84ccea-3682-5000-ace5-57bbe1b1fba6`.
+- `expanded-screen-#/Items-business` — هل أضيف صنفًا جديدًا علشان أصحح اسم صنف مستخدم؟ — `09e53c63-9f76-510b-8999-da8bcfc6a5bb`.
+- `expanded-screen-#/accountGroups-overview` — إيه استخدام شاشة «مجموعات الحسابات» وإيه اللي أراجعه فيها؟ — `eeafe4ac-c1ee-5a69-a8cb-d1a2e114cbdc`.
+- `expanded-screen-#/accountGroups-business` — إيه الفرق بين مجموعة حسابات وحساب أستاذ؟ — `d1acf5ba-d44d-51be-a718-66780c27f1af`.
+- `expanded-screen-#/accounts-reports-overview` — إيه استخدام شاشة «تقارير الحسابات» وإيه اللي أراجعه فيها؟ — `51f067df-f24d-5566-ad69-9be1a9bd3f98`.
+- `expanded-screen-#/accounts-reports-business` — هل ميزان المراجعة بديل عن كشف حساب الأستاذ؟ — `f79182ea-809c-54a5-a418-157790258c1f`.
+- `expanded-screen-#/actions-overview` — إيه استخدام شاشة «الاجراءات» وإيه اللي أراجعه فيها؟ — `e2b513ea-94b6-50d3-91e4-44fe35be090a`.
+- `expanded-screen-#/actions-business` — هل تعريف إجراء معناه إن فيه اعتماد تلقائي؟ — `3a8d59f2-349d-5128-b4f8-bfe80467abf4`.
+- `expanded-screen-#/addition-order/new-overview` — إيه استخدام شاشة «اذن استلام» وإيه اللي أراجعه فيها؟ — `dfec4764-4694-5420-bac1-a13652158d0d`.
+- `expanded-screen-#/addition-order/new-business` — ليه رسالة «المخزن مطلوب» بتظهر في إذن الاستلام؟ — `1734d733-75eb-53cb-a9aa-70d5b9009e8d`.
+- `expanded-screen-#/agent-itineraries-status-overview` — إيه استخدام شاشة «حالة خط السير new» وإيه اللي أراجعه فيها؟ — `9a08a8df-640f-5218-84c4-c65ea3f0fd37`.
+- `expanded-screen-#/agent-itineraries-status-business` — إزاي أتجنب حالات متشابهة في متابعة الزيارات؟ — `726b99e8-4598-567e-bef9-582d7e50635c`.
+- `expanded-screen-#/agentItinerary-overview` — إيه استخدام شاشة «خط السير» وإيه اللي أراجعه فيها؟ — `ab0a1430-d953-5976-bc65-92e566d91603`.
+- `expanded-screen-#/agentItinerary-business` — ليه زيارة اختفت بعد اختيار فلتر الحالة؟ — `c2db43d9-6c16-54c3-8e9e-17415059f01f`.
+- `expanded-screen-#/agents-overview` — إيه استخدام شاشة «المناديب» وإيه اللي أراجعه فيها؟ — `877d4fc1-e4b3-5d1b-96f6-b0de0bf30ea3`.
+- `expanded-screen-#/agents-business` — هل مبيعات المندوب هي نفسها تحصيلاته؟ — `4ca84d14-776d-5aba-bf0e-7239f4fba875`.
+- `expanded-screen-#/areas-overview` — إيه استخدام شاشة «المناطق» وإيه اللي أراجعه فيها؟ — `2084bac5-8721-5f22-9ae8-e25495ca0be0`.
+- `expanded-screen-#/areas-business` — ليه عميل مش بيظهر تحت المنطقة المختارة؟ — `5fb9bf8c-8012-5575-9c9d-1fd0b0ad403f`.
+- `expanded-screen-#/banks-overview` — إيه استخدام شاشة «البنوك» وإيه اللي أراجعه فيها؟ — `9d6e5c4a-ae2c-5837-9b43-dbd7ca62ca23`.
+- `expanded-screen-#/banks-business` — هل تشابه اسم البنك معناه إنهم نفس الحساب؟ — `905250dc-44e5-53f4-94d6-47b071437adf`.
+- `expanded-screen-#/branches-overview` — إيه استخدام شاشة «الفروع» وإيه اللي أراجعه فيها؟ — `6884bc1c-7cb9-5ad8-bd30-80b62f7623c3`.
+- `expanded-screen-#/branches-business` — هل تغيير الفرع ينقل المستندات القديمة؟ — `7cee46ae-32f4-50ce-b6b6-868432833d7b`.
+- `expanded-screen-#/branches-dashboard-overview` — إيه استخدام شاشة «إحصائيات الفروع» وإيه اللي أراجعه فيها؟ — `e8e4b352-1390-5245-9c6b-ecd18259af05`.
+- `expanded-screen-#/branches-dashboard-business` — ليه مجموع إحصائيات الفروع مختلف عن تقرير فرع واحد؟ — `7bb35cfc-23e7-55be-8f16-01f7bcff75a3`.
+- `expanded-screen-#/bulk-invoices-overview` — إيه استخدام شاشة «الفواتير المجمعه» وإيه اللي أراجعه فيها؟ — `1f2cf555-b557-525e-aa72-8be77884a863`.
+- `expanded-screen-#/bulk-invoices-business` — هل تجميع الفواتير ينشئ بيعًا جديدًا؟ — `bb18a69e-f2c3-55ed-b1fe-56e380b5f7f6`.
+- `expanded-screen-#/car-colors-overview` — إيه استخدام شاشة «الوان السيارات» وإيه اللي أراجعه فيها؟ — `b8bdb909-4918-518c-b972-482d5d38c9f8`.
+- `expanded-screen-#/car-colors-business` — هل أضيف لونًا جديدًا لكل عربية؟ — `5b28b0db-115f-5bad-8766-3327b23a41a2`.
+- `expanded-screen-#/cars-overview` — إيه استخدام شاشة «السيارات» وإيه اللي أراجعه فيها؟ — `fe580476-21d8-5562-95d2-dd0f5e1574f8`.
+- `expanded-screen-#/cars-business` — إيه المطلوب لو شاسيه ظاهر على سيارة غلط؟ — `1cf327ff-3416-5f8a-b11c-c0959df15ae4`.
+- `expanded-screen-#/castingTypes-overview` — إيه استخدام شاشة «نوع الصبة» وإيه اللي أراجعه فيها؟ — `f475ae67-b6b9-5727-87dc-6821d873777c`.
+- `expanded-screen-#/castingTypes-business` — هل نوع الصبة بيحدد السعر تلقائيًا؟ — `55496af0-89b4-5495-90a9-831b71a4c847`.
+- `expanded-screen-#/cementTypes-overview` — إيه استخدام شاشة «نوع الأسمنت» وإيه اللي أراجعه فيها؟ — `10a75f38-5ab2-5714-915d-6869f03722a7`.
+- `expanded-screen-#/cementTypes-business` — هل تغيير نوع الأسمنت يعدّل حجوزات قديمة؟ — `c573a80e-d3b6-58c5-b990-4da6a2f76935`.
+- `expanded-screen-#/chart-of-account-overview` — إيه استخدام شاشة «دليل الحسابات» وإيه اللي أراجعه فيها؟ — `2946354a-d199-5e6b-a08a-2cff17751753`.
+- `expanded-screen-#/chart-of-account-business` — هل أختار الحساب الرئيسي بدل الفرعي في الحركة؟ — `b28c6624-dfef-50fe-8fde-8822357b2597`.
+- `expanded-screen-#/collection-transactions-overview` — إيه استخدام شاشة «سند قبض عميل» وإيه اللي أراجعه فيها؟ — `fe076789-0da4-54cc-9ad9-61df4ab44252`.
+- `expanded-screen-#/collection-transactions-business` — هل سند القبض يسدد أقدم فاتورة تلقائيًا؟ — `48298725-5956-5f19-b2e5-0ef82a5e0d95`.
+- `expanded-screen-#/company-overview` — إيه استخدام شاشة «اعدادات الشركة» وإيه اللي أراجعه فيها؟ — `c4214571-c2ef-5815-9d12-6a9aab9f9f92`.
+- `expanded-screen-#/company-business` — هل أغيّر إعداد الشركة علشان فاتورة واحدة مختلفة؟ — `57f798f3-3ae2-5c38-9768-84b87abaf6b6`.
+- `expanded-screen-#/concrete-dashboard-overview` — إيه استخدام شاشة «إحصائيات الخرسانه new» وإيه اللي أراجعه فيها؟ — `5e31c7fb-d03a-5c60-8ff2-d937124e81d3`.
+- `expanded-screen-#/concrete-dashboard-business` — هل كمية الحجوزات هي نفسها كمية الخرسانة المباعة؟ — `56823055-8ae3-56f1-a6fe-a262c9bd0af6`.
+- `expanded-screen-#/concrete-exchange-order/new-overview` — إيه استخدام شاشة «إذن تسليم خرسانة» وإيه اللي أراجعه فيها؟ — `09d259ac-6173-5df2-944d-6f3ff6fbe8d6`.
+- `expanded-screen-#/concrete-exchange-order/new-business` — هل إذن تسليم الخرسانة بديل للفاتورة؟ — `cdcbefb5-3b28-5f4d-af87-a6bc62fde671`.
+- `expanded-screen-#/concrete-reports-overview` — إيه استخدام شاشة «تقارير الخرسانة» وإيه اللي أراجعه فيها؟ — `06f4a28a-2019-5c4f-a491-a91cc0b5ff24`.
+- `expanded-screen-#/concrete-reports-business` — إزاي أحقق فرق بين تقرير الخرسانة والفواتير؟ — `60b980a8-add8-5f4e-9782-0044ce485bb3`.
+- `expanded-screen-#/concrete-sales-invoice/new-overview` — إيه استخدام شاشة «فاتورة مبيعات خرسانة» وإيه اللي أراجعه فيها؟ — `8b45714c-4e92-55db-a2ac-dae1ec753c96`.
+- `expanded-screen-#/concrete-sales-invoice/new-business` — هل حفظ الفاتورة معناه إن الحجز اتنفذ بالكامل؟ — `55bc932c-2b47-586a-8f96-9fdb7005efb8`.
+- `expanded-screen-#/concrete-under-review/new-overview` — إيه استخدام شاشة «تحت الإجراء خرسانة new» وإيه اللي أراجعه فيها؟ — `8c903899-c480-50d8-829b-2332ef28cc0f`.
+- `expanded-screen-#/concrete-under-review/new-business` — لو شاشة تعديل الخرسانة فاضية، هل المستند اتحذف؟ — `bdb59800-f35b-5483-adf0-7e8e0b2657e7`.
+- `expanded-screen-#/contracts/new-overview` — إيه استخدام شاشة «إنشاء العقود» وإيه اللي أراجعه فيها؟ — `a81120cf-834e-58d3-ac9e-cf000ff42f95`.
+- `expanded-screen-#/contracts/new-business` — هل أعدّل كمية العقد علشان المتبقي ظهر غلط؟ — `511f6ec0-57f1-5a0b-b473-8f3236b454bd`.
+- `expanded-screen-#/cost-center-overview` — إيه استخدام شاشة «مراكز التكلفة» وإيه اللي أراجعه فيها؟ — `72bd348e-e5ca-5115-aaf8-acb98f0a484a`.
+- `expanded-screen-#/cost-center-business` — هل توزيع مراكز التكلفة يغيّر صافي الفاتورة؟ — `565eb055-7e87-524c-b7da-f76f8a9879a5`.
+- `expanded-screen-#/customer-discount-overview` — إيه استخدام شاشة «اشعار خصم عميل» وإيه اللي أراجعه فيها؟ — `223d316c-5cd5-5d3b-9a5a-52fc3f9eb63a`.
+- `expanded-screen-#/customer-discount-business` — ليه إشعار الخصم ظاهر غير مخصص؟ — `142fbed6-f3c1-5b6d-b45e-c34127b81c1b`.
+- `expanded-screen-#/customers-overview` — إيه استخدام شاشة «العملاء» وإيه اللي أراجعه فيها؟ — `b2b9298d-0e1a-5c90-8dfd-778355a546af`.
+- `expanded-screen-#/customers-business` — هل الحد الائتماني يمنع أي بيع زائد تلقائيًا؟ — `d8124048-0217-5f2a-ad9d-10500edb240a`.
+- `expanded-screen-#/customers-and-suppliers-overview` — إيه استخدام شاشة «تقارير العملاء والموردين» وإيه اللي أراجعه فيها؟ — `43096c25-15d4-5f7c-b3b1-b72a9ad9889c`.
+- `expanded-screen-#/customers-and-suppliers-business` — هل كشف الحساب يوضح عمر كل فاتورة؟ — `91e63764-0a07-5db0-bad0-6cfdbcf01f2b`.
+- `expanded-screen-#/damage-adjustment-overview` — إيه استخدام شاشة «تسوية التوالف» وإيه اللي أراجعه فيها؟ — `3c668b31-f811-5e4b-8267-1d5762071999`.
+- `expanded-screen-#/damage-adjustment-business` — هل أستخدم التوالف لأي فرق مخزون؟ — `a2b9a6ab-003d-5f54-b71f-18398fec43b0`.
+- `expanded-screen-#/dealersClassification-overview` — إيه استخدام شاشة «تصنيف المتعاملين» وإيه اللي أراجعه فيها؟ — `455343f4-e509-5208-af85-b6b78ad5edd5`.
+- `expanded-screen-#/dealersClassification-business` — هل تصنيف العميل بيغيّر سعره تلقائيًا؟ — `2e22c0d5-47de-5eeb-b77e-954ccc608c3e`.
+- `expanded-screen-#/discount-types-overview` — إيه استخدام شاشة «انوع الخصومات» وإيه اللي أراجعه فيها؟ — `2376192e-e631-57c0-b9e2-8949a172b3d2`.
+- `expanded-screen-#/discount-types-business` — هل نوع الخصم هو نفسه حد الخصم للمستخدم؟ — `57aa8a6c-5122-5090-bdb3-019ffcc75ca0`.
+- `expanded-screen-#/drivers-overview` — إيه استخدام شاشة «السائقين» وإيه اللي أراجعه فيها؟ — `45a63074-9e41-5a93-9ca6-08f32e565a29`.
+- `expanded-screen-#/drivers-business` — ليه اسم السائق في التقرير مختلف؟ — `7b3c0f64-98c0-5804-aa3c-3b3771fa1681`.
+- `expanded-screen-#/exchange-destinations-overview` — إيه استخدام شاشة «جهات الصرف» وإيه اللي أراجعه فيها؟ — `436c2c72-23b0-5026-8aef-cc859eed2a84`.
+- `expanded-screen-#/exchange-destinations-business` — إيه الفرق بين جهة صرف وعميل فاتورة؟ — `9747a146-2e11-5264-8045-ff65e611c414`.
+- `expanded-screen-#/exchange-order/new-overview` — إيه استخدام شاشة «إذن صرف» وإيه اللي أراجعه فيها؟ — `fee24aad-a4f2-5116-b39f-3ef8f1f25c03`.
+- `expanded-screen-#/exchange-order/new-business` — هل إذن الصرف يعمل مديونية على العميل؟ — `1d6c8ae4-e952-50f4-a7d0-00dd2661ae83`.
+- `expanded-screen-#/expense-transactions-overview` — إيه استخدام شاشة «حركة المصروفات» وإيه اللي أراجعه فيها؟ — `41e24da3-3bae-5279-9d04-a856745a6334`.
+- `expanded-screen-#/expense-transactions-business` — هل اختيار نوع مصروف يكفي لتحديد حسابه؟ — `c290bd91-068c-54ff-ac6c-27bf93050d21`.
+- `expanded-screen-#/expense-type-overview` — إيه استخدام شاشة «أنواع المصروفات» وإيه اللي أراجعه فيها؟ — `f1da241c-37d2-5d5d-bad5-97f01a39078b`.
+- `expanded-screen-#/expense-type-business` — هل إضافة نوع مصروف بتخصم من الخزنة؟ — `744e5def-b949-552b-8ae3-a061d2a8c6eb`.
+- `expanded-screen-#/income-transactions-overview` — إيه استخدام شاشة «حركة الايرادات» وإيه اللي أراجعه فيها؟ — `c4639e37-357f-5adc-921f-ec8ece1f5d0b`.
+- `expanded-screen-#/income-transactions-business` — هل أسجّل تحصيل فاتورة كإيراد آخر؟ — `824a9cff-34cc-58c5-a4e6-efdde811551d`.
+- `expanded-screen-#/income-type-overview` — إيه استخدام شاشة «أنواع الإيرادات» وإيه اللي أراجعه فيها؟ — `e4ae95c3-fb2d-5abb-ba9b-483501585a54`.
+- `expanded-screen-#/income-type-business` — إزاي أختار بين نوعين إيراد متشابهين؟ — `80a0d741-efc2-5500-bd20-8dd89c792dc3`.
+- `expanded-screen-#/inventory-overview` — إيه استخدام شاشة «محضر الجرد» وإيه اللي أراجعه فيها؟ — `9ec6e489-bd06-5ccd-b2e1-9d289c3d2ea7`.
+- `expanded-screen-#/inventory-business` — هل فتح محضر الجرد ينفذ تسوية؟ — `f0f0fc83-5fad-5702-98a1-58a311258db3`.
+- `expanded-screen-#/invoice-list-overview` — إيه استخدام شاشة «استعراض المبيعات» وإيه اللي أراجعه فيها؟ — `aad1bd91-a728-5626-a4cd-ef61526611e0`.
+- `expanded-screen-#/invoice-list-business` — ليه عرض سعر بيظهر وسط قائمة الفواتير؟ — `d68a9a99-33e8-5d1e-8156-b16f17e36ac0`.
+- `expanded-screen-#/invoice/new-overview` — إيه استخدام شاشة «فاتورة مبيعات» وإيه اللي أراجعه فيها؟ — `3c95bcf2-0f38-5269-8392-a317285211d8`.
+- `expanded-screen-#/invoice/new-business` — لو العميل اتغيّر، هل أسعار البنود بتتراجع تلقائيًا؟ — `00d50f4d-d91e-58d9-8d6d-1db276a0f436`.
+- `expanded-screen-#/items-category-overview` — إيه استخدام شاشة «فئات الأصناف» وإيه اللي أراجعه فيها؟ — `3175f47e-1c21-5e2f-afbc-3a589cd71d6c`.
+- `expanded-screen-#/items-category-business` — ليه تقرير الفئة ناقص صنفًا؟ — `a2d155fb-c0f5-5ec7-9677-8542778dce1c`.
+- `expanded-screen-#/items-reports-overview` — إيه استخدام شاشة «تقارير الأصناف» وإيه اللي أراجعه فيها؟ — `1b02b87c-3826-5ef9-b52d-d20d2896d43e`.
+- `expanded-screen-#/items-reports-business` — هل رصيد المخزن هو نفسه تقييم المخزن؟ — `fc1027ea-c542-5b65-8a50-c1a9905ea860`.
+- `expanded-screen-#/mainDealer-overview` — إيه استخدام شاشة «المتعامل الرئيسي» وإيه اللي أراجعه فيها؟ — `5323fb5b-b0e5-599f-9a93-b82503efae6d`.
+- `expanded-screen-#/mainDealer-business` — هل تجميع العملاء تحت رئيسي يدمج أرصدتهم؟ — `d14606a4-46e1-5caf-8e74-62813b5bd539`.
+- `expanded-screen-#/manufacturing-order/new-overview` — إيه استخدام شاشة «إذن تصنيع» وإيه اللي أراجعه فيها؟ — `c651fcf3-3b48-5317-8f59-10d5e0383478`.
+- `expanded-screen-#/manufacturing-order/new-business` — ليه كمية المكون أكبر من كمية المنتج؟ — `3846816d-0ad5-54b1-81cf-79348596df02`.
+- `expanded-screen-#/maxTemperature-overview` — إيه استخدام شاشة «اقصي درجة حرارة» وإيه اللي أراجعه فيها؟ — `5bf13f5c-7743-5734-8d71-729066b7945c`.
+- `expanded-screen-#/maxTemperature-business` — هل تخطي درجة الحرارة يمنع الحفظ؟ — `565c309d-ccdf-5d03-95d8-9f7133ad6fbf`.
+- `expanded-screen-#/orders-overview` — إيه استخدام شاشة «استعراض الأذونات» وإيه اللي أراجعه فيها؟ — `8f200f34-1b61-58be-a5ec-df4555fc1fbb`.
+- `expanded-screen-#/orders-business` — إزاي أميز إذن استلام من صرف في القائمة؟ — `d275318c-8168-593f-8be8-b5f07fefdfe7`.
+- `expanded-screen-#/overflow-adjustment-overview` — إيه استخدام شاشة «تسوية الفائض» وإيه اللي أراجعه فيها؟ — `6f545c65-2fee-5943-b257-4645588c98ad`.
+- `expanded-screen-#/overflow-adjustment-business` — هل أسجّل فاتورة شراء بدل تسوية فائض؟ — `914a0a70-6619-5f95-91cb-48f34b10c7ad`.
+- `expanded-screen-#/payment-methods-overview` — إيه استخدام شاشة «طرق الدفع» وإيه اللي أراجعه فيها؟ — `278131be-61ce-5317-9c90-6b738a48ff94`.
+- `expanded-screen-#/payment-methods-business` — ليه رصيد البنك ما اتغيرش مع طريقة بنكية؟ — `d8ceb3f4-0fa6-5942-80c8-c6f8c4059fb0`.
+- `expanded-screen-#/payment-transactions-overview` — إيه استخدام شاشة «سند صرف مورد» وإيه اللي أراجعه فيها؟ — `2075435b-0f80-5faa-be1e-a37a9b71fa11`.
+- `expanded-screen-#/payment-transactions-business` — هل دفع المورد يقلل المخزون؟ — `b38c923d-954d-5689-b7a3-75a609616f39`.
+- `expanded-screen-#/point-of-sale-overview` — إيه استخدام شاشة «فاتورة نقاط بيع» وإيه اللي أراجعه فيها؟ — `2bce8b54-d61e-5859-9168-2df394732aa1`.
+- `expanded-screen-#/point-of-sale-business` — إزاي أتعامل مع دفع نقاط بيع نتيجته مش واضحة؟ — `ebb24344-ac8a-5ff5-a029-653591fc137f`.
+- `expanded-screen-#/posConfigurations-overview` — إيه استخدام شاشة «الربط مع هيئة الزكاة» وإيه اللي أراجعه فيها؟ — `cf1a119d-99c4-567a-9d1e-fbbf6289fd66`.
+- `expanded-screen-#/posConfigurations-business` — هل اكتمال إعداد الربط يعني قبول كل الفواتير؟ — `98db5d87-3a49-5305-9d2c-8a45d197ae2e`.
+- `expanded-screen-#/post-vouchers-overview` — إيه استخدام شاشة «الترحيل الي الحسابات» وإيه اللي أراجعه فيها؟ — `bd66b3d8-798a-582a-b3e7-14b5a7500c5e`.
+- `expanded-screen-#/post-vouchers-business` — لو نتيجة الترحيل مش واضحة، أكرره؟ — `9f8cc2d0-a69f-542e-a463-70114c17c604`.
+- `expanded-screen-#/price-list-overview` — إيه استخدام شاشة «قوائم الأسعار» وإيه اللي أراجعه فيها؟ — `9ceec0b8-5fef-568a-ab07-c540c840c81f`.
+- `expanded-screen-#/price-list-business` — هل تغيير القائمة يعدّل فواتير محفوظة؟ — `546ea781-5007-5a60-a2a3-5ab9329eace6`.
+- `expanded-screen-#/projects-overview` — إيه استخدام شاشة «المشاريع» وإيه اللي أراجعه فيها؟ — `2ecd7ecf-d5ef-5d3d-9c81-6a4af4c7849e`.
+- `expanded-screen-#/projects-business` — ليه مستند مش ظاهر تحت مشروعه في التقرير؟ — `e8407afd-a977-55a5-bab4-95770a537ce7`.
+- `expanded-screen-#/purch-invoice-list-overview` — إيه استخدام شاشة «استعراض المشتريات» وإيه اللي أراجعه فيها؟ — `d942c81d-6ba8-5c4a-9dc5-d2dcd660db5c`.
+- `expanded-screen-#/purch-invoice-list-business` — إزاي أعرف إن فاتورة المورد اتسجلت قبل كده؟ — `3d2060a4-96fc-596e-9f09-4ae0c454b5a1`.
+- `expanded-screen-#/purch-invoice/new-overview` — إيه استخدام شاشة «فاتورة مشتريات» وإيه اللي أراجعه فيها؟ — `b0bb7b33-662c-5ca1-a211-b4de7437d663`.
+- `expanded-screen-#/purch-invoice/new-business` — هل رقم فاتورة المورد هو كود البرنامج؟ — `fef3fe3b-6582-5ffc-93c7-6e92fcc5f812`.
+- `expanded-screen-#/purchOrder/new-overview` — إيه استخدام شاشة «امر شراء» وإيه اللي أراجعه فيها؟ — `fbdfd639-d8c9-57a5-addc-69232a1e6af1`.
+- `expanded-screen-#/purchOrder/new-business` — إزاي أعرف إن أمر الشراء اتنفذ فعلًا؟ — `ca13c27b-72f3-5f27-820a-00f925bbbb3d`.
+- `expanded-screen-#/purchase-dashboard-overview` — إيه استخدام شاشة «إحصائيات المشتريات» وإيه اللي أراجعه فيها؟ — `56d655ba-5c31-57d9-9b71-0ca12138a719`.
+- `expanded-screen-#/purchase-dashboard-business` — ليه إحصائية المشتريات مختلفة عن مدفوعات الموردين؟ — `7078a50f-47e4-51c5-a654-2649e5f78614`.
+- `expanded-screen-#/purchase-reports-overview` — إيه استخدام شاشة «تقارير المشتريات» وإيه اللي أراجعه فيها؟ — `0f8e4375-efeb-5c35-83be-9ea9b036e0b6`.
+- `expanded-screen-#/purchase-reports-business` — هل تقرير شراء الأصناف يطابق كشف المورد مباشرة؟ — `b1510806-acb7-5091-aad5-7ae2e88af149`.
+- `expanded-screen-#/quotation/new-overview` — إيه استخدام شاشة «عرض سعر» وإيه اللي أراجعه فيها؟ — `217a147a-9663-5cdb-a746-7a86469c14b6`.
+- `expanded-screen-#/quotation/new-business` — هل موافقة العميل على العرض تخصم البضاعة؟ — `f51cfcb2-517c-52c6-8139-a58fa6fa38d6`.
+- `expanded-screen-#/reservations/new-overview` — إيه استخدام شاشة «الحجوزات» وإيه اللي أراجعه فيها؟ — `8eb5e68e-15ca-502a-a479-a8e237259458`.
+- `expanded-screen-#/reservations/new-business` — هل تعديل الحجز يعدّل إذن تسليم محفوظ؟ — `eacb13d8-0c52-53bb-9df0-9747dde8172a`.
+- `expanded-screen-#/restaurant-dashboard-overview` — إيه استخدام شاشة «إحصائيات المطاعم» وإيه اللي أراجعه فيها؟ — `fb593a7c-61ed-5a4f-97b6-17696085762e`.
+- `expanded-screen-#/restaurant-dashboard-business` — هل عدد الطلبات يساوي الفواتير المدفوعة؟ — `d87486d3-f91a-5582-8375-582c195bd603`.
+- `expanded-screen-#/restaurant-menu-overview` — إيه استخدام شاشة «فاتورة المطعم» وإيه اللي أراجعه فيها؟ — `3d395908-cbeb-5479-afac-ac4d7b01ddd4`.
+- `expanded-screen-#/restaurant-menu-business` — ليه طلبين بنفس الأصناف ليهم إجمالي مختلف؟ — `c7742b63-887b-533e-a6cf-1974e5e18ab1`.
+- `expanded-screen-#/restaurant-orders-overview` — إيه استخدام شاشة «طلبات المطبخ» وإيه اللي أراجعه فيها؟ — `19b4d936-4a86-55b9-b8b2-05e11a9fb01a`.
+- `expanded-screen-#/restaurant-orders-business` — هل اختفاء طلب المطبخ معناه إلغاءه؟ — `4b4de787-2fd8-5aba-8a49-6418a7808fdf`.
+- `expanded-screen-#/return-purch/new-overview` — إيه استخدام شاشة «مرتجع مشتريات» وإيه اللي أراجعه فيها؟ — `0565fe2d-be4d-544d-995b-f4c1f65f9081`.
+- `expanded-screen-#/return-purch/new-business` — هل مرتجع الشراء معناه إن المورد رد الفلوس؟ — `f4e4f2f4-0f98-5f41-91ae-20abfb278b8f`.
+- `expanded-screen-#/return-sales/new-overview` — إيه استخدام شاشة «مرتجع مبيعات» وإيه اللي أراجعه فيها؟ — `8293fc16-9cdf-592b-b665-e4124885b207`.
+- `expanded-screen-#/return-sales/new-business` — هل مرتجع البيع معناه إن العميل استلم المبلغ؟ — `3c0b2547-0c1c-5874-9c2d-e1984d38197c`.
+- `expanded-screen-#/safe-transaction-overview` — إيه استخدام شاشة «إستلام الخزينة» وإيه اللي أراجعه فيها؟ — `e3f6f332-d59a-5180-9891-0a7cde639a8c`.
+- `expanded-screen-#/safe-transaction-business` — هل استلام الخزينة هو سند قبض عميل؟ — `0650b884-f821-5e77-a9d2-5b810cb5b4c3`.
+- `expanded-screen-#/safes-overview` — إيه استخدام شاشة «الخزن» وإيه اللي أراجعه فيها؟ — `0ef164cd-df93-5a12-a248-8b3027d494fc`.
+- `expanded-screen-#/safes-business` — هل إضافة خزنة تنقل رصيد القديمة؟ — `c3e5864a-0d6f-5b31-a535-ed192f3623ee`.
+- `expanded-screen-#/sales-dashboard-overview` — إيه استخدام شاشة «إحصائيات المبيعات» وإيه اللي أراجعه فيها؟ — `61a48afb-6b44-5eaf-8b16-38b7988344f3`.
+- `expanded-screen-#/sales-dashboard-business` — ليه المبيعات أعلى من التحصيل في نفس اليوم؟ — `201ea67e-1d9d-580b-8cb5-a39a1237d5c6`.
+- `expanded-screen-#/sales-order/new-overview` — إيه استخدام شاشة «امر بيع» وإيه اللي أراجعه فيها؟ — `52431c03-74ca-548a-8048-515ab3c0b369`.
+- `expanded-screen-#/sales-order/new-business` — إيه اللي أراجعه قبل تحويل طلب لفاتورة؟ — `b1dc65b0-5f0e-505c-a686-4773c9d0c2e3`.
+- `expanded-screen-#/sales-reports-overview` — إيه استخدام شاشة «تقارير المبيعات» وإيه اللي أراجعه فيها؟ — `ad65236b-470c-5728-a8dc-7d708c87e0fd`.
+- `expanded-screen-#/sales-reports-business` — هل صافي المبيعات هو ربح المبيعات؟ — `0ac78538-c21f-58dc-993f-6dcd68aa177a`.
+- `expanded-screen-#/sendInvoiceToZatca-overview` — إيه استخدام شاشة «ترحيل الفواتير للهيئة» وإيه اللي أراجعه فيها؟ — `acaefaeb-e304-50e4-a929-d2ae153dffe0`.
+- `expanded-screen-#/sendInvoiceToZatca-business` — هل أعيد إرسال فاتورة حالتها غير واضحة؟ — `e1b3117f-c778-57f3-bbbd-82da8caaedf2`.
+- `expanded-screen-#/shortage-adjustment-overview` — إيه استخدام شاشة «تسوية العجز» وإيه اللي أراجعه فيها؟ — `6a1bc3b5-9b38-5675-9b95-d0a5cb69f3de`.
+- `expanded-screen-#/shortage-adjustment-business` — هل العجز لازم يتسجل كتالف؟ — `7f900ca4-6091-57fc-9de5-cb38c20114f1`.
+- `expanded-screen-#/storage-transfer-overview` — إيه استخدام شاشة «التحويل بين المخازن» وإيه اللي أراجعه فيها؟ — `689449c3-cc0c-5be1-8928-3bc1f8b63a41`.
+- `expanded-screen-#/storage-transfer-business` — لو مخزن الوجهة ما زادش، أعمل تحويل تاني؟ — `67e98203-812b-5c48-a80c-396c3f069d80`.
+- `expanded-screen-#/subscription-data-overview` — إيه استخدام شاشة «بيانات الإشتراك» وإيه اللي أراجعه فيها؟ — `e806a5da-75a2-530f-9707-be540d902b14`.
+- `expanded-screen-#/subscription-data-business` — إيه تفاصيل مشكلة الاشتراك اللي يحتاجها الدعم؟ — `fcf03ef3-4ffc-560f-94c2-d0b5761de870`.
+- `expanded-screen-#/supplier-discount-overview` — إيه استخدام شاشة «اشعار خصم مورد» وإيه اللي أراجعه فيها؟ — `e0317627-7ff4-5fac-be59-3995d02826bf`.
+- `expanded-screen-#/supplier-discount-business` — ليه كشف المورد اتغير بدون سند سداد؟ — `8a6b22a3-b5f8-50ee-859e-f107194c30bd`.
+- `expanded-screen-#/suppliers-overview` — إيه استخدام شاشة «الموردين» وإيه اللي أراجعه فيها؟ — `80911047-e243-53bd-9e2e-2f37b6d9218e`.
+- `expanded-screen-#/suppliers-business` — هل أفتح مورد جديد لو بيانات القديم غلط؟ — `05035fc9-bff4-5d5e-b94c-91ec1e5ffcd8`.
+- `expanded-screen-#/tables-overview` — إيه استخدام شاشة «الطاولات» وإيه اللي أراجعه فيها؟ — `edc00a04-e0c6-525f-80a0-879fbffe09ef`.
+- `expanded-screen-#/tables-business` — هل تغيير رقم الطاولة ينقل طلبها المفتوح؟ — `08c23973-93a5-5ff9-9beb-a5d8b273671b`.
+- `expanded-screen-#/transfers-and-settlements-overview` — إيه استخدام شاشة «تحويلات وتسويات» وإيه اللي أراجعه فيها؟ — `642722c3-bbf0-59d0-a0da-4701b2d727db`.
+- `expanded-screen-#/transfers-and-settlements-business` — إيه الفرق بين تحويل مبلغ وتسوية رصيد؟ — `66b03a2e-220e-52d7-927c-1aab9e39e859`.
+- `expanded-screen-#/underReview/new-overview` — إيه استخدام شاشة «فاتورة تحت الأجراء new» وإيه اللي أراجعه فيها؟ — `307ec2be-9fe0-5d36-b845-a715e14eb934`.
+- `expanded-screen-#/underReview/new-business` — هل تمت المراجعة معناها مرحّل للحسابات؟ — `7b47cb15-2ad8-505f-ae4e-64d6fffe9b88`.
+- `expanded-screen-#/units-overview` — إيه استخدام شاشة «الوحدات» وإيه اللي أراجعه فيها؟ — `f6fd24ef-c094-5426-9ae9-156090391fce`.
+- `expanded-screen-#/units-business` — هل تعريف كرتونة يحدد عدد القطع لكل الأصناف؟ — `2f09fc49-6fb9-5b19-9948-c232c9ad77c4`.
+- `expanded-screen-#/users-overview` — إيه استخدام شاشة «المستخدمين» وإيه اللي أراجعه فيها؟ — `a36dff85-d650-5909-8327-5eb422f005ff`.
+- `expanded-screen-#/users-business` — هل أدي الموظف حساب الأدمن علشان الشاشة تفتح؟ — `c79409c8-b8ac-5085-b680-76046da6d5db`.
+- `expanded-screen-#/usersAndAgents-dashboard-overview` — إيه استخدام شاشة «إحصائيات المستخدمين» وإيه اللي أراجعه فيها؟ — `f4d31c9b-7498-5928-926b-399e20cfb95b`.
+- `expanded-screen-#/usersAndAgents-dashboard-business` — ليه مبيعات المستخدم مختلفة عن المندوب؟ — `7c1403ef-ac63-52d1-ae5a-7fc9c9705afb`.
+- `expanded-screen-#/vouchers-overview` — إيه استخدام شاشة «قيود اليومية» وإيه اللي أراجعه فيها؟ — `cf189332-6d8c-5332-9818-65343e8fc3be`.
+- `expanded-screen-#/vouchers-business` — هل قيمة صف القيد كفاية لمراجعته؟ — `7511d12b-adfe-5c3c-a159-7db99d7dca91`.
+- `expanded-screen-#/warehouses-overview` — إيه استخدام شاشة «قائمة المخازن» وإيه اللي أراجعه فيها؟ — `2c3364e8-d806-5a82-bbb7-20fc778678d1`.
+- `expanded-screen-#/warehouses-business` — هل تغيير تبعية مخزن ينقل تاريخه وأرصدته؟ — `850ffcfc-3050-525d-a82b-1a4d22811c70`.
+- `expanded-screen-/employees-overview` — إيه استخدام شاشة «الموظفون» وإيه اللي أراجعه فيها؟ — `44ca07ef-46cd-598e-aaf1-4384042a5498`.
+- `expanded-screen-/employees-business` — هل أضيف موظفًا جديدًا لو الكود موجود والاسم متغير؟ — `2a9882cd-3315-5ed2-9e86-45cb940e7269`.
+- `expanded-screen-/marital-status-overview` — إيه استخدام شاشة «الحالات الاجتماعية» وإيه اللي أراجعه فيها؟ — `6c45e567-98bf-55b8-a794-2b9ee10e3ae1`.
+- `expanded-screen-/marital-status-business` — هل تغيير الحالة الاجتماعية يغيّر الراتب تلقائيًا؟ — `d972e1c3-89db-5c5c-a6d8-47579f9cf553`.
+- `expanded-screen-/salary-items-overview` — إيه استخدام شاشة «بنود الرواتب» وإيه اللي أراجعه فيها؟ — `e2867ce9-360a-548c-8602-a3987939e463`.
+- `expanded-screen-/salary-items-business` — هل البند الثابت والمتغير بيتكرروا بنفس الطريقة؟ — `e005f403-141c-5230-959e-70095099e12a`.
+- `expanded-screen-/qualification-overview` — إيه استخدام شاشة «المؤهلات» وإيه اللي أراجعه فيها؟ — `89a0eaf5-6869-5b88-b811-7270e9159c07`.
+- `expanded-screen-/qualification-business` — هل اختلاف كتابة المؤهل يعمل تصنيفين؟ — `6a44bb9e-5579-5a7d-bc5a-3c90b1dded1e`.
+- `expanded-screen-/sections-overview` — إيه استخدام شاشة «الأقسام» وإيه اللي أراجعه فيها؟ — `8f333a52-d271-5c54-ab00-f2150259c47d`.
+- `expanded-screen-/sections-business` — ليه الموظف مش ظاهر في تقرير قسمه؟ — `f899c962-9e5c-5a03-bd2f-067361a5dd75`.
+- `expanded-screen-/jop-title-overview` — إيه استخدام شاشة «المسميات الوظيفية» وإيه اللي أراجعه فيها؟ — `66f0a3ee-2acc-55da-afc1-9f714608b819`.
+- `expanded-screen-/jop-title-business` — هل تغيير المسمى يعدّل بنود الراتب؟ — `3d1f86b4-cdd0-54c3-9011-ddcb38991293`.
+- `expanded-screen-/mangement-overview` — إيه استخدام شاشة «الإدارات» وإيه اللي أراجعه فيها؟ — `ce263a1e-d76a-5da5-a6d2-8d2865467826`.
+- `expanded-screen-/mangement-business` — إيه الفرق بين الإدارة والقسم بملف الموظف؟ — `c5afcbf1-f39f-58db-acd2-65871f0333d9`.
+- `expanded-screen-/religion-overview` — إيه استخدام شاشة «الديانات» وإيه اللي أراجعه فيها؟ — `53d12706-fd1d-5d8f-9f95-b88c3d2cae8d`.
+- `expanded-screen-/religion-business` — هل الديانة حقل إلزامي لكل موظف؟ — `0c0d8dc0-629f-5240-95db-619b5822791f`.
+- `expanded-screen-/typeVacations-overview` — إيه استخدام شاشة «أنواع الإجازات» وإيه اللي أراجعه فيها؟ — `4e5a3ab2-2fdd-50e9-9fb2-1086ab335ad9`.
+- `expanded-screen-/typeVacations-business` — هل كل الإجازات بتخصم من نفس الرصيد؟ — `1d3626cb-e168-5011-9cea-1ebdc37a9bec`.
+- `expanded-screen-/vacationRequest-overview` — إيه استخدام شاشة «طلبات الإجازة» وإيه اللي أراجعه فيها؟ — `973dc7e1-7586-5e22-8ed9-44b52f4c99f4`.
+- `expanded-screen-/vacationRequest-business` — لو مدة الإجازة مختلفة، أراجع إيه؟ — `5b80438a-203d-5ee5-a731-edef8143ded3`.
+- `expanded-screen-/benefitsAndDeductions-overview` — إيه استخدام شاشة «الاستحقاقات والاستقطاعات» وإيه اللي أراجعه فيها؟ — `0cdbb459-df05-5903-8f77-ddd49ee000ba`.
+- `expanded-screen-/benefitsAndDeductions-business` — ليه مش قادر أعدّل حركة دخلت في راتب؟ — `cb3f1441-7aec-5b93-a8c6-3295afc6f24d`.
+- `expanded-screen-/employeeAdvancePayment-overview` — إيه استخدام شاشة «السلف» وإيه اللي أراجعه فيها؟ — `d2da71ca-d5fc-5116-ac13-6412858ce563`.
+- `expanded-screen-/employeeAdvancePayment-business` — لو السلفة بدأت آخر السنة، الأقساط بتنتهي إمتى؟ — `c8f2fd28-95e6-56f0-90cb-411bee52038e`.
+- `expanded-screen-/calculateSalary-overview` — إيه استخدام شاشة «احتساب الرواتب» وإيه اللي أراجعه فيها؟ — `f8aec0c5-c8fd-51fa-8b08-b0697d2e7bca`.
+- `expanded-screen-/calculateSalary-business` — هل أعيد احتساب راتب موجود لنفس الشهر؟ — `38140045-8824-5a84-95dd-0c28d7d4b9d9`.
+- `expanded-screen-/salary-overview` — إيه استخدام شاشة «استعراض الرواتب» وإيه اللي أراجعه فيها؟ — `92b2e20d-0053-556c-8a49-78955ab04e9a`.
+- `expanded-screen-/salary-business` — هل ظهور الراتب معناه إنه اتصرف؟ — `e5c52c04-363c-5665-b3eb-3a6f64d781e8`.
+- `expanded-screen-/employees-dashboard-overview` — إيه استخدام شاشة «إحصائيات الموظفين» وإيه اللي أراجعه فيها؟ — `0dd384da-3abf-5c87-b34d-18ad7d148879`.
+- `expanded-screen-/employees-dashboard-business` — هل عدد الموظفين يساوي عدد صفوف الرواتب؟ — `0d4cb225-3021-5d40-953b-5eb10499e508`.
+- `expanded-screen-/nationalties-overview` — إيه استخدام شاشة «الجنسيات» وإيه اللي أراجعه فيها؟ — `07e167bf-1048-5af9-8363-9774a93ef6b4`.
+- `expanded-screen-/nationalties-business` — ليه تقرير جنسية ناقص موظفين؟ — `705d11d1-afec-5c4f-81e6-5fdd20a68b44`.
+- `expanded-screen-/employees-reports-overview` — إيه استخدام شاشة «تقارير شئون الموظفين» وإيه اللي أراجعه فيها؟ — `bfd81437-c34a-5451-b10c-382d58b6ae99`.
+- `expanded-screen-/employees-reports-business` — هل فتح تقرير الموظفين يثبت صحة حساباته؟ — `8a9cc83a-e17c-5c07-a9a5-6f1a84e65d13`.
+- `expanded-report-purchase-reports-تقرير المشتريات` — إزاي أراجع «تقرير المشتريات» وأفهم نتيجته؟ — `020c10f2-cc07-5063-81d0-ead95bde0359`.
+- `expanded-report-purchase-reports-تقرير المشتريات بطرق الدفع` — إزاي أراجع «تقرير المشتريات بطرق الدفع» وأفهم نتيجته؟ — `9bd3f6c8-9fbc-5b4d-b154-ad68dc5a225b`.
+- `expanded-report-purchase-reports-تقرير مشتريات الأصناف` — إزاي أراجع «تقرير مشتريات الأصناف» وأفهم نتيجته؟ — `05873aad-4f3d-5581-ba5e-661657464c3b`.
+- `expanded-report-purchase-reports-تقرير مشتريات الموردين` — إزاي أراجع «تقرير مشتريات الموردين» وأفهم نتيجته؟ — `20369b45-4343-537b-a442-46eb55c27813`.
+- `expanded-report-customers-and-suppliers-تقرير كشف حساب العملاء` — إزاي أراجع «تقرير كشف حساب العملاء» وأفهم نتيجته؟ — `d17c1b26-ef10-5b13-8cc6-fc049be2e1b4`.
+- `expanded-report-customers-and-suppliers-تقرير كشف حساب الموردين` — إزاي أراجع «تقرير كشف حساب الموردين» وأفهم نتيجته؟ — `82688f12-58d2-569d-a545-c90fb56b2db6`.
+- `expanded-report-customers-and-suppliers-تقرير أعمار ديون العملاء` — إزاي أراجع «تقرير أعمار ديون العملاء» وأفهم نتيجته؟ — `c783c3ad-ebff-5bc0-acb4-486661d33f8f`.
+- `expanded-report-customers-and-suppliers-تقرير أعمار ديون الموردين` — إزاي أراجع «تقرير أعمار ديون الموردين» وأفهم نتيجته؟ — `518c81d1-101f-51db-ba1e-6c9ecd6a3838`.
+- `expanded-report-customers-and-suppliers-العملاء اللذين تعدو الحد الإئتماني` — إزاي أراجع «العملاء اللذين تعدو الحد الإئتماني» وأفهم نتيجته؟ — `f13e3bee-48b5-5f68-973c-25bdc263b167`.
+- `expanded-report-customers-and-suppliers-تقرير سند قبض عميل` — إزاي أراجع «تقرير سند قبض عميل» وأفهم نتيجته؟ — `4df4cfdc-9538-5706-9bb6-1fe066711738`.
+- `expanded-report-customers-and-suppliers-تقرير سند صرف مورد` — إزاي أراجع «تقرير سند صرف مورد» وأفهم نتيجته؟ — `01c41e62-24eb-543a-8901-529e27f37281`.
+- `expanded-report-customers-and-suppliers-تقرير سندات القبض المخصصة` — إزاي أراجع «تقرير سندات القبض المخصصة» وأفهم نتيجته؟ — `43efcbb9-dfe0-5318-9147-eee708ff5d29`.
+- `expanded-report-customers-and-suppliers-تقرير سندات الصرف المخصصة` — إزاي أراجع «تقرير سندات الصرف المخصصة» وأفهم نتيجته؟ — `ffd4dc13-9872-5289-8817-04a656112d7e`.
+- `expanded-report-customers-and-suppliers-تقرير المبيعات المخصصة` — إزاي أراجع «تقرير المبيعات المخصصة» وأفهم نتيجته؟ — `9c5553a4-8ce6-5a19-aaad-cac8d1a5d9a2`.
+- `expanded-report-customers-and-suppliers-تقرير المشتريات المخصصة` — إزاي أراجع «تقرير المشتريات المخصصة» وأفهم نتيجته؟ — `d42cb5f7-c34e-5476-a6c7-0b0771685ca0`.
+- `expanded-report-customers-and-suppliers-كشف حساب نقاط ولاء` — إزاي أراجع «كشف حساب نقاط ولاء» وأفهم نتيجته؟ — `5760196f-daf2-5e1f-a5e2-57c3bb5060b7`.
+- `expanded-report-customers-and-suppliers-بيانات العملاء المضافة بفاتورة نقاط بيع` — إزاي أراجع «بيانات العملاء المضافة بفاتورة نقاط بيع» وأفهم نتيجته؟ — `83be42d0-5ad9-546f-b92f-5b881c2a4e2e`.
+- `expanded-report-customers-and-suppliers-تقرير ركود العملاء` — إزاي أراجع «تقرير ركود العملاء» وأفهم نتيجته؟ — `2979a736-7df9-53e1-8d12-6e56c2806cc7`.
+- `expanded-report-customers-and-suppliers-تقرير كشف حساب العملاء تفصيلي بالاصناف` — إزاي أراجع «تقرير كشف حساب العملاء تفصيلي بالاصناف» وأفهم نتيجته؟ — `bc9f95dd-a6b5-5b60-b3d3-5c0372425a53`.
+- `expanded-report-customers-and-suppliers-تقرير خطوط السير` — إزاي أراجع «تقرير خطوط السير» وأفهم نتيجته؟ — `a6deaee1-11cd-516f-8ef7-2fefcb04f8b5`.
+- `expanded-report-customers-and-suppliers-تقرير مبيعات العملاء بالشهور` — إزاي أراجع «تقرير مبيعات العملاء بالشهور» وأفهم نتيجته؟ — `87bc5319-8b16-549c-92d7-4e49f2a75d44`.
+- `expanded-report-accounts-reports-تقرير الضرائب` — إزاي أراجع «تقرير الضرائب» وأفهم نتيجته؟ — `8ca19a80-a998-5674-a402-67993c99ae85`.
+- `expanded-report-accounts-reports-تقرير كشف حساب الأستاذ` — إزاي أراجع «تقرير كشف حساب الأستاذ» وأفهم نتيجته؟ — `cd05eb06-05b4-5279-b3cd-38c87ecdfc47`.
+- `expanded-report-accounts-reports-تقرير كشف حساب الاستاذ بالرئيسي` — إزاي أراجع «تقرير كشف حساب الاستاذ بالرئيسي» وأفهم نتيجته؟ — `e2800023-f965-5bd0-a4e0-ec231ec2a264`.
+- `expanded-report-accounts-reports-تقرير حساب الخزن` — إزاي أراجع «تقرير حساب الخزن» وأفهم نتيجته؟ — `32d35f88-f7be-574d-b60e-5c8d61710074`.
+- `expanded-report-accounts-reports-تقرير حساب البنوك` — إزاي أراجع «تقرير حساب البنوك» وأفهم نتيجته؟ — `e24b4cf3-df93-53c9-bb4d-47caffcacfdb`.
+- `expanded-report-accounts-reports-تقرير ميزان المراجعة` — إزاي أراجع «تقرير ميزان المراجعة» وأفهم نتيجته؟ — `c3e2872d-b936-5dc8-8e49-42ac6900bee6`.
+- `expanded-report-accounts-reports-تقرير مراكز التكلفة` — إزاي أراجع «تقرير مراكز التكلفة» وأفهم نتيجته؟ — `888a1189-6245-510e-9243-fd953670e834`.
+- `expanded-report-accounts-reports-تقرير حركة الايرادات` — إزاي أراجع «تقرير حركة الايرادات» وأفهم نتيجته؟ — `00ed9f9f-5679-5565-9766-c8bff812d222`.
+- `expanded-report-accounts-reports-تقرير حركة المصروفات` — إزاي أراجع «تقرير حركة المصروفات» وأفهم نتيجته؟ — `bee0024d-cdc5-59a3-a68f-4a50a97a113b`.
+- `expanded-report-accounts-reports-تقرير التحويلات والتسويات` — إزاي أراجع «تقرير التحويلات والتسويات» وأفهم نتيجته؟ — `372c084f-37a5-5e96-b1ea-8d49ea7a9786`.
+- `expanded-report-accounts-reports-تقرير قائمة الدخل` — إزاي أراجع «تقرير قائمة الدخل» وأفهم نتيجته؟ — `ad52c990-3ddd-50bb-856c-7974515f102f`.
+- `expanded-report-accounts-reports-تقرير الميزانية العمومية` — إزاي أراجع «تقرير الميزانية العمومية» وأفهم نتيجته؟ — `86f9f012-57da-575e-9af0-ae72b77d12de`.
+- `expanded-report-accounts-reports-تقرير القيود اليومية` — إزاي أراجع «تقرير القيود اليومية» وأفهم نتيجته؟ — `92c657f6-fec8-571c-8a9d-f8f91293a13a`.
+- `expanded-report-sales-reports-تقرير المبيعات` — إزاي أراجع «تقرير المبيعات» وأفهم نتيجته؟ — `fb701036-568b-5a2a-8fca-8e10a6ed51bc`.
+- `expanded-report-sales-reports-تقرير المبيعات بتاريخ الاستحقاق` — إزاي أراجع «تقرير المبيعات بتاريخ الاستحقاق» وأفهم نتيجته؟ — `3f9a536c-6632-52f0-8a9e-96aa25c239bf`.
+- `expanded-report-sales-reports-تقرير أعمار ديون الفواتير` — إزاي أراجع «تقرير أعمار ديون الفواتير» وأفهم نتيجته؟ — `a0d42f66-d5d6-58be-84b9-288df2a55d39`.
+- `expanded-report-sales-reports-تقرير المبيعات بطرق الدفع` — إزاي أراجع «تقرير المبيعات بطرق الدفع» وأفهم نتيجته؟ — `2059a889-f14d-5f7c-86aa-37bd6ef642a8`.
+- `expanded-report-sales-reports-تقرير مبيعات وتحصيل المندوبين` — إزاي أراجع «تقرير مبيعات وتحصيل المندوبين» وأفهم نتيجته؟ — `54a03d1e-87e4-587b-912a-38539a50f22e`.
+- `expanded-report-sales-reports-تقرير خصومات المطاعم` — إزاي أراجع «تقرير خصومات المطاعم» وأفهم نتيجته؟ — `e61d3945-25ec-5b5f-a3e9-623815612ee0`.
+- `expanded-report-sales-reports-تقرير مبيعات الأصناف` — إزاي أراجع «تقرير مبيعات الأصناف» وأفهم نتيجته؟ — `10177fbc-c9cd-555e-9c95-5470b2eefd2d`.
+- `expanded-report-sales-reports-تقرير الارباح للفواتير` — إزاي أراجع «تقرير الارباح للفواتير» وأفهم نتيجته؟ — `85ebf616-6bc5-5663-a5f8-c4c02d9a4f81`.
+- `expanded-report-sales-reports-تقرير الارباح للأصناف` — إزاي أراجع «تقرير الارباح للأصناف» وأفهم نتيجته؟ — `83e16dbb-b2fd-5b20-b997-e46fb8f3b66c`.
+- `expanded-report-sales-reports-تقرير الارباح للعملاء` — إزاي أراجع «تقرير الارباح للعملاء» وأفهم نتيجته؟ — `e27ea1a4-2130-5ca1-bfd8-f359b7244057`.
+- `expanded-report-sales-reports-تقرير عروض الاسعار المحولة لفاتورة` — إزاي أراجع «تقرير عروض الاسعار المحولة لفاتورة» وأفهم نتيجته؟ — `fba0c050-5e2d-5c64-96a8-a50a39543c42`.
+- `expanded-report-sales-reports-تقرير لاوامر البيع والمنفذ منها` — إزاي أراجع «تقرير لاوامر البيع والمنفذ منها» وأفهم نتيجته؟ — `4a9ccfd8-582a-50ee-bae7-973ec648a113`.
+- `expanded-report-sales-reports-تقرير المندوبين` — إزاي أراجع «تقرير المندوبين» وأفهم نتيجته؟ — `e90c50b2-80cd-548a-aded-45dcb9db765c`.
+- `expanded-report-sales-reports-تقرير عمولات الاصناف للمندوبين` — إزاي أراجع «تقرير عمولات الاصناف للمندوبين» وأفهم نتيجته؟ — `e776d5d4-6692-5a68-a0df-ee5a8ede94f0`.
+- `expanded-report-sales-reports-تقرير العمولات الإجمالي للمندوب` — إزاي أراجع «تقرير العمولات الإجمالي للمندوب» وأفهم نتيجته؟ — `9f7a157b-9bd8-54da-9b7d-aa1219755ab7`.
+- `expanded-report-sales-reports-تقرير استهلاك الدفعة المقدمة` — إزاي أراجع «تقرير استهلاك الدفعة المقدمة» وأفهم نتيجته؟ — `dce0a088-2de3-53bc-9e46-d5ff962b5270`.
+- `expanded-report-sales-reports-تقرير الحجوزات والمنفذ منها` — إزاي أراجع «تقرير الحجوزات والمنفذ منها» وأفهم نتيجته؟ — `5d802b90-94c5-53fe-824e-f63632429911`.
+- `expanded-report-sales-reports-تقرير المبيعات بنوع الدفع` — إزاي أراجع «تقرير المبيعات بنوع الدفع» وأفهم نتيجته؟ — `7ee05f07-f6f2-569f-b5a7-feae0fd13da9`.
+- `expanded-report-sales-reports-تقرير حركة مبيعات السيارات` — إزاي أراجع «تقرير حركة مبيعات السيارات» وأفهم نتيجته؟ — `ef972c50-5153-5376-9c7f-39d082bbb93f`.
+- `expanded-report-sales-reports-تقرير للفواتير المرحلة والفواتير الغير مرحلة للهيئة` — إزاي أراجع «تقرير للفواتير المرحلة والفواتير الغير مرحلة للهيئة» وأفهم نتيجته؟ — `3b3569a6-100c-5ecb-adb4-6b197f540584`.
+- `expanded-report-items-reports-تقرير اجمالي سعر الصنف` — إزاي أراجع «تقرير اجمالي سعر الصنف» وأفهم نتيجته؟ — `a94407b6-8d06-5c7a-a162-44ab54ab766f`.
+- `expanded-report-items-reports-تقرير الحد الأدني للأصناف` — إزاي أراجع «تقرير الحد الأدني للأصناف» وأفهم نتيجته؟ — `1443cd93-d414-5622-808c-49918b10506d`.
+- `expanded-report-items-reports-تقرير الأصناف التي تعدت الحد الأدني` — إزاي أراجع «تقرير الأصناف التي تعدت الحد الأدني» وأفهم نتيجته؟ — `dcaa3d2e-ce64-52c6-a4f0-1deee875d954`.
+- `expanded-report-items-reports-تقرير اجمالي الحركات علي الأصناف` — إزاي أراجع «تقرير اجمالي الحركات علي الأصناف» وأفهم نتيجته؟ — `8888caa3-331f-55fd-8d8b-ac2024c717b7`.
+- `expanded-report-items-reports-تقرير حركة الأصناف تفصيلي` — إزاي أراجع «تقرير حركة الأصناف تفصيلي» وأفهم نتيجته؟ — `33e7444a-83a0-5ffb-9339-6c5e3ea3a4e6`.
+- `expanded-report-items-reports-تقرير التحويلات المخزنية` — إزاي أراجع «تقرير التحويلات المخزنية» وأفهم نتيجته؟ — `5a3fae6d-9f13-5d5b-9e80-c7654d33cc88`.
+- `expanded-report-items-reports-تقرير باركود الأصناف` — إزاي أراجع «تقرير باركود الأصناف» وأفهم نتيجته؟ — `58a60bf5-7593-579c-b91e-f815b062374f`.
+- `expanded-report-items-reports-تقرير رصيد المخزن` — إزاي أراجع «تقرير رصيد المخزن» وأفهم نتيجته؟ — `5a44708d-2299-5344-ac28-b52d82eaf770`.
+- `expanded-report-items-reports-تقرير تقييم المخزن` — إزاي أراجع «تقرير تقييم المخزن» وأفهم نتيجته؟ — `5ce94158-9078-5b3b-a83c-49113f4c831b`.
+- `expanded-report-items-reports-تقرير اذن الاستلام` — إزاي أراجع «تقرير اذن الاستلام» وأفهم نتيجته؟ — `3ae823db-2033-5df2-9567-80b13cb76e29`.
+- `expanded-report-items-reports-تقرير اجمالي ارصدة الأصناف بالمخزن` — إزاي أراجع «تقرير اجمالي ارصدة الأصناف بالمخزن» وأفهم نتيجته؟ — `2aeade59-51fc-587e-8741-b9e730f73ac4`.
+- `expanded-report-items-reports-تقرير جهات الصرف` — إزاي أراجع «تقرير جهات الصرف» وأفهم نتيجته؟ — `97dc499d-11e8-5e7c-bd3f-bd96fde0084b`.
+- `expanded-report-items-reports-تقرير QR كود الطاولات` — إزاي أراجع «تقرير QR كود الطاولات» وأفهم نتيجته؟ — `5915371d-6587-5f3f-b26f-efa1c7e28b3b`.
+- `expanded-report-items-reports-تقرير الجرد` — إزاي أراجع «تقرير الجرد» وأفهم نتيجته؟ — `01b98e63-4926-5b7c-9ce7-7201314836ab`.
+- `expanded-report-items-reports-تقرير تسوية التوالف` — إزاي أراجع «تقرير تسوية التوالف» وأفهم نتيجته؟ — `c70c8a8e-854c-56ba-8ebc-ca70d0a4d2aa`.
+- `expanded-report-items-reports-تقرير ركود الاصناف` — إزاي أراجع «تقرير ركود الاصناف» وأفهم نتيجته؟ — `7fed9441-2641-565a-bc30-d2fcb749691e`.
+- `expanded-report-items-reports-تقرير الاصناف` — إزاي أراجع «تقرير الاصناف» وأفهم نتيجته؟ — `2a1975be-bb66-5291-943d-9fabb741e864`.

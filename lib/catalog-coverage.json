@@ -1,0 +1,1889 @@
+{
+  "version": "faq-v2",
+  "date": "2026-11-03",
+  "total": 390,
+  "legacy": 107,
+  "added": 283,
+  "screens": 107,
+  "screenGuidance": 106,
+  "excluded": 1,
+  "reports": 71,
+  "screensWithImages": 9,
+  "articlesWithImages": 19,
+  "additionalScreenshots": 7,
+  "verifiedBusinessProcedures": 0,
+  "liveCapturePerformed": false,
+  "publication": "DEFERRED",
+  "screensInventory": [
+    {
+      "route": "#/",
+      "name": "الصفحة الرئيسية",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "c81ca4ab-3a90-5051-a0b6-f2ddd744bb92",
+        "52cc8f81-23fb-5e0c-8325-98541cd07164"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/Items",
+      "name": "قائمة الاصناف",
+      "module": "products",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "ad84ccea-3682-5000-ace5-57bbe1b1fba6",
+        "09e53c63-9f76-510b-8999-da8bcfc6a5bb"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/accountGroups",
+      "name": "مجموعات الحسابات",
+      "module": "accounting",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "eeafe4ac-c1ee-5a69-a8cb-d1a2e114cbdc",
+        "d1acf5ba-d44d-51be-a718-66780c27f1af"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/accounts-reports",
+      "name": "تقارير الحسابات",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "51f067df-f24d-5566-ad69-9be1a9bd3f98",
+        "f79182ea-809c-54a5-a418-157790258c1f"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/actions",
+      "name": "الاجراءات",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "e2b513ea-94b6-50d3-91e4-44fe35be090a",
+        "3a8d59f2-349d-5128-b4f8-bfe80467abf4"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/addition-order/new",
+      "name": "اذن استلام",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "dfec4764-4694-5420-bac1-a13652158d0d",
+        "1734d733-75eb-53cb-a9aa-70d5b9009e8d"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/agent-itineraries-status",
+      "name": "حالة خط السير new",
+      "module": "dealers",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "9a08a8df-640f-5218-84c4-c65ea3f0fd37",
+        "726b99e8-4598-567e-bef9-582d7e50635c"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/agentItinerary",
+      "name": "خط السير",
+      "module": "dealers",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "ab0a1430-d953-5976-bc65-92e566d91603",
+        "c2db43d9-6c16-54c3-8e9e-17415059f01f"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/agents",
+      "name": "المناديب",
+      "module": "dealers",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "877d4fc1-e4b3-5d1b-96f6-b0de0bf30ea3",
+        "4ca84d14-776d-5aba-bf0e-7239f4fba875"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/areas",
+      "name": "المناطق",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "2084bac5-8721-5f22-9ae8-e25495ca0be0",
+        "5fb9bf8c-8012-5575-9c9d-1fd0b0ad403f"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/banks",
+      "name": "البنوك",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "9d6e5c4a-ae2c-5837-9b43-dbd7ca62ca23",
+        "905250dc-44e5-53f4-94d6-47b071437adf"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/branches",
+      "name": "الفروع",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "6884bc1c-7cb9-5ad8-bd30-80b62f7623c3",
+        "7cee46ae-32f4-50ce-b6b6-868432833d7b"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/branches-dashboard",
+      "name": "إحصائيات الفروع",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "e8e4b352-1390-5245-9c6b-ecd18259af05",
+        "7bb35cfc-23e7-55be-8f16-01f7bcff75a3"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/bulk-invoices",
+      "name": "الفواتير المجمعه",
+      "module": "accounting",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "1f2cf555-b557-525e-aa72-8be77884a863",
+        "bb18a69e-f2c3-55ed-b1fe-56e380b5f7f6"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/car-colors",
+      "name": "الوان السيارات",
+      "module": "sales",
+      "activities": [
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "b8bdb909-4918-518c-b972-482d5d38c9f8",
+        "5b28b0db-115f-5bad-8766-3327b23a41a2"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/cars",
+      "name": "السيارات",
+      "module": "sales",
+      "activities": [
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "fe580476-21d8-5562-95d2-dd0f5e1574f8",
+        "1cf327ff-3416-5f8a-b11c-c0959df15ae4"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/castingTypes",
+      "name": "نوع الصبة",
+      "module": "settings",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "f475ae67-b6b9-5727-87dc-6821d873777c",
+        "55496af0-89b4-5495-90a9-831b71a4c847"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/cementTypes",
+      "name": "نوع الأسمنت",
+      "module": "settings",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "10a75f38-5ab2-5714-915d-6869f03722a7",
+        "c573a80e-d3b6-58c5-b990-4da6a2f76935"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/chart-of-account",
+      "name": "دليل الحسابات",
+      "module": "accounting",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "2946354a-d199-5e6b-a08a-2cff17751753",
+        "b28c6624-dfef-50fe-8fde-8822357b2597"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/collection-transactions",
+      "name": "سند قبض عميل",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "fe076789-0da4-54cc-9ad9-61df4ab44252",
+        "48298725-5956-5f19-b2e5-0ef82a5e0d95"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/company",
+      "name": "اعدادات الشركة",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "c4214571-c2ef-5815-9d12-6a9aab9f9f92",
+        "57f798f3-3ae2-5c38-9768-84b87abaf6b6"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/concrete-dashboard",
+      "name": "إحصائيات الخرسانه new",
+      "module": "reports",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "5e31c7fb-d03a-5c60-8ff2-d937124e81d3",
+        "56823055-8ae3-56f1-a6fe-a262c9bd0af6"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/concrete-exchange-order/new",
+      "name": "إذن تسليم خرسانة",
+      "module": "inventory",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "09d259ac-6173-5df2-944d-6f3ff6fbe8d6",
+        "cdcbefb5-3b28-5f4d-af87-a6bc62fde671"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/concrete-reports",
+      "name": "تقارير الخرسانة",
+      "module": "reports",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "06f4a28a-2019-5c4f-a491-a91cc0b5ff24",
+        "60b980a8-add8-5f4e-9782-0044ce485bb3"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/concrete-sales-invoice/new",
+      "name": "فاتورة مبيعات خرسانة",
+      "module": "sales",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "8b45714c-4e92-55db-a2ac-dae1ec753c96",
+        "55bc932c-2b47-586a-8f96-9fdb7005efb8"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/concrete-under-review/new",
+      "name": "تحت الإجراء خرسانة new",
+      "module": "sales",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "8c903899-c480-50d8-829b-2332ef28cc0f",
+        "bdb59800-f35b-5483-adf0-7e8e0b2657e7"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/contracts/new",
+      "name": "إنشاء العقود",
+      "module": "sales",
+      "activities": [
+        "construction"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "a81120cf-834e-58d3-ac9e-cf000ff42f95",
+        "511f6ec0-57f1-5a0b-b473-8f3236b454bd"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/cost-center",
+      "name": "مراكز التكلفة",
+      "module": "accounting",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "72bd348e-e5ca-5115-aaf8-acb98f0a484a",
+        "565eb055-7e87-524c-b7da-f76f8a9879a5"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/customer-discount",
+      "name": "اشعار خصم عميل",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "223d316c-5cd5-5d3b-9a5a-52fc3f9eb63a",
+        "142fbed6-f3c1-5b6d-b45e-c34127b81c1b"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/customers",
+      "name": "العملاء",
+      "module": "dealers",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "b2b9298d-0e1a-5c90-8dfd-778355a546af",
+        "d8124048-0217-5f2a-ad9d-10500edb240a"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/customers-and-suppliers",
+      "name": "تقارير العملاء والموردين",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "43096c25-15d4-5f7c-b3b1-b72a9ad9889c",
+        "91e63764-0a07-5db0-bad0-6cfdbcf01f2b"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/damage-adjustment",
+      "name": "تسوية التوالف",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "3c668b31-f811-5e4b-8267-1d5762071999",
+        "a2b9a6ab-003d-5f54-b71f-18398fec43b0"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/dealersClassification",
+      "name": "تصنيف المتعاملين",
+      "module": "dealers",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "455343f4-e509-5208-af85-b6b78ad5edd5",
+        "2e22c0d5-47de-5eeb-b77e-954ccc608c3e"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/discount-types",
+      "name": "انوع الخصومات",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "2376192e-e631-57c0-b9e2-8949a172b3d2",
+        "57aa8a6c-5122-5090-bdb3-019ffcc75ca0"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/drivers",
+      "name": "السائقين",
+      "module": "settings",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "45a63074-9e41-5a93-9ca6-08f32e565a29",
+        "7b3c0f64-98c0-5804-aa3c-3b3771fa1681"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/exchange-destinations",
+      "name": "جهات الصرف",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "436c2c72-23b0-5026-8aef-cc859eed2a84",
+        "9747a146-2e11-5264-8045-ff65e611c414"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/exchange-order/new",
+      "name": "إذن صرف",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "fee24aad-a4f2-5116-b39f-3ef8f1f25c03",
+        "1d6c8ae4-e952-50f4-a7d0-00dd2661ae83"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/expense-transactions",
+      "name": "حركة المصروفات",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "41e24da3-3bae-5279-9d04-a856745a6334",
+        "c290bd91-068c-54ff-ac6c-27bf93050d21"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/expense-type",
+      "name": "أنواع المصروفات",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "f1da241c-37d2-5d5d-bad5-97f01a39078b",
+        "744e5def-b949-552b-8ae3-a061d2a8c6eb"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/income-transactions",
+      "name": "حركة الايرادات",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "c4639e37-357f-5adc-921f-ec8ece1f5d0b",
+        "824a9cff-34cc-58c5-a4e6-efdde811551d"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/income-type",
+      "name": "أنواع الإيرادات",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "e4ae95c3-fb2d-5abb-ba9b-483501585a54",
+        "80a0d741-efc2-5500-bd20-8dd89c792dc3"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/inventory",
+      "name": "محضر الجرد",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "9ec6e489-bd06-5ccd-b2e1-9d289c3d2ea7",
+        "f0f0fc83-5fad-5702-98a1-58a311258db3"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/invoice-list",
+      "name": "استعراض المبيعات",
+      "module": "sales",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "aad1bd91-a728-5626-a4cd-ef61526611e0",
+        "d68a9a99-33e8-5d1e-8156-b16f17e36ac0"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/invoice/new",
+      "name": "فاتورة مبيعات",
+      "module": "sales",
+      "activities": [
+        "general"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "3c95bcf2-0f38-5269-8392-a317285211d8",
+        "00d50f4d-d91e-58d9-8d6d-1db276a0f436"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/items-category",
+      "name": "فئات الأصناف",
+      "module": "products",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "3175f47e-1c21-5e2f-afbc-3a589cd71d6c",
+        "a2d155fb-c0f5-5ec7-9677-8542778dce1c"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/items-reports",
+      "name": "تقارير الأصناف",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "1b02b87c-3826-5ef9-b52d-d20d2896d43e",
+        "fc1027ea-c542-5b65-8a50-c1a9905ea860"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/logs",
+      "name": "الملف التاريخي",
+      "state": "excluded_removed",
+      "reason": "Owner-confirmed removal: docs/testing/AUDIT_LOG_REMOVAL_2026_10_25_AR.md",
+      "articleIds": []
+    },
+    {
+      "route": "#/mainDealer",
+      "name": "المتعامل الرئيسي",
+      "module": "dealers",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "5323fb5b-b0e5-599f-9a93-b82503efae6d",
+        "d14606a4-46e1-5caf-8e74-62813b5bd539"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/manufacturing-order/new",
+      "name": "إذن تصنيع",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "c651fcf3-3b48-5317-8f59-10d5e0383478",
+        "3846816d-0ad5-54b1-81cf-79348596df02"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/maxTemperature",
+      "name": "اقصي درجة حرارة",
+      "module": "settings",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "5bf13f5c-7743-5734-8d71-729066b7945c",
+        "565c309d-ccdf-5d03-95d8-9f7133ad6fbf"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/orders",
+      "name": "استعراض الأذونات",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "8f200f34-1b61-58be-a5ec-df4555fc1fbb",
+        "d275318c-8168-593f-8be8-b5f07fefdfe7"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/overflow-adjustment",
+      "name": "تسوية الفائض",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "6f545c65-2fee-5943-b257-4645588c98ad",
+        "914a0a70-6619-5f95-91cb-48f34b10c7ad"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/payment-methods",
+      "name": "طرق الدفع",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "278131be-61ce-5317-9c90-6b738a48ff94",
+        "d8ceb3f4-0fa6-5942-80c8-c6f8c4059fb0"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/payment-transactions",
+      "name": "سند صرف مورد",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "2075435b-0f80-5faa-be1e-a37a9b71fa11",
+        "b38c923d-954d-5689-b7a3-75a609616f39"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/point-of-sale",
+      "name": "فاتورة نقاط بيع",
+      "module": "sales",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "2bce8b54-d61e-5859-9168-2df394732aa1",
+        "ebb24344-ac8a-5ff5-a029-653591fc137f"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/posConfigurations",
+      "name": "الربط مع هيئة الزكاة",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "cf1a119d-99c4-567a-9d1e-fbbf6289fd66",
+        "98db5d87-3a49-5305-9d2c-8a45d197ae2e"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/post-vouchers",
+      "name": "الترحيل الي الحسابات",
+      "module": "accounting",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "bd66b3d8-798a-582a-b3e7-14b5a7500c5e",
+        "9f8cc2d0-a69f-542e-a463-70114c17c604"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/price-list",
+      "name": "قوائم الأسعار",
+      "module": "products",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "9ceec0b8-5fef-568a-ab07-c540c840c81f",
+        "546ea781-5007-5a60-a2a3-5ab9329eace6"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/projects",
+      "name": "المشاريع",
+      "module": "settings",
+      "activities": [
+        "construction",
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "2ecd7ecf-d5ef-5d3d-9c81-6a4af4c7849e",
+        "e8407afd-a977-55a5-bab4-95770a537ce7"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/purch-invoice-list",
+      "name": "استعراض المشتريات",
+      "module": "purchases",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "d942c81d-6ba8-5c4a-9dc5-d2dcd660db5c",
+        "3d2060a4-96fc-596e-9f09-4ae0c454b5a1"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/purch-invoice/new",
+      "name": "فاتورة مشتريات",
+      "module": "purchases",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "b0bb7b33-662c-5ca1-a211-b4de7437d663",
+        "fef3fe3b-6582-5ffc-93c7-6e92fcc5f812"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/purchOrder/new",
+      "name": "امر شراء",
+      "module": "purchases",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "fbdfd639-d8c9-57a5-addc-69232a1e6af1",
+        "ca13c27b-72f3-5f27-820a-00f925bbbb3d"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/purchase-dashboard",
+      "name": "إحصائيات المشتريات",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "56d655ba-5c31-57d9-9b71-0ca12138a719",
+        "7078a50f-47e4-51c5-a654-2649e5f78614"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/purchase-reports",
+      "name": "تقارير المشتريات",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "0f8e4375-efeb-5c35-83be-9ea9b036e0b6",
+        "b1510806-acb7-5091-aad5-7ae2e88af149"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/quotation/new",
+      "name": "عرض سعر",
+      "module": "sales",
+      "activities": [
+        "general"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "217a147a-9663-5cdb-a746-7a86469c14b6",
+        "f51cfcb2-517c-52c6-8139-a58fa6fa38d6"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/reservations/new",
+      "name": "الحجوزات",
+      "module": "sales",
+      "activities": [
+        "concrete"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "8eb5e68e-15ca-502a-a479-a8e237259458",
+        "eacb13d8-0c52-53bb-9df0-9747dde8172a"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/restaurant-dashboard",
+      "name": "إحصائيات المطاعم",
+      "module": "reports",
+      "activities": [
+        "restaurant"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "fb593a7c-61ed-5a4f-97b6-17696085762e",
+        "d87486d3-f91a-5582-8375-582c195bd603"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/restaurant-menu",
+      "name": "فاتورة المطعم",
+      "module": "sales",
+      "activities": [
+        "restaurant"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "3d395908-cbeb-5479-afac-ac4d7b01ddd4",
+        "c7742b63-887b-533e-a6cf-1974e5e18ab1"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/restaurant-orders",
+      "name": "طلبات المطبخ",
+      "module": "sales",
+      "activities": [
+        "restaurant"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "19b4d936-4a86-55b9-b8b2-05e11a9fb01a",
+        "4b4de787-2fd8-5aba-8a49-6418a7808fdf"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/return-purch/new",
+      "name": "مرتجع مشتريات",
+      "module": "purchases",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "0565fe2d-be4d-544d-995b-f4c1f65f9081",
+        "f4e4f2f4-0f98-5f41-91ae-20abfb278b8f"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/return-sales/new",
+      "name": "مرتجع مبيعات",
+      "module": "sales",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "8293fc16-9cdf-592b-b665-e4124885b207",
+        "3c0b2547-0c1c-5874-9c2d-e1984d38197c"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/safe-transaction",
+      "name": "إستلام الخزينة",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "e3f6f332-d59a-5180-9891-0a7cde639a8c",
+        "0650b884-f821-5e77-a9d2-5b810cb5b4c3"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/safes",
+      "name": "الخزن",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "0ef164cd-df93-5a12-a248-8b3027d494fc",
+        "c3e5864a-0d6f-5b31-a535-ed192f3623ee"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/sales-dashboard",
+      "name": "إحصائيات المبيعات",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "61a48afb-6b44-5eaf-8b16-38b7988344f3",
+        "201ea67e-1d9d-580b-8cb5-a39a1237d5c6"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/sales-order/new",
+      "name": "امر بيع",
+      "module": "sales",
+      "activities": [
+        "general"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "52431c03-74ca-548a-8048-515ab3c0b369",
+        "b1dc65b0-5f0e-505c-a686-4773c9d0c2e3"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/sales-reports",
+      "name": "تقارير المبيعات",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "ad65236b-470c-5728-a8dc-7d708c87e0fd",
+        "0ac78538-c21f-58dc-993f-6dcd68aa177a"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/sendInvoiceToZatca",
+      "name": "ترحيل الفواتير للهيئة",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "acaefaeb-e304-50e4-a929-d2ae153dffe0",
+        "e1b3117f-c778-57f3-bbbd-82da8caaedf2"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/shortage-adjustment",
+      "name": "تسوية العجز",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "6a1bc3b5-9b38-5675-9b95-d0a5cb69f3de",
+        "7f900ca4-6091-57fc-9de5-cb38c20114f1"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/storage-transfer",
+      "name": "التحويل بين المخازن",
+      "module": "inventory",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "689449c3-cc0c-5be1-8928-3bc1f8b63a41",
+        "67e98203-812b-5c48-a80c-396c3f069d80"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/subscription-data",
+      "name": "بيانات الإشتراك",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "e806a5da-75a2-530f-9707-be540d902b14",
+        "fcf03ef3-4ffc-560f-94c2-d0b5761de870"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/supplier-discount",
+      "name": "اشعار خصم مورد",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "e0317627-7ff4-5fac-be59-3995d02826bf",
+        "8a6b22a3-b5f8-50ee-859e-f107194c30bd"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/suppliers",
+      "name": "الموردين",
+      "module": "dealers",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "80911047-e243-53bd-9e2e-2f37b6d9218e",
+        "05035fc9-bff4-5d5e-b94c-91ec1e5ffcd8"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/tables",
+      "name": "الطاولات",
+      "module": "sales",
+      "activities": [
+        "restaurant"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "edc00a04-e0c6-525f-80a0-879fbffe09ef",
+        "08c23973-93a5-5ff9-9beb-a5d8b273671b"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/transfers-and-settlements",
+      "name": "تحويلات وتسويات",
+      "module": "finance",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "642722c3-bbf0-59d0-a0da-4701b2d727db",
+        "66b03a2e-220e-52d7-927c-1aab9e39e859"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/underReview/new",
+      "name": "فاتورة تحت الأجراء new",
+      "module": "sales",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "307ec2be-9fe0-5d36-b845-a715e14eb934",
+        "7b47cb15-2ad8-505f-ae4e-64d6fffe9b88"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/units",
+      "name": "الوحدات",
+      "module": "products",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "f6fd24ef-c094-5426-9ae9-156090391fce",
+        "2f09fc49-6fb9-5b19-9948-c232c9ad77c4"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/users",
+      "name": "المستخدمين",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "a36dff85-d650-5909-8327-5eb422f005ff",
+        "c79409c8-b8ac-5085-b680-76046da6d5db"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/usersAndAgents-dashboard",
+      "name": "إحصائيات المستخدمين",
+      "module": "reports",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "f4d31c9b-7498-5928-926b-399e20cfb95b",
+        "7c1403ef-ac63-52d1-ae5a-7fc9c9705afb"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "#/vouchers",
+      "name": "قيود اليومية",
+      "module": "accounting",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "cf189332-6d8c-5332-9818-65343e8fc3be",
+        "7511d12b-adfe-5c3c-a159-7db99d7dca91"
+      ],
+      "image": true,
+      "businessVerified": false
+    },
+    {
+      "route": "#/warehouses",
+      "name": "قائمة المخازن",
+      "module": "settings",
+      "activities": [
+        "general",
+        "restaurant",
+        "construction",
+        "concrete",
+        "cars"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "2c3364e8-d806-5a82-bbb7-20fc778678d1",
+        "850ffcfc-3050-525d-a82b-1a4d22811c70"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/employees",
+      "name": "الموظفون",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "44ca07ef-46cd-598e-aaf1-4384042a5498",
+        "2a9882cd-3315-5ed2-9e86-45cb940e7269"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/marital-status",
+      "name": "الحالات الاجتماعية",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "6c45e567-98bf-55b8-a794-2b9ee10e3ae1",
+        "d972e1c3-89db-5c5c-a6d8-47579f9cf553"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/salary-items",
+      "name": "بنود الرواتب",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "e2867ce9-360a-548c-8602-a3987939e463",
+        "e005f403-141c-5230-959e-70095099e12a"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/qualification",
+      "name": "المؤهلات",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "89a0eaf5-6869-5b88-b811-7270e9159c07",
+        "6a44bb9e-5579-5a7d-bc5a-3c90b1dded1e"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/sections",
+      "name": "الأقسام",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "8f333a52-d271-5c54-ab00-f2150259c47d",
+        "f899c962-9e5c-5a03-bd2f-067361a5dd75"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/jop-title",
+      "name": "المسميات الوظيفية",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "66f0a3ee-2acc-55da-afc1-9f714608b819",
+        "3d1f86b4-cdd0-54c3-9011-ddcb38991293"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/mangement",
+      "name": "الإدارات",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "ce263a1e-d76a-5da5-a6d2-8d2865467826",
+        "c5afcbf1-f39f-58db-acd2-65871f0333d9"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/religion",
+      "name": "الديانات",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "53d12706-fd1d-5d8f-9f95-b88c3d2cae8d",
+        "0c0d8dc0-629f-5240-95db-619b5822791f"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/typeVacations",
+      "name": "أنواع الإجازات",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "4e5a3ab2-2fdd-50e9-9fb2-1086ab335ad9",
+        "1d3626cb-e168-5011-9cea-1ebdc37a9bec"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/vacationRequest",
+      "name": "طلبات الإجازة",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "973dc7e1-7586-5e22-8ed9-44b52f4c99f4",
+        "5b80438a-203d-5ee5-a731-edef8143ded3"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/benefitsAndDeductions",
+      "name": "الاستحقاقات والاستقطاعات",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "0cdbb459-df05-5903-8f77-ddd49ee000ba",
+        "cb3f1441-7aec-5b93-a8c6-3295afc6f24d"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/employeeAdvancePayment",
+      "name": "السلف",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "d2da71ca-d5fc-5116-ac13-6412858ce563",
+        "c8f2fd28-95e6-56f0-90cb-411bee52038e"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/calculateSalary",
+      "name": "احتساب الرواتب",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "f8aec0c5-c8fd-51fa-8b08-b0697d2e7bca",
+        "38140045-8824-5a84-95dd-0c28d7d4b9d9"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/salary",
+      "name": "استعراض الرواتب",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "92b2e20d-0053-556c-8a49-78955ab04e9a",
+        "e5c52c04-363c-5665-b3eb-3a6f64d781e8"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/employees-dashboard",
+      "name": "إحصائيات الموظفين",
+      "module": "reports",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "0dd384da-3abf-5c87-b34d-18ad7d148879",
+        "0d4cb225-3021-5d40-953b-5eb10499e508"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/nationalties",
+      "name": "الجنسيات",
+      "module": "hr",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "07e167bf-1048-5af9-8363-9774a93ef6b4",
+        "705d11d1-afec-5c4f-81e6-5fdd20a68b44"
+      ],
+      "image": false,
+      "businessVerified": false
+    },
+    {
+      "route": "/employees-reports",
+      "name": "تقارير شئون الموظفين",
+      "module": "reports",
+      "activities": [
+        "hr"
+      ],
+      "state": "draft_guidance",
+      "articleIds": [
+        "bfd81437-c34a-5451-b10c-382d58b6ae99",
+        "8a9cc83a-e17c-5c07-a9a5-6f1a84e65d13"
+      ],
+      "image": false,
+      "businessVerified": false
+    }
+  ]
+}

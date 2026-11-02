@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-03",
+  "status": "LOCAL_PLATFORM_READY_PUBLICATION_DEFERRED_BY_USER",
+  "application_version": "1.0.0",
+  "site_project_id": "appgprj_6ae891cdafac8191a681f8c4691b0e02",
+  "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
+  "current_source_pushed": false,
+  "deployment_verified": false,
+  "publication_instruction": "User explicitly deferred publication and requested completion of the local project first. Do not attempt publication until resumed by the user.",
+  "last_connector_observation": "Original project lookup returned NOT_FOUND and the selected account listed zero Sites. Preserve the original ID; no replacement was created.",
+  "browser_qa": "PARTIAL_INITIAL_CUSTOMER_DOM_OBSERVED_FURTHER_CONTROL_DISABLED",
+  "verification": {
+    "typescript": "passed 2026-11-03",
+    "production_build": "passed 2026-11-03",
+    "model_tests": {
+      "passed": 7,
+      "failed": 0
+    },
+    "local_lifecycle_checks": {
+      "passed": 11,
+      "failed": 0
+    },
+    "local_role_groups": {
+      "passed": 4,
+      "failed": 0,
+      "scope": "Includes catalog role authorization; first transient connection-reset run retried successfully after owner restoration."
+    },
+    "local_owner_restored": true,
+    "local_qa_records_cleaned": true,
+    "prior_pdf_pilot": "six pages rendered and reviewed; not evidence for new dynamic browser printing",
+    "catalog_local_import": "390 private drafts present; 283 added and 107 preserved; replays skip all; five public articles; metadata/image hashes verified; anonymous/cross-origin denied",
+    "catalog_tests": {
+      "passed": 3,
+      "failed": 0
+    },
+    "bundled_image_hashes": "7 added assets served unchanged; original historical UI examples inspected"
+  },
+  "content": {
+    "articles": 395,
+    "genuine_screenshots": 9,
+    "print_mode": "Dynamic per-article, activity and saved guide layouts; browser print-to-PDF",
+    "scope": "Five published bounded articles; 390 private drafts including 106 active screen contexts and 71 report explanations. Written coverage is not LIVE business qualification.",
+    "published_articles": 5,
+    "draft_catalog_articles": 390,
+    "catalog_modules": 11,
+    "catalog_activities": 6,
+    "catalog_verification": "STATIC_DOC_TEST_REFERENCES_ONLY_PENDING_LIVE_STEPS_AND_SCREENSHOTS",
+    "active_screens_with_written_guidance": 106,
+    "individual_reports_with_written_guidance": 71,
+    "draft_catalog_articles_with_images": 19,
+    "historical_ui_only_screenshots_added": 7,
+    "new_browser_capture": "Unavailable; user chose existing images/content."
+  },
+  "implemented": [
+    "Public-compatible customer library and article permalinks",
+    "Server-enforced staff roles",
+    "Draft/review/publication and immutable revision history",
+    "R2 image library with published-reference access",
+    "Image highlighting and focused/full viewer",
+    "Training handover guides and revocable links",
+    "Persistent feedback",
+    "Repeated-question backlog and frequency",
+    "Content JSON export",
+    "Arabic in-app team guide",
+    "Source archive and local launch/stop tools"
+  ],
+  "erp_changes": false,
+  "external_messages_sent": false,
+  "remaining": [
+    "Real-browser desktop/mobile interaction and visual verification when control is available",
+    "Actual printing of dynamic PDF layouts",
+    "When explicitly resumed: recover access, verify hosted auth/storage, apply authorized public access and deploy the same Site",
+    "Verify the 390 drafts on current authorized UI/policies and complete genuine per-step screenshot coverage before publication"
+  ],
+  "local_preview": "http://127.0.0.1:5173/",
+  "local_admin": "http://127.0.0.1:5173/admin",
+  "github": {
+    "repository": "mamdouhm7701-byte/plugin-soft-customer-guide",
+    "url": "https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide",
+    "visibility": "private",
+    "repository_creation_confirmed": true,
+    "default_branch": "main",
+    "source_upload_authorized": true
+  }
+}

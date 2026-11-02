@@ -1,0 +1,58 @@
+[
+  {
+    "name": "erp-receipt-required-store.png",
+    "caption": "رسالة المخزن مطلوب في إذن الاستلام · لقطة فعلية أرشيفية 2026-11-03 ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.",
+    "source": "screenshots/FAIL_SM_RequiredStore-2026-11-03_00-08-58-7a963718-49d2-4c26-bf14-499791e3fea8.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "f56892b479a5fcbb845d14df8c607118acd42bbf6f96405f5f0448986bd5bc6a"
+  },
+  {
+    "name": "erp-customer-report-filters.png",
+    "caption": "معايير كشف حساب العملاء · لقطة فعلية أرشيفية 2026-11-02 ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.",
+    "source": "screenshots/FAIL_inspectNativeReportDateInputsWithoutSaving-2026-11-02_12-27-07-e4a978eb-fc1e-4a5f-806e-358d81bb266c.png",
+    "capturedAt": "2026-11-02",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "2cc61e0af3edd784cfa8ebfe3a0ed5efa55b7586fb94f6cffd98eb108b948689"
+  },
+  {
+    "name": "erp-journal-list.png",
+    "caption": "أعمدة استعراض قيود اليومية · لقطة فعلية أرشيفية 2026-11-02 ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.",
+    "source": "screenshots/FAIL_inspectSavedVoucherRowAndPrintedCells-2026-11-02_19-03-24-ac72d987-6239-4319-a7e9-3ea3ee755c94.png",
+    "capturedAt": "2026-11-02",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "919470110c750c244de3264cd5587b0b81d03c707f073124637a38a1fc18e377"
+  },
+  {
+    "name": "erp-customer-discount-list.png",
+    "caption": "استعراض إشعار خصم عميل وحالة التخصيص · لقطة فعلية أرشيفية 2026-11-02 ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.",
+    "source": "screenshots/FAIL_inspectOwnedOtherFinancialListColumns-2026-11-02_16-19-37-59f255ee-d8ce-4de4-bd5c-3dd2668950b9.png",
+    "capturedAt": "2026-11-02",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "bf5e3267d0fb0116f2f8b36ffd8a7c6629022a120845958a36d38b1865757a23"
+  },
+  {
+    "name": "erp-supplier-discount-list.png",
+    "caption": "استعراض إشعار خصم مورد وحالة التخصيص · لقطة فعلية أرشيفية 2026-11-02 ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.",
+    "source": "screenshots/FAIL_inspectOwnedOtherFinancialListColumns-2026-11-02_16-19-45-330b28e7-eba2-4ae1-a939-d7348059801e.png",
+    "capturedAt": "2026-11-02",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "7c8d63b3c911198be4508d922b3617209517fdafa7d5c28bdc920a920c227a3a"
+  },
+  {
+    "name": "erp-route-visit-panel.png",
+    "caption": "بيانات خط السير وتواريخ الزيارة · لقطة فعلية أرشيفية 2026-11-02 ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.",
+    "source": "screenshots/FAIL_expandedVisitShowsExactCustomerStatusTitleAndEnteredDates-2026-11-02_19-43-04-ce08efb8-58ee-4fd4-ba25-eb03121ab92b.png",
+    "capturedAt": "2026-11-02",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "ddb0576c28d1b2f660847ad97923e3f4dbb8a09066ad6440cb3ca1c9b2a33b6d"
+  },
+  {
+    "name": "erp-sales-list-filters.png",
+    "caption": "فلاتر وأنواع مستندات المبيعات · لقطة فعلية أرشيفية 2026-11-02 ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.",
+    "source": "screenshots/FAIL_savedPlanningDocumentMatchesItsVisibleRowWithoutStockOrCustomerDebt-2026-11-02_16-48-49-29f57ea5-83b3-4277-bfd3-e1ad4f315423.png",
+    "capturedAt": "2026-11-02",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "e7a2e6f62169e19a28a0dfd848a9bdfc4d7fc74eb6708b94461b981dce2a76db"
+  }
+]
