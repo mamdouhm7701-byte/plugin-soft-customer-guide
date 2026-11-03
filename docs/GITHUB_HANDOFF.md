@@ -3,7 +3,7 @@
 Target owner: `mamdouhm7701-byte`.
 Repository: `plugin-soft-customer-guide`.
 Repository URL: https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide
-Initial visibility: private. Creation was confirmed by the GitHub API on 2026-11-03 under the user-authorized account. Source upload is authorized; website deployment remains deferred.
+Initial visibility: private. Creation was confirmed by the GitHub API on 2026-11-03 under the user-authorized account. Source upload is authorized and synchronized on codex/code-quality-review; website deployment remains deferred.
 
 ## Stack
 

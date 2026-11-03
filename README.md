@@ -6,7 +6,7 @@ Arabic RTL training handover and support knowledge platform. Current local sourc
 
 React 19 and TypeScript, Vinext/Vite with App Router conventions, Cloudflare Workers, D1/SQLite with Drizzle, R2 uploads, and Zod validation. Excel export uses ExcelJS; PDF delivery uses browser print layouts. This is a standalone application, separate from the ERP Java/Selenium automation repository.
 
-Workstation source: `C:/Users/pcx/Desktop/PluginSoft_Customer_Guide`. Private GitHub repository: [plugin-soft-customer-guide](https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide). Current review changes are local, not yet pushed or deployed.
+Workstation source: `C:/Users/pcx/Desktop/PluginSoft_Customer_Guide`. Private GitHub repository: [plugin-soft-customer-guide](https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide). Reviewed source is synchronized on the private codex/code-quality-review branch; main and website deployment are unchanged.
 
 ## Run locally
 
