@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-03",
-  "status": "WHATSAPP_SHARING_READY_HOSTING_ACCESS_UNAVAILABLE",
+  "date": "2026-11-04",
+  "status": "WHATSAPP_SHARING_PUBLISHED",
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
   "current_source_pushed": true,
   "deployment_verified": true,
-  "publication_instruction": "WhatsApp reply/handover sharing prepared; deployment blocked because configured Sites project returns NOT_FOUND in current connector account.",
-  "last_connector_observation": "get_site and source write credential returned project_not_found; existing Site identity retained.",
+  "publication_instruction": "WhatsApp answer and handover sharing deployed on the existing dedicated Site.",
+  "last_connector_observation": "Owner account restored access; native version 5 deployment succeeded.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
     "typescript": "passed 2026-11-03",
@@ -150,7 +150,7 @@
   "source_implementation_commit": "See Git HEAD for this release; hosted application commit is hosted_source_commit.",
   "historical_site_project_id": "appgprj_6ae891cdafac8191a681f8c4691b0e02",
   "live_url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site",
-  "hosted_version": 4,
-  "hosted_source_commit": "d9bb560a88f9de38d162b50d380285de40075240",
-  "hosted_deployment_id": "appgdep_6aea299c3b808191acc583e751c90650"
+  "hosted_version": 5,
+  "hosted_source_commit": "de7d7c15b34a268e11a7f938f528f8670e72ca7a",
+  "hosted_deployment_id": "appgdep_6aea5b4d61508191b9fe3e71935270fe"
 }

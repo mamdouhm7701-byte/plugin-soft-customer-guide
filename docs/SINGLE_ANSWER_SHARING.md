@@ -37,3 +37,7 @@ Dedicated public-audience Site version 4 deployed successfully on 2026-11-03 fro
 Team-only Send via WhatsApp buttons are available beside answer copy actions and active handover packs. Desktop opens https://web.whatsapp.com/send with URL-encoded prefilled text; mobile uses the official wa.me text-sharing path. No phone number or recipient is collected/stored. The member selects the chat and confirms sending in their own WhatsApp account. If not signed in, WhatsApp may require device linking. Browser-popup failure shows a copy fallback. Existing answer and handover scopes remain distinct.
 
 Reference: https://faq.whatsapp.com/5913398998672934 . The focused encoding test, TypeScript and ESLint passed; no real message was sent and logged-in WhatsApp behavior was not exercised. Publication is currently blocked: configured Sites project returns NOT_FOUND for get_site and repository write credentials. Existing Site identity is preserved.
+
+## WhatsApp publication — 2026-11-04
+
+Owner access was restored. Dedicated Site version 5 deployed successfully from de7d7c15b34a268e11a7f938f528f8670e72ca7a; deployment appgdep_6aea5b4d61508191b9fe3e71935270fe. The earlier account-access blocker above is resolved. No real WhatsApp recipient or message was used during publication.
