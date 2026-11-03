@@ -4,7 +4,7 @@ import json
 
 root=Path(__file__).resolve().parents[1]
 out=root.parent/'PluginSoft_Customer_Guide_Project.zip'
-root_files={'.gitignore','.npmrc','.env.example','README.md','STATUS.json','CHANGELOG.md','package.json','package-lock.json','tsconfig.json','vite.config.ts','next.config.ts','drizzle.config.ts','cloudflare-env.d.ts','postcss.config.mjs','eslint.config.mjs','components.json','START_GUIDE.cmd','STOP_GUIDE.ps1'}
+root_files={'.gitattributes','.editorconfig','.prettierrc.json','.prettierignore','.gitignore','.npmrc','.env.example','README.md','STATUS.json','CHANGELOG.md','package.json','package-lock.json','tsconfig.json','vite.config.ts','next.config.ts','drizzle.config.ts','cloudflare-env.d.ts','postcss.config.mjs','eslint.config.mjs','components.json','START_GUIDE.cmd','STOP_GUIDE.ps1'}
 directories={'app','components','db','drizzle','docs','hooks','lib','public','scripts','tests','vendor','worker'}
 paths=[root/name for name in root_files if (root/name).is_file()]
 paths.append(root/'.openai/hosting.json')

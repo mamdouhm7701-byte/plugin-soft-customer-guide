@@ -1,0 +1,9 @@
+{
+  "name": "live-dealer-class-modal.png",
+  "capturedAt": "2026-11-03T10:30:49.172439900Z",
+  "route": "/dealersClassification/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "323aff862a72766d6c3207359910bb02058c70d50096de8ef01ccae54d537f72",
+  "review": "Visually inspected native blank definition; no loading overlay or private records; no save performed."
+}

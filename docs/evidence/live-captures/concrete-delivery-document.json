@@ -1,0 +1,9 @@
+{
+  "name": "live-concrete-delivery-empty.png",
+  "capturedAt": "2026-11-03T10:16:45.565491100Z",
+  "route": "/concrete-exchange-order/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "3c877c49ef0b2aab7a9d65ebf50a32337641b4edabf4af6331df074aadc5cd56",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

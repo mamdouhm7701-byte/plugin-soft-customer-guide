@@ -1,0 +1,9 @@
+{
+  "name": "live-under-review-empty.png",
+  "capturedAt": "2026-11-03T10:17:13.561505800Z",
+  "route": "/underReview/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "f7a65ff36b03bfe4083caefe9cff295a680c45eb4f085361ec1f894e630f44f4",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

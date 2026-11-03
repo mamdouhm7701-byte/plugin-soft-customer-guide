@@ -1,0 +1,9 @@
+{
+  "name": "live-expense-movement-empty.png",
+  "capturedAt": "2026-11-03T11:02:54.384546700Z",
+  "route": "/expense-transactions/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "898bd2be18df4f3594367d06433cbe94d532ab3088d9cc89a338a4d3a174fd28",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

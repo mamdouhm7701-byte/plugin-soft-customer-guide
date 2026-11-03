@@ -1,0 +1,9 @@
+{
+  "name": "live-sales-return-empty.png",
+  "capturedAt": "2026-11-03T10:13:48.790266100Z",
+  "route": "/return-sales/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "d1f04824a78ddcb4d2e9cfef08cbeb0abe5ddda46c17066ada1256ae5d175916",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

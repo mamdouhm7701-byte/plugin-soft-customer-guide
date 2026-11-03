@@ -1,0 +1,9 @@
+{
+  "name": "live-customer-empty.png",
+  "capturedAt": "2026-11-03T11:30:49.299471300Z",
+  "route": "/customers/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "c2b593b48e923f12873a436e35723c527382146bb263c471b0552852f6615e78",
+  "review": "Visually reviewed: native blank form, only generic defaults; no save, no customer/employee records."
+}

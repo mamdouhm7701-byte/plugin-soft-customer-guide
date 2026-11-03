@@ -1,0 +1,9 @@
+{
+  "name": "live-supplier-empty.png",
+  "capturedAt": "2026-11-03T11:08:43.231639800Z",
+  "route": "/suppliers/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "298de420801ae5bbeca34551379900174141ec3ec38c0a1b36e3954963a34f23",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

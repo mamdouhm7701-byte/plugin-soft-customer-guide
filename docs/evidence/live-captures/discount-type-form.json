@@ -1,0 +1,9 @@
+{
+  "name": "live-discount-type-empty.png",
+  "capturedAt": "2026-11-03T11:13:19.093348800Z",
+  "route": "/discount-types/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "8f98b5d44eccec1b4d4387d95c2e97500e9c7180f08036f65376e2b19b190154",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

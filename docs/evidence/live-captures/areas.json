@@ -1,0 +1,9 @@
+{
+  "name": "live-areas-form.png",
+  "capturedAt": "2026-11-03T09:39:29.975231700Z",
+  "route": "/areas",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "813b81890410ae145baf1857466e98d0aae856ed273f9841d236e6b60579f28f",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

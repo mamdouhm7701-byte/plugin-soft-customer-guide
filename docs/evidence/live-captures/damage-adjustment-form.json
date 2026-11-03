@@ -1,0 +1,9 @@
+{
+  "name": "live-damage-adjustment-empty.png",
+  "capturedAt": "2026-11-03T11:06:29.969503800Z",
+  "route": "/damage-adjustment/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "ef374ede827c42e62219deacefa98bc63fb20aa9ebefca71e12ea53be9e4893b",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

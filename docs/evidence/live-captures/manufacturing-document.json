@@ -1,0 +1,9 @@
+{
+  "name": "live-manufacturing-empty.png",
+  "capturedAt": "2026-11-03T10:13:45.489073600Z",
+  "route": "/manufacturing-order/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "93dd0921a48c070ec8d31951244f2bb0d14206f2d067be3ebd921d76ff40d2d4",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

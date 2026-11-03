@@ -1,0 +1,9 @@
+{
+  "name": "live-user-empty.png",
+  "capturedAt": "2026-11-03T11:12:22.106628800Z",
+  "route": "/users/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "efdd2ab2a686eabd8e6b0bab5bc132cec2ade13949090bf48ee05159a951ddbf",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

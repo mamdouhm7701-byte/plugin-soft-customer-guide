@@ -1,7 +1,93 @@
-import {z} from 'zod';
-import {activitySchema,moduleSchema} from '@/lib/guide-model';
-import {apiGuard,sameOrigin,requireStaff,database,bodyJSON,json,now,auditStatement,getPublished,GuideError} from '@/lib/guide-server';
-export const dynamic='force-dynamic';
-export async function GET(){return apiGuard(async()=>{await requireStaff();const rows=await database().prepare('SELECT * FROM guide_questions ORDER BY frequency DESC,updated_at DESC LIMIT 300').all();return json({questions:rows.results});});}
-export async function POST(request:Request){return apiGuard(async()=>{sameOrigin(request);const user=await requireStaff(),v=z.object({question:z.string().trim().min(8).max(500),activity:activitySchema,module:moduleSchema,source:z.enum(['training','support'])}).parse(await bodyJSON(request)),id=crypto.randomUUID(),stamp=now();await database().batch([database().prepare("INSERT INTO guide_questions (id,question,activity,module,source,status,frequency,created_by,created_at,updated_at) VALUES (?,?,?,?,?,'open',1,?,?,?)").bind(id,v.question,v.activity,v.module,v.source,user.userId,stamp,stamp),auditStatement(user.userId,'question.create',id)]);return json({id},201);});}
-export async function PUT(request:Request){return apiGuard(async()=>{sameOrigin(request);const user=await requireStaff(),v=z.object({id:z.string().uuid(),action:z.enum(['repeat','link','reopen']),articleId:z.string().max(100).optional()}).parse(await bodyJSON(request)),db=database();const question=await db.prepare('SELECT activity FROM guide_questions WHERE id=?').bind(v.id).first<{activity:string}>();if(!question)throw new GuideError(404,'السؤال غير موجود.');if(v.action==='link'){if(!v.articleId)throw new GuideError(400,'اختر شرحًا منشورًا.');const a=await getPublished(v.articleId);if(!a)throw new GuideError(400,'الشرح لازم يكون منشورًا.');if(!a.content.activities.includes('all')&&!a.content.activities.includes(question.activity as never))throw new GuideError(400,'الشرح لا ينطبق على نشاط السؤال.');await db.prepare("UPDATE guide_questions SET article_id=?,status='linked',updated_at=? WHERE id=?").bind(v.articleId,now(),v.id).run();}else if(v.action==='repeat')await db.prepare('UPDATE guide_questions SET frequency=frequency+1,updated_at=? WHERE id=?').bind(now(),v.id).run();else await db.prepare("UPDATE guide_questions SET status='open',article_id=NULL,updated_at=? WHERE id=?").bind(now(),v.id).run();await auditStatement(user.userId,'question.'+v.action,v.id).run();return json({ok:true});});}
+import { z } from 'zod';
+import { activitySchema, moduleSchema } from '@/lib/guide-model';
+import {
+  apiGuard,
+  sameOrigin,
+  requireStaff,
+  database,
+  bodyJSON,
+  json,
+  now,
+  auditStatement,
+  getPublished,
+  GuideError,
+} from '@/lib/guide-server';
+export const dynamic = 'force-dynamic';
+export async function GET() {
+  return apiGuard(async () => {
+    await requireStaff();
+    const rows = await database()
+      .prepare('SELECT * FROM guide_questions ORDER BY frequency DESC,updated_at DESC LIMIT 300')
+      .all();
+    return json({ questions: rows.results });
+  });
+}
+export async function POST(request: Request) {
+  return apiGuard(async () => {
+    sameOrigin(request);
+    const user = await requireStaff(),
+      v = z
+        .object({
+          question: z.string().trim().min(8).max(500),
+          activity: activitySchema,
+          module: moduleSchema,
+          source: z.enum(['training', 'support']),
+        })
+        .parse(await bodyJSON(request)),
+      id = crypto.randomUUID(),
+      stamp = now();
+    await database().batch([
+      database()
+        .prepare(
+          "INSERT INTO guide_questions (id,question,activity,module,source,status,frequency,created_by,created_at,updated_at) VALUES (?,?,?,?,?,'open',1,?,?,?)",
+        )
+        .bind(id, v.question, v.activity, v.module, v.source, user.userId, stamp, stamp),
+      auditStatement(user.userId, 'question.create', id),
+    ]);
+    return json({ id }, 201);
+  });
+}
+export async function PUT(request: Request) {
+  return apiGuard(async () => {
+    sameOrigin(request);
+    const user = await requireStaff(),
+      v = z
+        .object({
+          id: z.string().uuid(),
+          action: z.enum(['repeat', 'link', 'reopen']),
+          articleId: z.string().max(100).optional(),
+        })
+        .parse(await bodyJSON(request)),
+      db = database();
+    const question = await db
+      .prepare('SELECT activity FROM guide_questions WHERE id=?')
+      .bind(v.id)
+      .first<{ activity: string }>();
+    if (!question) throw new GuideError(404, 'السؤال غير موجود.');
+    if (v.action === 'link') {
+      if (!v.articleId) throw new GuideError(400, 'اختر شرحًا منشورًا.');
+      const a = await getPublished(v.articleId);
+      if (!a) throw new GuideError(400, 'الشرح لازم يكون منشورًا.');
+      if (
+        !a.content.activities.includes('all') &&
+        !a.content.activities.includes(question.activity as never)
+      )
+        throw new GuideError(400, 'الشرح لا ينطبق على نشاط السؤال.');
+      await db
+        .prepare("UPDATE guide_questions SET article_id=?,status='linked',updated_at=? WHERE id=?")
+        .bind(v.articleId, now(), v.id)
+        .run();
+    } else if (v.action === 'repeat')
+      await db
+        .prepare('UPDATE guide_questions SET frequency=frequency+1,updated_at=? WHERE id=?')
+        .bind(now(), v.id)
+        .run();
+    else
+      await db
+        .prepare("UPDATE guide_questions SET status='open',article_id=NULL,updated_at=? WHERE id=?")
+        .bind(now(), v.id)
+        .run();
+    await auditStatement(user.userId, 'question.' + v.action, v.id).run();
+    return json({ ok: true });
+  });
+}

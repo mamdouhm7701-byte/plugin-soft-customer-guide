@@ -54,5 +54,1165 @@
     "capturedAt": "2026-11-02",
     "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
     "sha256": "e7a2e6f62169e19a28a0dfd848a9bdfc4d7fc74eb6708b94461b981dce2a76db"
+  },
+  {
+    "name": "erp-sales-form-20261103.png",
+    "caption": "لقطة فعلية أرشيفية 2026-11-03 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "screenshots/FAIL_savesOwnedItemFromPicker-2026-11-03_10-08-31-3408834a-d780-4f80-b6b9-ce0fccdf7f8c.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "0879c481140af837b638b2ea5938873970b2e22c4fdbf927ec7efab5dce987db"
+  },
+  {
+    "name": "erp-credit-form-20261103.png",
+    "caption": "لقطة فعلية أرشيفية 2026-11-03 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "screenshots/FAIL_inspectAllocationFormWithoutSavingInvoice-2026-11-03_08-33-03-099ca915-5ea2-463c-b5d1-ae04eab679eb.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "9dc6e714b55f6e63d2978b0a6add9618d95f397ceddae5d839d394385fe92fe9"
+  },
+  {
+    "name": "erp-table-qr-filter.png",
+    "caption": "لقطة فعلية أرشيفية 2026-11-03 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "screenshots/FAIL_selectedTableNumberMatchesAndQrElementHasNoRenderingError-2026-11-03_08-27-48-b49b52c2-9cf6-4713-8f92-ddac6d316330.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "af7b9623ec429b6976624949778540b01deb15f2eaf9ef0b3a5950cb03f1d037"
+  },
+  {
+    "name": "erp-restaurant-payment-panel.png",
+    "caption": "لقطة فعلية أرشيفية 2026-11-03 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "screenshots/FAIL_closedPaidRestaurantInvoicePreservesSelectedDiscountType-2026-11-03_02-21-31-da4d11c4-f3a5-4fb1-ad8c-ea7cde45ed5c.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "5b9011f522a80d72be2012a3c5a2885b50af810bd3dc0a3c0ca11334474f6785"
+  },
+  {
+    "name": "erp-car-sales-report-picker.png",
+    "caption": "لقطة فعلية أرشيفية 2026-11-03 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "screenshots/FAIL_inspectOwnedCarSalesReport-2026-11-03_02-25-49-3d39e4bc-56dc-4ffe-ada9-8f1aa369bcee.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "77cee4b9ac02c61158a4bd791c87090fb027e5a1114636b88927d6634b86bf5a"
+  },
+  {
+    "name": "erp-item-stagnation-dates.png",
+    "caption": "لقطة فعلية أرشيفية 2026-11-03 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "screenshots/FAIL_inspectOwnedSelectedItemStagnationContent-2026-11-03_08-47-21-0f07188f-6739-481e-bc44-b6a09703f384.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "48ed17b9658c08d66aff4d82f2de82577391eeeef977341bb9774ed5b7ad421f"
+  },
+  {
+    "name": "erp-journal-report-filters.png",
+    "caption": "لقطة فعلية أرشيفية 2026-11-03 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "screenshots/FAIL_inspectOwnedJournalReportLinesAndExcludedControl-2026-11-03_00-16-02-8cfe5fe9-ce14-40d3-ac14-117ea652d3bb.png",
+    "capturedAt": "2026-11-03",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "08a20a97b6b00f1393a43ae81542b2b7456e1865105901447703c5c738ac2dd6"
+  },
+  {
+    "name": "erp-concrete-delivery-fields.png",
+    "caption": "لقطة فعلية أرشيفية 2026-10-28 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/concrete-delivery-native-click-results/78d68f20-85c1-4496-a5cb-7accd5ee5b86-attachment.png",
+    "capturedAt": "2026-10-28",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "4a7c601c8f0736f0b8817a032f4adb47f0e378d31bb29a7c26180b1aea82142c"
+  },
+  {
+    "name": "erp-concrete-driver-validation.png",
+    "caption": "لقطة فعلية أرشيفية 2026-10-28 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/business-complete-concrete-results/fdaf6794-f182-46b3-b77b-1018cd0c165f-attachment.png",
+    "capturedAt": "2026-10-28",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "fb4239c7eb4676b6b9ad9377203a1bee32e355c40bc426aa1a931c9f66622d2e"
+  },
+  {
+    "name": "erp-car-invoice-chassis.png",
+    "caption": "لقطة فعلية أرشيفية 2026-10-28 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/business-complete-car_showroom-results/8880a521-815f-4c25-bc05-06d5790826ca-attachment.png",
+    "capturedAt": "2026-10-28",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "01f132b40d704d77215840ca47737354a10c67cc066db8663bda2a4aa4c6f4e4"
+  },
+  {
+    "name": "erp-customer-definition-fields.png",
+    "caption": "لقطة فعلية أرشيفية 2026-10-28 من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/concrete-customer-project-native-link-results/b2feeb5f-7f07-4e37-b93a-21668c12ee77-attachment.png",
+    "capturedAt": "2026-10-28",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "d34db520471514bc1fbb127222f7842e0b58487dec951bd4c9f8f8519b395e7f"
+  },
+  {
+    "name": "erp-hr-advance-list.png",
+    "caption": "لقطة فعلية أرشيفية unknown من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/hr-complete-v7/failure-review/runs/56d750dc2291e0faaf1c7970c8b3f1a59c7a49740c0743d863ded39150922fef/evidence/fe5775d5-4d99-4dae-9b28-9838d86cb5a6-attachment.png",
+    "capturedAt": "unknown",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "55b1498a92d795a6c44291b8ec8a1cb3820ba9653b5ea920b5041b8ecc5d3ce2"
+  },
+  {
+    "name": "erp-hr-salary-calculation-form.png",
+    "caption": "لقطة فعلية أرشيفية unknown من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/hr-complete-v7/failure-review/runs/56d750dc2291e0faaf1c7970c8b3f1a59c7a49740c0743d863ded39150922fef/evidence/fdc79222-6926-46ad-a981-91555587f1ac-attachment.png",
+    "capturedAt": "unknown",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "a480321215375f26f5ebc0ab3f8d59d5da262fc55d2ea2e6bf8c78981344e8d6"
+  },
+  {
+    "name": "erp-hr-payroll-report-form.png",
+    "caption": "لقطة فعلية أرشيفية unknown من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/hr-complete-v7/failure-review/runs/56d750dc2291e0faaf1c7970c8b3f1a59c7a49740c0743d863ded39150922fef/evidence/faecf1d2-f408-489e-a69a-2118e6fcc70c-attachment.png",
+    "capturedAt": "unknown",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "5fbbd90a320bd87d406be4ff05ec3d65883cc9fecf48e8d240f7327facd1d42a"
+  },
+  {
+    "name": "erp-hr-adjustment-list.png",
+    "caption": "لقطة فعلية أرشيفية unknown من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/hr-complete-v7/failure-review/runs/56d750dc2291e0faaf1c7970c8b3f1a59c7a49740c0743d863ded39150922fef/evidence/e318c534-6278-4041-af8d-03d3b72303da-attachment.png",
+    "capturedAt": "unknown",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "fac29ffba58d34be3729ef650a20929c94bbb6eedb5d41bb092e48f4b6dded65"
+  },
+  {
+    "name": "erp-hr-employee-filter-panel.png",
+    "caption": "لقطة فعلية أرشيفية unknown من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/hr-complete-v7/failure-review/runs/56d750dc2291e0faaf1c7970c8b3f1a59c7a49740c0743d863ded39150922fef/evidence/dfa0f914-3f7c-4e73-a132-7f69fb37cfbb-attachment.png",
+    "capturedAt": "unknown",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "75e8e5896ae7597abdb3c5bfb158b6365835fc947a691eb55c27cfe962b62a08"
+  },
+  {
+    "name": "erp-hr-vacation-list.png",
+    "caption": "لقطة فعلية أرشيفية unknown من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/hr-complete-v7/failure-review/runs/56d750dc2291e0faaf1c7970c8b3f1a59c7a49740c0743d863ded39150922fef/evidence/d95aaec7-bd26-40d7-b67b-ba6695bf5820-attachment.png",
+    "capturedAt": "unknown",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "5ae73d34ea9b97da7d1aaac2547994c413a431e7b7c44d7b0a3ce9e9badc82ce"
+  },
+  {
+    "name": "erp-hr-employee-personal-form.png",
+    "caption": "لقطة فعلية أرشيفية unknown من بيئة QA؛ توضح الواجهة فقط، ولا تثبت نجاح العملية أو الحسابات.",
+    "source": "target/hr-complete-v7/failure-review/runs/56d750dc2291e0faaf1c7970c8b3f1a59c7a49740c0743d863ded39150922fef/evidence/d613cf21-d694-4611-b4dc-13a45f26b275-attachment.png",
+    "capturedAt": "unknown",
+    "scope": "UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT",
+    "sha256": "fd6ceb930ee9a12cf85bcc079e524d6886c35cf7e470e1d8bcc3d839ddf6a244"
+  },
+  {
+    "name": "live-units-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/units.json",
+    "capturedAt": "2026-11-03T09:40:43.547300800Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "53501214bfb6b4291136cec67e34405502cdccb30a66148c5efc83d1ae291479"
+  },
+  {
+    "name": "live-banks-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/banks.json",
+    "capturedAt": "2026-11-03T09:31:11.350464500Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "8262d728ebd21bd3f518a79217fd361c49635645141b3a2c27fca7c8179b9672"
+  },
+  {
+    "name": "live-safes-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/safes.json",
+    "capturedAt": "2026-11-03T09:38:40.509925900Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "f49cb57d54c0339b40c7fa3baacae1ce17c0644946c492ac1c5f54cce2e41477"
+  },
+  {
+    "name": "live-areas-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/areas.json",
+    "capturedAt": "2026-11-03T09:39:29.975231700Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "813b81890410ae145baf1857466e98d0aae856ed273f9841d236e6b60579f28f"
+  },
+  {
+    "name": "live-expense-type-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/expense-type.json",
+    "capturedAt": "2026-11-03T09:43:32.962236900Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "4311a886ef6d32a17621432279748f885326e14f4a1c23aa48924a0acd409685"
+  },
+  {
+    "name": "live-income-type-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/income-type.json",
+    "capturedAt": "2026-11-03T09:44:21.315973600Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "f1df83befd9a433100c623dd2d37dea4c36607f723e0af4c7ea41dc4a30ca578"
+  },
+  {
+    "name": "live-payment-methods-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/payment-methods.json",
+    "capturedAt": "2026-11-03T09:44:38.110309300Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "25816df703e90b8af1623594fea50ac9f4efbe444491bae6ccad2b568eba449a"
+  },
+  {
+    "name": "live-account-groups-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/account-groups.json",
+    "capturedAt": "2026-11-03T09:45:03.438432300Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "284ac9e374465fc2bf3c579975f51d1b292d745bcf34fff32c8822b749c0bdaa"
+  },
+  {
+    "name": "live-warehouses-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/warehouses.json",
+    "capturedAt": "2026-11-03T09:45:54.155439Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "4d2b8c0803f90b6dff688a004cda4a8a05c512312ca5725eec950ec62f071fe1"
+  },
+  {
+    "name": "live-exchange-destinations-form.png",
+    "caption": "صورة فعلية من البرنامج · 2026-11-03 · نموذج فارغ غير محفوظ.",
+    "source": "docs/evidence/live-captures/exchange-destinations.json",
+    "capturedAt": "2026-11-03T09:47:04.048101100Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "sha256": "36da44e8a4e7ef5776489bd42b76c3cd236f905a5d433313502fdf5773d7144e"
+  },
+  {
+    "name": "live-purchase-invoice-empty.png",
+    "source": "docs/evidence/live-captures/purchase-invoice-document.json",
+    "sha256": "bc0e80b1bf4e3b81f8b0c2dc8d998b2641795f45d24c916d4e653440eb6f940b",
+    "capturedAt": "2026-11-03T10:09:26.506344300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-purchase-order-empty.png",
+    "source": "docs/evidence/live-captures/purchase-order-document.json",
+    "sha256": "66143ccbe7ca8edf4ee1c837c77d166a8868f66a22fd37f56598ccec139106d5",
+    "capturedAt": "2026-11-03T10:10:00.695885300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-purchase-return-empty.png",
+    "source": "docs/evidence/live-captures/purchase-return-document.json",
+    "sha256": "fd39fe46bf63b9139967bd58b8fce3e326ede304c6a8fd8fae7bde889a92fe5a",
+    "capturedAt": "2026-11-03T10:10:55.054970600Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-stock-addition-empty.png",
+    "source": "docs/evidence/live-captures/stock-addition-document.json",
+    "sha256": "b6da1612d1f419fd1c34ff5b0e758983739c35494882d5548bb80952a6ba6391",
+    "capturedAt": "2026-11-03T10:11:55.772775200Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-stock-exchange-empty.png",
+    "source": "docs/evidence/live-captures/stock-exchange-document.json",
+    "sha256": "563361636bd4b2e5c34cad6ef29492e838fc888c7ae63273fad270143b0706be",
+    "capturedAt": "2026-11-03T10:12:41.153352800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-manufacturing-empty.png",
+    "source": "docs/evidence/live-captures/manufacturing-document.json",
+    "sha256": "93dd0921a48c070ec8d31951244f2bb0d14206f2d067be3ebd921d76ff40d2d4",
+    "capturedAt": "2026-11-03T10:13:45.489073600Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-quotation-empty.png",
+    "source": "docs/evidence/live-captures/quotation-document.json",
+    "sha256": "076ef578237b5dfa716d4cbccc2ee51a021168e0a336ad64f71278b40a1c2b73",
+    "capturedAt": "2026-11-03T10:13:47.143092900Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-sales-return-empty.png",
+    "source": "docs/evidence/live-captures/sales-return-document.json",
+    "sha256": "d1f04824a78ddcb4d2e9cfef08cbeb0abe5ddda46c17066ada1256ae5d175916",
+    "capturedAt": "2026-11-03T10:13:48.790266100Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-sales-order-empty.png",
+    "source": "docs/evidence/live-captures/sales-order-document.json",
+    "sha256": "a1a6f501cf1494f754ba54f423da05a690a7be81b4b83f351fa39ef6956a3eb0",
+    "capturedAt": "2026-11-03T10:15:44.395380Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-sales-invoice-empty.png",
+    "source": "docs/evidence/live-captures/sales-invoice-document.json",
+    "sha256": "f4bd95c9148d625b35d6b16c3b85a5b7259e98ac5fa00de67871431d36afc1da",
+    "capturedAt": "2026-11-03T10:13:51.722599200Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-contract-empty.png",
+    "source": "docs/evidence/live-captures/contract-document.json",
+    "sha256": "7f2b60029cbc3ab60aa3b6fbcad1a64038560a29fee68d46c38b970550e80c4d",
+    "capturedAt": "2026-11-03T10:16:25.917648900Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-reservation-empty.png",
+    "source": "docs/evidence/live-captures/reservation-document.json",
+    "sha256": "e96f88389f68cd764fbc7ee58664d809139b4bd2a5bc38a793408a69752792a1",
+    "capturedAt": "2026-11-03T10:13:54.038955100Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-concrete-delivery-empty.png",
+    "source": "docs/evidence/live-captures/concrete-delivery-document.json",
+    "sha256": "3c877c49ef0b2aab7a9d65ebf50a32337641b4edabf4af6331df074aadc5cd56",
+    "capturedAt": "2026-11-03T10:16:45.565491100Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-concrete-invoice-empty.png",
+    "source": "docs/evidence/live-captures/concrete-invoice-document.json",
+    "sha256": "2b6e1d9dbbbfbfffcda9b0c616427caa71203270726c2124434f55e2e32c75ff",
+    "capturedAt": "2026-11-03T10:14:27.189838300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-under-review-empty.png",
+    "source": "docs/evidence/live-captures/under-review-document.json",
+    "sha256": "f7a65ff36b03bfe4083caefe9cff295a680c45eb4f085361ec1f894e630f44f4",
+    "capturedAt": "2026-11-03T10:17:13.561505800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-concrete-review-empty.png",
+    "source": "docs/evidence/live-captures/concrete-review-document.json",
+    "sha256": "860351636c4dc0f89f21da0e0e3eef78685a684ba67086f7d46d80c5d7e408a5",
+    "capturedAt": "2026-11-03T10:15:09.829316200Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية · 2026-11-03 · نموذج فارغ غير محفوظ؛ القيم الافتراضية تراجع حسب فرعك."
+  },
+  {
+    "name": "live-car-colors-modal.png",
+    "source": "docs/evidence/live-captures/car-colors-modal.json",
+    "sha256": "0aac4a71385ed36080b39ac2fea1af361b748dad7803d97350d9beba6bbaacbd",
+    "capturedAt": "2026-11-03T10:30:41.350829600Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-casting-types-modal.png",
+    "source": "docs/evidence/live-captures/casting-types-modal.json",
+    "sha256": "57b10ff1c9bfc23ca818a98b5824fb44b7f6345594cbad1e88a34021a0e2d3bd",
+    "capturedAt": "2026-11-03T10:30:43.200063300Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-cement-types-modal.png",
+    "source": "docs/evidence/live-captures/cement-types-modal.json",
+    "sha256": "3912df9272c4f69d3115620234931baaa43e3f9ca3264e273382e93c6cb2b542",
+    "capturedAt": "2026-11-03T10:30:44.716852400Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-temperature-modal.png",
+    "source": "docs/evidence/live-captures/temperature-modal.json",
+    "sha256": "2222fe566575ec7574694aedd6ae408d2d44cb84dd6f79bfc10a13a8cedd398c",
+    "capturedAt": "2026-11-03T10:30:47.032531Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-dealer-class-modal.png",
+    "source": "docs/evidence/live-captures/dealer-class-modal.json",
+    "sha256": "323aff862a72766d6c3207359910bb02058c70d50096de8ef01ccae54d537f72",
+    "capturedAt": "2026-11-03T10:30:49.172439900Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-main-dealer-modal.png",
+    "source": "docs/evidence/live-captures/main-dealer-modal.json",
+    "sha256": "d5226b1a6e52289bc29ccd2e4139c4888a6a779b1e9fc02d5e7aa09d578770ec",
+    "capturedAt": "2026-11-03T10:30:51.449980200Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-agents-empty.png",
+    "source": "docs/evidence/live-captures/agents-empty.json",
+    "sha256": "1a02afa5410520fdb48ee7a3df3c65a26a3a0403499f001e8a9b63f6b2de3e5d",
+    "capturedAt": "2026-11-03T10:34:29.531348300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-projects-empty.png",
+    "source": "docs/evidence/live-captures/projects-empty.json",
+    "sha256": "bf863a0168b56683b18064bbe390ad5727aa5760db903acfe5aa7553d9775dbc",
+    "capturedAt": "2026-11-03T10:34:07.272395600Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-visit-status-empty.png",
+    "source": "docs/evidence/live-captures/visit-status-empty.json",
+    "sha256": "883d66d25ef2900f8c73c2b650727f0405a5ba6baa75a27e2efe3d22075a4643",
+    "capturedAt": "2026-11-03T10:33:37.754934500Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج تعريف غير محفوظ؛ 2026-11-03"
+  },
+  {
+    "name": "live-report-001.png",
+    "source": "docs/evidence/report-criteria/live-report-001.json",
+    "sha256": "647b65edffe3d750effe9ecf398c5f797b21ee6332eb1f6441ab050c6162db72",
+    "capturedAt": "2026-11-03T10:41:46.439010300Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المشتريات؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-002.png",
+    "source": "docs/evidence/report-criteria/live-report-002.json",
+    "sha256": "3ca5a9c65e9e845599c9d1f6cb4018dc7eecfcb84157c717a7632a5cffc90470",
+    "capturedAt": "2026-11-03T10:41:47.187054Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المشتريات بطرق الدفع؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-003.png",
+    "source": "docs/evidence/report-criteria/live-report-003.json",
+    "sha256": "547bd0b27efea6848d425e990f148bc21033793bcd7709edbbccc6c97f1c9cb0",
+    "capturedAt": "2026-11-03T10:41:48.486500600Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير مشتريات الأصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-004.png",
+    "source": "docs/evidence/report-criteria/live-report-004.json",
+    "sha256": "cd9a1419c9ecaf6b2a591574f5bac6455e790f0822d09d64f4bd3612581d01b7",
+    "capturedAt": "2026-11-03T10:41:49.269529200Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير مشتريات الموردين؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-005.png",
+    "source": "docs/evidence/report-criteria/live-report-005.json",
+    "sha256": "3f1768fe97f279a11a440de3aa965b737e2dcda56120d9ed574311dcd751d8c0",
+    "capturedAt": "2026-11-03T10:41:50.337614900Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير كشف حساب العملاء؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-006.png",
+    "source": "docs/evidence/report-criteria/live-report-006.json",
+    "sha256": "c6629f99e96eebc37e3196392c14501e860c76ec3aa73cea8e86951ce6f3aa28",
+    "capturedAt": "2026-11-03T10:41:50.559608700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير كشف حساب الموردين؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-007.png",
+    "source": "docs/evidence/report-criteria/live-report-007.json",
+    "sha256": "e9c935f3ebeccf7467a111a6ac94d0cdb8ced2d5dcb75eee012f006f32549884",
+    "capturedAt": "2026-11-03T10:41:51.321160900Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير أعمار ديون العملاء؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-008.png",
+    "source": "docs/evidence/report-criteria/live-report-008.json",
+    "sha256": "7c7410a2497aae4ee18915cde7b28559724cb302ba85d61242a83a8170429bb0",
+    "capturedAt": "2026-11-03T10:41:51.537935300Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير أعمار ديون الموردين؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-009.png",
+    "source": "docs/evidence/report-criteria/live-report-009.json",
+    "sha256": "2b5ab5f5cc0929bc4bb1fd2526c3c912f0913a94d32445c40a247004a35adf2b",
+    "capturedAt": "2026-11-03T10:41:52.826164400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير العملاء اللذين تعدو الحد الإئتماني؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-010.png",
+    "source": "docs/evidence/report-criteria/live-report-010.json",
+    "sha256": "9df100a2bf3d1f71308f632856b89da416cb56e97ac6b1e3e81881b25ef2b0c2",
+    "capturedAt": "2026-11-03T10:41:53.657510600Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير سند قبض عميل؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-011.png",
+    "source": "docs/evidence/report-criteria/live-report-011.json",
+    "sha256": "d707222298d0917956b57ba7d187c2190b65b3af14b282ac3f3dd533c698f09f",
+    "capturedAt": "2026-11-03T10:41:53.944630600Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير سند صرف مورد؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-012.png",
+    "source": "docs/evidence/report-criteria/live-report-012.json",
+    "sha256": "6a20c72724e6c69619260ac98f927a0fd5da3c2575b8ae3c51c080315698e853",
+    "capturedAt": "2026-11-03T10:41:54.766228600Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير سندات القبض المخصصة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-013.png",
+    "source": "docs/evidence/report-criteria/live-report-013.json",
+    "sha256": "1faad721b0a517acb06b898876185f8ada3eac609624b2ce7694e8d6e5088640",
+    "capturedAt": "2026-11-03T10:41:55.054747700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير سندات الصرف المخصصة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-014.png",
+    "source": "docs/evidence/report-criteria/live-report-014.json",
+    "sha256": "bb2289b9ed457a0d551ca9f4282e25a5c45936ceea64de9fb9399a2d04b7b488",
+    "capturedAt": "2026-11-03T10:41:55.886874100Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المبيعات المخصصة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-015.png",
+    "source": "docs/evidence/report-criteria/live-report-015.json",
+    "sha256": "228d0528193e93273f437f3bcb5e0541c14ed29b7053baf21731fda0a6961857",
+    "capturedAt": "2026-11-03T10:41:56.185295800Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المشتريات المخصصة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-016.png",
+    "source": "docs/evidence/report-criteria/live-report-016.json",
+    "sha256": "580bb73bd9d1818a3a792febf18bbdf7beaa2bd468a8be46e78eaede2070e0be",
+    "capturedAt": "2026-11-03T10:41:56.508261200Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير كشف حساب نقاط ولاء؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-017.png",
+    "source": "docs/evidence/report-criteria/live-report-017.json",
+    "sha256": "aff8c32e6fecf21b881190ecddcf30b68121cca8501a8de09c1ebbc5b3a4a7c8",
+    "capturedAt": "2026-11-03T10:41:57.434301900Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير بيانات العملاء المضافة بفاتورة نقاط بيع؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-018.png",
+    "source": "docs/evidence/report-criteria/live-report-018.json",
+    "sha256": "f8141fe60a25b036a5d79e1eb6b6c3fb6e19df015070acfb45ac9e8833a99a87",
+    "capturedAt": "2026-11-03T10:41:58.317435Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير ركود العملاء؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-019.png",
+    "source": "docs/evidence/report-criteria/live-report-019.json",
+    "sha256": "d536afb3529a5144c669806ce6eb94183bc0c340d6adfa4894f1e8854c644a97",
+    "capturedAt": "2026-11-03T10:41:59.249461800Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير كشف حساب العملاء تفصيلي بالاصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-020.png",
+    "source": "docs/evidence/report-criteria/live-report-020.json",
+    "sha256": "5110a67c8159e27f04d17f378e98cbcb06212a262e04bda0855476c783815693",
+    "capturedAt": "2026-11-03T10:42:00.171298700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير خطوط السير؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-021.png",
+    "source": "docs/evidence/report-criteria/live-report-021.json",
+    "sha256": "1ec1eea2209095b822a1a8a308c542e9c1e016fdb582875a300f4fc22a516652",
+    "capturedAt": "2026-11-03T10:42:01.085703800Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير مبيعات العملاء بالشهور؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-022.png",
+    "source": "docs/evidence/report-criteria/live-report-022.json",
+    "sha256": "e618ac6d78aff6a436de5a47a0b43de695315398486d67e86721c195f324e5b6",
+    "capturedAt": "2026-11-03T10:42:02.236613900Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الضرائب؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-023.png",
+    "source": "docs/evidence/report-criteria/live-report-023.json",
+    "sha256": "5fef5fb72d7ee2696b4f3cb044ba018e3d3060e30b4f4e6991c78168902e3824",
+    "capturedAt": "2026-11-03T10:42:02.956482400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير كشف حساب الأستاذ؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-024.png",
+    "source": "docs/evidence/report-criteria/live-report-024.json",
+    "sha256": "28d505db49c401de1d57a2b0edee23db816d33826e6a75353b173ee209aee447",
+    "capturedAt": "2026-11-03T10:42:03.641304500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير كشف حساب الاستاذ بالرئيسي؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-025.png",
+    "source": "docs/evidence/report-criteria/live-report-025.json",
+    "sha256": "a90d82f3fff6e076798805dc969d9c0e24bbaa040768aee5c14a845f50996aa0",
+    "capturedAt": "2026-11-03T10:42:04.322319500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير حساب الخزن؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-026.png",
+    "source": "docs/evidence/report-criteria/live-report-026.json",
+    "sha256": "17c6c6f065ac8ec6607f5c0f77f156d78d4f1671e11731e0f534dfa564a4cf37",
+    "capturedAt": "2026-11-03T10:42:04.878472400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير حساب البنوك؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-027.png",
+    "source": "docs/evidence/report-criteria/live-report-027.json",
+    "sha256": "53092c2da35a24f2fa5f49957e7c261d4b22ef6d3d7199a51ae2510532c412ae",
+    "capturedAt": "2026-11-03T10:42:05.933495300Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير ميزان المراجعة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-028.png",
+    "source": "docs/evidence/report-criteria/live-report-028.json",
+    "sha256": "797c3e91ebcfc4b1d3ae5f1c53dd4f8f74cf1385afe1961f47a33f5b9a105452",
+    "capturedAt": "2026-11-03T10:42:06.678705800Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير مراكز التكلفة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-029.png",
+    "source": "docs/evidence/report-criteria/live-report-029.json",
+    "sha256": "a47e2955f9cc2c25443f8ba9b3069b36fa90cc7d45efc5250c8e08320f8e1114",
+    "capturedAt": "2026-11-03T10:42:07.904108400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير حركة الايرادات؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-030.png",
+    "source": "docs/evidence/report-criteria/live-report-030.json",
+    "sha256": "87a46254db70d571cb3eab1cf9270ac9763ee6cc0e59566cb345e910405af463",
+    "capturedAt": "2026-11-03T10:42:08.835741800Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير حركة المصروفات؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-031.png",
+    "source": "docs/evidence/report-criteria/live-report-031.json",
+    "sha256": "11a67ed19f23505179292f3bd3ba9c24cfdb3005a1e0cc4a8d4812effdb33828",
+    "capturedAt": "2026-11-03T10:42:12.009608Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير التحويلات والتسويات؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-032.png",
+    "source": "docs/evidence/report-criteria/live-report-032.json",
+    "sha256": "099de41d9c3aeaeb9d7534b473f7349f851104a06c7eead12f3b14f5dc5fc21c",
+    "capturedAt": "2026-11-03T10:42:12.273277400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير قائمة الدخل؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-033.png",
+    "source": "docs/evidence/report-criteria/live-report-033.json",
+    "sha256": "62ca35d8ddc8f055264cb7c2d48d5678d559101e46db7ba1e7a9082aa4963afa",
+    "capturedAt": "2026-11-03T10:42:12.633294200Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الميزانية العمومية؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-034.png",
+    "source": "docs/evidence/report-criteria/live-report-034.json",
+    "sha256": "dc4ae32e427d134267bad446c3cf35f83d2ab9ef8e7e20217a8ce293493cc12c",
+    "capturedAt": "2026-11-03T10:42:12.982324700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير القيود اليومية؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-036.png",
+    "source": "docs/evidence/report-criteria/live-report-036.json",
+    "sha256": "0fb6fe499528a8ca8d383df3bf0d018300e9c7402e538e2f2b5b9607d7614dee",
+    "capturedAt": "2026-11-03T10:42:18.187688200Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المبيعات بتاريخ الاستحقاق؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-037.png",
+    "source": "docs/evidence/report-criteria/live-report-037.json",
+    "sha256": "9cbead1585060423ae114ab9b0bbba98ddd1253613d4763129a1634b76a1d128",
+    "capturedAt": "2026-11-03T10:42:19.909416300Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير أعمار ديون الفواتير؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-038.png",
+    "source": "docs/evidence/report-criteria/live-report-038.json",
+    "sha256": "8b6b4cf377d781d702077f280bd77c2b793f93bf833e197aa1f312778a95e73e",
+    "capturedAt": "2026-11-03T10:42:20.621852200Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المبيعات بطرق الدفع؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-039.png",
+    "source": "docs/evidence/report-criteria/live-report-039.json",
+    "sha256": "75f05f0bc01870dfb1b3de93b68bfcd43c781dda4b0dad5c9e1a1149aba7c48d",
+    "capturedAt": "2026-11-03T10:42:21.377458100Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير مبيعات وتحصيل المندوبين؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-040.png",
+    "source": "docs/evidence/report-criteria/live-report-040.json",
+    "sha256": "468df9670e4c16fdfddf2d616966a105cdd134d21bb433c5ce4abab76f30dc46",
+    "capturedAt": "2026-11-03T10:42:22.090747300Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير خصومات المطاعم؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-041.png",
+    "source": "docs/evidence/report-criteria/live-report-041.json",
+    "sha256": "0ae8343d35d9c7da81c3ff9683b5f773e24760f114648958fdfd769eaa296f78",
+    "capturedAt": "2026-11-03T10:42:22.823052700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير مبيعات الأصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-042.png",
+    "source": "docs/evidence/report-criteria/live-report-042.json",
+    "sha256": "9140646c3f2e1fd6ad11e8c532664baf7b29bbc322f514ba08c8c890cea52134",
+    "capturedAt": "2026-11-03T10:42:23.541384Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الارباح للفواتير؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-043.png",
+    "source": "docs/evidence/report-criteria/live-report-043.json",
+    "sha256": "ad31ea22b399067c5b873355d702bbba0dc2aac9f0049fd985b20d3550b0c117",
+    "capturedAt": "2026-11-03T10:42:24.292724100Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الارباح للأصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-044.png",
+    "source": "docs/evidence/report-criteria/live-report-044.json",
+    "sha256": "0b4f01d98d03296034676139d255dd36ad48e8a4131c59d23fc0a52645067b3a",
+    "capturedAt": "2026-11-03T10:42:25.038543700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الارباح للعملاء؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-045.png",
+    "source": "docs/evidence/report-criteria/live-report-045.json",
+    "sha256": "d77821ff480226660ab5fd2dc3ca66fd74743be22f0e1660d9c282bf9d5d6835",
+    "capturedAt": "2026-11-03T10:42:25.806325400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير عروض الاسعار المحولة لفاتورة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-046.png",
+    "source": "docs/evidence/report-criteria/live-report-046.json",
+    "sha256": "b4a3dae845ad54e453138f51055751c9b7c16164e089472e0c7c21dd39df7f18",
+    "capturedAt": "2026-11-03T10:42:26.556578Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير لاوامر البيع والمنفذ منها؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-047.png",
+    "source": "docs/evidence/report-criteria/live-report-047.json",
+    "sha256": "b84137de59509a71fa642834f62cb06ab9a80d8cf4db894aa1c57e1f4123d1ab",
+    "capturedAt": "2026-11-03T10:42:27.322440Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المندوبين؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-050.png",
+    "source": "docs/evidence/report-criteria/live-report-050.json",
+    "sha256": "8deb491f9500467d816ec895867127f5a9358a621c4d468263392d40b64e3edd",
+    "capturedAt": "2026-11-03T10:43:31.656743400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير استهلاك الدفعة المقدمة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-051.png",
+    "source": "docs/evidence/report-criteria/live-report-051.json",
+    "sha256": "88fddeafc788ab9c098aaed903b0262053153a41416d8d90cf707452b8d50b8c",
+    "capturedAt": "2026-11-03T10:43:33.987297500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الحجوزات والمنفذ منها؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-052.png",
+    "source": "docs/evidence/report-criteria/live-report-052.json",
+    "sha256": "e1196db8e3fa8e0c2181d3f65ac592eeb03c7fae30ec3c95d1e0f0ee51ac25ea",
+    "capturedAt": "2026-11-03T10:43:36.310930900Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المبيعات بنوع الدفع؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-053.png",
+    "source": "docs/evidence/report-criteria/live-report-053.json",
+    "sha256": "24f2ed944b780d9e53c4755bb89029cb9a453dd9704f3159f5d486441fedcad5",
+    "capturedAt": "2026-11-03T10:43:37.671667200Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير حركة مبيعات السيارات؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-054.png",
+    "source": "docs/evidence/report-criteria/live-report-054.json",
+    "sha256": "24ae6f3cd105de2c0354cbb27df877fbe4bbf72d13c3c63345294c05db853b8a",
+    "capturedAt": "2026-11-03T10:43:38.502823500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير للفواتير المرحلة والفواتير الغير مرحلة للهيئة؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-055.png",
+    "source": "docs/evidence/report-criteria/live-report-055.json",
+    "sha256": "1c6df95df1fa019c5f1f9d9ba922f7120eb79bef4eae5cf9785eba0538981ec5",
+    "capturedAt": "2026-11-03T10:43:42.688377400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير اجمالي سعر الصنف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-056.png",
+    "source": "docs/evidence/report-criteria/live-report-056.json",
+    "sha256": "fcb2a37c519c3b1da39127c937ced61d1ef8a84cbae6c6ee8d5e979127a2cc29",
+    "capturedAt": "2026-11-03T10:43:44.366060500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الحد الأدني للأصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-057.png",
+    "source": "docs/evidence/report-criteria/live-report-057.json",
+    "sha256": "0fcd906a67f707ff7880f1e0bf273a2203b17405ff5be05d412c7d329e676a53",
+    "capturedAt": "2026-11-03T10:43:45.050605100Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الأصناف التي تعدت الحد الأدني؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-058.png",
+    "source": "docs/evidence/report-criteria/live-report-058.json",
+    "sha256": "b022e3a7009d5df02b7f29a109e4e50b503379529e818df8e5fb7b769d8c93ed",
+    "capturedAt": "2026-11-03T10:43:45.782096Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير اجمالي الحركات علي الأصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-059.png",
+    "source": "docs/evidence/report-criteria/live-report-059.json",
+    "sha256": "46038d2d94e7b1bdd024f4988f412fbf01fcbbe8d14679d991a272fbae73d7e0",
+    "capturedAt": "2026-11-03T10:43:46.565372700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير حركة الأصناف تفصيلي؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-060.png",
+    "source": "docs/evidence/report-criteria/live-report-060.json",
+    "sha256": "01a5e5af745a34e104c9a05887ab397a34fddef2d22fad265cfea7bf4cfdc48e",
+    "capturedAt": "2026-11-03T10:43:47.317200800Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير التحويلات المخزنية؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-061.png",
+    "source": "docs/evidence/report-criteria/live-report-061.json",
+    "sha256": "15e20e5d57286e92f09ab95f6d19c5c991ca302f42bbf42da3841aede53b0a6e",
+    "capturedAt": "2026-11-03T10:43:48.085465500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير باركود الأصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-062.png",
+    "source": "docs/evidence/report-criteria/live-report-062.json",
+    "sha256": "4e4e2ea03ca416ee7e81d674d3da184d9a8cdbea07b620cbae94667523e5476b",
+    "capturedAt": "2026-11-03T10:43:48.877363500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير رصيد المخزن؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-063.png",
+    "source": "docs/evidence/report-criteria/live-report-063.json",
+    "sha256": "9781fd528f4860463446c3243c8605bf95570256795c1c9718f4db825fed19a6",
+    "capturedAt": "2026-11-03T10:43:49.707781700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير تقييم المخزن؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-064.png",
+    "source": "docs/evidence/report-criteria/live-report-064.json",
+    "sha256": "2ce811839f2a7cb2c83a64f01cf1f0070752dbcde8af17afd38f54d9bcac3eb3",
+    "capturedAt": "2026-11-03T10:43:50.527964500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير اذن الاستلام؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-065.png",
+    "source": "docs/evidence/report-criteria/live-report-065.json",
+    "sha256": "dad98631d9adc8e704cb95fbc115a0a613a25f84f0480da0517fa34defcf5b47",
+    "capturedAt": "2026-11-03T10:43:51.403060400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير اجمالي ارصدة الأصناف بالمخزن؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-066.png",
+    "source": "docs/evidence/report-criteria/live-report-066.json",
+    "sha256": "8110efef32d14d10753767d89c9a46fdf1093fede44309e112f48ba9ca92239e",
+    "capturedAt": "2026-11-03T10:43:52.233225100Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير جهات الصرف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-067.png",
+    "source": "docs/evidence/report-criteria/live-report-067.json",
+    "sha256": "82fa42b6be771b8696300a7ce6ca701b9baec391ea9fa2356d0cb4f3392555f6",
+    "capturedAt": "2026-11-03T10:43:54.172800700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير QR كود الطاولات؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-068.png",
+    "source": "docs/evidence/report-criteria/live-report-068.json",
+    "sha256": "47a0eda9433f67fbb9a6de50dbb3ef3c6017bc4fbd9963bda18b860480c83d1a",
+    "capturedAt": "2026-11-03T10:43:57.110585700Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الجرد؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-069.png",
+    "source": "docs/evidence/report-criteria/live-report-069.json",
+    "sha256": "d824118c3376d04fbd8b075b93301a8d019bc1a007ada7a1f01772a9c50a722d",
+    "capturedAt": "2026-11-03T10:43:58.475519Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير تسوية التوالف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-070.png",
+    "source": "docs/evidence/report-criteria/live-report-070.json",
+    "sha256": "307791baed216d69304303b050a8adf4a29b39b690f47eb44981ad37089ff8bd",
+    "capturedAt": "2026-11-03T10:43:59.859891400Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير ركود الاصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-071.png",
+    "source": "docs/evidence/report-criteria/live-report-071.json",
+    "sha256": "da2dc75b0287c409ab1ceb3712163393917a92152a7b8c164df9fcd3703966cc",
+    "capturedAt": "2026-11-03T10:44:00.739124500Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير الاصناف؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-customer-receipt-empty.png",
+    "source": "docs/evidence/live-captures/customer-receipt-form.json",
+    "sha256": "7ed3c3fde778cb3ca79e224bf3bdcdad7845cceceb27788a2a446a39235a6b06",
+    "capturedAt": "2026-11-03T11:02:07.128203300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج سند قبض عميل؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-supplier-payment-empty.png",
+    "source": "docs/evidence/live-captures/supplier-payment-form.json",
+    "sha256": "4ae6f97806896cf191b24cbaff2b9f3bb19dda7eed3237d90f3d3baca97fcc61",
+    "capturedAt": "2026-11-03T11:01:22.226390900Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج سند صرف مورد؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-income-movement-empty.png",
+    "source": "docs/evidence/live-captures/income-movement-form.json",
+    "sha256": "ab40c988a0dd4e77bfdf3321b902a19d237215eddfd820e38ab9839a2db1f9e3",
+    "capturedAt": "2026-11-03T10:59:32.225853300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج حركة إيراد؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-expense-movement-empty.png",
+    "source": "docs/evidence/live-captures/expense-movement-form.json",
+    "sha256": "898bd2be18df4f3594367d06433cbe94d532ab3088d9cc89a338a4d3a174fd28",
+    "capturedAt": "2026-11-03T11:02:54.384546700Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج حركة مصروف؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-storage-transfer-empty.png",
+    "source": "docs/evidence/live-captures/storage-transfer-form.json",
+    "sha256": "5b9e4dacc92562e6712d3670f800466bb79f70623afdae56477f018bc1ea7665",
+    "capturedAt": "2026-11-03T11:05:42.870941700Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تحويل بين مخازن؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-damage-adjustment-empty.png",
+    "source": "docs/evidence/live-captures/damage-adjustment-form.json",
+    "sha256": "ef374ede827c42e62219deacefa98bc63fb20aa9ebefca71e12ea53be9e4893b",
+    "capturedAt": "2026-11-03T11:06:29.969503800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تسوية توالف؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-shortage-adjustment-empty.png",
+    "source": "docs/evidence/live-captures/shortage-adjustment-form.json",
+    "sha256": "c6380c8271f0599c030e91982c376b6659d704a3ba0baa701e2f1ea3c4089972",
+    "capturedAt": "2026-11-03T11:06:48.338777900Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تسوية عجز؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-overflow-adjustment-empty.png",
+    "source": "docs/evidence/live-captures/overflow-adjustment-form.json",
+    "sha256": "3a287e63dfb7a4bf45f6f505ceaf1d976de15d8ea2627f331e80298b06280924",
+    "capturedAt": "2026-11-03T11:07:06.316316300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تسوية فائض؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-inventory-empty.png",
+    "source": "docs/evidence/live-captures/inventory-form.json",
+    "sha256": "15b8d2d6b54c2d50e59b9c7b6192f3be6f34493ac8005868c4bf310acf1d8637",
+    "capturedAt": "2026-11-03T11:07:30.517803800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج محضر جرد؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-financial-transfer-empty.png",
+    "source": "docs/evidence/live-captures/financial-transfer-form.json",
+    "sha256": "0ca7238bef9c6bbd85ce6d14afa23869c9fc24a9395ac5eb3f806388c2b67b7d",
+    "capturedAt": "2026-11-03T11:07:50.685897800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تحويلات وتسويات؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-item-empty.png",
+    "source": "docs/evidence/live-captures/item-form.json",
+    "sha256": "dd5f4b9ad7de6d21d35469d90e3a116355fd685f29a25b2ac23e0419fa9e25b8",
+    "capturedAt": "2026-11-03T11:08:19.067597700Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف صنف؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-supplier-empty.png",
+    "source": "docs/evidence/live-captures/supplier-form.json",
+    "sha256": "298de420801ae5bbeca34551379900174141ec3ec38c0a1b36e3954963a34f23",
+    "capturedAt": "2026-11-03T11:08:43.231639800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف مورد؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-vehicle-empty.png",
+    "source": "docs/evidence/live-captures/vehicle-form.json",
+    "sha256": "6b0d65bdacd4d6f5743a0c422670b691068075db78176697921f3adcd8900f15",
+    "capturedAt": "2026-11-03T11:09:11.091295600Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف سيارة تشغيل؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-price-list-empty.png",
+    "source": "docs/evidence/live-captures/price-list-form.json",
+    "sha256": "7f1b7767a80aad8f656600f8474cbb773cf5919a28581dc8d3735ef4b953e363",
+    "capturedAt": "2026-11-03T11:09:36.760859600Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج قائمة أسعار؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-branch-empty.png",
+    "source": "docs/evidence/live-captures/branch-form.json",
+    "sha256": "4ceb334a4e8e6894482d8aff7f579f6b7ee5a6f785a33d29469bdc13cf1ac37f",
+    "capturedAt": "2026-11-03T11:10:07.501567600Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف فرع؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-table-empty.png",
+    "source": "docs/evidence/live-captures/table-form.json",
+    "sha256": "34ab7980aa7b2afc1da7c9a933fe386fd323db05703f795290d5317e553ee007",
+    "capturedAt": "2026-11-03T11:11:50.830211500Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج تعريف طاولة؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-user-empty.png",
+    "source": "docs/evidence/live-captures/user-form.json",
+    "sha256": "efdd2ab2a686eabd8e6b0bab5bc132cec2ade13949090bf48ee05159a951ddbf",
+    "capturedAt": "2026-11-03T11:12:22.106628800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف مستخدم؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-discount-type-empty.png",
+    "source": "docs/evidence/live-captures/discount-type-form.json",
+    "sha256": "8f98b5d44eccec1b4d4387d95c2e97500e9c7180f08036f65376e2b19b190154",
+    "capturedAt": "2026-11-03T11:13:19.093348800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج نوع خصم؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-treasury-handover-empty.png",
+    "source": "docs/evidence/live-captures/treasury-handover-form.json",
+    "sha256": "1f9f386120f9497fec8c1c348a3dba01473eafa6961fa105644e9aa24ca0501d",
+    "capturedAt": "2026-11-03T11:15:09.579888400Z",
+    "scope": "LIVE_UI_CAPTURE_READ_ONLY",
+    "caption": "صورة فعلية حالية لنموذج استلام خزينة؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-report-035.png",
+    "source": "docs/evidence/report-criteria/live-report-035.json",
+    "sha256": "eaf405275ec26d4499a44e02a9665abec30b0d8b92a84ba79a5c2a37971d0095",
+    "capturedAt": "2026-11-03T11:24:35.316629Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير المبيعات؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-048.png",
+    "source": "docs/evidence/report-criteria/live-report-048.json",
+    "sha256": "12dc903ec9f5ca8dd2248a98c0b7941e2cba8545442a1d7e6f2c34e9a7e80c22",
+    "capturedAt": "2026-11-03T11:26:33.260613600Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير عمولات الاصناف للمندوبين؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-report-049.png",
+    "source": "docs/evidence/report-criteria/live-report-049.json",
+    "sha256": "4d92eea44c61a8b35cc92d3502f39fdc4d1cac3d07c73cce73e9120f33968b86",
+    "capturedAt": "2026-11-03T11:26:34.303122100Z",
+    "scope": "LIVE_REPORT_CRITERIA_ONLY",
+    "caption": "صورة فعلية لنموذج معايير تقرير العمولات الإجمالي للمندوب؛ لا تتضمن نتائج التقرير."
+  },
+  {
+    "name": "live-customer-empty.png",
+    "source": "docs/evidence/live-captures/customer-form.json",
+    "sha256": "c2b593b48e923f12873a436e35723c527382146bb263c471b0552852f6615e78",
+    "capturedAt": "2026-11-03T11:30:49.299471300Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف عميل؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-driver-empty.png",
+    "source": "docs/evidence/live-captures/driver-form.json",
+    "sha256": "5063893e8c460e1fd27e3338fb2b86a23704bf2532ce7067bb5a62a1630d8515",
+    "capturedAt": "2026-11-03T11:31:29.794300800Z",
+    "scope": "LIVE_EMPTY_DOCUMENT_UI",
+    "caption": "صورة فعلية حالية لنموذج تعريف سائق؛ نموذج فارغ غير محفوظ."
   }
 ]

@@ -1,0 +1,9 @@
+{
+  "name": "live-stock-exchange-empty.png",
+  "capturedAt": "2026-11-03T10:12:41.153352800Z",
+  "route": "/exchange-order/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "563361636bd4b2e5c34cad6ef29492e838fc888c7ae63273fad270143b0706be",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

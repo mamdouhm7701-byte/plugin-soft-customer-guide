@@ -24,7 +24,9 @@ def write_json(path, value):
 def identity(key):
     return str(uuid.uuid5(uuid.NAMESPACE_URL, 'plugin-soft-faq-v2/' + key))
 
-legacy = [x for x in json.loads((root/'lib/faq-catalog.json').read_text(encoding='utf-8')) if not x['key'].startswith('expanded-')]
+existing_catalog=json.loads((root/'lib/faq-catalog.json').read_text(encoding='utf-8'))
+supplemental=[x for x in existing_catalog if x['key'].startswith(('illustrated-v3-','live-ui-v1-','business-v1-'))]
+legacy = [x for x in existing_catalog if not x['key'].startswith(('expanded-','illustrated-v3-','live-ui-v1-','business-v1-'))]
 assert len(legacy) == 107, 'Preserve the original editorial batch unchanged.'
 screens = read_csv('docs/testing/SCREEN_DEPTH_AUDIT.csv')
 hr_screens = read_csv('docs/hr/SCREEN_COVERAGE.csv')
@@ -36,7 +38,7 @@ for line in (root/'lib/screen-answer-spec.txt').read_text(encoding='utf-8-sig').
         assert route not in spec
         spec[route] = (module, intro, question, answer, check)
 report_spec = dict(line.split('|', 1) for line in (root/'lib/report-answer-spec.txt').read_text(encoding='utf-8').splitlines() if line.strip())
-assets = []
+assets = json.loads((root/'lib/screenshot-assets.json').read_text(encoding='utf-8'))
 image_map = {}
 
 # Each original was visually inspected. The screenshots contain synthetic QA
@@ -52,17 +54,24 @@ for route, label, name, filename, focus in [
 ]:
     original = erp / 'screenshots' / filename
     target = root / 'public/assets' / name
-    target.write_bytes(original.read_bytes())
+    data = original.read_bytes()
     date = '2026-11-03' if '2026-11-03_' in filename else '2026-11-02'
     caption = label + ' · لقطة فعلية أرشيفية '+date+' ببيانات QA تجريبية؛ توضح الواجهة فقط ولا تثبت نجاح العملية.'
-    assets.append(dict(name=name,caption=caption,source='screenshots/'+filename,capturedAt=date,scope='UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT',sha256=hashlib.sha256(target.read_bytes()).hexdigest()))
+    digest = hashlib.sha256(data).hexdigest()
+    previous = next((a for a in assets if a['name'] == name), None)
+    if previous:
+        assert previous['sha256'] == digest, 'Released screenshot changed: '+name
+    else:
+        assets.append(dict(name=name,caption=caption,source='screenshots/'+filename,capturedAt=date,scope='UI_ONLY_FROM_HISTORICAL_FAILURE_ARTIFACT',sha256=digest))
+    target.write_bytes(data)
     image_map[route] = (name,caption,focus)
 image_map['#/invoice/new'] = ('erp-invoice.jpg','صورة فعلية لشاشة فاتورة بيع عامة غير محفوظة بتاريخ 2026-11-02؛ لا تثبت أثر الحفظ.',None)
 image_map['#/sales-order/new'] = ('erp-sales-order.jpg','صورة فعلية لأمر بيع عام غير محفوظ بتاريخ 2026-11-02؛ لا تثبت أثر الحفظ.',None)
 
 def activities_for(route):
     if not route.startswith('#'): return ['hr']
-    if route in ['#/car-colors','#/cars']: return ['cars']
+    if route == '#/car-colors': return ['cars']
+    if route == '#/cars': return ['concrete']
     if route in ['#/contracts/new']: return ['construction']
     if route in ['#/tables','#/restaurant-menu','#/restaurant-orders','#/restaurant-dashboard']: return ['restaurant']
     if any(x in route for x in ['concrete','castingTypes','cementTypes','maxTemperature','reservations','drivers']): return ['concrete']
@@ -128,8 +137,12 @@ for report in reports:
         asset,caption,focus=image_map['#/customers-and-suppliers']
         entry['content']['steps'][0].update(image=dict(kind='asset',name=asset),caption=caption,focus=focus)
 
-all_entries=legacy+new_entries
+# Generation is append-only: existing authored content, images and references win.
+existing_by_id={e['id']:e for e in existing_catalog}
+new_entries=[existing_by_id.get(e['id'],e) for e in new_entries]
+all_entries=legacy+new_entries+supplemental
 for entry in new_entries:
+    if entry['id'] in existing_by_id: continue
     c=entry['content']
     exact=[x['id'] for x in new_entries if x['id']!=entry['id'] and x['screenKeys']==entry['screenKeys'] and x['content']['activities']==c['activities']]
     similar=[x['id'] for x in all_entries if x['id']!=entry['id'] and x['content']['module']==c['module'] and x['content']['activities']==c['activities']]
@@ -138,6 +151,17 @@ assert len(set(x['id'] for x in all_entries))==len(all_entries)
 assert len(set(x['content']['title'] for x in all_entries))==len(all_entries)
 write_json(root/'lib/faq-catalog.json',all_entries)
 write_json(root/'lib/screenshot-assets.json',assets)
+prior_coverage=json.loads((root/'lib/catalog-coverage.json').read_text(encoding='utf8'))
 meta=dict(version='faq-v2',date='2026-11-03',total=len(all_entries),legacy=107,added=len(new_entries),screens=len(matrix),screenGuidance=sum(x['state']=='draft_guidance' for x in matrix),excluded=sum(x['state']=='excluded_removed' for x in matrix),reports=len(reports),screensWithImages=sum(x.get('image',False) for x in matrix),articlesWithImages=sum(any(s['image'] for s in x['content']['steps']) for x in all_entries),additionalScreenshots=len(assets),verifiedBusinessProcedures=0,liveCapturePerformed=False,publication='DEFERRED',screensInventory=matrix)
+meta={**prior_coverage,**meta}
+for screen in matrix:
+    linked=[e['id'] for e in supplemental if screen['route'] in e['screenKeys']]
+    if linked:
+        screen['image']=True
+        screen['supplementalArticleIds']=linked
+for screen in matrix:
+    linked = [e for e in all_entries if screen['route'] in e.get('screenKeys',[])]
+    screen['image'] = any(s.get('image') for e in linked for s in e['content']['steps'])
+meta.update(screensWithImages=sum(x.get('image',False) for x in matrix),liveCapturePerformed=any(a.get('scope','').startswith('LIVE_') for a in assets),liveReadOnlyScreenshots=sum(a.get('scope','').startswith('LIVE_') for a in assets),liveIllustratedArticles=sum(e['key'].startswith('live-ui-v1-') for e in supplemental),supplementalIllustratedArticles=sum(e['key'].startswith('illustrated-v3-') for e in supplemental))
 write_json(root/'lib/catalog-coverage.json',meta)
 print(json.dumps({k:v for k,v in meta.items() if k!='screensInventory'}))

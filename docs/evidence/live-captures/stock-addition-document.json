@@ -1,0 +1,9 @@
+{
+  "name": "live-stock-addition-empty.png",
+  "capturedAt": "2026-11-03T10:11:55.772775200Z",
+  "route": "/addition-order/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "b6da1612d1f419fd1c34ff5b0e758983739c35494882d5548bb80952a6ba6391",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

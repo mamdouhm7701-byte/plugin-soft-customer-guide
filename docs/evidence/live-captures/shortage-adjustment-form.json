@@ -1,0 +1,9 @@
+{
+  "name": "live-shortage-adjustment-empty.png",
+  "capturedAt": "2026-11-03T11:06:48.338777900Z",
+  "route": "/shortage-adjustment/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "c6380c8271f0599c030e91982c376b6659d704a3ba0baa701e2f1ea3c4089972",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "live-warehouses-form.png",
+  "capturedAt": "2026-11-03T09:45:54.155439Z",
+  "route": "/warehouses",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "4d2b8c0803f90b6dff688a004cda4a8a05c512312ca5725eec950ec62f071fe1",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

@@ -1,0 +1,503 @@
+{
+  "reviewed": [
+    {
+      "articleId": "020c10f2-cc07-5063-81d0-ead95bde0359",
+      "key": "expanded-report-purchase-reports-تقرير المشتريات",
+      "asset": "live-report-001.png",
+      "report": "تقرير المشتريات",
+      "source": "docs/evidence/report-criteria/live-report-001.json"
+    },
+    {
+      "articleId": "9bd3f6c8-9fbc-5b4d-b154-ad68dc5a225b",
+      "key": "expanded-report-purchase-reports-تقرير المشتريات بطرق الدفع",
+      "asset": "live-report-002.png",
+      "report": "تقرير المشتريات بطرق الدفع",
+      "source": "docs/evidence/report-criteria/live-report-002.json"
+    },
+    {
+      "articleId": "05873aad-4f3d-5581-ba5e-661657464c3b",
+      "key": "expanded-report-purchase-reports-تقرير مشتريات الأصناف",
+      "asset": "live-report-003.png",
+      "report": "تقرير مشتريات الأصناف",
+      "source": "docs/evidence/report-criteria/live-report-003.json"
+    },
+    {
+      "articleId": "20369b45-4343-537b-a442-46eb55c27813",
+      "key": "expanded-report-purchase-reports-تقرير مشتريات الموردين",
+      "asset": "live-report-004.png",
+      "report": "تقرير مشتريات الموردين",
+      "source": "docs/evidence/report-criteria/live-report-004.json"
+    },
+    {
+      "articleId": "d17c1b26-ef10-5b13-8cc6-fc049be2e1b4",
+      "key": "expanded-report-customers-and-suppliers-تقرير كشف حساب العملاء",
+      "asset": "live-report-005.png",
+      "report": "تقرير كشف حساب العملاء",
+      "source": "docs/evidence/report-criteria/live-report-005.json"
+    },
+    {
+      "articleId": "82688f12-58d2-569d-a545-c90fb56b2db6",
+      "key": "expanded-report-customers-and-suppliers-تقرير كشف حساب الموردين",
+      "asset": "live-report-006.png",
+      "report": "تقرير كشف حساب الموردين",
+      "source": "docs/evidence/report-criteria/live-report-006.json"
+    },
+    {
+      "articleId": "c783c3ad-ebff-5bc0-acb4-486661d33f8f",
+      "key": "expanded-report-customers-and-suppliers-تقرير أعمار ديون العملاء",
+      "asset": "live-report-007.png",
+      "report": "تقرير أعمار ديون العملاء",
+      "source": "docs/evidence/report-criteria/live-report-007.json"
+    },
+    {
+      "articleId": "518c81d1-101f-51db-ba1e-6c9ecd6a3838",
+      "key": "expanded-report-customers-and-suppliers-تقرير أعمار ديون الموردين",
+      "asset": "live-report-008.png",
+      "report": "تقرير أعمار ديون الموردين",
+      "source": "docs/evidence/report-criteria/live-report-008.json"
+    },
+    {
+      "articleId": "f13e3bee-48b5-5f68-973c-25bdc263b167",
+      "key": "expanded-report-customers-and-suppliers-العملاء اللذين تعدو الحد الإئتماني",
+      "asset": "live-report-009.png",
+      "report": "العملاء اللذين تعدو الحد الإئتماني",
+      "source": "docs/evidence/report-criteria/live-report-009.json"
+    },
+    {
+      "articleId": "4df4cfdc-9538-5706-9bb6-1fe066711738",
+      "key": "expanded-report-customers-and-suppliers-تقرير سند قبض عميل",
+      "asset": "live-report-010.png",
+      "report": "تقرير سند قبض عميل",
+      "source": "docs/evidence/report-criteria/live-report-010.json"
+    },
+    {
+      "articleId": "01c41e62-24eb-543a-8901-529e27f37281",
+      "key": "expanded-report-customers-and-suppliers-تقرير سند صرف مورد",
+      "asset": "live-report-011.png",
+      "report": "تقرير سند صرف مورد",
+      "source": "docs/evidence/report-criteria/live-report-011.json"
+    },
+    {
+      "articleId": "43efcbb9-dfe0-5318-9147-eee708ff5d29",
+      "key": "expanded-report-customers-and-suppliers-تقرير سندات القبض المخصصة",
+      "asset": "live-report-012.png",
+      "report": "تقرير سندات القبض المخصصة",
+      "source": "docs/evidence/report-criteria/live-report-012.json"
+    },
+    {
+      "articleId": "ffd4dc13-9872-5289-8817-04a656112d7e",
+      "key": "expanded-report-customers-and-suppliers-تقرير سندات الصرف المخصصة",
+      "asset": "live-report-013.png",
+      "report": "تقرير سندات الصرف المخصصة",
+      "source": "docs/evidence/report-criteria/live-report-013.json"
+    },
+    {
+      "articleId": "9c5553a4-8ce6-5a19-aaad-cac8d1a5d9a2",
+      "key": "expanded-report-customers-and-suppliers-تقرير المبيعات المخصصة",
+      "asset": "live-report-014.png",
+      "report": "تقرير المبيعات المخصصة",
+      "source": "docs/evidence/report-criteria/live-report-014.json"
+    },
+    {
+      "articleId": "d42cb5f7-c34e-5476-a6c7-0b0771685ca0",
+      "key": "expanded-report-customers-and-suppliers-تقرير المشتريات المخصصة",
+      "asset": "live-report-015.png",
+      "report": "تقرير المشتريات المخصصة",
+      "source": "docs/evidence/report-criteria/live-report-015.json"
+    },
+    {
+      "articleId": "5760196f-daf2-5e1f-a5e2-57c3bb5060b7",
+      "key": "expanded-report-customers-and-suppliers-كشف حساب نقاط ولاء",
+      "asset": "live-report-016.png",
+      "report": "كشف حساب نقاط ولاء",
+      "source": "docs/evidence/report-criteria/live-report-016.json"
+    },
+    {
+      "articleId": "83be42d0-5ad9-546f-b92f-5b881c2a4e2e",
+      "key": "expanded-report-customers-and-suppliers-بيانات العملاء المضافة بفاتورة نقاط بيع",
+      "asset": "live-report-017.png",
+      "report": "بيانات العملاء المضافة بفاتورة نقاط بيع",
+      "source": "docs/evidence/report-criteria/live-report-017.json"
+    },
+    {
+      "articleId": "2979a736-7df9-53e1-8d12-6e56c2806cc7",
+      "key": "expanded-report-customers-and-suppliers-تقرير ركود العملاء",
+      "asset": "live-report-018.png",
+      "report": "تقرير ركود العملاء",
+      "source": "docs/evidence/report-criteria/live-report-018.json"
+    },
+    {
+      "articleId": "bc9f95dd-a6b5-5b60-b3d3-5c0372425a53",
+      "key": "expanded-report-customers-and-suppliers-تقرير كشف حساب العملاء تفصيلي بالاصناف",
+      "asset": "live-report-019.png",
+      "report": "تقرير كشف حساب العملاء تفصيلي بالاصناف",
+      "source": "docs/evidence/report-criteria/live-report-019.json"
+    },
+    {
+      "articleId": "a6deaee1-11cd-516f-8ef7-2fefcb04f8b5",
+      "key": "expanded-report-customers-and-suppliers-تقرير خطوط السير",
+      "asset": "live-report-020.png",
+      "report": "تقرير خطوط السير",
+      "source": "docs/evidence/report-criteria/live-report-020.json"
+    },
+    {
+      "articleId": "87bc5319-8b16-549c-92d7-4e49f2a75d44",
+      "key": "expanded-report-customers-and-suppliers-تقرير مبيعات العملاء بالشهور",
+      "asset": "live-report-021.png",
+      "report": "تقرير مبيعات العملاء بالشهور",
+      "source": "docs/evidence/report-criteria/live-report-021.json"
+    },
+    {
+      "articleId": "8ca19a80-a998-5674-a402-67993c99ae85",
+      "key": "expanded-report-accounts-reports-تقرير الضرائب",
+      "asset": "live-report-022.png",
+      "report": "تقرير الضرائب",
+      "source": "docs/evidence/report-criteria/live-report-022.json"
+    },
+    {
+      "articleId": "cd05eb06-05b4-5279-b3cd-38c87ecdfc47",
+      "key": "expanded-report-accounts-reports-تقرير كشف حساب الأستاذ",
+      "asset": "live-report-023.png",
+      "report": "تقرير كشف حساب الأستاذ",
+      "source": "docs/evidence/report-criteria/live-report-023.json"
+    },
+    {
+      "articleId": "e2800023-f965-5bd0-a4e0-ec231ec2a264",
+      "key": "expanded-report-accounts-reports-تقرير كشف حساب الاستاذ بالرئيسي",
+      "asset": "live-report-024.png",
+      "report": "تقرير كشف حساب الاستاذ بالرئيسي",
+      "source": "docs/evidence/report-criteria/live-report-024.json"
+    },
+    {
+      "articleId": "32d35f88-f7be-574d-b60e-5c8d61710074",
+      "key": "expanded-report-accounts-reports-تقرير حساب الخزن",
+      "asset": "live-report-025.png",
+      "report": "تقرير حساب الخزن",
+      "source": "docs/evidence/report-criteria/live-report-025.json"
+    },
+    {
+      "articleId": "e24b4cf3-df93-53c9-bb4d-47caffcacfdb",
+      "key": "expanded-report-accounts-reports-تقرير حساب البنوك",
+      "asset": "live-report-026.png",
+      "report": "تقرير حساب البنوك",
+      "source": "docs/evidence/report-criteria/live-report-026.json"
+    },
+    {
+      "articleId": "c3e2872d-b936-5dc8-8e49-42ac6900bee6",
+      "key": "expanded-report-accounts-reports-تقرير ميزان المراجعة",
+      "asset": "live-report-027.png",
+      "report": "تقرير ميزان المراجعة",
+      "source": "docs/evidence/report-criteria/live-report-027.json"
+    },
+    {
+      "articleId": "888a1189-6245-510e-9243-fd953670e834",
+      "key": "expanded-report-accounts-reports-تقرير مراكز التكلفة",
+      "asset": "live-report-028.png",
+      "report": "تقرير مراكز التكلفة",
+      "source": "docs/evidence/report-criteria/live-report-028.json"
+    },
+    {
+      "articleId": "00ed9f9f-5679-5565-9766-c8bff812d222",
+      "key": "expanded-report-accounts-reports-تقرير حركة الايرادات",
+      "asset": "live-report-029.png",
+      "report": "تقرير حركة الايرادات",
+      "source": "docs/evidence/report-criteria/live-report-029.json"
+    },
+    {
+      "articleId": "bee0024d-cdc5-59a3-a68f-4a50a97a113b",
+      "key": "expanded-report-accounts-reports-تقرير حركة المصروفات",
+      "asset": "live-report-030.png",
+      "report": "تقرير حركة المصروفات",
+      "source": "docs/evidence/report-criteria/live-report-030.json"
+    },
+    {
+      "articleId": "372c084f-37a5-5e96-b1ea-8d49ea7a9786",
+      "key": "expanded-report-accounts-reports-تقرير التحويلات والتسويات",
+      "asset": "live-report-031.png",
+      "report": "تقرير التحويلات والتسويات",
+      "source": "docs/evidence/report-criteria/live-report-031.json"
+    },
+    {
+      "articleId": "ad52c990-3ddd-50bb-856c-7974515f102f",
+      "key": "expanded-report-accounts-reports-تقرير قائمة الدخل",
+      "asset": "live-report-032.png",
+      "report": "تقرير قائمة الدخل",
+      "source": "docs/evidence/report-criteria/live-report-032.json"
+    },
+    {
+      "articleId": "86f9f012-57da-575e-9af0-ae72b77d12de",
+      "key": "expanded-report-accounts-reports-تقرير الميزانية العمومية",
+      "asset": "live-report-033.png",
+      "report": "تقرير الميزانية العمومية",
+      "source": "docs/evidence/report-criteria/live-report-033.json"
+    },
+    {
+      "articleId": "92c657f6-fec8-571c-8a9d-f8f91293a13a",
+      "key": "expanded-report-accounts-reports-تقرير القيود اليومية",
+      "asset": "live-report-034.png",
+      "report": "تقرير القيود اليومية",
+      "source": "docs/evidence/report-criteria/live-report-034.json"
+    },
+    {
+      "articleId": "fb701036-568b-5a2a-8fca-8e10a6ed51bc",
+      "key": "expanded-report-sales-reports-تقرير المبيعات",
+      "asset": "live-report-035.png",
+      "report": "تقرير المبيعات",
+      "source": "docs/evidence/report-criteria/live-report-035.json"
+    },
+    {
+      "articleId": "3f9a536c-6632-52f0-8a9e-96aa25c239bf",
+      "key": "expanded-report-sales-reports-تقرير المبيعات بتاريخ الاستحقاق",
+      "asset": "live-report-036.png",
+      "report": "تقرير المبيعات بتاريخ الاستحقاق",
+      "source": "docs/evidence/report-criteria/live-report-036.json"
+    },
+    {
+      "articleId": "a0d42f66-d5d6-58be-84b9-288df2a55d39",
+      "key": "expanded-report-sales-reports-تقرير أعمار ديون الفواتير",
+      "asset": "live-report-037.png",
+      "report": "تقرير أعمار ديون الفواتير",
+      "source": "docs/evidence/report-criteria/live-report-037.json"
+    },
+    {
+      "articleId": "2059a889-f14d-5f7c-86aa-37bd6ef642a8",
+      "key": "expanded-report-sales-reports-تقرير المبيعات بطرق الدفع",
+      "asset": "live-report-038.png",
+      "report": "تقرير المبيعات بطرق الدفع",
+      "source": "docs/evidence/report-criteria/live-report-038.json"
+    },
+    {
+      "articleId": "54a03d1e-87e4-587b-912a-38539a50f22e",
+      "key": "expanded-report-sales-reports-تقرير مبيعات وتحصيل المندوبين",
+      "asset": "live-report-039.png",
+      "report": "تقرير مبيعات وتحصيل المندوبين",
+      "source": "docs/evidence/report-criteria/live-report-039.json"
+    },
+    {
+      "articleId": "e61d3945-25ec-5b5f-a3e9-623815612ee0",
+      "key": "expanded-report-sales-reports-تقرير خصومات المطاعم",
+      "asset": "live-report-040.png",
+      "report": "تقرير خصومات المطاعم",
+      "source": "docs/evidence/report-criteria/live-report-040.json"
+    },
+    {
+      "articleId": "10177fbc-c9cd-555e-9c95-5470b2eefd2d",
+      "key": "expanded-report-sales-reports-تقرير مبيعات الأصناف",
+      "asset": "live-report-041.png",
+      "report": "تقرير مبيعات الأصناف",
+      "source": "docs/evidence/report-criteria/live-report-041.json"
+    },
+    {
+      "articleId": "85ebf616-6bc5-5663-a5f8-c4c02d9a4f81",
+      "key": "expanded-report-sales-reports-تقرير الارباح للفواتير",
+      "asset": "live-report-042.png",
+      "report": "تقرير الارباح للفواتير",
+      "source": "docs/evidence/report-criteria/live-report-042.json"
+    },
+    {
+      "articleId": "83e16dbb-b2fd-5b20-b997-e46fb8f3b66c",
+      "key": "expanded-report-sales-reports-تقرير الارباح للأصناف",
+      "asset": "live-report-043.png",
+      "report": "تقرير الارباح للأصناف",
+      "source": "docs/evidence/report-criteria/live-report-043.json"
+    },
+    {
+      "articleId": "e27ea1a4-2130-5ca1-bfd8-f359b7244057",
+      "key": "expanded-report-sales-reports-تقرير الارباح للعملاء",
+      "asset": "live-report-044.png",
+      "report": "تقرير الارباح للعملاء",
+      "source": "docs/evidence/report-criteria/live-report-044.json"
+    },
+    {
+      "articleId": "fba0c050-5e2d-5c64-96a8-a50a39543c42",
+      "key": "expanded-report-sales-reports-تقرير عروض الاسعار المحولة لفاتورة",
+      "asset": "live-report-045.png",
+      "report": "تقرير عروض الاسعار المحولة لفاتورة",
+      "source": "docs/evidence/report-criteria/live-report-045.json"
+    },
+    {
+      "articleId": "4a9ccfd8-582a-50ee-bae7-973ec648a113",
+      "key": "expanded-report-sales-reports-تقرير لاوامر البيع والمنفذ منها",
+      "asset": "live-report-046.png",
+      "report": "تقرير لاوامر البيع والمنفذ منها",
+      "source": "docs/evidence/report-criteria/live-report-046.json"
+    },
+    {
+      "articleId": "e90c50b2-80cd-548a-aded-45dcb9db765c",
+      "key": "expanded-report-sales-reports-تقرير المندوبين",
+      "asset": "live-report-047.png",
+      "report": "تقرير المندوبين",
+      "source": "docs/evidence/report-criteria/live-report-047.json"
+    },
+    {
+      "articleId": "e776d5d4-6692-5a68-a0df-ee5a8ede94f0",
+      "key": "expanded-report-sales-reports-تقرير عمولات الاصناف للمندوبين",
+      "asset": "live-report-048.png",
+      "report": "تقرير عمولات الاصناف للمندوبين",
+      "source": "docs/evidence/report-criteria/live-report-048.json"
+    },
+    {
+      "articleId": "9f7a157b-9bd8-54da-9b7d-aa1219755ab7",
+      "key": "expanded-report-sales-reports-تقرير العمولات الإجمالي للمندوب",
+      "asset": "live-report-049.png",
+      "report": "تقرير العمولات الإجمالي للمندوب",
+      "source": "docs/evidence/report-criteria/live-report-049.json"
+    },
+    {
+      "articleId": "dce0a088-2de3-53bc-9e46-d5ff962b5270",
+      "key": "expanded-report-sales-reports-تقرير استهلاك الدفعة المقدمة",
+      "asset": "live-report-050.png",
+      "report": "تقرير استهلاك الدفعة المقدمة",
+      "source": "docs/evidence/report-criteria/live-report-050.json"
+    },
+    {
+      "articleId": "5d802b90-94c5-53fe-824e-f63632429911",
+      "key": "expanded-report-sales-reports-تقرير الحجوزات والمنفذ منها",
+      "asset": "live-report-051.png",
+      "report": "تقرير الحجوزات والمنفذ منها",
+      "source": "docs/evidence/report-criteria/live-report-051.json"
+    },
+    {
+      "articleId": "7ee05f07-f6f2-569f-b5a7-feae0fd13da9",
+      "key": "expanded-report-sales-reports-تقرير المبيعات بنوع الدفع",
+      "asset": "live-report-052.png",
+      "report": "تقرير المبيعات بنوع الدفع",
+      "source": "docs/evidence/report-criteria/live-report-052.json"
+    },
+    {
+      "articleId": "ef972c50-5153-5376-9c7f-39d082bbb93f",
+      "key": "expanded-report-sales-reports-تقرير حركة مبيعات السيارات",
+      "asset": "live-report-053.png",
+      "report": "تقرير حركة مبيعات السيارات",
+      "source": "docs/evidence/report-criteria/live-report-053.json"
+    },
+    {
+      "articleId": "3b3569a6-100c-5ecb-adb4-6b197f540584",
+      "key": "expanded-report-sales-reports-تقرير للفواتير المرحلة والفواتير الغير مرحلة للهيئة",
+      "asset": "live-report-054.png",
+      "report": "تقرير للفواتير المرحلة والفواتير الغير مرحلة للهيئة",
+      "source": "docs/evidence/report-criteria/live-report-054.json"
+    },
+    {
+      "articleId": "a94407b6-8d06-5c7a-a162-44ab54ab766f",
+      "key": "expanded-report-items-reports-تقرير اجمالي سعر الصنف",
+      "asset": "live-report-055.png",
+      "report": "تقرير اجمالي سعر الصنف",
+      "source": "docs/evidence/report-criteria/live-report-055.json"
+    },
+    {
+      "articleId": "1443cd93-d414-5622-808c-49918b10506d",
+      "key": "expanded-report-items-reports-تقرير الحد الأدني للأصناف",
+      "asset": "live-report-056.png",
+      "report": "تقرير الحد الأدني للأصناف",
+      "source": "docs/evidence/report-criteria/live-report-056.json"
+    },
+    {
+      "articleId": "dcaa3d2e-ce64-52c6-a4f0-1deee875d954",
+      "key": "expanded-report-items-reports-تقرير الأصناف التي تعدت الحد الأدني",
+      "asset": "live-report-057.png",
+      "report": "تقرير الأصناف التي تعدت الحد الأدني",
+      "source": "docs/evidence/report-criteria/live-report-057.json"
+    },
+    {
+      "articleId": "8888caa3-331f-55fd-8d8b-ac2024c717b7",
+      "key": "expanded-report-items-reports-تقرير اجمالي الحركات علي الأصناف",
+      "asset": "live-report-058.png",
+      "report": "تقرير اجمالي الحركات علي الأصناف",
+      "source": "docs/evidence/report-criteria/live-report-058.json"
+    },
+    {
+      "articleId": "33e7444a-83a0-5ffb-9339-6c5e3ea3a4e6",
+      "key": "expanded-report-items-reports-تقرير حركة الأصناف تفصيلي",
+      "asset": "live-report-059.png",
+      "report": "تقرير حركة الأصناف تفصيلي",
+      "source": "docs/evidence/report-criteria/live-report-059.json"
+    },
+    {
+      "articleId": "5a3fae6d-9f13-5d5b-9e80-c7654d33cc88",
+      "key": "expanded-report-items-reports-تقرير التحويلات المخزنية",
+      "asset": "live-report-060.png",
+      "report": "تقرير التحويلات المخزنية",
+      "source": "docs/evidence/report-criteria/live-report-060.json"
+    },
+    {
+      "articleId": "58a60bf5-7593-579c-b91e-f815b062374f",
+      "key": "expanded-report-items-reports-تقرير باركود الأصناف",
+      "asset": "live-report-061.png",
+      "report": "تقرير باركود الأصناف",
+      "source": "docs/evidence/report-criteria/live-report-061.json"
+    },
+    {
+      "articleId": "5a44708d-2299-5344-ac28-b52d82eaf770",
+      "key": "expanded-report-items-reports-تقرير رصيد المخزن",
+      "asset": "live-report-062.png",
+      "report": "تقرير رصيد المخزن",
+      "source": "docs/evidence/report-criteria/live-report-062.json"
+    },
+    {
+      "articleId": "5ce94158-9078-5b3b-a83c-49113f4c831b",
+      "key": "expanded-report-items-reports-تقرير تقييم المخزن",
+      "asset": "live-report-063.png",
+      "report": "تقرير تقييم المخزن",
+      "source": "docs/evidence/report-criteria/live-report-063.json"
+    },
+    {
+      "articleId": "3ae823db-2033-5df2-9567-80b13cb76e29",
+      "key": "expanded-report-items-reports-تقرير اذن الاستلام",
+      "asset": "live-report-064.png",
+      "report": "تقرير اذن الاستلام",
+      "source": "docs/evidence/report-criteria/live-report-064.json"
+    },
+    {
+      "articleId": "2aeade59-51fc-587e-8741-b9e730f73ac4",
+      "key": "expanded-report-items-reports-تقرير اجمالي ارصدة الأصناف بالمخزن",
+      "asset": "live-report-065.png",
+      "report": "تقرير اجمالي ارصدة الأصناف بالمخزن",
+      "source": "docs/evidence/report-criteria/live-report-065.json"
+    },
+    {
+      "articleId": "97dc499d-11e8-5e7c-bd3f-bd96fde0084b",
+      "key": "expanded-report-items-reports-تقرير جهات الصرف",
+      "asset": "live-report-066.png",
+      "report": "تقرير جهات الصرف",
+      "source": "docs/evidence/report-criteria/live-report-066.json"
+    },
+    {
+      "articleId": "5915371d-6587-5f3f-b26f-efa1c7e28b3b",
+      "key": "expanded-report-items-reports-تقرير QR كود الطاولات",
+      "asset": "live-report-067.png",
+      "report": "تقرير QR كود الطاولات",
+      "source": "docs/evidence/report-criteria/live-report-067.json"
+    },
+    {
+      "articleId": "01b98e63-4926-5b7c-9ce7-7201314836ab",
+      "key": "expanded-report-items-reports-تقرير الجرد",
+      "asset": "live-report-068.png",
+      "report": "تقرير الجرد",
+      "source": "docs/evidence/report-criteria/live-report-068.json"
+    },
+    {
+      "articleId": "c70c8a8e-854c-56ba-8ebc-ca70d0a4d2aa",
+      "key": "expanded-report-items-reports-تقرير تسوية التوالف",
+      "asset": "live-report-069.png",
+      "report": "تقرير تسوية التوالف",
+      "source": "docs/evidence/report-criteria/live-report-069.json"
+    },
+    {
+      "articleId": "7fed9441-2641-565a-bc30-d2fcb749691e",
+      "key": "expanded-report-items-reports-تقرير ركود الاصناف",
+      "asset": "live-report-070.png",
+      "report": "تقرير ركود الاصناف",
+      "source": "docs/evidence/report-criteria/live-report-070.json"
+    },
+    {
+      "articleId": "2a1975be-bb66-5291-943d-9fabb741e864",
+      "key": "expanded-report-items-reports-تقرير الاصناف",
+      "asset": "live-report-071.png",
+      "report": "تقرير الاصناف",
+      "source": "docs/evidence/report-criteria/live-report-071.json"
+    }
+  ],
+  "failed": [],
+  "scope": "criteria only; not report results or transaction qualification"
+}

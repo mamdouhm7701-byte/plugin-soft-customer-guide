@@ -1,0 +1,9 @@
+{
+  "name": "live-units-form.png",
+  "capturedAt": "2026-11-03T09:40:43.547300800Z",
+  "route": "/units",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "53501214bfb6b4291136cec67e34405502cdccb30a66148c5efc83d1ae291479",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

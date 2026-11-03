@@ -7,7 +7,7 @@ if ([IO.Path]::GetFullPath($guideRecord.root) -ne [IO.Path]::GetFullPath($guideR
 $guideProcess = Get-CimInstance Win32_Process -Filter "ProcessId = $($guideRecord.pid)"
 if ($null -eq $guideProcess) { Write-Output 'Guide process already stopped.'; exit }
 $guideCommand = [string]$guideProcess.CommandLine
-if ($guideProcess.Name -ne 'node.exe' -or $guideCommand -notmatch 'scripts[/\\]run-framework\.mjs.+dev.+--hostname.+127\.0\.0\.1.+--port.+5173') { throw 'Process identity changed; nothing was stopped.' }
+if ($guideProcess.Name -ne 'node.exe' -or $guideCommand -notmatch 'scripts[/\\]run-framework\.mjs.+dev.+--hostname.+127\.0\.0\.1.+--port.+5174') { throw 'Process identity changed; nothing was stopped.' }
 if ($guideCommand -notmatch [regex]::Escape($guideRoot)) { throw 'Process command does not belong to this checkout.' }
 Stop-Process -Id $guideProcess.ProcessId
 Write-Output 'Task-owned local guide process stopped.'

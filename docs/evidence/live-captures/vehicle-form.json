@@ -1,0 +1,9 @@
+{
+  "name": "live-vehicle-empty.png",
+  "capturedAt": "2026-11-03T11:09:11.091295600Z",
+  "route": "/cars/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "6b0d65bdacd4d6f5743a0c422670b691068075db78176697921f3adcd8900f15",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

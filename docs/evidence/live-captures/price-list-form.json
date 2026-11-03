@@ -1,0 +1,9 @@
+{
+  "name": "live-price-list-empty.png",
+  "capturedAt": "2026-11-03T11:09:36.760859600Z",
+  "route": "/price-list/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "7f1b7767a80aad8f656600f8474cbb773cf5919a28581dc8d3735ef4b953e363",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

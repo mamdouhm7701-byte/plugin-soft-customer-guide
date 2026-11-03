@@ -1,0 +1,9 @@
+{
+  "name": "live-temperature-modal.png",
+  "capturedAt": "2026-11-03T10:30:47.032531Z",
+  "route": "/maxTemperature",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "2222fe566575ec7574694aedd6ae408d2d44cb84dd6f79bfc10a13a8cedd398c",
+  "review": "Visually inspected native blank definition; no loading overlay or private records; no save performed."
+}

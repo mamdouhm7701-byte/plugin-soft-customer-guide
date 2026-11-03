@@ -1,0 +1,9 @@
+{
+  "name": "live-customer-receipt-empty.png",
+  "capturedAt": "2026-11-03T11:02:07.128203300Z",
+  "route": "/collection-transactions/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "7ed3c3fde778cb3ca79e224bf3bdcdad7845cceceb27788a2a446a39235a6b06",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

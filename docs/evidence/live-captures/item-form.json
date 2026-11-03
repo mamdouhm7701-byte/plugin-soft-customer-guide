@@ -1,0 +1,9 @@
+{
+  "name": "live-item-empty.png",
+  "capturedAt": "2026-11-03T11:08:19.067597700Z",
+  "route": "/Items/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "dd5f4b9ad7de6d21d35469d90e3a116355fd685f29a25b2ac23e0419fa9e25b8",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

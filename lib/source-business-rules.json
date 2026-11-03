@@ -1,0 +1,345 @@
+[
+  {
+    "id": "SL-PLAN",
+    "source": "src/test/java/Invoice/SalesScenarioTest.java",
+    "sha256": "da5fdfb06cb1083e630339ed781aba03d945784011bcfc68ca8b5a2cc56a8987",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "في أمثلة النشاط العام، عرض السعر وأمر البيع لا يغيران كمية المخزون، بينما فاتورة البيع تخصم الكمية والمرتجع يضيفها. عدم الخصم وحده لا يثبت وجود حجز مخزني.",
+    "example": "لو المخزون 20 وكمية المستند 3: العرض والأمر يتركانه 20، والفاتورة يصبح بعدها 17، والمرتجع يزيد الرصيد بمقدار 3. قارن نفس الصنف والوحدة والمخزن.",
+    "articleKeys": [
+      "sales-general-01"
+    ],
+    "module": "sales",
+    "activities": [
+      "general"
+    ]
+  },
+  {
+    "id": "SL-ORDER",
+    "source": "src/test/java/Invoice/SalesScenarioTest.java",
+    "sha256": "da5fdfb06cb1083e630339ed781aba03d945784011bcfc68ca8b5a2cc56a8987",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "في مثال النشاط العام الموضح هنا، أمر البيع يترك كمية المخزون دون تغيير. الحجز مفهوم مستقل يحتاج مراجعة مستقلة؛ راجع نوع المستند قبل تفسير الرصيد.",
+    "example": "المثال: مخزون 20 وأمر بيع بكمية 3؛ الرصيد المتوقع 20. لا تقارنه بفاتورة بيع محفوظة بكمية 3، لأن أثرها المتوقع مختلف.",
+    "articleKeys": [
+      "sales-general-02"
+    ],
+    "module": "sales",
+    "activities": [
+      "general"
+    ]
+  },
+  {
+    "id": "SL-ADVANCE",
+    "source": "src/test/java/Invoice/SalesScenarioTest.java",
+    "sha256": "da5fdfb06cb1083e630339ed781aba03d945784011bcfc68ca8b5a2cc56a8987",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "أمر البيع النقدي قد يتضمن دفعة مقدمة تؤثر في رصيد العميل رغم ثبات كمية المخزون. في الأمثلة الموضحة، أمر البيع الآجل وعرض السعر لا يغيران الرصيد؛ راجع نوع السداد وسند الدفعة.",
+    "example": "بدون ضريبة: أمر نقدي بقيمة 300 يتوقع تغير الرصيد الموقع بمقدار -300؛ أمر آجل بنفس القيمة يتوقع صفر تغير. راجع سند الدفعة ونوع السداد، ولا تسجل دفعة ثانية لمجرد ثبات المخزون.",
+    "articleKeys": [
+      "sales-general-08"
+    ],
+    "module": "sales",
+    "activities": [
+      "general"
+    ]
+  },
+  {
+    "id": "SL-RETURN",
+    "source": "src/test/java/Invoice/LinkedSalesReturnTest.java",
+    "sha256": "77ef095995c177067516e95ad6876863c3a4bf45ff3970e0a6b025ff4ce0a31e",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "المرتجع المرتبط يرجع لفاتورة المصدر وتُراجع كميته في حدود كمية المصدر. المرتجع الحر له مسار منفصل؛ لا تغيّر النوع لمجرد تجاوز قيد المرتجع المرتبط.",
+    "example": "طابق رقم فاتورة المصدر والصنف والوحدة والكمية والسعر والضريبة. مثال: مصدر بكمية 3 لا يستخدم كمبرر لمرتجع مرتبط بكمية 4. الحد الفعلي يراجع مع المرتجعات السابقة والحالة الحالية.",
+    "articleKeys": [
+      "sales-general-05"
+    ],
+    "module": "sales",
+    "activities": [
+      "general"
+    ]
+  },
+  {
+    "id": "PU-STOCK",
+    "source": "src/test/java/Purches/PurchaseScenarioTest.java",
+    "sha256": "e36370616a377d01c5f8ad75f4daf4258a5f8a57658d1913e9e4c62aa93637c0",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "في دورة الشراء الموضحة، أمر الشراء يترك كمية المخزون دون تغيير، وفاتورة الشراء تزيدها ومرتجع المشتريات ينقصها. الدفع للمورد حركة مالية منفصلة عن كمية المخزون.",
+    "example": "لو الرصيد 20 والكمية 3: أمر الشراء يترك 20، والفاتورة تزيده إلى 23، والمرتجع ينقص الرصيد الذي سبق تنفيذه بمقدار 3. يجب ثبات المخزن غير المعني.",
+    "articleKeys": [
+      "purchases-general-01"
+    ],
+    "module": "purchases",
+    "activities": [
+      "general",
+      "restaurant",
+      "construction",
+      "concrete",
+      "cars"
+    ]
+  },
+  {
+    "id": "PU-DISCOUNT",
+    "source": "src/test/java/Purches/PurchaseFormActions.java",
+    "sha256": "a2981d005c9e66cb805e25d201a39aefade34570796708dee8bccf8b893b5905",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "صحة حساب الخصم لا تعني السماح للمستخدم بحفظه. راجع الصلاحية وحد الخصم ورسالة الرفض قبل الحفظ؛ لا تفترض نسبة مسموحة غير ظاهرة ولا تعتبر الرفض دليلًا على نجاح العملية.",
+    "example": "راجع رسالة الرفض وحد الخصم إن كان ظاهرًا، ثم اطلب الصلاحية المناسبة. لا تعتبر رفض الخصم حفظًا ناجحًا، ولا تكرر الحفظ قبل التأكد من حالة المستند.",
+    "articleKeys": [
+      "purchases-general-07"
+    ],
+    "module": "purchases",
+    "activities": [
+      "general",
+      "restaurant",
+      "construction",
+      "concrete",
+      "cars"
+    ]
+  },
+  {
+    "id": "ST-MOVEMENT",
+    "source": "src/test/java/StoreTest/StoreSaveVerification.java",
+    "sha256": "676ff5b3e41248bed906ef1035094011f344ff60fd1db99731b05c50ced3970f",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "إذن الإضافة يزيد كمية المخزن، والصرف والتالف ينقصانها في الأمثلة الموضحة. راجع المخزن والصنف والوحدة ونوع الحركة قبل مقارنة الرصيد.",
+    "example": "رصيد 20: إضافة 3 تعطي 23، أو صرف 3 يعطي 17، أو تالف 3 يعطي 17. هذه أمثلة مستقلة، وليست ثلاث حركات نُفذت بالتتابع.",
+    "articleKeys": [
+      "inventory-general-01"
+    ],
+    "module": "inventory",
+    "activities": [
+      "general",
+      "restaurant",
+      "construction",
+      "concrete",
+      "cars"
+    ]
+  },
+  {
+    "id": "ST-TRANSFER",
+    "source": "src/test/java/StoreTest/StoreSaveVerification.java",
+    "sha256": "676ff5b3e41248bed906ef1035094011f344ff60fd1db99731b05c50ced3970f",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "تحويل المخازن ينقص كمية المصدر ويزيد كمية الوجهة. قارن الطرفين بنفس الصنف والوحدة والكمية، ولا تكتفِ بتغير طرف واحد.",
+    "example": "مصدر رصيده 20 ووجهة رصيدها 5، وتحويل 3: المتوقع 17 في المصدر و8 في الوجهة. مجموع الاثنين يظل 25 في هذا المثال دون حركات أخرى.",
+    "articleKeys": [
+      "inventory-general-02"
+    ],
+    "module": "inventory",
+    "activities": [
+      "general",
+      "restaurant",
+      "construction",
+      "concrete",
+      "cars"
+    ]
+  },
+  {
+    "id": "ST-MANUFACTURE",
+    "source": "src/test/java/StoreTest/StoreSaveVerification.java",
+    "sha256": "676ff5b3e41248bed906ef1035094011f344ff60fd1db99731b05c50ced3970f",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "التصنيع يزيد المنتج ويستهلك المدخلات حسب وصفة الصنف المعتمدة. نسبة 2 خام إلى 1 منتج هي مثال لوصفة محددة، وليست قاعدة عامة لكل تصنيع.",
+    "example": "لو الوصفة المعتمدة تستهلك 2 خام لإنتاج 1 منتج، فإنتاج 3 يستهلك 6 خام. غيّر الحساب حسب الوصفة والوحدة الفعلية، لا حسب المثال وحده.",
+    "articleKeys": [
+      "inventory-general-06"
+    ],
+    "module": "inventory",
+    "activities": [
+      "general",
+      "restaurant",
+      "construction",
+      "concrete",
+      "cars"
+    ]
+  },
+  {
+    "id": "GL-INVENTORY",
+    "source": "src/main/java/Plugin_ERP/Business/Calculator/InventoryPostingExpectation.java",
+    "sha256": "829713f9eea9db775f191ca92b0c4abd28369dc53dbce92915872555f5bea841",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "نموذج الترحيل يضيف في الجرد المستمر مدين تكلفة المبيعات ودائن المخزون بقيمة التكلفة. الجرد الدوري لا يضيف هذين السطرين في نفس نموذج البيع. المرتجع يعكس الإشارات.",
+    "example": "بيع بضاعة قبل الضريبة 100 وتكلفتها 60 وVAT بقيمة 15، دون إضافية: النموذج يتوقع العميل مدين 115، المبيعات دائن 100، الضريبة دائن 15. المستمر يضيف تكلفة مبيعات مدين 60 ومخزون دائن 60.",
+    "articleKeys": [
+      "accounting-general-04"
+    ],
+    "module": "accounting",
+    "activities": [
+      "general",
+      "restaurant",
+      "construction",
+      "concrete",
+      "cars"
+    ]
+  },
+  {
+    "id": "TAX-POLICY",
+    "source": "src/main/java/Plugin_ERP/Business/Calculator/BranchInvoiceCalculator.java",
+    "sha256": "1fd180c6e41a3dce69e0a865d767ecfdb56b8538e9c92d53c5904b5351a9ffb9",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "لو إعداد الفرع ضريبة قيمة مضافة 15% وسعرًا شاملًا، اقسم السعر بعد الخصم على 1.15 لاستخراج الأساس. السعر غير الشامل تضاف إليه الضريبة؛ لا تستخدم 15% تلقائيًا مع إعداد أو نشاط آخر.",
+    "example": "مثال مشروط بسياسة 15%: سعر شامل 115 = أساس 100 وضريبة 15. أساس غير شامل 100 + ضريبة 15 = صافي 115. في ItemBased تُستبعد البنود المعفاة من وعاء الضريبة حسب السياسة.",
+    "articleKeys": [
+      "sales-general-09"
+    ],
+    "module": "sales",
+    "activities": [
+      "general"
+    ]
+  },
+  {
+    "id": "TAX-ROUND",
+    "source": "src/main/java/Plugin_ERP/Business/Calculator/BranchInvoiceCalculator.java",
+    "sha256": "1fd180c6e41a3dce69e0a865d767ecfdb56b8538e9c92d53c5904b5351a9ffb9",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "فرق الإجمالي قد يرتبط بالتقريب على مستوى السطر أو الفاتورة، أو بالاحتفاظ بالدقة الوسيطة حتى الصافي النهائي. طابق طريقة التقريب المطبقة على نفس المستند، بدل خلط نتائج طرق مختلفة.",
+    "example": "راجع دقة العملة، وموضع التقريب، والخصم والضريبة وإعداد الفرع. لا تغيّر سعر بند أو تضف خصمًا لتعويض فرق صغير غير مفسر؛ سجّل الأرقام قبل وبعد التقريب.",
+    "articleKeys": [
+      "sales-general-06"
+    ],
+    "module": "sales",
+    "activities": [
+      "general"
+    ]
+  },
+  {
+    "id": "REST-EXTRA",
+    "source": "src/main/java/Plugin_ERP/Business/Calculator/RestaurantAdditionalTaxCalculator.java",
+    "sha256": "2b57c3bc726819d81631fc1feefac82ed390cca5a64340d873a11a3abaed9fca",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "في المثال المشروط بتفعيل الضريبة الإضافية ومعدل موجب وحد أدنى 25 لكل وحدة، تؤخذ القيمة الأكبر بين نسبة الإضافية من الأساس بعد الخصم والحد الأدنى. طابق إعداد فرع المطعم؛ هذه ليست قاعدة عامة لكل نشاط.",
+    "example": "بفرض كمية 3 وسعر قبل VAT قيمته 10 وإضافية 10%: النسبة = 3، والحد الأدنى = 75، فالإضافية المتوقعة 75. مع VAT 15% على الوعاء 105 تكون VAT 15.75 والصافي 120.75.",
+    "articleKeys": [
+      "sales-restaurant-04"
+    ],
+    "module": "sales",
+    "activities": [
+      "restaurant"
+    ]
+  },
+  {
+    "id": "REST-RETURN-ISSUE",
+    "source": "docs/testing/KNOWN_BUSINESS_ISSUES.md",
+    "sha256": "ebe008a8e2112d09e027acedce4bfb1c754be4d46dc393de0754fdaa3b66f2fb",
+    "scope": "HISTORICAL_DOCUMENTED_EVIDENCE",
+    "answer": "لو إجمالي المرتجع المرتبط في المطعم مختلف، راجع إضافية وضريبة فاتورة المصدر قبل الحفظ. توجد حالة تاريخية محددة على سياسة الصافي NetBased اختلف فيها رد الحد الأدنى للإضافية؛ لا تفترض استمرارها أو انطباقها على نسختك.",
+    "example": "لإرجاع وحدة، المتوقع في الحالة الموثقة إضافية 25 وVAT 5.25 وصافي 40.25؛ المرصود تاريخيًا كان إضافية 10 وVAT 3 وصافي 23. لا تحفظ على أساس المثال كحل؛ جهز مرجع المصدر والقيم للدعم. هذه ملاحظة تاريخية محددة لا تعمم على كل نسخة.",
+    "articleKeys": [
+      "sales-restaurant-05"
+    ],
+    "module": "sales",
+    "activities": [
+      "restaurant"
+    ]
+  },
+  {
+    "id": "HR-PERCENT",
+    "source": "src/main/java/Plugin_ERP/Business/HumanResources/HrSalaryExpectation.java",
+    "sha256": "ad5326b5e97139b489b90e70aaae891b4d65b2f17ec0773f786d23c9840428c4",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "بند النسبة يحسب من الراتب الأساسي الشهري: الأساسي × النسبة ÷ 100. راجع طبيعة البند وهل هو استحقاق أم استقطاع؛ النسبة وحدها لا تحدد اتجاه التأثير.",
+    "example": "أساسي 5000 × 10 ÷ 100 = 500.00. المبلغ يضاف إذا كان استحقاقًا ويخصم إذا كان استقطاعًا وفق الحركة المسجلة، وليس لمجرد وجود الاسم.",
+    "articleKeys": [
+      "hr-hr-05"
+    ],
+    "module": "hr",
+    "activities": [
+      "hr"
+    ]
+  },
+  {
+    "id": "HR-DAYS",
+    "source": "src/main/java/Plugin_ERP/Business/HumanResources/HrSalaryExpectation.java",
+    "sha256": "ad5326b5e97139b489b90e70aaae891b4d65b2f17ec0773f786d23c9840428c4",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "بند الأيام = الأساسي ÷ 30.4167 × الأيام، وبند الساعات = الأساسي ÷ 30.4167 ÷ 8 × الساعات. احتفظ بالدقة الوسيطة ثم قرّب الناتج النهائي لخانتين.",
+    "example": "مع أساسي 5000: يوم واحد 164.38، يومان 328.77، أربع ساعات 82.19. لا تستخدم حساب أول راتب جزئي لهذه البنود؛ له قاعدة مستقلة.",
+    "articleKeys": [
+      "hr-hr-06"
+    ],
+    "module": "hr",
+    "activities": [
+      "hr"
+    ]
+  },
+  {
+    "id": "HR-FIRST",
+    "source": "src/main/java/Plugin_ERP/Business/HumanResources/HrSalaryExpectation.java",
+    "sha256": "ad5326b5e97139b489b90e70aaae891b4d65b2f17ec0773f786d23c9840428c4",
+    "scope": "SOURCE_CONTRACT",
+    "answer": "نموذج أول راتب جزئي مستقل: اليوم = الأساسي × 12 ÷ 365، ثم يضرب في أيام الاستحقاق الفعلية. الشهر المؤهل كاملًا يرجع الأساسي الكامل. إدخال يوم التعيين أو استبعاده قرار صريح في السياسة.",
+    "example": "أساسي 5000 وعشرة أيام مؤهلة: 5000 × 12 ÷ 365 × 10 = 1643.84 بعد التقريب. طابق الشهر الميلادي وتاريخ التعيين وسياسة احتساب يوم التعيين؛ لا تفترض ضمه تلقائيًا.",
+    "articleKeys": [
+      "hr-hr-07"
+    ],
+    "module": "hr",
+    "activities": [
+      "hr"
+    ]
+  },
+  {
+    "id": "HR-ABSENCE",
+    "source": "docs/hr/BUSINESS_RULES_AR.md",
+    "sha256": "7346b2367d7cf9e0bc5440734b34f0d212db31add36401863f0b83cd14ba1e8e",
+    "scope": "HISTORICAL_DOCUMENTED_EVIDENCE",
+    "answer": "لا تعتبر تسجيل الغياب أو الإجازة وحده خصمًا تلقائيًا من الراتب. راجع سياسة المنشأة وحركة الاستقطاع المسجلة وبنود الراتب قبل تفسير الصافي أو إضافة خصم جديد.",
+    "example": "طابق الغياب أو الإجازة مع السياسة وحركة الاستقطاع وبنود الراتب. لا تسجل خصمًا ثانيًا قبل التأكد من عدم وجود استقطاع مسجل لنفس الحالة.",
+    "articleKeys": [
+      "hr-hr-08"
+    ],
+    "module": "hr",
+    "activities": [
+      "hr"
+    ]
+  },
+  {
+    "id": "HR-ADVANCE",
+    "source": "docs/hr/BUSINESS_RULES_AR.md",
+    "sha256": "7346b2367d7cf9e0bc5440734b34f0d212db31add36401863f0b83cd14ba1e8e",
+    "scope": "HISTORICAL_DOCUMENTED_EVIDENCE",
+    "answer": "السلفة تخصم طبقًا للجدول المسجل لها؛ لا نفترض خصم المبلغ كاملًا في أول شهر. الشاشة تعرض عدد الأقساط وقيمة القسط وتاريخ البداية.",
+    "example": "مثال حسابي لثلاثة أقساط متساوية دون رسوم: 1200 ÷ 3 = 400 للقسط. راجع التواريخ والقيم المسجلة، وأي استثناء؛ المثال لا يستبدل الجدول الفعلي.",
+    "articleKeys": [
+      "hr-hr-09"
+    ],
+    "module": "hr",
+    "activities": [
+      "hr"
+    ]
+  },
+  {
+    "id": "CAR-IDENTITY",
+    "source": "docs/testing/evidence/car-chassis-sales-report-content-qualified-native-2026-11-03.json",
+    "sha256": "b1a32594fb46480ce71167b952d168c1e9276078cc322a9bf9945fc50283a8da",
+    "scope": "HISTORICAL_DOCUMENTED_EVIDENCE",
+    "answer": "لتحديد العربية الصحيحة، طابق اسم السيارة ورقم الشاسيه واللون والحالة والمخزن والصنف ورقم الفاتورة وتاريخها وسعر البيع. تشابه الاسم وحده لا يكفي لتحديد نفس السيارة.",
+    "example": "ابدأ بالشاسيه واللون ورقم المستند، ثم سعر السطر والإجماليات. لو الحالة مستعملة أو فيها مرتجع أو فلاتر متعارضة، جهز تفاصيلها للدعم؛ المقارنة البسيطة لا تحسم هذه الحالات.",
+    "articleKeys": [
+      "sales-cars-01"
+    ],
+    "module": "sales",
+    "activities": [
+      "cars"
+    ]
+  },
+  {
+    "id": "REPORT-FILTER",
+    "source": "docs/testing/evidence/item-stagnation-report-content-qualified-native-2026-11-03.json",
+    "sha256": "93965d06f2f398d9ae0764c1df80c89f058c323417799178c718f2b5305ac1d3",
+    "scope": "HISTORICAL_DOCUMENTED_EVIDENCE",
+    "answer": "اختلاف العميل أو المندوب أو فترة التقرير قد يغير الصفوف الظاهرة في تقرير الركود. اختفاء بيع من النطاق المختار لا يعني حذف مستنده؛ راجع كل فلتر مع نفس الصنف والمخزن.",
+    "example": "ابدأ بنفس الصنف والمخزن والفترة، ثم غيّر فلترًا واحدًا. طابق هوية آخر بيع والكمية والقيمة والتاريخ، ولا تفسر اختفاء السطر على أنه حذف للمستند.",
+    "articleKeys": [
+      "reports-general-01"
+    ],
+    "module": "reports",
+    "activities": [
+      "general",
+      "restaurant",
+      "construction",
+      "concrete",
+      "cars"
+    ]
+  }
+]

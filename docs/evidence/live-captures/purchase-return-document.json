@@ -1,0 +1,9 @@
+{
+  "name": "live-purchase-return-empty.png",
+  "capturedAt": "2026-11-03T10:10:55.054970600Z",
+  "route": "/return-purch/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "fd39fe46bf63b9139967bd58b8fce3e326ede304c6a8fd8fae7bde889a92fe5a",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "live-reservation-empty.png",
+  "capturedAt": "2026-11-03T10:13:54.038955100Z",
+  "route": "/reservations/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "e96f88389f68cd764fbc7ee58664d809139b4bd2a5bc38a793408a69752792a1",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

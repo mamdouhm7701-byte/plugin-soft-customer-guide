@@ -1,0 +1,9 @@
+{
+  "name": "live-overflow-adjustment-empty.png",
+  "capturedAt": "2026-11-03T11:07:06.316316300Z",
+  "route": "/overflow-adjustment/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "3a287e63dfb7a4bf45f6f505ceaf1d976de15d8ea2627f331e80298b06280924",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "live-table-empty.png",
+  "capturedAt": "2026-11-03T11:11:50.830211500Z",
+  "route": "/tables",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "34ab7980aa7b2afc1da7c9a933fe386fd323db05703f795290d5317e553ee007",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "live-supplier-payment-empty.png",
+  "capturedAt": "2026-11-03T11:01:22.226390900Z",
+  "route": "/payment-transactions/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "4ae6f97806896cf191b24cbaff2b9f3bb19dda7eed3237d90f3d3baca97fcc61",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

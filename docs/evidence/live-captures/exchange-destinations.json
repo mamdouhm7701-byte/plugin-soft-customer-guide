@@ -1,0 +1,9 @@
+{
+  "name": "live-exchange-destinations-form.png",
+  "capturedAt": "2026-11-03T09:47:04.048101100Z",
+  "route": "/exchange-destinations",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "36da44e8a4e7ef5776489bd42b76c3cd236f905a5d433313502fdf5773d7144e",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "live-branch-empty.png",
+  "capturedAt": "2026-11-03T11:10:07.501567600Z",
+  "route": "/branches/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "4ceb334a4e8e6894482d8aff7f579f6b7ee5a6f785a33d29469bdc13cf1ac37f",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

@@ -1,98 +1,65 @@
 # Plugin Soft Customer Guide
 
-Full-stack Arabic RTL customer knowledge library and training handover platform. Version 1.0.0, 2026-11-02.
+Arabic RTL training handover and support knowledge platform. Current local source: 2026-11-03. Website publication is deferred by the user.
 
-The application is independent of the ERP Selenium repository. No ERP source was changed and no ERP test suites were run during this implementation.
+## Stack and location
+
+React 19 and TypeScript, Vinext/Vite with App Router conventions, Cloudflare Workers, D1/SQLite with Drizzle, R2 uploads, and Zod validation. Excel export uses ExcelJS; PDF delivery uses browser print layouts. This is a standalone application, separate from the ERP Java/Selenium automation repository.
+
+Workstation source: `C:/Users/pcx/Desktop/PluginSoft_Customer_Guide`. Private GitHub repository: [plugin-soft-customer-guide](https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide). Current review changes are local, not yet pushed or deployed.
 
 ## Run locally
 
-Requires Node.js >=22.13 and installed dependencies. On this workstation the dependencies and local schema are already prepared.
+Requires Node.js >=22.13. Run `npm run install:ci` for a fresh checkout, then double-click `START_GUIDE.cmd` or run `node scripts/local-preview.mjs`. The launcher prepares ignored local environment values, applies local migrations and uses port **5174**.
 
-- Double-click `START_GUIDE.cmd`, or run `node scripts/local-preview.mjs` from the project directory.
-- Customer library: `http://127.0.0.1:5173/`
-- Team administration: `http://127.0.0.1:5173/admin`
-- Local sign-in uses the starter's loopback-only development identity. It is absent from production builds.
-- `STOP_GUIDE.ps1` stops only a process recorded by the launcher after checking its identity. A manually started development server must be stopped by its owning terminal.
-- Loopback links are local previews, not customer-shareable Internet links.
+- Team login: `http://127.0.0.1:5174/team/login`.
+- Administration: `http://127.0.0.1:5174/admin`.
+- Customer entry: a saved `/guides/<id>` link; the anonymous root is not a global library.
+- Stop a launcher-owned process with `STOP_GUIDE.ps1`. Manually started servers are owned by their terminals.
 
-For a fresh checkout, run `npm run install:ci` once, then `node scripts/local-preview.mjs`. The launcher creates an ignored local `.dev.vars` with development-only values, builds if needed, applies pending migrations locally and starts a hidden loopback process. It does not publish or contact the ERP. Local startup logs are under `.sites-runtime/`.
+On a fresh database, provision the designated owner using `node --experimental-strip-types scripts/provision-team-owner.mjs owner@example.com`. This trusted **local-only** recovery command creates a single-use activation file in ignored `.sites-runtime/`; it revokes existing owner sessions and must not be rerun during ordinary startup. Set the password through that private activation link. Team sign-in uses independent email/password; no ChatGPT identity headers grant membership.
 
-## Implemented features
+Loopback addresses cannot be sent to remote customers. Source ZIPs exclude the local database, sessions, runtime files and uploaded R2 media.
 
-### Customers
+## Customer and team behavior
 
-- Anonymous-compatible library, Arabic-normalized search, activity and module filters.
-- Stable article URLs under `/help/<id>`; only published snapshots are exposed.
-- Prerequisites, activity/screen limitations, numbered illustrated steps, highlight overlays, focused/full-image viewer, expected result and warnings.
-- Related articles, copy-link action, persistent feedback and print/PDF layouts.
-- Saved handover guides under `/guides/<id>` and printable versions under `/guides/<id>/print`.
-- Guides select activity, trained modules and either specific articles or all applicable published articles. Archived guides stop resolving.
+Each customer receives one guide scoped to its activity, trained modules and selected published articles. Customer navigation has no activity switcher or global-library fallback. Every article/API/print/uploaded-media request rechecks active guide scope. Stopping or deleting a guide blocks subsequent access; deletion preserves the original articles. Anyone holding a live bearer link can use it; downloaded material cannot be revoked.
 
-### Team
+Team roles are enforced on the server: owner manages members, reviewer reviews/publishes/exports, editor prepares drafts, and support uses published replies and customer guides. Draft edits do not replace a published snapshot until reviewed publication. Support selects an eligible active customer guide before copying a reply link. The app sends no customer messages automatically.
 
-- Server-enforced membership and roles: `owner`, `reviewer`, `editor`, `support`.
-- Support library with ready reply plus permalink; no automatic customer messaging.
-- Content editor, step reordering, image upload/library, highlight placement, internal verification notes and preview.
-- Draft -> review -> published workflow. Draft edits preserve the prior published snapshot. Optimistic revision checks reject concurrent/stale updates.
-- Revision history, restore-as-draft, review comments and archive/unarchive.
-- Server-backed screenshot storage; uploaded private images become publicly readable only while referenced by a published snapshot.
-- Handover guide creation/editing/revocation and copyable handover message.
-- Repeated-question queue with frequency counts and linkage to a suitable published answer.
-- Customer feedback review, content export, staff allowlist/role management and audit log.
-- In-app Arabic team usage guide.
+The platform includes illustrated answers, image focus overlays, Arabic search, repeated-question tracking, customer feedback, revision history, audit history, per-customer printable handovers, XLSX export and team PDF print layouts. Exports include private editorial information and stay within the team. Excel includes image references; it does not embed image binaries or replace a database/media backup.
 
-## Content boundary
+## Content and verification boundaries
 
-The initial dataset has five screenshot-backed articles using two genuine authorized Demo screenshots. They document opening general sales screens, locating item search and totals, and preparing a support question. No transaction was saved, no ERP records were modified, and no financial or inventory rule was qualified by those captures.
+- 467 private catalog drafts and five separately published seed articles (472 shipped articles).
+- 154 genuine screenshot assets: 127 current read-only native captures, 25 historical registry images and two original sales-form assets.
+- 349 catalog articles have at least one image reference; 260 have a reference in every step. A reference may illustrate the same form across steps; it is not proof those steps or financial outcomes were executed.
+- All 71 individual report criteria forms are captured, individually reviewed and linked to their exact report article. No report output was run or qualified.
+- 118 catalog articles have no image; 207 lack at least one step image. Publication remains five seed articles; drafts are not silently exposed to customers.
+- Written guidance maps 106 active screens, 71 reports, eleven modules and six activities. Twenty-one bounded source business rules retain exact source hashes; all hashes were rechecked against ERP source.
+- Independent team roles/password login, scoped customer packs, revocation/delete, XLSX and browser PDF layouts are implemented locally. Website hosting remains the final, deferred stage; no separate ERP/EduPro Site was changed.
 
-Restaurant, Construction, Concrete, Car Showroom and HR are supported content categories, not claims of completed coverage. General-sales procedures are scoped to `general`; only the generic support-intake guidance applies to all activities. Authors must publish verified, activity-appropriate procedures progressively. Finishing the ERP automation coverage is not a prerequisite for operating this platform.
+The importer preserves existing records and revisions. `scripts/add-live-ui-content.py` imports only the specifically reviewed native blank-modal captures with route/time/hash evidence. See [content provenance](docs/CONTENT_CATALOG.md), [current verification](docs/VERIFICATION.md), [team access](docs/TEAM_ACCESS.md) and `STATUS.json`.
 
-## Technology and source map
-
-- Vinext / React / TypeScript with the bundled Sites runtime integration preserved.
-- D1 for content, revisions, roles, packs, questions, feedback and audit records.
-- R2 for uploaded image bytes; fixed brand assets and initial screenshots under `public/assets`.
-- `lib/guide-model.ts`: validation, public types, activity/role rules and search normalization.
-- `lib/guide-server.ts`, `lib/guide-write.ts`: identity, database access, publication transactions and snapshot separation.
-- `app/api/admin/`: authenticated write/read operations; public API routes expose published data only.
-- `components/guide/`: customer library, article, photo viewer, feedback and print UI.
-- `components/admin/`: team workspace, editor, packs, media, staff and question queue.
-- `db/schema.ts`, `drizzle/`: schema and immutable sequential migrations.
-- `tests/`: model and local API integration/role verification.
-- `docs/`: architecture, operations and release verification.
-
-## Local verification
+## Checks
 
 ```text
-node node_modules/typescript/bin/tsc --noEmit
-node --experimental-strip-types --test tests/model.test.ts
-node tests/local-integration.mjs
-node tests/local-roles.mjs
+npm run typecheck
+npm test
+npm run format:check
+npm run lint
+node --experimental-strip-types tests/local-integration.mjs
+node --experimental-strip-types tests/local-roles.mjs
+npm run test:auth
+npm run test:customer
 ```
 
-Integration and role tests deliberately refuse external hosts and use the separate local preview database. They create test-owned records; role verification temporarily changes only the starter's local test identity and restores it in `finally`. Do not run these against a user session or hosted database. `scripts/clean-local-test-data.mjs` removes only explicitly named task-owned local QA records; read its SQL/evidence before use. No general data-deletion API is exposed.
+Loopback integration/auth/role checks create their own temporary staff identities and never replace the designated owner's password or role. Their content fixtures are archived after lifecycle checks. Local browser and server checks do not certify hosted D1/R2, public delivery or deployment.
 
-## Hosting
+## Deployment and handoff
 
-Publication is deferred at the user's explicit request. The original Sites identity remains in `.openai/hosting.json`; do not create a replacement Site. The intended audience is public customer read access plus authenticated, allowlisted team administration. Never expose the Site before hosted identity/secrets and server-side authorization are verified.
+Preserve the original Sites identity in `.openai/hosting.json`. Before publication, apply migrations through `0003_team_auth.sql`, configure server-only `GUIDE_RATE_SECRET`, provision the hosted owner through a reviewed operator procedure, and verify independent sign-in, guide revocation, storage and customer routes in the hosted environment. There is no public owner-bootstrap endpoint. GitHub Pages alone cannot run the application's server/D1/R2 features.
 
-Required hosted runtime secrets:
+Generate the source handoff with `python scripts/package-source.py`. See [operations](docs/OPERATIONS.md) and [GitHub handoff](docs/GITHUB_HANDOFF.md). Publishing remains deferred.
 
-- `GUIDE_BOOTSTRAP_EMAIL`: the designated owner's verified sign-in email. It is used only for initial owner creation and must never be copied into source or the browser bundle.
-- `GUIDE_RATE_SECRET`: random secret salt for feedback identifiers/rate limiting.
-
-Hosted D1 migrations, R2 provisioning, real identity, audience settings and delivery links still require deployment verification. The current local tests do not certify those external services.
-
-## Verification limits
-
-The build, TypeScript checks, seven model tests, eleven local lifecycle cases and four local role groups pass. Genuine screenshots and the earlier PDF pilot were visually inspected. A first customer-library DOM was observed in the browser; complete interactive desktop/mobile QA could not finish because browser control became unavailable. This remains explicitly pending, not a fabricated pass. See `docs/VERIFICATION.md` and `STATUS.json`.
-
-## Expanded screen and business FAQ catalog
-
-The local library contains **390 private editorial drafts**, preserving the original 107 and adding 283. The new batch maps 106 active inventoried ERP/HR screens and 71 individual ERP reports; the removed audit/history screen is excluded. There are **9 genuine screenshot assets** total, referenced in 19 catalog drafts where appropriate. Seven are historical QA UI examples, not successful business execution evidence. Most operational steps still need current screenshots and verification before customer publication.
-
-The answer library includes a searchable screen coverage map, module/activity/status filters, an illustrated-content filter and draft preview with accurate non-public status. On a fresh installation an owner/reviewer imports all shipped questions from the library button. Repeating import preserves existing content. See [catalog provenance and index](docs/CONTENT_CATALOG.md). No ERP source, live data or customer occurrence frequency is modified. The five existing public articles remain available; publishing is deferred.
-
-## GitHub handoff
-
-See [GitHub source handoff](docs/GITHUB_HANDOFF.md) for the exact stack, source layout, setup and storage/hosting boundaries. Repository: [mamdouhm7701-byte/plugin-soft-customer-guide](https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide) (private). Source upload is separate from website deployment; publishing remains deferred.
+The latest mobile/source-business pass is documented in docs/VERIFICATION.md. A dedicated guide Site remains the final stage; the separate ERP/EduPro Site must not be modified.

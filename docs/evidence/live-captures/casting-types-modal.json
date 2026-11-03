@@ -1,0 +1,9 @@
+{
+  "name": "live-casting-types-modal.png",
+  "capturedAt": "2026-11-03T10:30:43.200063300Z",
+  "route": "/castingTypes",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "57b10ff1c9bfc23ca818a98b5824fb44b7f6345594cbad1e88a34021a0e2d3bd",
+  "review": "Visually inspected native blank definition; no loading overlay or private records; no save performed."
+}

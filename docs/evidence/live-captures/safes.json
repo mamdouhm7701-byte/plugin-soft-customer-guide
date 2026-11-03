@@ -1,0 +1,9 @@
+{
+  "name": "live-safes-form.png",
+  "capturedAt": "2026-11-03T09:38:40.509925900Z",
+  "route": "/safes",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "f49cb57d54c0339b40c7fa3baacae1ce17c0644946c492ac1c5f54cce2e41477",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

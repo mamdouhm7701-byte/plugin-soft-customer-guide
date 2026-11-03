@@ -1,0 +1,9 @@
+{
+  "name": "live-account-groups-form.png",
+  "capturedAt": "2026-11-03T09:45:03.438432300Z",
+  "route": "/accountGroups",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "284ac9e374465fc2bf3c579975f51d1b292d745bcf34fff32c8822b749c0bdaa",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

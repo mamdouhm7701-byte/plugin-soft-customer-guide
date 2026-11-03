@@ -1,0 +1,9 @@
+{
+  "name": "live-storage-transfer-empty.png",
+  "capturedAt": "2026-11-03T11:05:42.870941700Z",
+  "route": "/storage-transfer/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "5b9e4dacc92562e6712d3670f800466bb79f70623afdae56477f018bc1ea7665",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

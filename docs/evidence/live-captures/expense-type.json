@@ -1,0 +1,9 @@
+{
+  "name": "live-expense-type-form.png",
+  "capturedAt": "2026-11-03T09:43:32.962236900Z",
+  "route": "/expense-type",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "4311a886ef6d32a17621432279748f885326e14f4a1c23aa48924a0acd409685",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

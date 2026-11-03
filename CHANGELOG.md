@@ -1,3 +1,7 @@
+# Latest continuation — 2026-11-03
+
+Completed the 71-report criteria image set, added 21 reviewed empty forms, attached curated original-FAQ references and retained explicit historical/transaction limits. Corrected operating-vehicle versus CarShowroom context and treasury opening-balance guidance. Clarified customer-facing business wording without changing formulas or source provenance. Made source generation preserve authored content/images; added reproducible coverage audit and complete paged readiness navigation with refresh. Local revisioned saves preserve user edits and publication snapshots. Hosting remains deferred.
+
 # Changes
 
 ## 1.0.0 - 2026-11-02
@@ -26,3 +30,41 @@
 - Added seven inspected, unmodified historical QA screenshots, attached only to matching UI contexts with dated UI-only captions. Nine unique screenshots now ship; 19 draft articles have applicable images.
 - Accurate draft preview labels replace the misleading published-version footer for unverified drafts. Shared publication requirements remain intact.
 - Extended the portable import/catalog package, provenance records and focused validation. ERP source/live state unchanged; publication remains deferred.
+
+## 2026-11-03 — Code review
+
+Split administrative screens, introduced consistent formatting, hardened asynchronous client loading and error handling, protected failed draft loads and added API regression coverage. See docs/CODE_REVIEW.md. No deployment or ERP change.
+
+## Human-readable export
+
+Replaced the user-facing JSON link with real Excel workbook download and an authenticated browser print/save-PDF view. Exports include draft status, full answers/steps and image references; PDF view includes available screenshots. Existing owner/reviewer restrictions remain.
+
+## Independent team access and activity handover
+
+Added password-based team sessions, owner-created accounts, one-use activation/reset, session revocation, self-password changes and generic activity handover links/print views. Retained existing content and legacy pack links. ChatGPT identity no longer grants team access. See docs/TEAM_ACCESS.md. Hosted rollout remains deferred.
+
+## Personalized customer handover
+
+Replaced primary activity-wide delivery UI with per-customer packs. Scoped customer navigation and print links remain in the pack; server-side article membership and revocation are enforced. Link possession remains the anonymous access model.
+
+## Customer revocation and deletion
+
+Closed anonymous global-library/article/print fallback after pack revocation. Customer navigation and APIs require a currently active guide. Added revision-checked guide deletion with audit preservation and a dedicated isolated customer-boundary check.
+
+## Illustrated historical UI supplement
+
+Added 36 private draft articles with 108 annotated image-step references across 18 additional reviewed historical ERP/HR screenshots. Catalog totals: 426 drafts, 55 illustrated drafts, 27 unique screenshots. Stable local-only import preserves user edits and publication state. No live capture or ERP mutation; current browser control is disabled.
+
+## Local completion pass — 2026-11-03
+
+Support sharing now selects an eligible active customer guide before copying an article URL; unscoped preview URLs are labeled for team use. Customer PDF article links retain the guide scope. Regression fixtures create their own UUID staff accounts rather than resetting the actual owner. Legacy anonymous-library/activity expectations were updated to fail closed. Default local launcher, framework and stop script use port 5174. Error text no longer claims a failed save could not have persisted.
+
+Added twenty illustrated private articles from ten visually reviewed current read-only native blank-modal screenshots, with route/time/hash evidence and append-only import. Current content is 446 drafts plus five bounded published seeds, 37 genuine screenshot assets and 75 illustrated catalog drafts. No ERP data mutations or source edits occurred. Eighteen pure checks, eleven lifecycle groups, four role groups, nine auth groups, revocation/delete regression, TypeScript, full-repository lint, formatting and production build passed. Local desktop/mobile sample and actual four-page customer PDF were visually checked. Publication and hosted verification remain deferred; draft transaction/business qualification remains pending.
+
+## Source business and mobile pass — 2026-11-03
+
+Current shipment: 467 catalog drafts + five seed articles, 53 genuine screenshot assets (26 current read-only captures), 122 illustrated catalog drafts. Twenty-one source business rules have exact source hashes and examples in `lib/source-business-rules.json`; the staff-only `/api/admin/business` feeds the searchable reference in Team Help. Rules distinguish source expectations, historical observations and current UI capture. Generic report troubleshooting remains generic; the specific stagnation explanation has its own article.
+
+Mobile changes: collapsible accessible navigation, visible logout, card presentation for answers, larger form controls, bounded scrollable dialogs, scoped reply selection and beforeunload protection for dirty edits. Local Chromium matrix covered eleven team tabs and three customer/login routes across 320/390/768/1280 widths (56 layout samples), without horizontal document overflow. Pack form, menu toggle and scoped reply selection exercised; screenshots visually reviewed. This is not a claim of physical iOS/Safari device testing.
+
+Twenty pure checks, TypeScript, ESLint and formatting passed. Catalog import replay and customer revocation regression passed. ERP source unchanged; no ERP saves, deletes or live mutation suites ran. Screenshots are native empty forms, not evidence of executed financial examples. User reaffirmed dedicated guide hosting and deferred site creation/publication until the final stage; the separate ERP/EduPro site was not touched.

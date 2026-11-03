@@ -1,0 +1,9 @@
+{
+  "name": "live-financial-transfer-empty.png",
+  "capturedAt": "2026-11-03T11:07:50.685897800Z",
+  "route": "/transfers-and-settlements/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "0ca7238bef9c6bbd85ce6d14afa23869c9fc24a9395ac5eb3f806388c2b67b7d",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

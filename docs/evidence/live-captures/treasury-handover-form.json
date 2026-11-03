@@ -1,0 +1,9 @@
+{
+  "name": "live-treasury-handover-empty.png",
+  "capturedAt": "2026-11-03T11:15:09.579888400Z",
+  "route": "/safe-transaction",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "1f9f386120f9497fec8c1c348a3dba01473eafa6961fa105644e9aa24ca0501d",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

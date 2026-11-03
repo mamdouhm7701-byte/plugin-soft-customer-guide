@@ -1,0 +1,9 @@
+{
+  "name": "live-concrete-review-empty.png",
+  "capturedAt": "2026-11-03T10:15:09.829316200Z",
+  "route": "/concrete-under-review/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "860351636c4dc0f89f21da0e0e3eef78685a684ba67086f7d46d80c5d7e408a5",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

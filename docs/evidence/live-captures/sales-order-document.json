@@ -1,0 +1,9 @@
+{
+  "name": "live-sales-order-empty.png",
+  "capturedAt": "2026-11-03T10:15:44.395380Z",
+  "route": "/sales-order/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "a1a6f501cf1494f754ba54f423da05a690a7be81b4b83f351fa39ef6956a3eb0",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

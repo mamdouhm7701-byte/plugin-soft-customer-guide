@@ -1,0 +1,9 @@
+{
+  "name": "live-contract-empty.png",
+  "capturedAt": "2026-11-03T10:16:25.917648900Z",
+  "route": "/contracts/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "7f2b60029cbc3ab60aa3b6fbcad1a64038560a29fee68d46c38b970550e80c4d",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

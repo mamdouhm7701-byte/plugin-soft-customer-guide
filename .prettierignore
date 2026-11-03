@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.next/
+.vinext/
+.wrangler/
+.sites-runtime/
+qa/
+work/
+outputs/
+vendor/
+components/ui/
+lib/*.json
+public/
+package-lock.json
+scripts/vite/
+scripts/connector-preview/

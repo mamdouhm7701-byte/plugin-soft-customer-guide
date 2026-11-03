@@ -1,24 +1,216 @@
 'use client';
-import {useRef,useState} from 'react';
-import {Archive,ArrowLeft,BookOpen,CheckCircle2,ClipboardList,Download,ExternalLink,FileClock,FileText,Image,LayoutDashboard,LogOut,MessageCircleQuestion,MessageSquare,Plus,Search,ShieldCheck,Users,X} from 'lucide-react';
-import {ACTIVITIES,MODULES,ROLE_LABELS,actionName,canEdit,canPublish,matchesSearch,activityName,moduleName,type StaffUser,type ArticleSummary,type Article} from '@/lib/guide-model';
-import {Brand,CopyButton,shortDate} from '@/components/guide/common';
-import {api,useResource,explain} from './api';
-import {ArticleEditor} from './ArticleEditor';
-import {MediaLibrary} from './MediaLibrary';
-import {PackManager} from './PackManager';
-import {StaffManager} from './StaffManager';
-import {Questions} from './Questions';
-import {TeamHelp} from './TeamHelp';
-import {CatalogCoverage} from './CatalogCoverage';
-type Tab='dashboard'|'articles'|'editor'|'media'|'packs'|'questions'|'feedback'|'staff'|'audit'|'help';
-const statusNames:Record<string,string>={draft:'مسودة',review:'بانتظار المراجعة',published:'منشور',archived:'مؤرشف'};
-export function AdminApp({user,initialTab='dashboard',initialId=''}:{user:StaffUser;initialTab?:string;initialId?:string}){const [tab,setTab]=useState<Tab>(initialTab as Tab),[editId,setEditId]=useState(initialId),[dirty,setDirty]=useState(false),[refresh,setRefresh]=useState(0);const nav=[{id:'dashboard',name:'نظرة عامة',icon:LayoutDashboard},{id:'articles',name:'مكتبة الإجابات',icon:BookOpen},{id:'packs',name:'تسليم العميل',icon:ClipboardList},{id:'questions',name:'أسئلة محتاجة شرح',icon:MessageCircleQuestion},{id:'feedback',name:'ملاحظات العملاء',icon:MessageSquare},{id:'help',name:'دليل استخدام الفريق',icon:BookOpen},...(canEdit(user.role)?[{id:'media',name:'مكتبة الصور',icon:Image}]:[]),...(canPublish(user.role)?[{id:'audit',name:'سجل الإجراءات',icon:FileClock}]:[]),...(user.role==='owner'?[{id:'staff',name:'الفريق والصلاحيات',icon:Users}]:[])];
- function navigate(next:Tab,id=''){if(dirty&&!confirm('فيه تعديلات غير محفوظة. تخرج من المسودة وتفقد التعديلات؟'))return;setDirty(false);setEditId(id);setTab(next);history.replaceState(null,'','/admin?tab='+next+(id?'&id='+id:''));window.scrollTo(0,0);}
- return <div className="admin-shell"><aside className="admin-sidebar"><Brand compact/><div className="admin-caption">مساحة التدريب والدعم</div><nav aria-label="إدارة الدليل">{nav.map(n=><button className={tab===n.id||(tab==='editor'&&n.id==='articles')?'active':''} key={n.id} onClick={()=>navigate(n.id as Tab)}><n.icon size={18}/>{n.name}</button>)}</nav><div className="admin-side-bottom"><span className="role-tag"><ShieldCheck size={15}/>{ROLE_LABELS[user.role]}</span><p>{user.displayName}</p><a href="/" target="_blank" rel="noreferrer"><ExternalLink size={14}/>فتح عرض العميل</a><a href="/signout-with-chatgpt?return_to=%2F" target="_top"><LogOut size={14}/>تسجيل الخروج</a></div></aside><div className="admin-body"><header className="admin-header"><div><span className="tiny-dot"/>منصة دليل العميل <span className="muted">/ {nav.find(n=>n.id===tab)?.name||(tab==='editor'?'تحرير شرح':'الإدارة')}</span></div><div className="inline-actions">{canEdit(user.role)&&<button className="button primary small" onClick={()=>navigate('editor')}><Plus size={15}/>شرح جديد</button>}<a className="button secondary small" href="/" target="_blank" rel="noreferrer">معاينة العميل ↗</a></div></header><main className="admin-main">{tab==='dashboard'&&<Dashboard onNavigate={navigate}/>} {tab==='articles'&&<ArticleList user={user} onEdit={id=>navigate('editor',id)}/>} {tab==='editor'&&canEdit(user.role)&&<ArticleEditor key={editId||'new'} id={editId} user={user} onDirty={setDirty} onSaved={id=>{setEditId(id);setRefresh(v=>v+1);history.replaceState(null,'','/admin?tab=editor&id='+id);}}/>} {tab==='media'&&canEdit(user.role)&&<><div className="section-title"><div><h2>مكتبة الصور الفعلية</h2><p className="muted">الصور المرفوعة تُخزّن على السيرفر، وليست على جهاز الموظف فقط.</p></div></div><MediaLibrary/></>} {tab==='packs'&&<PackManager/>} {tab==='questions'&&<Questions/>} {tab==='help'&&<TeamHelp/>} {tab==='feedback'&&<FeedbackList/>} {tab==='staff'&&user.role==='owner'&&<StaffManager/>} {tab==='audit'&&canPublish(user.role)&&<AuditLog/>}</main><footer className="admin-footer">Plugin Soft · إدارة دليل العميل · كل إجراء محفوظ حسب صلاحية الحساب</footer></div></div>;
+import { useState, useEffect } from 'react';
+import {
+  BookOpen,
+  ClipboardList,
+  ExternalLink,
+  FileClock,
+  Image,
+  LayoutDashboard,
+  LogOut,
+  Menu,
+  MessageCircleQuestion,
+  MessageSquare,
+  Plus,
+  ShieldCheck,
+  Users,
+} from 'lucide-react';
+import { ROLE_LABELS, canEdit, canPublish, type StaffUser } from '@/lib/guide-model';
+import { Brand } from '@/components/guide/common';
+import { ArticleEditor } from './ArticleEditor';
+import { MediaLibrary } from './MediaLibrary';
+import { AccountSettings } from './AccountSettings';
+import { PackManager } from './PackManager';
+import { StaffManager } from './StaffManager';
+import { Questions } from './Questions';
+import { TeamHelp } from './TeamHelp';
+import { Dashboard } from './Dashboard';
+import { ArticleList } from './ArticleList';
+import { FeedbackList } from './FeedbackList';
+import { AuditLog } from './AuditLog';
+type Tab =
+  | 'account'
+  | 'dashboard'
+  | 'articles'
+  | 'editor'
+  | 'media'
+  | 'packs'
+  | 'questions'
+  | 'feedback'
+  | 'staff'
+  | 'audit'
+  | 'help';
+export function AdminApp({
+  user,
+  initialTab = 'dashboard',
+  initialId = '',
+}: {
+  user: StaffUser;
+  initialTab?: string;
+  initialId?: string;
+}) {
+  const [tab, setTab] = useState<Tab>(initialTab as Tab),
+    [editId, setEditId] = useState(initialId),
+    [dirty, setDirty] = useState(false),
+    [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+    if (!dirty) return;
+    const protect = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    window.addEventListener('beforeunload', protect);
+    return () => window.removeEventListener('beforeunload', protect);
+  }, [dirty]);
+  const nav = [
+    { id: 'dashboard', name: 'نظرة عامة', icon: LayoutDashboard },
+    { id: 'articles', name: 'مكتبة الإجابات', icon: BookOpen },
+    { id: 'packs', name: 'تسليم العميل', icon: ClipboardList },
+    { id: 'questions', name: 'أسئلة محتاجة شرح', icon: MessageCircleQuestion },
+    { id: 'feedback', name: 'ملاحظات العملاء', icon: MessageSquare },
+    { id: 'help', name: 'دليل استخدام الفريق', icon: BookOpen },
+    { id: 'account', name: 'حسابي وكلمة السر', icon: ShieldCheck },
+    ...(canEdit(user.role) ? [{ id: 'media', name: 'مكتبة الصور', icon: Image }] : []),
+    ...(canPublish(user.role) ? [{ id: 'audit', name: 'سجل الإجراءات', icon: FileClock }] : []),
+    ...(user.role === 'owner' ? [{ id: 'staff', name: 'الفريق والصلاحيات', icon: Users }] : []),
+  ];
+  async function logout() {
+    if (dirty && !confirm('فيه تعديلات غير محفوظة. تخرج؟')) return;
+    const response = await fetch('/api/team/logout', {
+      method: 'POST',
+      headers: { Origin: location.origin },
+    });
+    if (response.ok) location.assign('/team/login');
+  }
+  function navigate(next: Tab, id = '') {
+    if (dirty && !confirm('فيه تعديلات غير محفوظة. تخرج من المسودة وتفقد التعديلات؟')) return;
+    setDirty(false);
+    setMenuOpen(false);
+    setEditId(id);
+    setTab(next);
+    history.replaceState(null, '', '/admin?tab=' + next + (id ? '&id=' + id : ''));
+    window.scrollTo(0, 0);
+  }
+  return (
+    <div className="admin-shell">
+      <aside className="admin-sidebar">
+        <div className="admin-nav-heading">
+          <Brand compact />
+          <button
+            className="button secondary admin-menu-toggle"
+            aria-expanded={menuOpen}
+            aria-controls="admin-navigation"
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            <Menu size={18} /> الأقسام
+          </button>
+        </div>
+        <div className="admin-caption">مساحة التدريب والدعم</div>
+        <nav
+          id="admin-navigation"
+          className={menuOpen ? 'is-open' : 'is-closed'}
+          aria-label="إدارة الدليل"
+        >
+          {nav.map((n) => (
+            <button
+              className={tab === n.id || (tab === 'editor' && n.id === 'articles') ? 'active' : ''}
+              aria-current={
+                tab === n.id || (tab === 'editor' && n.id === 'articles') ? 'page' : undefined
+              }
+              key={n.id}
+              onClick={() => navigate(n.id as Tab)}
+            >
+              <n.icon size={18} />
+              {n.name}
+            </button>
+          ))}
+        </nav>
+        <div className="admin-side-bottom">
+          <span className="role-tag">
+            <ShieldCheck size={15} />
+            {ROLE_LABELS[user.role]}
+          </span>
+          <p>{user.displayName}</p>
+          <a href="/" target="_blank" rel="noreferrer">
+            <ExternalLink size={14} />
+            فتح عرض العميل
+          </a>
+          <button className="button ghost small" onClick={logout}>
+            <LogOut size={14} />
+            تسجيل الخروج
+          </button>
+        </div>
+      </aside>
+      <div className="admin-body">
+        <header className="admin-header">
+          <div>
+            <span className="tiny-dot" />
+            منصة دليل العميل{' '}
+            <span className="muted">
+              /{' '}
+              {nav.find((n) => n.id === tab)?.name || (tab === 'editor' ? 'تحرير شرح' : 'الإدارة')}
+            </span>
+          </div>
+          <div className="inline-actions">
+            <button
+              className="icon-button admin-mobile-logout"
+              onClick={logout}
+              aria-label="تسجيل الخروج"
+              title="تسجيل الخروج"
+            >
+              <LogOut size={18} />
+            </button>
+            {canEdit(user.role) && (
+              <button className="button primary small" onClick={() => navigate('editor')}>
+                <Plus size={15} />
+                شرح جديد
+              </button>
+            )}
+            <a className="button secondary small" href="/" target="_blank" rel="noreferrer">
+              معاينة العميل ↗
+            </a>
+          </div>
+        </header>
+        <main className="admin-main">
+          {tab === 'dashboard' && <Dashboard onNavigate={navigate} />}{' '}
+          {tab === 'articles' && (
+            <ArticleList user={user} onEdit={(id) => navigate('editor', id)} />
+          )}{' '}
+          {tab === 'editor' && canEdit(user.role) && (
+            <ArticleEditor
+              key={editId || 'new'}
+              id={editId}
+              user={user}
+              onDirty={setDirty}
+              onSaved={(id) => {
+                setEditId(id);
+                history.replaceState(null, '', '/admin?tab=editor&id=' + id);
+              }}
+            />
+          )}{' '}
+          {tab === 'media' && canEdit(user.role) && (
+            <>
+              <div className="section-title">
+                <div>
+                  <h2>مكتبة الصور الفعلية</h2>
+                  <p className="muted">
+                    الصور المرفوعة تُخزّن على السيرفر، وليست على جهاز الموظف فقط.
+                  </p>
+                </div>
+              </div>
+              <MediaLibrary />
+            </>
+          )}{' '}
+          {tab === 'packs' && <PackManager />} {tab === 'questions' && <Questions />}{' '}
+          {tab === 'account' && <AccountSettings user={user} />} {tab === 'help' && <TeamHelp />}{' '}
+          {tab === 'feedback' && <FeedbackList />}{' '}
+          {tab === 'staff' && user.role === 'owner' && <StaffManager />}{' '}
+          {tab === 'audit' && canPublish(user.role) && <AuditLog />}
+        </main>
+        <footer className="admin-footer">
+          Plugin Soft · إدارة دليل العميل · كل إجراء محفوظ حسب صلاحية الحساب
+        </footer>
+      </div>
+    </div>
+  );
 }
-function Dashboard({onNavigate}:{onNavigate:(t:Tab)=>void}){const r=useResource<{articles:{total:number;published:number;review:number;draft:number};packs:{total:number;active:number};feedback:{total:number;needs_attention:number}}>('dashboard');return <section><div className="welcome-heading"><span className="eyebrow">معرفة الفريق، بتخدم العميل</span><h1>كل سؤال متكرر فرصة لشرح أوضح.</h1><p>جهّز المحتوى، راجعه، وسلّم العميل مرجع يقدر يرجع له بعد التدريب.</p></div>{r.error&&<p className="error-line">{r.error}</p>}<div className="metrics-grid"><div className="metric-panel"><span>شروحات منشورة</span><strong>{r.data?.articles.published??'—'}</strong><small>متاحة للعميل مباشرة</small></div><div className="metric-panel"><span>بانتظار المراجعة</span><strong>{r.data?.articles.review??'—'}</strong><small>مسودات لم تظهر للعميل بعد</small></div><div className="metric-panel"><span>أدلة تسليم فعّالة</span><strong>{r.data?.packs.active??'—'}</strong><small>روابط مخصصة بعد التدريب</small></div><div className="metric-panel"><span>ملاحظات تحتاج متابعة</span><strong>{r.data?.feedback.needs_attention??'—'}</strong><small>العميل اختار «محتاج توضيح»</small></div></div><div className="dashboard-actions"><button className="panel action-panel" onClick={()=>onNavigate('articles')}><BookOpen size={26}/><h3>رد على السؤال برابط</h3><p>ابحث عن السؤال وانسخ الرد مع الشرح المصوّر.</p><span>فتح مكتبة الإجابات ←</span></button><button className="panel action-panel" onClick={()=>onNavigate('packs')}><ClipboardList size={26}/><h3>اقفل التدريب بدليل واضح</h3><p>اختَر النشاط والأقسام، وجهّز رابط ورسالة تسليم.</p><span>تجهيز دليل العميل ←</span></button><button className="panel action-panel" onClick={()=>onNavigate('questions')}><MessageCircleQuestion size={26}/><h3>حوّل التكرار لأولوية</h3><p>سجّل الأسئلة الناقصة وحدّد اللي بيتكرر أكتر.</p><span>الأسئلة المطلوب توثيقها ←</span></button></div><div className="soft-note">المكتبة اتوسعت لتشمل إرشادات وأسئلة بيزنس للشاشات والتقارير. المسودات منفصلة عن خمسة شروحات منشورة موثقة للشاشات العامة. افتح مكتبة الإجابات للاطلاع عليها. إضافة نشاط جديد للمنصة لا تعني إن كل شاشاته اتغطّت؛ انشر فقط الإجراء اللي اتراجع فعلًا.</div></section>;}
-type AdminSummary=ArticleSummary&{status:string;archived:boolean;hasPublished:boolean;publishedRevision:number|null;updatedAt:string};
-function ArticleList({user,onEdit}:{user:StaffUser;onEdit:(id:string)=>void}){const r=useResource<{articles:AdminSummary[];limit:number}>('articles'),[q,setQ]=useState(''),[status,setStatus]=useState('all'),[activity,setActivity]=useState('all'),[module,setModule]=useState('all'),[imagesOnly,setImagesOnly]=useState(false),[shown,setShown]=useState(30),[reply,setReply]=useState<Article|null>(null),[replyError,setReplyError]=useState(''),[loadingCatalog,setLoadingCatalog]=useState(false),[catalogMessage,setCatalogMessage]=useState(''),dialog=useRef<HTMLDialogElement>(null);const list=(r.data?.articles||[]).filter(a=>matchesSearch(a,q)&&(status==='all'||a.status===status)&&(activity==='all'||a.activities.includes('all')||a.activities.includes(activity))&&(module==='all'||a.module===module)&&(!imagesOnly||!!a.image));async function importCatalog(){setLoadingCatalog(true);setCatalogMessage('');try{const result=await api<{inserted:number;skipped:number;total:number}>('catalog',{method:'POST',body:'{}'});setCatalogMessage(`تمت إضافة ${result.inserted} إجابة كمسودات، و${result.skipped} موجودة بالفعل. الإجمالي ${result.total}. الصور والتحقق مطلوبان قبل النشر.`);r.reload();}catch(e){setCatalogMessage(explain(e));}finally{setLoadingCatalog(false);}}async function openReply(id:string){setReply(null);setReplyError('');dialog.current?.showModal();try{const response=await fetch('/api/articles/'+id);const d=await response.json() as Article&{error?:string};if(!response.ok)throw Error(d.error);setReply(d);}catch(e){setReplyError(explain(e));}}return <section><div className="section-title"><div><h2>مكتبة الإجابات</h2><p className="muted">رابط واحد لكل شرح. تعديل المسودة لا يغيّر نسخة العميل قبل النشر.</p></div>{canPublish(user.role)&&<div className="inline-actions"><button className="button primary small" disabled={loadingCatalog} onClick={importCatalog}>{loadingCatalog?'جارٍ تحميل الحزمة…':'إضافة كل الأسئلة المتاحة'}</button><a className="button secondary small" href="/api/admin/export" download><Download size={16}/>نسخة من المحتوى</a></div>}</div>{canEdit(user.role)&&<CatalogCoverage onEdit={onEdit}/>} {catalogMessage&&<p className="inline-message" role="status">{catalogMessage}</p>}<div className="admin-filters"><label className="search-control"><Search size={18}/><input type="search" aria-label="البحث في مكتبة الفريق" placeholder="دَوّر بصياغة السؤال أو الكود…" value={q} onChange={e=>{setQ(e.target.value);setShown(30);}}/></label><select aria-label="حالة الشرح" value={status} onChange={e=>setStatus(e.target.value)}><option value="all">كل الحالات</option>{Object.entries(statusNames).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select><select aria-label="نشاط الشرح" value={activity} onChange={e=>setActivity(e.target.value)}><option value="all">كل الأنشطة</option>{ACTIVITIES.map(a=><option value={a.id} key={a.id}>{a.name}</option>)}</select><select aria-label="قسم الشرح" value={module} onChange={e=>{setModule(e.target.value);setShown(30);}}><option value="all">كل الأقسام</option>{MODULES.map(m=><option value={m.id} key={m.id}>{m.name}</option>)}</select><label><input type="checkbox" checked={imagesOnly} onChange={e=>{setImagesOnly(e.target.checked);setShown(30);}}/> بصور فعلية</label></div>{r.error&&<p className="error-line" role="alert">{r.error}</p>}<p className="list-count" role="status">{list.length} شروحات{r.data&&r.data.articles.length>=r.data.limit?' · معروض أحدث ١٠٠٠ شرح':''}</p>{r.loading?<p>جارٍ تحميل الشروحات…</p>:<div className="table-wrap"><table className="data-table articles-table"><thead><tr><th>السؤال</th><th>النشاط والقسم</th><th>حالة المسودة</th><th>الإجراء</th></tr></thead><tbody>{list.slice(0,shown).map(a=><tr key={a.id}><td><strong>{a.title||'مسودة بدون عنوان'}</strong><small><bdi>{a.code}</bdi> · {a.stepCount} خطوات · {shortDate(a.updatedAt)}</small></td><td>{a.activities.includes('all')?'كل الأنشطة':a.activities.map(activityName).join('، ')}<small>{moduleName(a.module)}</small></td><td><span className={'status-tag '+a.status}>{statusNames[a.status]||a.status}</span>{a.hasPublished&&a.status!=='published'&&<small>نسخة منشورة ما زالت متاحة</small>}</td><td><div className="table-actions">{canEdit(user.role)&&<button className="button secondary small" onClick={()=>onEdit(a.id)}>تحرير / مراجعة</button>}{a.hasPublished&&<><button className="button secondary small" onClick={()=>openReply(a.id)}>الرد والرابط</button><a className="icon-button" href={'/help/'+a.id} target="_blank" rel="noreferrer" aria-label={'فتح '+a.title}><ExternalLink size={16}/></a></>}</div></td></tr>)}</tbody></table>{!list.length&&<div className="empty-state compact"><p>لا توجد شروحات مطابقة.</p></div>}</div>}{list.length>shown&&<button className="button secondary" onClick={()=>setShown(v=>v+30)}>عرض المزيد</button>}<dialog ref={dialog} className="reply-dialog"><div className="dialog-heading"><h2>الرد الجاهز للعميل</h2><button className="icon-button" aria-label="إغلاق الرد" onClick={()=>dialog.current?.close()}><X size={19}/></button></div>{replyError?<p className="error-line">{replyError}</p>:reply?<><h3>{reply.content.title}</h3><textarea className="reply-text" readOnly rows={7} value={reply.content.reply+'\n'+(typeof window==='undefined'?'':location.origin)+'/help/'+reply.id}/><div className="inline-actions"><CopyButton label="نسخ الرد والرابط" className="button primary" text={()=>reply.content.reply+'\n'+location.origin+'/help/'+reply.id}/><CopyButton text={()=>location.origin+'/help/'+reply.id}/></div><p className="muted">انسخ الرد وابعتُه في قناة الدعم. الموقع لا يرسل رسائل للعميل تلقائيًا.</p></>:<p>جارٍ تحميل الرد المنشور…</p>}</dialog></section>;}
-function FeedbackList(){const r=useResource<{feedback:{id:string;article_id:string;vote:string;comment:string;resolved:number;created_at:string}[]}>('feedback'),[error,setError]=useState(''),[busy,setBusy]=useState(false);async function resolve(id:string,resolved:boolean){setBusy(true);setError('');try{await api('feedback/'+id,{method:'POST',body:JSON.stringify({resolved})});r.reload();}catch(e){setError(explain(e));}finally{setBusy(false);}}return <section><div className="section-title"><div><h2>ملاحظات العملاء</h2><p className="muted">تقييمات وصلت فعلًا من صفحات الشرح. تحديث الشرح هو الخطوة التالية عند تكرار نفس الملاحظة.</p></div></div>{(error||r.error)&&<p className="error-line">{error||r.error}</p>}{r.data?.feedback.length?<div className="feedback-list">{r.data.feedback.map(f=><article className="panel" key={f.id}><div className="section-title"><span className={'status-tag '+(f.vote==='yes'?'published':'review')}>{f.vote==='yes'?'الشرح واضح':'محتاج توضيح'}</span><small>{shortDate(f.created_at)}</small></div><a href={'/help/'+f.article_id} target="_blank" rel="noreferrer" className="text-link">فتح الشرح المرتبط ↗</a><p>{f.comment||'لم تُضف ملاحظة مكتوبة.'}</p><button className="button secondary small" disabled={busy} onClick={()=>resolve(f.id,!f.resolved)}>{f.resolved?'إعادة فتح المتابعة':'تمت المراجعة'}</button>{!!f.resolved&&<span className="success-line small">تمت متابعة الملاحظة</span>}</article>)}</div>:<div className="empty-state"><MessageSquare size={32}/><h3>لسه مفيش تقييمات</h3><p>هتظهر هنا لما العميل يقيّم شرحًا أو يطلب توضيح.</p></div>}</section>;}
-function AuditLog(){const r=useResource<{logs:{action:string;entity_id:string;detail:string;created_at:string}[]}>('audit');return <section><div className="section-title"><h2>سجل الإجراءات</h2><span className="muted">أحدث ١٠٠ إجراء</span></div>{r.error&&<p className="error-line">{r.error}</p>}<div className="table-wrap"><table className="data-table"><thead><tr><th>الإجراء</th><th>المرجع</th><th>التفاصيل</th><th>التاريخ</th></tr></thead><tbody>{r.data?.logs.map((l,i)=><tr key={i}><td>{actionName(l.action)}</td><td><bdi>{l.entity_id}</bdi></td><td>{l.detail||'—'}</td><td>{shortDate(l.created_at)}</td></tr>)}</tbody></table></div></section>;}

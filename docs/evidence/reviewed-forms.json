@@ -1,0 +1,353 @@
+{
+  "forms": [
+    {
+      "name": "live-customer-receipt-empty.png",
+      "screenRoute": "#/collection-transactions",
+      "captureRoute": "/collection-transactions/new",
+      "label": "سند قبض عميل",
+      "fields": [
+        "التاريخ",
+        "العميل",
+        "رصيد العميل",
+        "مندوب",
+        "القيمة",
+        "طريقة الدفع",
+        "الملاحظات"
+      ],
+      "sha256": "7ed3c3fde778cb3ca79e224bf3bdcdad7845cceceb27788a2a446a39235a6b06",
+      "source": "docs/evidence/live-captures/customer-receipt-form.json"
+    },
+    {
+      "name": "live-supplier-payment-empty.png",
+      "screenRoute": "#/payment-transactions",
+      "captureRoute": "/payment-transactions/new",
+      "label": "سند صرف مورد",
+      "fields": [
+        "التاريخ",
+        "المورد",
+        "رصيد المورد",
+        "مندوب",
+        "القيمة",
+        "طريقة الدفع",
+        "الملاحظات"
+      ],
+      "sha256": "4ae6f97806896cf191b24cbaff2b9f3bb19dda7eed3237d90f3d3baca97fcc61",
+      "source": "docs/evidence/live-captures/supplier-payment-form.json"
+    },
+    {
+      "name": "live-income-movement-empty.png",
+      "screenRoute": "#/income-transactions",
+      "captureRoute": "/income-transactions/new",
+      "label": "حركة إيراد",
+      "fields": [
+        "التاريخ",
+        "أنواع الإيرادات",
+        "دليل الحسابات",
+        "القيمة",
+        "طريقة الدفع",
+        "الملاحظات"
+      ],
+      "sha256": "ab40c988a0dd4e77bfdf3321b902a19d237215eddfd820e38ab9839a2db1f9e3",
+      "source": "docs/evidence/live-captures/income-movement-form.json"
+    },
+    {
+      "name": "live-expense-movement-empty.png",
+      "screenRoute": "#/expense-transactions",
+      "captureRoute": "/expense-transactions/new",
+      "label": "حركة مصروف",
+      "fields": [
+        "التاريخ",
+        "أنواع المصروفات",
+        "دليل الحسابات",
+        "المرجع",
+        "القيمة",
+        "طريقة الدفع",
+        "خاضع للضريبة",
+        "الملاحظات"
+      ],
+      "sha256": "898bd2be18df4f3594367d06433cbe94d532ab3088d9cc89a338a4d3a174fd28",
+      "source": "docs/evidence/live-captures/expense-movement-form.json"
+    },
+    {
+      "name": "live-storage-transfer-empty.png",
+      "screenRoute": "#/storage-transfer",
+      "captureRoute": "/storage-transfer/new",
+      "label": "تحويل بين مخازن",
+      "fields": [
+        "التاريخ",
+        "توقيت الحركة",
+        "من مخزن",
+        "إلى مخزن",
+        "الأصناف",
+        "الوحدة",
+        "الكمية"
+      ],
+      "sha256": "5b9e4dacc92562e6712d3670f800466bb79f70623afdae56477f018bc1ea7665",
+      "source": "docs/evidence/live-captures/storage-transfer-form.json"
+    },
+    {
+      "name": "live-damage-adjustment-empty.png",
+      "screenRoute": "#/damage-adjustment",
+      "captureRoute": "/damage-adjustment/new",
+      "label": "تسوية توالف",
+      "fields": [
+        "التاريخ",
+        "المخزن",
+        "الأصناف",
+        "الوحدة",
+        "الكمية",
+        "الملاحظات"
+      ],
+      "sha256": "ef374ede827c42e62219deacefa98bc63fb20aa9ebefca71e12ea53be9e4893b",
+      "source": "docs/evidence/live-captures/damage-adjustment-form.json"
+    },
+    {
+      "name": "live-shortage-adjustment-empty.png",
+      "screenRoute": "#/shortage-adjustment",
+      "captureRoute": "/shortage-adjustment/new",
+      "label": "تسوية عجز",
+      "fields": [
+        "التاريخ",
+        "المخزن",
+        "الأصناف",
+        "الوحدة",
+        "الكمية",
+        "الملاحظات"
+      ],
+      "sha256": "c6380c8271f0599c030e91982c376b6659d704a3ba0baa701e2f1ea3c4089972",
+      "source": "docs/evidence/live-captures/shortage-adjustment-form.json"
+    },
+    {
+      "name": "live-overflow-adjustment-empty.png",
+      "screenRoute": "#/overflow-adjustment",
+      "captureRoute": "/overflow-adjustment/new",
+      "label": "تسوية فائض",
+      "fields": [
+        "التاريخ",
+        "المخزن",
+        "الأصناف",
+        "الوحدة",
+        "الكمية",
+        "الملاحظات"
+      ],
+      "sha256": "3a287e63dfb7a4bf45f6f505ceaf1d976de15d8ea2627f331e80298b06280924",
+      "source": "docs/evidence/live-captures/overflow-adjustment-form.json"
+    },
+    {
+      "name": "live-inventory-empty.png",
+      "screenRoute": "#/inventory",
+      "captureRoute": "/inventory/new",
+      "label": "محضر جرد",
+      "fields": [
+        "التاريخ",
+        "تاريخ الإغلاق",
+        "المخزن",
+        "الفئة",
+        "الباركود",
+        "الرصيد الدفتري",
+        "الرصيد الفعلي"
+      ],
+      "sha256": "15b8d2d6b54c2d50e59b9c7b6192f3be6f34493ac8005868c4bf310acf1d8637",
+      "source": "docs/evidence/live-captures/inventory-form.json"
+    },
+    {
+      "name": "live-financial-transfer-empty.png",
+      "screenRoute": "#/transfers-and-settlements",
+      "captureRoute": "/transfers-and-settlements/new",
+      "label": "تحويلات وتسويات",
+      "fields": [
+        "التاريخ",
+        "المرجع",
+        "القيمة",
+        "من (دائن)",
+        "إلى (مدين)",
+        "خزينة",
+        "البنك",
+        "العميل",
+        "المورد"
+      ],
+      "sha256": "0ca7238bef9c6bbd85ce6d14afa23869c9fc24a9395ac5eb3f806388c2b67b7d",
+      "source": "docs/evidence/live-captures/financial-transfer-form.json"
+    },
+    {
+      "name": "live-item-empty.png",
+      "screenRoute": "#/Items",
+      "captureRoute": "/Items/new",
+      "label": "تعريف صنف",
+      "fields": [
+        "الكود",
+        "الاسم العربي",
+        "الفئة",
+        "الوحدة الأساسية",
+        "الباركود",
+        "سعر البيع",
+        "المخزن",
+        "الرصيد الافتتاحي"
+      ],
+      "sha256": "dd5f4b9ad7de6d21d35469d90e3a116355fd685f29a25b2ac23e0419fa9e25b8",
+      "source": "docs/evidence/live-captures/item-form.json"
+    },
+    {
+      "name": "live-supplier-empty.png",
+      "screenRoute": "#/suppliers",
+      "captureRoute": "/suppliers/new",
+      "label": "تعريف مورد",
+      "fields": [
+        "الكود",
+        "الاسم العربي",
+        "الرقم الضريبي",
+        "المنطقة",
+        "رقم الحساب",
+        "المندوب",
+        "التصنيف",
+        "فعال"
+      ],
+      "sha256": "298de420801ae5bbeca34551379900174141ec3ec38c0a1b36e3954963a34f23",
+      "source": "docs/evidence/live-captures/supplier-form.json"
+    },
+    {
+      "name": "live-vehicle-empty.png",
+      "screenRoute": "#/cars",
+      "captureRoute": "/cars/new",
+      "label": "تعريف سيارة تشغيل",
+      "fields": [
+        "الكود",
+        "الاسم العربي",
+        "نوع السيارة",
+        "رقم السيارة",
+        "السائق",
+        "تاريخ انتهاء الاستمارة",
+        "تاريخ انتهاء التأمين"
+      ],
+      "sha256": "6b0d65bdacd4d6f5743a0c422670b691068075db78176697921f3adcd8900f15",
+      "source": "docs/evidence/live-captures/vehicle-form.json"
+    },
+    {
+      "name": "live-price-list-empty.png",
+      "screenRoute": "#/price-list",
+      "captureRoute": "/price-list/new",
+      "label": "قائمة أسعار",
+      "fields": [
+        "الكود",
+        "التاريخ",
+        "اسم القائمة (عربي)",
+        "اسم القائمة (إنجليزي)",
+        "الملاحظات",
+        "الأصناف"
+      ],
+      "sha256": "7f1b7767a80aad8f656600f8474cbb773cf5919a28581dc8d3735ef4b953e363",
+      "source": "docs/evidence/live-captures/price-list-form.json"
+    },
+    {
+      "name": "live-branch-empty.png",
+      "screenRoute": "#/branches",
+      "captureRoute": "/branches/new",
+      "label": "تعريف فرع",
+      "fields": [
+        "الكود",
+        "الاسم العربي",
+        "العنوان",
+        "الجوال",
+        "نوع النشاط",
+        "السجل التجاري",
+        "إعدادات الفرع"
+      ],
+      "sha256": "4ceb334a4e8e6894482d8aff7f579f6b7ee5a6f785a33d29469bdc13cf1ac37f",
+      "source": "docs/evidence/live-captures/branch-form.json"
+    },
+    {
+      "name": "live-table-empty.png",
+      "screenRoute": "#/tables",
+      "captureRoute": "/tables",
+      "label": "تعريف طاولة",
+      "fields": [
+        "رقم الطاولة",
+        "عدد الأفراد",
+        "الملاحظات"
+      ],
+      "sha256": "34ab7980aa7b2afc1da7c9a933fe386fd323db05703f795290d5317e553ee007",
+      "source": "docs/evidence/live-captures/table-form.json"
+    },
+    {
+      "name": "live-user-empty.png",
+      "screenRoute": "#/users",
+      "captureRoute": "/users/new",
+      "label": "تعريف مستخدم",
+      "fields": [
+        "الكود",
+        "الاسم بالكامل",
+        "اسم المستخدم",
+        "الفروع",
+        "أعلى نسبة خصم",
+        "نسخ الصلاحيات"
+      ],
+      "sha256": "efdd2ab2a686eabd8e6b0bab5bc132cec2ade13949090bf48ee05159a951ddbf",
+      "source": "docs/evidence/live-captures/user-form.json"
+    },
+    {
+      "name": "live-discount-type-empty.png",
+      "screenRoute": "#/discount-types",
+      "captureRoute": "/discount-types/new",
+      "label": "نوع خصم",
+      "fields": [
+        "الكود",
+        "الاسم العربي",
+        "النسبة",
+        "الكود السري",
+        "فعال",
+        "التأثير في الفواتير المعلقة"
+      ],
+      "sha256": "8f98b5d44eccec1b4d4387d95c2e97500e9c7180f08036f65376e2b19b190154",
+      "source": "docs/evidence/live-captures/discount-type-form.json"
+    },
+    {
+      "name": "live-treasury-handover-empty.png",
+      "screenRoute": "#/safe-transaction",
+      "captureRoute": "/safe-transaction",
+      "label": "استلام خزينة",
+      "fields": [
+        "التاريخ",
+        "خزينة",
+        "المستخدم",
+        "الرصيد الافتتاحي"
+      ],
+      "sha256": "1f9f386120f9497fec8c1c348a3dba01473eafa6961fa105644e9aa24ca0501d",
+      "source": "docs/evidence/live-captures/treasury-handover-form.json"
+    },
+    {
+      "name": "live-customer-empty.png",
+      "screenRoute": "#/customers",
+      "captureRoute": "/customers/new",
+      "label": "تعريف عميل",
+      "fields": [
+        "الكود",
+        "الاسم العربي",
+        "المنطقة",
+        "قائمة الأسعار",
+        "رقم الحساب",
+        "المندوب",
+        "الحد الائتماني",
+        "فعال"
+      ],
+      "sha256": "c2b593b48e923f12873a436e35723c527382146bb263c471b0552852f6615e78",
+      "source": "docs/evidence/live-captures/customer-form.json"
+    },
+    {
+      "name": "live-driver-empty.png",
+      "screenRoute": "#/drivers",
+      "captureRoute": "/drivers/new",
+      "label": "تعريف سائق",
+      "fields": [
+        "الكود",
+        "الاسم العربي",
+        "رقم الهوية",
+        "رقم الجوال",
+        "طبيعة السائق",
+        "السيارة"
+      ],
+      "sha256": "5063893e8c460e1fd27e3338fb2b86a23704bf2532ce7067bb5a62a1630d8515",
+      "source": "docs/evidence/live-captures/driver-form.json"
+    }
+  ],
+  "scope": "Read-only UI reference; all forms individually reviewed, no transactions executed."
+}

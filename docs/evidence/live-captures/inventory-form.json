@@ -1,0 +1,9 @@
+{
+  "name": "live-inventory-empty.png",
+  "capturedAt": "2026-11-03T11:07:30.517803800Z",
+  "route": "/inventory/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "15b8d2d6b54c2d50e59b9c7b6192f3be6f34493ac8005868c4bf310acf1d8637",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "live-driver-empty.png",
+  "capturedAt": "2026-11-03T11:31:29.794300800Z",
+  "route": "/drivers/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "5063893e8c460e1fd27e3338fb2b86a23704bf2532ce7067bb5a62a1630d8515",
+  "review": "Visually reviewed: native blank form, only generic defaults; no save, no customer/employee records."
+}

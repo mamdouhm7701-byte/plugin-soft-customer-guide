@@ -1,0 +1,9 @@
+{
+  "name": "live-main-dealer-modal.png",
+  "capturedAt": "2026-11-03T10:30:51.449980200Z",
+  "route": "/mainDealer/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "d5226b1a6e52289bc29ccd2e4139c4888a6a779b1e9fc02d5e7aa09d578770ec",
+  "review": "Visually inspected native blank definition; no loading overlay or private records; no save performed."
+}

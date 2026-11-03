@@ -1,0 +1,9 @@
+{
+  "name": "live-agents-empty.png",
+  "capturedAt": "2026-11-03T10:34:29.531348300Z",
+  "route": "/agents/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "1a02afa5410520fdb48ee7a3df3c65a26a3a0403499f001e8a9b63f6b2de3e5d",
+  "review": "Visually inspected native blank definition; no loading overlay or private records; no save performed."
+}

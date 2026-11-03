@@ -1,0 +1,9 @@
+{
+  "name": "live-purchase-order-empty.png",
+  "capturedAt": "2026-11-03T10:10:00.695885300Z",
+  "route": "/purchOrder/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "66143ccbe7ca8edf4ee1c837c77d166a8868f66a22fd37f56598ccec139106d5",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

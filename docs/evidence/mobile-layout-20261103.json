@@ -1,0 +1,292 @@
+{
+  "date": "2026-11-03",
+  "environment": "loopback Chromium responsive emulation",
+  "samples": [
+    {
+      "overflow": false,
+      "tab": "dashboard",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "articles",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "editor",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "packs",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "questions",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "feedback",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "media",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "staff",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "audit",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "account",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "help",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "tab": "dashboard",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "articles",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "editor",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "packs",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "questions",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "feedback",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "media",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "staff",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "audit",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "account",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "help",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "tab": "dashboard",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "articles",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "editor",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "packs",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "questions",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "feedback",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "media",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "staff",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "audit",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "account",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "help",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "tab": "dashboard",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "articles",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "editor",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "packs",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "questions",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "feedback",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "media",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "staff",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "audit",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "account",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "tab": "help",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "customerPage": "guide",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "customerPage": "article",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "customerPage": "login",
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "customerPage": "guide",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "customerPage": "article",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "customerPage": "login",
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "customerPage": "guide",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "customerPage": "article",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "customerPage": "login",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "customerPage": "guide",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "customerPage": "article",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "customerPage": "login",
+      "width": 1280
+    }
+  ],
+  "interactions": [
+    "navigation toggle",
+    "new customer pack form opened",
+    "published reply guide selection and guide-scoped URL"
+  ],
+  "physicalDevicesTested": false
+}

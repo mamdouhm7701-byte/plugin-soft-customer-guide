@@ -1,0 +1,9 @@
+{
+  "name": "live-banks-form.png",
+  "capturedAt": "2026-11-03T09:31:11.350464500Z",
+  "route": "/banks",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "8262d728ebd21bd3f518a79217fd361c49635645141b3a2c27fca7c8179b9672",
+  "review": "Visually reviewed: blank modal, no customer records; navigation/form only; no save or ERP data mutation."
+}

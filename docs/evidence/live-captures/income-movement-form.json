@@ -1,0 +1,9 @@
+{
+  "name": "live-income-movement-empty.png",
+  "capturedAt": "2026-11-03T10:59:32.225853300Z",
+  "route": "/income-transactions/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "ab40c988a0dd4e77bfdf3321b902a19d237215eddfd820e38ab9839a2db1f9e3",
+  "review": "Individually visually reviewed: rendered blank native form, generic defaults only; no customer records, no save. Validation decoration may be visible; it is not evidence of a save attempt or business execution."
+}

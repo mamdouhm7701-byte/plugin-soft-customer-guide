@@ -2,9 +2,9 @@
 
 ## Data flow
 
-Customer pages call server readers which return published snapshots. Administrative endpoints resolve the dispatch-authenticated identity, require a matching active staff row, then authorize each action. Browser navigation and hidden buttons are not the security boundary.
+Customer pages call server readers which return published snapshots. Administrative endpoints resolve an independent team session cookie, require matching active staff and current credential version, then authorize each action. Browser navigation and hidden buttons are not the security boundary.
 
-Sites dispatch owns hosted sign-in and identity headers. The shipped starter's local auth mock is restricted to loopback development and removed from production builds. No custom OAuth implementation, plaintext password store or public bootstrap endpoint is introduced.
+Team identity is now independent of Sites/ChatGPT. The application ignores ChatGPT identity headers for administrative authorization. Passwords use WebCrypto PBKDF2-SHA256 with a random per-account salt and 100,000 iterations (Workers-compatible). Random 256-bit session tokens and activation tokens are stored as SHA-256 digests. There is no public registration or email delivery. Sessions expire after eight hours; HttpOnly/SameSite=Lax cookies are Secure on HTTPS.
 
 ## Roles
 
@@ -17,7 +17,7 @@ Sites dispatch owns hosted sign-in and identity headers. The shipped starter's l
 | Content export, audit | No | No | Yes | Yes |
 | Staff and invitation management | No | No | No | Yes |
 
-Owner membership is bootstrapped only from the server-side configured verified email when no owner exists. Public ChatGPT sign-in does not itself confer staff membership. Disabling a staff row blocks every subsequent administrative request. The primary owner cannot be disabled/demoted through the UI.
+The initial owner is provisioned through a trusted local/operator database procedure. No owner is created from a public request, a ChatGPT login, or a matching email header. Only owners create team members and activation/reset links. Links expire after 24 hours and are consumed atomically once. Disabling or changing roles deletes sessions and activation links. Resetting passwords invalidates session credential versions. The owner cannot be disabled/demoted through the member UI.
 
 ## Publication
 
@@ -33,7 +33,11 @@ Uploads accept bounded PNG/JPEG/WebP bytes with supported signatures and reject 
 
 Image highlights use percentages and remain attached to the same screenshot region across viewport sizes. Full/focused viewing preserves image aspect ratio. Highlight controls annotate the image; they do not alter the ERP or claim a screenshot is a completed transaction.
 
-## Handover
+## Customer activity guides
+
+The selected delivery model is a general guide per activity: `/guides/activity/{activity}` with `/print` for customer PDF printing. These read only current published snapshots. Admin delivery displays six reusable links and copyable handover messages; no per-customer identifier is required. Legacy pack APIs/links are retained for compatibility but are no longer the primary workflow. Public guides contain no team exports, editorial notes or private records.
+
+## Legacy packs
 
 Packs contain no ERP credentials or user record IDs. A pack selects activity/modules and optionally exact article IDs. Reads resolve the latest published matching snapshot, so withdrawn articles stop appearing and draft edits remain hidden. The server rejects activity mismatches and empty initial selections. Revoking a pack prevents its link and print route from resolving; it does not erase the article library.
 
@@ -46,3 +50,9 @@ Writes require same-origin requests and staff authorization when applicable. JSO
 ## Portability
 
 The source keeps the bundled Sites/Vinext integration and build output contract. Local D1/R2 and hosted D1/R2 are separate. Migrations are schema-only and immutable after application; content seeding is an idempotent application operation. Do not run local test fixtures or role substitutions against hosting.
+
+## Local completion pass — 2026-11-03
+
+Support sharing now selects an eligible active customer guide before copying an article URL; unscoped preview URLs are labeled for team use. Customer PDF article links retain the guide scope. Regression fixtures create their own UUID staff accounts rather than resetting the actual owner. Legacy anonymous-library/activity expectations were updated to fail closed. Default local launcher, framework and stop script use port 5174. Error text no longer claims a failed save could not have persisted.
+
+Added twenty illustrated private articles from ten visually reviewed current read-only native blank-modal screenshots, with route/time/hash evidence and append-only import. Current content is 446 drafts plus five bounded published seeds, 37 genuine screenshot assets and 75 illustrated catalog drafts. No ERP data mutations or source edits occurred. Eighteen pure checks, eleven lifecycle groups, four role groups, nine auth groups, revocation/delete regression, TypeScript, full-repository lint, formatting and production build passed. Local desktop/mobile sample and actual four-page customer PDF were visually checked. Publication and hosted verification remain deferred; draft transaction/business qualification remains pending.

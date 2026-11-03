@@ -1,0 +1,9 @@
+{
+  "name": "live-quotation-empty.png",
+  "capturedAt": "2026-11-03T10:13:47.143092900Z",
+  "route": "/quotation/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "076ef578237b5dfa716d4cbccc2ee51a021168e0a336ad64f71278b40a1c2b73",
+  "review": "Visually reviewed: correct rendered empty form, no loading overlay, no customer/supplier records, only generic default branch/store/safe labels; no save/mutation."
+}

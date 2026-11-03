@@ -1,0 +1,9 @@
+{
+  "name": "live-projects-empty.png",
+  "capturedAt": "2026-11-03T10:34:07.272395600Z",
+  "route": "/projects",
+  "mode": "native-element-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "bf863a0168b56683b18064bbe390ad5727aa5760db903acfe5aa7553d9775dbc",
+  "review": "Visually inspected native blank definition; no loading overlay or private records; no save performed."
+}
