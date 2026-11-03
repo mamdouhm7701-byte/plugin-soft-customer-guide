@@ -1,5 +1,6 @@
 'use client';
 import { ActionHint } from '@/components/guide/ActionHint';
+import { WhatsAppShare } from './WhatsAppShare';
 import { useEffect, useMemo, useState } from 'react';
 import { Archive, BookOpen, Check, ExternalLink, FileDown, Plus, Save, X } from 'lucide-react';
 import {
@@ -329,6 +330,7 @@ export function PackManager() {
                       hint="ده رابط دليل العميل بكل الشروحات المختارة له. لو هتبعت إجابة واحدة فقط، استخدم مشاركة الإجابة من مكتبة الإجابات."
                     />
                     <CopyButton label="نسخ رسالة التسليم" text={() => handover(p)} />
+                    <WhatsAppShare text={() => handover(p)} />
                     <a
                       className="button ghost small"
                       href={'/guides/' + p.id + '/print'}

@@ -31,3 +31,9 @@ Fixtures use only isolated local UUID staff, packs and articles. Their owned rec
 ## Deployment
 
 Dedicated public-audience Site version 4 deployed successfully on 2026-11-03 from d9bb560a88f9de38d162b50d380285de40075240. Deployment appgdep_6aea299c3b808191acc583e751c90650. Existing authentication, D1/R2 bindings and secret revision 1 were preserved. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site . The final article row uses lightweight hover descriptions instead of extra information icons; the global mobile help mode covers those controls.
+
+## WhatsApp handoff (prepared, not deployed)
+
+Team-only Send via WhatsApp buttons are available beside answer copy actions and active handover packs. Desktop opens https://web.whatsapp.com/send with URL-encoded prefilled text; mobile uses the official wa.me text-sharing path. No phone number or recipient is collected/stored. The member selects the chat and confirms sending in their own WhatsApp account. If not signed in, WhatsApp may require device linking. Browser-popup failure shows a copy fallback. Existing answer and handover scopes remain distinct.
+
+Reference: https://faq.whatsapp.com/5913398998672934 . The focused encoding test, TypeScript and ESLint passed; no real message was sent and logged-in WhatsApp behavior was not exercised. Publication is currently blocked: configured Sites project returns NOT_FOUND for get_site and repository write credentials. Existing Site identity is preserved.

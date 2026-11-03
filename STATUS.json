@@ -1,13 +1,13 @@
 {
   "date": "2026-11-03",
-  "status": "INDEPENDENT_SUPPORT_SHARING_PUBLISHED",
+  "status": "WHATSAPP_SHARING_READY_HOSTING_ACCESS_UNAVAILABLE",
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
   "current_source_pushed": true,
   "deployment_verified": true,
-  "publication_instruction": "Published automatic standalone answer sharing and app-wide contextual help; training handover remains separate.",
-  "last_connector_observation": "Native version 4 deployment succeeded on 2026-11-03.",
+  "publication_instruction": "WhatsApp reply/handover sharing prepared; deployment blocked because configured Sites project returns NOT_FOUND in current connector account.",
+  "last_connector_observation": "get_site and source write credential returned project_not_found; existing Site identity retained.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
     "typescript": "passed 2026-11-03",
@@ -52,7 +52,8 @@
     "hosted_browser": "Independent login rendered at 320/390/1280 with no horizontal overflow; desktop/mobile PNGs reviewed; no owner password entered.",
     "single_answer": "Passed: no-pack link generation; fresh-browser singleton article/API/print; optional empty feedback; handover archive/delete has no effect; answer archive revokes. Legacy grant compatibility pure check passed.",
     "prerequisite_and_hint_ui": "Six exact Chromium viewport samples: important/details/hidden at 390/1280; no overflow; modal, mouse hover/tap hints, optional comment skip and team reply-link generation passed; mobile PNGs visually reviewed.",
-    "contextual_help": "Passed: six exact 390/1280 customer viewport samples; automatic team reply with no pack selector; row hover and mobile help mode interception; contextual help in ten team sections. PNGs visually reviewed. Focused ESLint and TypeScript passed."
+    "contextual_help": "Passed: six exact 390/1280 customer viewport samples; automatic team reply with no pack selector; row hover and mobile help mode interception; contextual help in ten team sections. PNGs visually reviewed. Focused ESLint and TypeScript passed.",
+    "whatsapp": "Arabic message and scoped URL round-trip test passed; TypeScript and focused ESLint passed. No WhatsApp recipient selected or message sent; logged-in WhatsApp session not tested."
   },
   "content": {
     "articles": 472,

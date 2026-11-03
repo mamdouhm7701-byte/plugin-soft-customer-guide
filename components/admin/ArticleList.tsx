@@ -18,6 +18,7 @@ import { api, useResource, explain } from './api';
 import { ContentReadiness } from './ContentReadiness';
 import { CatalogCoverage } from './CatalogCoverage';
 import { ContentExport } from './ContentExport';
+import { WhatsAppShare } from './WhatsAppShare';
 const statusNames: Record<string, string> = {
   draft: 'مسودة',
   review: 'بانتظار المراجعة',
@@ -336,6 +337,9 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
             <div className="inline-actions">
               {customerPath ? (
                 <>
+                  <WhatsAppShare
+                    text={() => reply.content.reply + '\n' + location.origin + customerPath}
+                  />
                   <CopyButton
                     label="نسخ الرد والرابط"
                     hint="ينسخ نص الرد ورابط الإجابة فقط؛ العميل يفتحه من غير تسجيل دخول ومن غير الوصول لباقي الدليل."

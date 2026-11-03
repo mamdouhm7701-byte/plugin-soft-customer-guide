@@ -1,3 +1,7 @@
+# WhatsApp sharing prepared — 2026-11-03
+
+Added team WhatsApp launch actions for answer replies and active training handovers, with prefilled Arabic text and scoped links. Sending remains a member action in WhatsApp. Hosting update blocked by configured Site NOT_FOUND.
+
 # Separate support sharing from training handover — 2026-11-03
 
 Share Answer now prepares its standalone answer link automatically from the article row. New links need no client/pack and are revoked by answer unpublication, independently of training handover. Existing guide-bound grants keep their original restrictions. Added app-wide hover/focus hints and an explicit mobile help mode covering dialogs without executing explained actions.
