@@ -1,3 +1,7 @@
+Latest hosted verification: native deployment succeeded; independent login rendered at 320/390/1280 with zero horizontal overflow, desktop/mobile PNGs visually reviewed, no password entered. Hosted health/login return 200, anonymous admin 401, out-of-guide article/library 404, invalid activation 400. Configured owner enrollment exists; user password is not set by the agent. Local role checks encountered ECONNRESET during dev refresh, then all four groups passed on retry.
+
+Published release: 52 articles (47 reviewed ERP additions plus five original guides). Remaining 420 catalog records stay private; HR is deferred. Dedicated live Site: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site . Hosted login/access smoke checks passed; owner enrollment is configured and awaits the user choosing a password. See docs/RELEASE.md.
+
 # Current verification snapshot — 2026-11-03
 
 Implementation commit 6b6222c was uploaded to the private codex/code-quality-review branch. Main and hosting were not changed.

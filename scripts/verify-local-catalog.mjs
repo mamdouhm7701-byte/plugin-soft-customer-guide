@@ -7,6 +7,9 @@ if (!['127.0.0.1', 'localhost', '[::1]'].includes(new URL(base).hostname))
   throw new Error('Local guide checks require a loopback URL.');
 const catalog = JSON.parse(fs.readFileSync('lib/faq-catalog.json', 'utf8'));
 const expected = catalog.length;
+const released = new Set(
+  JSON.parse(fs.readFileSync('lib/released-articles.json', 'utf8')).map((e) => e.id),
+);
 const { cookie, cleanup } = await localOwnerLogin(base);
 try {
   async function call(path, auth = true, origin = true) {
@@ -33,8 +36,8 @@ try {
   assert.equal(rows.articles.filter((a) => catalog.some((c) => c.id === a.id)).length, expected);
   for (const entry of catalog) {
     const a = rows.articles.find((a) => a.id === entry.id);
-    assert.equal(a.status, 'draft');
-    assert.equal(a.hasPublished, false);
+    assert.equal(a.status, released.has(entry.id) ? 'published' : 'draft');
+    assert.equal(a.hasPublished, released.has(entry.id));
   }
   const meta = await (
     await fetch(base + '/api/admin/catalog', { headers: { Cookie: cookie } })
@@ -77,7 +80,7 @@ try {
   console.log(
     'PASS: ' +
       expected +
-      ' private drafts loaded; replay preserved content and revisions; anonymous and cross-origin imports denied; public articles remain five.',
+      ' catalog records checked; reviewed release published and other drafts private; replay preserved content and revisions; anonymous and cross-origin imports denied.',
   );
   fs.mkdirSync('qa', { recursive: true });
   fs.writeFileSync(

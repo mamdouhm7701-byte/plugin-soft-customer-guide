@@ -1,3 +1,7 @@
+# Reviewed ERP release published — 2026-11-03
+
+Published 47 bounded reviewed additions, left HR deferred, created a dedicated public-audience Site with independent staff login and scoped customer links. Added operator-configured one-use owner activation; passwords remain user-selected. Native deployment succeeded and hosted deny/access probes passed.
+
 # Latest continuation — 2026-11-03
 
 Completed the 71-report criteria image set, added 21 reviewed empty forms, attached curated original-FAQ references and retained explicit historical/transaction limits. Corrected operating-vehicle versus CarShowroom context and treasury opening-balance guidance. Clarified customer-facing business wording without changing formulas or source provenance. Made source generation preserve authored content/images; added reproducible coverage audit and complete paged readiness navigation with refresh. Local revisioned saves preserve user edits and publication snapshots. Hosting remains deferred.

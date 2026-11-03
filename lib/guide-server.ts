@@ -2,6 +2,7 @@ import { env } from 'cloudflare:workers';
 import { teamSession } from './team-auth';
 import { redirect } from 'next/navigation';
 import seedData from './seed-articles.json';
+import releasedData from './released-articles.json';
 import {
   articleSchema,
   codeFor,
@@ -34,8 +35,11 @@ export function bucket() {
   if (!env.BUCKET) throw new GuideError(503, 'تخزين الصور غير متاح حاليًا.');
   return env.BUCKET;
 }
-export const seeds = seedData.map((s) => ({ id: s.id, content: articleSchema.parse(s.content) }));
-const seededAt = '2026-11-02T00:00:00.000Z';
+export const seeds = [...seedData, ...releasedData].map((s) => ({
+  id: s.id,
+  content: articleSchema.parse(s.content),
+}));
+const seededAt = '2026-11-03T00:00:00.000Z';
 export async function seedInitialContent() {
   const db = database();
   await db.batch(

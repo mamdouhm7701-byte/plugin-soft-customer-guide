@@ -9,6 +9,7 @@ import {
   SESSION_COOKIE,
 } from '@/lib/team-auth';
 import { tokenHash } from '@/lib/passwords';
+import { provisionConfiguredOwner } from '@/lib/owner-bootstrap';
 export const dynamic = 'force-dynamic';
 export async function POST(request: Request, { params }: { params: Promise<{ action: string }> }) {
   return apiGuard(async () => {
@@ -62,6 +63,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ act
           password: z.string().min(12).max(128),
         })
         .parse(raw);
+      await provisionConfiguredOwner();
       await activatePassword(request, v.token, v.password);
       return json({ ok: true });
     }

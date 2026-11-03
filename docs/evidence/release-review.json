@@ -1,0 +1,242 @@
+{
+  "date": "2026-11-03",
+  "hrExcluded": true,
+  "scope": "Explicitly reviewed bounded source concepts and native current UI field/navigation guides. No transaction execution claim.",
+  "articles": [
+    {
+      "id": "ad84ccea-3682-5000-ace5-57bbe1b1fba6",
+      "key": "expanded-screen-#/Items-overview",
+      "contentSha256": "25106883a6163a902d952ecd6570ee1541abe78d79a548fa2a515c981c9eca81"
+    },
+    {
+      "id": "6884bc1c-7cb9-5ad8-bd30-80b62f7623c3",
+      "key": "expanded-screen-#/branches-overview",
+      "contentSha256": "d133c2a836652052d9273efe3b485aff2b7a522c4ee0b2f55c0e701cc27f4ebb"
+    },
+    {
+      "id": "fe580476-21d8-5562-95d2-dd0f5e1574f8",
+      "key": "expanded-screen-#/cars-overview",
+      "contentSha256": "3fb086c10fa238e108d924b31448bdf5f2521e9a0104b2ad440d498e9b1c2025"
+    },
+    {
+      "id": "fe076789-0da4-54cc-9ad9-61df4ab44252",
+      "key": "expanded-screen-#/collection-transactions-overview",
+      "contentSha256": "c378e003bed4e2ea366886f36e831352fb75fd77de47e2767ee31bf25e4f6b84"
+    },
+    {
+      "id": "b2b9298d-0e1a-5c90-8dfd-778355a546af",
+      "key": "expanded-screen-#/customers-overview",
+      "contentSha256": "3e70023418f661a93af84ddefd965b5d3d9fb61365fee6a4f4dee6973da6fc26"
+    },
+    {
+      "id": "3c668b31-f811-5e4b-8267-1d5762071999",
+      "key": "expanded-screen-#/damage-adjustment-overview",
+      "contentSha256": "6f18ed583fd41aa38bea872a9ba0beffc3657b7e9028bc8c0c8d900964f861e2"
+    },
+    {
+      "id": "2376192e-e631-57c0-b9e2-8949a172b3d2",
+      "key": "expanded-screen-#/discount-types-overview",
+      "contentSha256": "b53266ce5e5e2669531864eacde54896aa49701f029130459cded2bca30078e8"
+    },
+    {
+      "id": "45a63074-9e41-5a93-9ca6-08f32e565a29",
+      "key": "expanded-screen-#/drivers-overview",
+      "contentSha256": "671d290a7c37cbfa17463ad0e75dd3dd5d6ae9c9dd506bac6fe08f2af7240b66"
+    },
+    {
+      "id": "41e24da3-3bae-5279-9d04-a856745a6334",
+      "key": "expanded-screen-#/expense-transactions-overview",
+      "contentSha256": "e4297ab46475787c6b9128446f8e465cf61888d00eabbc751dd434cd45c97221"
+    },
+    {
+      "id": "c4639e37-357f-5adc-921f-ec8ece1f5d0b",
+      "key": "expanded-screen-#/income-transactions-overview",
+      "contentSha256": "ab67b36485af93229db0fb36b2a365461708656c1c2ab28dc8c62714cc0f63a0"
+    },
+    {
+      "id": "9ec6e489-bd06-5ccd-b2e1-9d289c3d2ea7",
+      "key": "expanded-screen-#/inventory-overview",
+      "contentSha256": "f99814995d30a689f07480b350701331ff8ec16aed01e708a659f4904fe51c3e"
+    },
+    {
+      "id": "6f545c65-2fee-5943-b257-4645588c98ad",
+      "key": "expanded-screen-#/overflow-adjustment-overview",
+      "contentSha256": "34e9f0f5e523f4e2954b17c3e8f18d024e3497afaec134f207b5514ad3c746d9"
+    },
+    {
+      "id": "2075435b-0f80-5faa-be1e-a37a9b71fa11",
+      "key": "expanded-screen-#/payment-transactions-overview",
+      "contentSha256": "86f3b05270b7276b21cdcf22624f33581b417326ad4fd0e249bff0b92a1b5198"
+    },
+    {
+      "id": "9ceec0b8-5fef-568a-ab07-c540c840c81f",
+      "key": "expanded-screen-#/price-list-overview",
+      "contentSha256": "ae6b2f2f5891881656e98f7f189a33327653977698ca046bb93617e6914302ad"
+    },
+    {
+      "id": "e3f6f332-d59a-5180-9891-0a7cde639a8c",
+      "key": "expanded-screen-#/safe-transaction-overview",
+      "contentSha256": "1326bb5a18e62c54a0b6b34332bcac1d509e6a2b699c6535e6b9de78ce3ea110"
+    },
+    {
+      "id": "6a1bc3b5-9b38-5675-9b95-d0a5cb69f3de",
+      "key": "expanded-screen-#/shortage-adjustment-overview",
+      "contentSha256": "90cdc9928f8e330c74080b02d6f706865d0fc45417a3dd5a4029f4eacbb8438a"
+    },
+    {
+      "id": "689449c3-cc0c-5be1-8928-3bc1f8b63a41",
+      "key": "expanded-screen-#/storage-transfer-overview",
+      "contentSha256": "b6d049c97eca27fdbb6db7e9385dc225a9d8763f1ceaae35ca484173c14450c7"
+    },
+    {
+      "id": "80911047-e243-53bd-9e2e-2f37b6d9218e",
+      "key": "expanded-screen-#/suppliers-overview",
+      "contentSha256": "a7f73a8706cce20a3360d8ddbccd93ce37653bef78c08c6436cbd41ca3a75c45"
+    },
+    {
+      "id": "edc00a04-e0c6-525f-80a0-879fbffe09ef",
+      "key": "expanded-screen-#/tables-overview",
+      "contentSha256": "09f1c495dde4975675b26a0e84df48325405a789eb8c2ed67e6efeee565aabe1"
+    },
+    {
+      "id": "642722c3-bbf0-59d0-a0da-4701b2d727db",
+      "key": "expanded-screen-#/transfers-and-settlements-overview",
+      "contentSha256": "e1a80c256f427bde49499216e25e8eb03e6444741d1ea0c466bf141a3a87fa22"
+    },
+    {
+      "id": "a36dff85-d650-5909-8327-5eb422f005ff",
+      "key": "expanded-screen-#/users-overview",
+      "contentSha256": "cb66087c69ef00bd88bc824899edc09036b08fcbea0bc07ecb00cd5f45bf684d"
+    },
+    {
+      "id": "00a5a0a2-9bf5-51fc-8f47-2a4533d8d8a1",
+      "key": "live-ui-v1-units-steps",
+      "contentSha256": "c66f64874d6d17b979976edafe3ff7acdbb2f6076a5569cd341c64e3edc1d964"
+    },
+    {
+      "id": "7a071f36-86a5-5d67-89bd-629413aca9c9",
+      "key": "live-ui-v1-banks-steps",
+      "contentSha256": "9aa425e2b4c173da6c95eb81d11ebcde8bccefb881f555b8e906117f50d88a8e"
+    },
+    {
+      "id": "3769b8e2-3563-58cc-b75b-c00eb7fc3dfb",
+      "key": "live-ui-v1-safes-steps",
+      "contentSha256": "486e26e9a52b5246ecef45cf68de5e941e37db7f6fd88e3debad540eb3e2ac58"
+    },
+    {
+      "id": "f6dbc5db-9d50-55d5-b48c-99df8c9ef820",
+      "key": "live-ui-v1-areas-steps",
+      "contentSha256": "699b3e8533b227eb6cab1aa9acddcb4cb35ce0b5f1200d8f0957f2776a866b0d"
+    },
+    {
+      "id": "c4c0a9bb-4b5a-535c-8382-8f624c4f7109",
+      "key": "live-ui-v1-expense-type-steps",
+      "contentSha256": "f00f6bfb850ccc1186812e9e720026c84395bae2d69f09c37e005653b218996e"
+    },
+    {
+      "id": "de4d745f-aa0d-5e7a-9259-c866799c11bf",
+      "key": "live-ui-v1-income-type-steps",
+      "contentSha256": "fafab40f2ad3f3be6b3524057da51bd46dd340ecb736b7712d4c0bda5f36fa3f"
+    },
+    {
+      "id": "8e0f56d7-5d08-59fe-b9ed-b6bc1fa40d9c",
+      "key": "live-ui-v1-payment-methods-steps",
+      "contentSha256": "3d2b7d1b94934ac152239afa1197dd7a931190ac21efb7799dfd7213fb3a8765"
+    },
+    {
+      "id": "04c8cbac-5637-5d17-8d0a-e4b6c4ef41f7",
+      "key": "live-ui-v1-account-groups-steps",
+      "contentSha256": "70956c648b3ccb00eb3fc12c5131fb109e5eeb294fb2d2258befc6e185584bc3"
+    },
+    {
+      "id": "7b3acb82-6ad5-5073-badf-90fb7efac67c",
+      "key": "live-ui-v1-warehouses-steps",
+      "contentSha256": "57a8ac74024ec93cfd3c3ba6d157993b87a22c7680ecc537d86ab0837ef1827b"
+    },
+    {
+      "id": "eb1b33c1-6f8f-5eef-8adf-594a00f4876b",
+      "key": "live-ui-v1-exchange-destinations-steps",
+      "contentSha256": "c017a91ac6a49a19e50b31d3528a42248c7272f2ecc1eb7057fd77018f151679"
+    },
+    {
+      "id": "1458444d-742f-53ba-8357-4b9a69d9e9f9",
+      "key": "business-v1-sl-plan",
+      "contentSha256": "86636912743583eea3420bb14301e3dfd80b5821f29d8ad5751acdfffa87ff4a"
+    },
+    {
+      "id": "19c225f0-62b7-5ee8-b30c-8821dfe9ff69",
+      "key": "business-v1-sl-order",
+      "contentSha256": "c702e4bcf9af477352a83a95807430d8805520c47f00122794c57548be4ed62a"
+    },
+    {
+      "id": "0d36ad8a-82fa-51cb-bdd5-b0891374b3b9",
+      "key": "business-v1-sl-advance",
+      "contentSha256": "641f6393cee63d3b2f45023e91e331fe3cb68677d1cb18ecc1d2980f0209ace9"
+    },
+    {
+      "id": "344e6864-bfd6-5d75-a3b1-e32374f7785c",
+      "key": "business-v1-sl-return",
+      "contentSha256": "45c1e85908ff48357d702a452d7c0f6a9c7a0a4721ff1bd4f15705587130ba61"
+    },
+    {
+      "id": "8ad2cd32-72fe-509b-825e-e92ea2610c16",
+      "key": "business-v1-pu-stock",
+      "contentSha256": "f9b9b2de2e5276b1464db4016393e09ce2b12e649b54391159324110ae0392ed"
+    },
+    {
+      "id": "ca376ed3-2a47-5dc4-ad02-2bf01e7435c8",
+      "key": "business-v1-pu-discount",
+      "contentSha256": "9a7f004ce14ea195a4981af89976a1ab02a712219d368662418e2ec0912db684"
+    },
+    {
+      "id": "1b42deff-6d84-5518-98d8-5e4e784234b1",
+      "key": "business-v1-st-movement",
+      "contentSha256": "563fb38c7e5120a2078b1fb6d12f32f82298edb4f9edf7f4dff06bfca2596a4e"
+    },
+    {
+      "id": "1f6cab3a-22cd-5518-882c-0f9155283fc9",
+      "key": "business-v1-st-transfer",
+      "contentSha256": "1f7363af98b09ad357d74129e8d0e028b911a3fdd7afde795b0ad9c769097101"
+    },
+    {
+      "id": "17c54e7e-3b95-5127-be33-fd72ccf3df0c",
+      "key": "business-v1-st-manufacture",
+      "contentSha256": "557a138b183ada0119a3baacfbf97a56c071cb64289b3d6c8a715ee755650e5e"
+    },
+    {
+      "id": "9ee38768-121d-556a-926e-ce9367ecd170",
+      "key": "business-v1-gl-inventory",
+      "contentSha256": "730106571dbd7eb15d54946f439df88e55d3091d3b6f079591291691c63547ce"
+    },
+    {
+      "id": "8f15b7a5-3c8b-58d3-87e8-433a320dd8cb",
+      "key": "business-v1-tax-policy",
+      "contentSha256": "6d6702d0dddd9a8435300f0ff4411938f300876cd6a0b473a8e9862e385e4f50"
+    },
+    {
+      "id": "ba75c33e-2d25-5b4d-a012-a5eba286b62b",
+      "key": "business-v1-tax-round",
+      "contentSha256": "307a2f8c7e6752fbb835a64135cbb244434aa285bfe477a525a3f0b9614017ed"
+    },
+    {
+      "id": "d19a5908-edf0-5314-a6cb-7b31096b10d4",
+      "key": "business-v1-rest-extra",
+      "contentSha256": "9b26ad1164d596e9b50361e4c3fbbdf98d545b2a91d21e17f86d4ed276897c3d"
+    },
+    {
+      "id": "b2f2dbe0-3650-53e7-9319-cac6f06f3cc0",
+      "key": "business-v1-rest-return-issue",
+      "contentSha256": "6fc3d2d778dd1b2d2e88702d162c547c90e4b4df528aacb9c9e07f1796b1306c"
+    },
+    {
+      "id": "7378c0dc-0953-55e0-a25c-fce61c922cda",
+      "key": "business-v1-car-identity",
+      "contentSha256": "1fd15445ef48a1c8b2261e800c3c222edc6c292aaf42b5a84d22130fbabfa87f"
+    },
+    {
+      "id": "7eb880ba-72f1-5103-a253-dcefe398f5a9",
+      "key": "business-v1-report-filter",
+      "contentSha256": "1be81a6d8bde72f6a35a038c2c68a38bd692c932be954398c9979144b5ebf948"
+    }
+  ]
+}

@@ -10,6 +10,11 @@ import {
 } from '../lib/guide-model.ts';
 const catalog: { id: string; key: string; screenKeys?: string[]; content: ArticleContent }[] =
   JSON.parse(fs.readFileSync(new URL('../lib/faq-catalog.json', import.meta.url), 'utf8'));
+const released = new Set(
+  JSON.parse(fs.readFileSync('lib/released-articles.json', 'utf8')).map(
+    (e: { id: string }) => e.id,
+  ),
+);
 test('catalog is complete across modules and activities, with unique identities and valid related links', () => {
   assert(catalog.length >= 390);
   assert.equal(
@@ -49,6 +54,10 @@ test('catalog is complete across modules and activities, with unique identities 
       assert.equal(c.verifiedAt, '2026-11-03');
       assert.equal(publishIssues(c).length, 0);
       assert(c.verificationNote.includes('image is context only'));
+    } else if (released.has(entry.id)) {
+      assert.equal(c.verifiedAt, '2026-11-03');
+      assert.equal(publishIssues(c).length, 0);
+      assert(!c.activities.includes('hr'));
     } else {
       assert.equal(c.verifiedAt, '');
       assert(publishIssues(c).length > 0);
@@ -156,7 +165,7 @@ test('current read-only capture articles retain reviewed screenshots and cannot 
   const live = catalog.filter((x) => x.key.startsWith('live-ui-v1-'));
   assert.equal(live.length, 20);
   for (const entry of live) {
-    assert.equal(entry.content.verifiedAt, '');
+    assert.equal(entry.content.verifiedAt, released.has(entry.id) ? '2026-11-03' : '');
     assert(
       entry.content.verificationNote.includes(
         'No save, data mutation or transaction qualification',

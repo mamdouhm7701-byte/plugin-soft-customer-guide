@@ -1,13 +1,13 @@
 {
   "date": "2026-11-03",
-  "status": "CONTENT_COMPLETION_IN_PROGRESS",
+  "status": "PARTIAL_CONTENT_RELEASE_PUBLISHED",
   "application_version": "1.0.0",
-  "site_project_id": "appgprj_6ae891cdafac8191a681f8c4691b0e02",
+  "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
-  "current_source_pushed": true,
-  "deployment_verified": false,
-  "publication_instruction": "User reaffirmed on 2026-11-03: a dedicated site for this guide only; site registration/publication is the final stage and remains deferred. Do not modify Plugin ERP/EduPro site.",
-  "last_connector_observation": "Original guide Site lookup returned NOT_FOUND; a different ERP/EduPro Site exists and was not modified. Dedicated guide hosting deferred by user.",
+  "current_source_pushed": false,
+  "deployment_verified": true,
+  "publication_instruction": "User requested HR deferred and completed content published; dedicated Site version 1 succeeded.",
+  "last_connector_observation": "Dedicated Site created and published successfully; no ERP/EduPro Site modified.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
     "typescript": "passed 2026-11-03",
@@ -47,15 +47,17 @@
     "customer_scope": "Revocation/delete/access/API/print regression passed including scoped article links in print output.",
     "mobile_matrix": "56 local Chromium layout samples: eleven team tabs plus customer guide/article/login at widths 320,390,768,1280; zero horizontal document overflow. Menu toggle, new pack form and scoped reply selection exercised; mobile PNGs reviewed.",
     "new_erp_saves": 0,
-    "readiness_mobile": "Passed 390px Chromium: open panel, expand 60 to 120 tasks, refresh current records; no overflow; screenshot visually reviewed."
+    "readiness_mobile": "Passed 390px Chromium: open panel, expand 60 to 120 tasks, refresh current records; no overflow; screenshot visually reviewed.",
+    "hosted_http": "health/login 200; anonymous admin 401; library/article without guide 404; invalid activation 400; configured single owner confirmed through bounded DB read.",
+    "hosted_browser": "Independent login rendered at 320/390/1280 with no horizontal overflow; desktop/mobile PNGs reviewed; no owner password entered."
   },
   "content": {
     "articles": 472,
     "genuine_screenshots": 154,
     "print_mode": "Dynamic per-article, activity and saved guide layouts; browser print-to-PDF",
     "scope": "467 editorial catalog drafts plus five published seed articles. Twenty-one source-backed concept articles include reviewed bounded examples; publication status remains draft.",
-    "published_articles": 5,
-    "draft_catalog_articles": 467,
+    "published_articles": 52,
+    "draft_catalog_articles": 420,
     "catalog_modules": 11,
     "catalog_activities": 6,
     "catalog_verification": "BOUNDED_SOURCE_REVIEW_AND_READ_ONLY_NATIVE_UI; NOT_TRANSACTION_QUALIFICATION",
@@ -65,14 +67,16 @@
     "historical_ui_only_screenshots_added": 7,
     "new_browser_capture": "127 native current empty forms/report criteria; 71 report criteria matched; no ERP data saves or deletes.",
     "supplemental_illustrated_articles": 36,
-    "newly_published_articles": 0,
+    "newly_published_articles": 47,
     "live_read_only_screenshots": 127,
     "new_live_illustrated_articles": 20,
     "source_reviewed_business_rules": 21,
     "fully_illustrated_catalog_articles": 260,
     "report_criteria_images": 71,
     "catalog_articles_without_images": 118,
-    "catalog_articles_missing_some_step_image": 207
+    "catalog_articles_missing_some_step_image": 207,
+    "catalog_records": 467,
+    "hr_publication": "Deferred; no new HR content released."
   },
   "implemented": [
     "Public-compatible customer library and article permalinks",
@@ -90,10 +94,9 @@
   "erp_changes": false,
   "external_messages_sent": false,
   "remaining": [
-    "118 catalog drafts have no image; 207 lack at least one step image. Draft business/publication review remains.",
-    "Current ERP account has no visible HR entry; new HR captures remain unavailable.",
-    "Full-catalog internal PDF pagination and physical iOS/Safari remain unqualified.",
-    "Dedicated Site creation, hosted owner provisioning/migration and public delivery remain deferred."
+    "Complete remaining non-HR editorial gaps; 118 catalog entries currently lack an image, including deferred HR.",
+    "User sets own hosted password using one-use activation file, then team creates per-customer guides.",
+    "HR content/capture deferred explicitly."
   ],
   "local_preview": "http://127.0.0.1:5174/",
   "local_admin": "http://127.0.0.1:5174/admin",
@@ -123,12 +126,17 @@
     "local_auth_groups_passed": 9,
     "unit_model_export_password_checks_passed": 20,
     "migration": "0003_team_auth.sql",
-    "hosted_migration_applied": false,
-    "hosted_owner_provisioned": false,
+    "hosted_migration_applied": true,
+    "hosted_owner_provisioned": true,
     "browser_qa": "local desktop/mobile and scoped reply flow checked",
     "local_owner_activation": "Provisioned for user-selected email; password intentionally unset, one-use activation file in ignored runtime; token never logged or packaged.",
-    "customer_scope_checks": "passed: no activity/team/global navigation, article membership and scoped print, revoked-link rejection"
+    "customer_scope_checks": "passed: no activity/team/global navigation, article membership and scoped print, revoked-link rejection",
+    "hosted_owner_password": "User must choose password through private one-use activation file; never set by agent."
   },
   "source_branch": "codex/code-quality-review",
-  "source_implementation_commit": "6b6222c"
+  "source_implementation_commit": "6b6222c",
+  "historical_site_project_id": "appgprj_6ae891cdafac8191a681f8c4691b0e02",
+  "live_url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site",
+  "hosted_version": 1,
+  "hosted_source_commit": "eaac7b291dce714dbe4258033fb9bfc787e0f3cf"
 }

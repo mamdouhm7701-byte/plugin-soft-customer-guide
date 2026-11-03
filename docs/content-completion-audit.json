@@ -1474,14 +1474,14 @@
     {
       "id": "ad84ccea-3682-5000-ace5-57bbe1b1fba6",
       "key": "expanded-screen-#/Items-overview",
-      "title": "إيه استخدام شاشة «قائمة الاصناف» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف صنف» قبل الإدخال؟",
       "module": "products",
       "routes": [
         "#/Items"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1756,14 +1756,14 @@
     {
       "id": "6884bc1c-7cb9-5ad8-bd30-80b62f7623c3",
       "key": "expanded-screen-#/branches-overview",
-      "title": "إيه استخدام شاشة «الفروع» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف فرع» قبل الإدخال؟",
       "module": "settings",
       "routes": [
         "#/branches"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1876,14 +1876,14 @@
     {
       "id": "fe580476-21d8-5562-95d2-dd0f5e1574f8",
       "key": "expanded-screen-#/cars-overview",
-      "title": "إيه استخدام شاشة «السيارات» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف سيارة تشغيل» قبل الإدخال؟",
       "module": "settings",
       "routes": [
         "#/cars"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1988,14 +1988,14 @@
     {
       "id": "fe076789-0da4-54cc-9ad9-61df4ab44252",
       "key": "expanded-screen-#/collection-transactions-overview",
-      "title": "إيه استخدام شاشة «سند قبض عميل» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «سند قبض عميل» قبل الإدخال؟",
       "module": "finance",
       "routes": [
         "#/collection-transactions"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2286,14 +2286,14 @@
     {
       "id": "b2b9298d-0e1a-5c90-8dfd-778355a546af",
       "key": "expanded-screen-#/customers-overview",
-      "title": "إيه استخدام شاشة «العملاء» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف عميل» قبل الإدخال؟",
       "module": "dealers",
       "routes": [
         "#/customers"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2344,14 +2344,14 @@
     {
       "id": "3c668b31-f811-5e4b-8267-1d5762071999",
       "key": "expanded-screen-#/damage-adjustment-overview",
-      "title": "إيه استخدام شاشة «تسوية التوالف» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تسوية توالف» قبل الإدخال؟",
       "module": "inventory",
       "routes": [
         "#/damage-adjustment"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2396,14 +2396,14 @@
     {
       "id": "2376192e-e631-57c0-b9e2-8949a172b3d2",
       "key": "expanded-screen-#/discount-types-overview",
-      "title": "إيه استخدام شاشة «انوع الخصومات» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «نوع خصم» قبل الإدخال؟",
       "module": "settings",
       "routes": [
         "#/discount-types"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2422,14 +2422,14 @@
     {
       "id": "45a63074-9e41-5a93-9ca6-08f32e565a29",
       "key": "expanded-screen-#/drivers-overview",
-      "title": "إيه استخدام شاشة «السائقين» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف سائق» قبل الإدخال؟",
       "module": "settings",
       "routes": [
         "#/drivers"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2500,14 +2500,14 @@
     {
       "id": "41e24da3-3bae-5279-9d04-a856745a6334",
       "key": "expanded-screen-#/expense-transactions-overview",
-      "title": "إيه استخدام شاشة «حركة المصروفات» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «حركة مصروف» قبل الإدخال؟",
       "module": "finance",
       "routes": [
         "#/expense-transactions"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2552,14 +2552,14 @@
     {
       "id": "c4639e37-357f-5adc-921f-ec8ece1f5d0b",
       "key": "expanded-screen-#/income-transactions-overview",
-      "title": "إيه استخدام شاشة «حركة الايرادات» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «حركة إيراد» قبل الإدخال؟",
       "module": "finance",
       "routes": [
         "#/income-transactions"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2604,14 +2604,14 @@
     {
       "id": "9ec6e489-bd06-5ccd-b2e1-9d289c3d2ea7",
       "key": "expanded-screen-#/inventory-overview",
-      "title": "إيه استخدام شاشة «محضر الجرد» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «محضر جرد» قبل الإدخال؟",
       "module": "inventory",
       "routes": [
         "#/inventory"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2868,14 +2868,14 @@
     {
       "id": "6f545c65-2fee-5943-b257-4645588c98ad",
       "key": "expanded-screen-#/overflow-adjustment-overview",
-      "title": "إيه استخدام شاشة «تسوية الفائض» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تسوية فائض» قبل الإدخال؟",
       "module": "inventory",
       "routes": [
         "#/overflow-adjustment"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2920,14 +2920,14 @@
     {
       "id": "2075435b-0f80-5faa-be1e-a37a9b71fa11",
       "key": "expanded-screen-#/payment-transactions-overview",
-      "title": "إيه استخدام شاشة «سند صرف مورد» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «سند صرف مورد» قبل الإدخال؟",
       "module": "finance",
       "routes": [
         "#/payment-transactions"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3048,14 +3048,14 @@
     {
       "id": "9ceec0b8-5fef-568a-ab07-c540c840c81f",
       "key": "expanded-screen-#/price-list-overview",
-      "title": "إيه استخدام شاشة «قوائم الأسعار» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «قائمة أسعار» قبل الإدخال؟",
       "module": "products",
       "routes": [
         "#/price-list"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3460,14 +3460,14 @@
     {
       "id": "e3f6f332-d59a-5180-9891-0a7cde639a8c",
       "key": "expanded-screen-#/safe-transaction-overview",
-      "title": "إيه استخدام شاشة «إستلام الخزينة» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «استلام خزينة» قبل الإدخال؟",
       "module": "finance",
       "routes": [
         "#/safe-transaction"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3640,14 +3640,14 @@
     {
       "id": "6a1bc3b5-9b38-5675-9b95-d0a5cb69f3de",
       "key": "expanded-screen-#/shortage-adjustment-overview",
-      "title": "إيه استخدام شاشة «تسوية العجز» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تسوية عجز» قبل الإدخال؟",
       "module": "inventory",
       "routes": [
         "#/shortage-adjustment"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3666,14 +3666,14 @@
     {
       "id": "689449c3-cc0c-5be1-8928-3bc1f8b63a41",
       "key": "expanded-screen-#/storage-transfer-overview",
-      "title": "إيه استخدام شاشة «التحويل بين المخازن» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تحويل بين مخازن» قبل الإدخال؟",
       "module": "inventory",
       "routes": [
         "#/storage-transfer"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3758,14 +3758,14 @@
     {
       "id": "80911047-e243-53bd-9e2e-2f37b6d9218e",
       "key": "expanded-screen-#/suppliers-overview",
-      "title": "إيه استخدام شاشة «الموردين» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف مورد» قبل الإدخال؟",
       "module": "dealers",
       "routes": [
         "#/suppliers"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3784,14 +3784,14 @@
     {
       "id": "edc00a04-e0c6-525f-80a0-879fbffe09ef",
       "key": "expanded-screen-#/tables-overview",
-      "title": "إيه استخدام شاشة «الطاولات» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف طاولة» قبل الإدخال؟",
       "module": "sales",
       "routes": [
         "#/tables"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3810,14 +3810,14 @@
     {
       "id": "642722c3-bbf0-59d0-a0da-4701b2d727db",
       "key": "expanded-screen-#/transfers-and-settlements-overview",
-      "title": "إيه استخدام شاشة «تحويلات وتسويات» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تحويلات وتسويات» قبل الإدخال؟",
       "module": "finance",
       "routes": [
         "#/transfers-and-settlements"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3888,14 +3888,14 @@
     {
       "id": "a36dff85-d650-5909-8327-5eb422f005ff",
       "key": "expanded-screen-#/users-overview",
-      "title": "إيه استخدام شاشة «المستخدمين» وإيه اللي أراجعه فيها؟",
+      "title": "إزاي أراجع حقول نموذج «تعريف مستخدم» قبل الإدخال؟",
       "module": "settings",
       "routes": [
         "#/users"
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5970,7 +5970,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/units.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5996,7 +5996,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/banks.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6022,7 +6022,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/safes.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6048,7 +6048,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/areas.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6074,7 +6074,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/expense-type.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6100,7 +6100,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/income-type.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6126,7 +6126,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/payment-methods.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6152,7 +6152,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/account-groups.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6178,7 +6178,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/warehouses.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6204,7 +6204,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/exchange-destinations.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
