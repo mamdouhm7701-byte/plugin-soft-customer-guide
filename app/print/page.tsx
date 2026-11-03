@@ -21,7 +21,7 @@ export default async function Print({
       <PrintGuide
         articles={[scope.article]}
         title={scope.article.content.title}
-        activity={scope.pack.activity}
+        activity={scope.activity}
         back={'/help/' + scope.article.id + '?reply=' + scope.token}
         generatedAt={new Date().toISOString()}
       />

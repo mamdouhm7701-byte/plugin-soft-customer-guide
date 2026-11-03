@@ -1,3 +1,7 @@
+# Separate support sharing from training handover — 2026-11-03
+
+Share Answer now prepares its standalone answer link automatically from the article row. New links need no client/pack and are revoked by answer unpublication, independently of training handover. Existing guide-bound grants keep their original restrictions. Added app-wide hover/focus hints and an explicit mobile help mode covering dialogs without executing explained actions.
+
 # Answer-only replies and contextual help — 2026-11-03
 
 Added encrypted single-answer links tied to active customer guides, isolated article/API/print/media scope, optional negative-feedback comments, important/details/hidden prerequisite display modes, accessible hover/focus/tap action hints and a manual clipboard fallback. Existing content and owner credentials preserved. See docs/SINGLE_ANSWER_SHARING.md.

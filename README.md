@@ -1,8 +1,8 @@
-Published dedicated Site version 3: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
+Published dedicated Site version 4: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
 
 # Plugin Soft Customer Guide
 
-Arabic RTL training handover and support knowledge platform. Current local source: 2026-11-03. Dedicated Site version 3 is published; HR remains deferred.
+Arabic RTL training handover and support knowledge platform. Current local source: 2026-11-03. Dedicated Site version 4 is published; HR remains deferred.
 
 ## Stack and location
 
@@ -27,7 +27,7 @@ Loopback addresses cannot be sent to remote customers. Source ZIPs exclude the l
 
 Each customer receives one guide scoped to its activity, trained modules and selected published articles. Customer navigation has no activity switcher or global-library fallback. Every article/API/print/uploaded-media request rechecks active guide scope. Stopping or deleting a guide blocks subsequent access; deletion preserves the original articles. Anyone holding a live bearer link can use it; downloaded material cannot be revoked.
 
-Team roles are enforced on the server: owner manages members, reviewer reviews/publishes/exports, editor prepares drafts, and support uses published replies and customer guides. Draft edits do not replace a published snapshot until reviewed publication. Support selects an eligible active customer guide before copying a reply link. The app sends no customer messages automatically.
+Team roles are enforced on the server: owner manages members, reviewer reviews/publishes/exports, editor prepares drafts, and support uses published replies and customer guides. Draft edits do not replace a published snapshot until reviewed publication. Support opens Share Answer to generate an independent answer-only link automatically; no client or training guide is required. Handover pack revocation does not affect new support-answer links. The app sends no customer messages automatically.
 
 The platform includes illustrated answers, image focus overlays, Arabic search, repeated-question tracking, customer feedback, revision history, audit history, per-customer printable handovers, XLSX export and team PDF print layouts. Exports include private editorial information and stay within the team. Excel includes image references; it does not embed image binaries or replace a database/media backup.
 
@@ -62,7 +62,7 @@ Loopback integration/auth/role checks create their own temporary staff identitie
 
 Preserve the original Sites identity in `.openai/hosting.json`. Before publication, apply migrations through `0003_team_auth.sql`, configure server-only `GUIDE_RATE_SECRET`, provision the hosted owner through a reviewed operator procedure, and verify independent sign-in, guide revocation, storage and customer routes in the hosted environment. There is no public owner-bootstrap endpoint. GitHub Pages alone cannot run the application's server/D1/R2 features.
 
-Generate the source handoff with `python scripts/package-source.py`. See [operations](docs/OPERATIONS.md) and [GitHub handoff](docs/GITHUB_HANDOFF.md). Version 3 is published; see docs/RELEASE.md.
+Generate the source handoff with `python scripts/package-source.py`. See [operations](docs/OPERATIONS.md) and [GitHub handoff](docs/GITHUB_HANDOFF.md). Version 4 is published; see docs/RELEASE.md.
 
 The latest mobile/source-business pass is documented in docs/VERIFICATION.md. The dedicated guide Site is live; the separate ERP/EduPro Site must not be modified.
 

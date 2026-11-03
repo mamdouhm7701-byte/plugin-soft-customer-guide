@@ -1,7 +1,7 @@
 import businessRules from '@/lib/source-business-rules.json';
 import { env } from 'cloudflare:workers';
 import { createReplyToken } from '@/lib/reply-token';
-import { getPack, packArticles } from '@/lib/guide-server';
+import { getPublished } from '@/lib/guide-server';
 import { issueActivation } from '@/lib/team-auth';
 import { z } from 'zod';
 import { canEdit, canManageStaff, publishIssues, type Role } from '@/lib/guide-model';
@@ -199,13 +199,13 @@ export async function POST(request: Request, context: Context) {
       db = database();
     if (path[0] === 'replies' && path.length === 1) {
       const v = z
-        .object({ packId: z.string().uuid(), articleId: z.string().regex(/^[a-zA-Z0-9-]{1,100}$/) })
+        .object({ articleId: z.string().regex(/^[a-zA-Z0-9-]{1,100}$/) })
+        .strict()
         .parse(await bodyJSON(request));
-      const pack = await getPack(v.packId);
-      if (!pack || !(await packArticles(pack)).some((a) => a.id === v.articleId))
-        throw new GuideError(404, 'الشرح غير متاح في دليل العميل المفعّل.');
+      if (!(await getPublished(v.articleId)))
+        throw new GuideError(404, 'الشرح غير منشور أو تم إيقافه.');
       if (!env.GUIDE_RATE_SECRET) throw new GuideError(503, 'إعداد روابط الرد غير مكتمل.');
-      const token = await createReplyToken(env.GUIDE_RATE_SECRET, pack.id, v.articleId);
+      const token = await createReplyToken(env.GUIDE_RATE_SECRET, v.articleId);
       return json({ path: '/help/' + v.articleId + '?reply=' + token });
     }
     if (path[0] === 'media') {

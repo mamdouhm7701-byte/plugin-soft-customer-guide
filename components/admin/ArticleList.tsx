@@ -7,8 +7,6 @@ import {
   canEdit,
   canPublish,
   matchesSearch,
-  matchesActivity,
-  type GuidePack,
   activityName,
   moduleName,
   type StaffUser,
@@ -20,7 +18,6 @@ import { api, useResource, explain } from './api';
 import { ContentReadiness } from './ContentReadiness';
 import { CatalogCoverage } from './CatalogCoverage';
 import { ContentExport } from './ContentExport';
-import { ActionHint } from '@/components/guide/ActionHint';
 const statusNames: Record<string, string> = {
   draft: 'مسودة',
   review: 'بانتظار المراجعة',
@@ -36,8 +33,6 @@ type AdminSummary = ArticleSummary & {
 };
 export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: string) => void }) {
   const r = useResource<{ articles: AdminSummary[]; limit: number }>('articles'),
-    packs = useResource<{ packs: GuidePack[] }>('packs'),
-    [packId, setPackId] = useState(''),
     [q, setQ] = useState(''),
     [status, setStatus] = useState('all'),
     [activity, setActivity] = useState('all'),
@@ -52,7 +47,6 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
     [catalogMessage, setCatalogMessage] = useState(''),
     dialog = useRef<HTMLDialogElement>(null),
     replyRequest = useRef<AbortController | null>(null);
-  const linkRequest = useRef(0);
   useEffect(() => () => replyRequest.current?.abort(), []);
   const list = (r.data?.articles || []).filter(
     (a) =>
@@ -85,11 +79,8 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
     const request = new AbortController();
     replyRequest.current = request;
     setReply(null);
-    setPackId('');
     setCustomerPath('');
-    linkRequest.current++;
-    setMakingLink(false);
-    packs.reload();
+    setMakingLink(true);
     setReplyError('');
     dialog.current?.showModal();
     try {
@@ -100,38 +91,19 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
       const d = (await response.json()) as Article & { error?: string };
       if (!response.ok) throw Error(d.error);
       if (!request.signal.aborted) setReply(d);
-    } catch (e) {
-      if (!request.signal.aborted) setReplyError(explain(e));
-    }
-  }
-  const eligiblePacks = reply
-    ? (packs.data?.packs ?? []).filter(
-        (p) =>
-          !p.archived &&
-          matchesActivity(reply.content, p.activity) &&
-          p.modules.includes(reply.content.module) &&
-          (!p.articleIds.length || p.articleIds.includes(reply.id)),
-      )
-    : [];
-  const selectedPack = eligiblePacks.find((p) => p.id === packId);
-  async function makeReplyLink() {
-    if (!reply || !selectedPack) return;
-    const generation = ++linkRequest.current;
-    setMakingLink(true);
-    setReplyError('');
-    setCustomerPath('');
-    try {
       const result = await api<{ path: string }>('replies', {
         method: 'POST',
-        body: JSON.stringify({ articleId: reply.id, packId: selectedPack.id }),
+        signal: request.signal,
+        body: JSON.stringify({ articleId: id }),
       });
-      if (generation === linkRequest.current) setCustomerPath(result.path);
+      if (!request.signal.aborted) setCustomerPath(result.path);
     } catch (e) {
-      if (generation === linkRequest.current) setReplyError(explain(e));
+      if (!request.signal.aborted) setReplyError(explain(e));
     } finally {
-      if (generation === linkRequest.current) setMakingLink(false);
+      if (!request.signal.aborted) setMakingLink(false);
     }
   }
+
   return (
     <section>
       <div className="section-title">
@@ -272,23 +244,30 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
                   <td data-label="الإجراءات">
                     <div className="table-actions">
                       {canEdit(user.role) && (
-                        <button className="button secondary small" onClick={() => onEdit(a.id)}>
+                        <button
+                          data-hint="يفتح تعديل ومراجعة الشرح؛ نسخة العميل مش بتتغير إلا بعد النشر."
+                          className="button secondary small"
+                          onClick={() => onEdit(a.id)}
+                        >
                           تحرير / مراجعة
                         </button>
                       )}
                       {a.hasPublished && (
                         <>
                           <button
+                            data-hint="يفتح الرد ويجهز رابط الإجابة تلقائيًا، من غير اختيار عميل أو دليل تسليم."
                             className="button secondary small"
                             onClick={() => openReply(a.id)}
                           >
-                            الرد والرابط
+                            مشاركة الإجابة
                           </button>
+
                           <a
                             className="icon-button"
                             href={'/help/' + a.id}
                             target="_blank"
                             rel="noreferrer"
+                            data-hint="معاينة الشرح للفريق. لمشاركة إجابة مستقلة للعميل استخدم مشاركة الإجابة."
                             aria-label={'فتح ' + a.title}
                           >
                             <ExternalLink size={16} />
@@ -334,43 +313,14 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
                 {replyError}
               </p>
             )}
-            <label>
-              دليل العميل
-              <select
-                aria-label="اختيار دليل العميل للرد"
-                value={packId}
-                disabled={makingLink}
-                onChange={(e) => {
-                  setPackId(e.target.value);
-                  setCustomerPath('');
-                }}
-              >
-                <option value="">اختار دليل العميل قبل نسخ الرابط</option>
-                {eligiblePacks.map((p) => (
-                  <option key={p.id} value={p.id}>
-                    {p.title}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <ActionHint text="اختار دليل العميل، وبعدها جهّز رابط يفتح الإجابة دي بس. الرابط يقف لو دليل العميل اتوقف أو اتحذف.">
-              <button
-                className="button secondary small"
-                disabled={!selectedPack || makingLink}
-                onClick={makeReplyLink}
-              >
-                {makingLink ? 'جارٍ تجهيز الرابط…' : 'تجهيز رابط الإجابة فقط'}
-              </button>
-            </ActionHint>
             <p className="soft-note">
-              رابط الرد يفتح الإجابة دي بس، من غير باقي دليل العميل. إيقاف دليل العميل أو حذفه يوقف
-              الرابط.
+              رابط مستقل للإجابة دي بس؛ مش محتاج عميل أو دليل تسليم، ولا يفتح باقي المكتبة.
             </p>
-            {packs.error && <p className="error-line">{packs.error}</p>}
-            {!packs.loading && !eligiblePacks.length && (
-              <p className="soft-note">
-                الشرح مش موجود في دليل عميل مفعّل. أضِفه للدليل المناسب من «أدلة العملاء» الأول.
-              </p>
+            {makingLink && <p role="status">جارٍ تجهيز الرابط تلقائيًا…</p>}
+            {!makingLink && !customerPath && (
+              <button className="button secondary small" onClick={() => openReply(reply.id)}>
+                إعادة تجهيز الرابط
+              </button>
             )}
             <textarea
               className="reply-text"

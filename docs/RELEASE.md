@@ -1,3 +1,5 @@
+Current update: Site version 4 separates support answer sharing from training handover and adds app-wide contextual help. See SINGLE_ANSWER_SHARING.md. Earlier version-specific notes below are history; content inventory is unchanged.
+
 Current update: Site version 3 adds answer-only links, optional comments and lightweight guidance; see [single-answer sharing](SINGLE_ANSWER_SHARING.md). The content inventory below remains unchanged.
 
 # Reviewed ERP content expansion — 2026-11-03

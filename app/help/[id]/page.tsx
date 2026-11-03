@@ -43,12 +43,7 @@ export default async function Help({
     if ((await cookies()).get(REPLY_COOKIE)?.value !== scope.token)
       redirect('/api/customer/reply?token=' + encodeURIComponent(scope.token));
     return (
-      <ArticleView
-        article={a}
-        related={[]}
-        activity={scope.pack.activity}
-        replyToken={scope.token}
-      />
+      <ArticleView article={a} related={[]} activity={scope.activity} replyToken={scope.token} />
     );
   }
   if (!a || !(await allowedCustomerArticle(id, p.guide))) notFound();

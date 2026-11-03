@@ -1,13 +1,13 @@
 {
   "date": "2026-11-03",
-  "status": "ERP_RELEASE_WITH_SINGLE_ANSWER_SHARING_PUBLISHED",
+  "status": "INDEPENDENT_SUPPORT_SHARING_PUBLISHED",
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
   "current_source_pushed": true,
   "deployment_verified": true,
-  "publication_instruction": "Published answer-only replies, optional feedback comments, prerequisite display controls and lightweight action hints on the existing dedicated Site.",
-  "last_connector_observation": "Native version 3 deployment succeeded on 2026-11-03.",
+  "publication_instruction": "Published automatic standalone answer sharing and app-wide contextual help; training handover remains separate.",
+  "last_connector_observation": "Native version 4 deployment succeeded on 2026-11-03.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
     "typescript": "passed 2026-11-03",
@@ -37,7 +37,7 @@
     "team_auth": "Nine local groups passed with temporary UUID owner, designated owner untouched; independent email/password.",
     "content_supplement": "396 reviewed catalog snapshots published; 67 HR, three unconfirmed business topics and one team-only entry withheld.",
     "pure_tests": {
-      "passed": 24,
+      "passed": 25,
       "failed": 0
     },
     "lint": "Focused changed-file ESLint: zero errors; existing image-optimization warnings.",
@@ -48,10 +48,11 @@
     "mobile_matrix": "64 current Chromium layout samples: eleven team tabs and five customer/login/report/finance pages at 320/390/768/1280; zero overflow; matching full-module customer fixture; menu/new-pack/scoped-reply interactions passed. PNGs visually reviewed.",
     "new_erp_saves": 0,
     "readiness_mobile": "Passed 390px Chromium: open panel, expand 60 to 120 tasks, refresh current records; no overflow; screenshot visually reviewed.",
-    "hosted_http": "Version 3: native deploy succeeded; health/login/image 200; anonymous admin 401; unscoped library and invalid reply capability 404. Infrastructure dispatch authorization only, no staff session or owner password.",
+    "hosted_http": "Version 4: native deployment succeeded; health/login/image 200, anonymous admin 401, unscoped library and invalid reply 404. Infrastructure dispatch authorization only; no production owner password or staff session.",
     "hosted_browser": "Independent login rendered at 320/390/1280 with no horizontal overflow; desktop/mobile PNGs reviewed; no owner password entered.",
-    "single_answer": "Fresh-browser access, singleton article/API/print, tamper rejection, empty negative feedback and archive/delete revocation passed locally; final run followed a task-owned dev-worker restart after ECONNRESET.",
-    "prerequisite_and_hint_ui": "Six exact Chromium viewport samples: important/details/hidden at 390/1280; no overflow; modal, mouse hover/tap hints, optional comment skip and team reply-link generation passed; mobile PNGs visually reviewed."
+    "single_answer": "Passed: no-pack link generation; fresh-browser singleton article/API/print; optional empty feedback; handover archive/delete has no effect; answer archive revokes. Legacy grant compatibility pure check passed.",
+    "prerequisite_and_hint_ui": "Six exact Chromium viewport samples: important/details/hidden at 390/1280; no overflow; modal, mouse hover/tap hints, optional comment skip and team reply-link generation passed; mobile PNGs visually reviewed.",
+    "contextual_help": "Passed: six exact 390/1280 customer viewport samples; automatic team reply with no pack selector; row hover and mobile help mode interception; contextual help in ten team sections. PNGs visually reviewed. Focused ESLint and TypeScript passed."
   },
   "content": {
     "articles": 472,
@@ -96,9 +97,11 @@
     "Content XLSX export and PDF print layouts",
     "Arabic in-app team guide",
     "Source archive and local launch/stop tools",
-    "Encrypted single-answer reply links with parent guide revocation",
+    "Independent encrypted single-answer reply links with article publication revocation",
     "Important/details/hidden prerequisite display",
-    "Hover/focus/tap hints and manual clipboard fallback"
+    "Hover/focus/tap hints and manual clipboard fallback",
+    "App-wide hover/focus contextual help and non-executing mobile help mode",
+    "Automatic independent answer link preparation from article row"
   ],
   "erp_changes": false,
   "external_messages_sent": false,
@@ -122,7 +125,7 @@
     "baseline": "358f67fe6dc6a674e6c8341ab8ad4086ad02ff24",
     "branch": "codex/code-quality-review",
     "local_only": false,
-    "unit_tests_passed": 24,
+    "unit_tests_passed": 25,
     "lifecycle_checks_passed": 11,
     "role_groups_passed": 4,
     "preview": "http://127.0.0.1:5174/",
@@ -131,7 +134,7 @@
   "team_access": {
     "mode": "independent_email_password",
     "public_registration": false,
-    "customer_access": "anonymous_per_customer_scoped_bearer_pack_or_encrypted_single_answer",
+    "customer_access": "scoped_training_handover_or_independent_single_answer",
     "local_auth_groups_passed": 9,
     "unit_model_export_password_checks_passed": 20,
     "migration": "0003_team_auth.sql",
@@ -146,7 +149,7 @@
   "source_implementation_commit": "See Git HEAD for this release; hosted application commit is hosted_source_commit.",
   "historical_site_project_id": "appgprj_6ae891cdafac8191a681f8c4691b0e02",
   "live_url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site",
-  "hosted_version": 3,
-  "hosted_source_commit": "399a6c4a96f6d6ff582e4e3f80859911b08dff65",
-  "hosted_deployment_id": "appgdep_6aea234415e48191bc2a3d675f968b93"
+  "hosted_version": 4,
+  "hosted_source_commit": "d9bb560a88f9de38d162b50d380285de40075240",
+  "hosted_deployment_id": "appgdep_6aea299c3b808191acc583e751c90650"
 }

@@ -1,3 +1,5 @@
+Current sharing contract: independent support answers require no training pack. Share Answer prepares a one-answer link automatically. Unpublishing the answer revokes it; handover stop/delete does not. App-wide hover/focus/tap help is available. See SINGLE_ANSWER_SHARING.md. Earlier guide-bound sharing descriptions below are historical and apply only to legacy links.
+
 # Independent team access and scoped customer guides
 
 Current user choices: independent team email/password and a separate revocable guide per customer, scoped to one activity. The earlier general-activity delivery preference was superseded. Initial owner identity is held only in the local runtime/database, not reproduced in knowledge files.

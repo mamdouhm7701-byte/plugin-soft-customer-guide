@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { ContextHints } from '@/components/guide/ContextHints';
 
 export const metadata: Metadata = {
   title: { default: 'دليل العميل المصوّر | Plugin Soft', template: '%s | Plugin Soft' },
@@ -17,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body>{children}</body>
+      <body>
+        {children}
+        <ContextHints />
+      </body>
     </html>
   );
 }
