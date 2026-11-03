@@ -1,3 +1,7 @@
+# Answer-only replies and contextual help — 2026-11-03
+
+Added encrypted single-answer links tied to active customer guides, isolated article/API/print/media scope, optional negative-feedback comments, important/details/hidden prerequisite display modes, accessible hover/focus/tap action hints and a manual clipboard fallback. Existing content and owner credentials preserved. See docs/SINGLE_ANSWER_SHARING.md.
+
 # Reviewed ERP content expansion — 2026-11-03
 
 Published dedicated Site version 2: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .

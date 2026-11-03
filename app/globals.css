@@ -171,6 +171,55 @@ svg {
   gap: 7px;
   flex-wrap: wrap;
 }
+.action-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+}
+.hint-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.hint-info:hover,
+.hint-info:focus-visible {
+  background: #eee8f8;
+  color: var(--purple-dark);
+  outline: 2px solid var(--purple-dark);
+  outline-offset: 2px;
+}
+.action-tooltip {
+  position: fixed;
+  z-index: 10000;
+  width: min(260px, calc(100vw - 24px));
+  padding: 10px 13px;
+  border: 1px solid #ded4ee;
+  border-radius: 10px;
+  background: #fff;
+  color: #352a48;
+  box-shadow: 0 6px 24px #24123820;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: start;
+  white-space: normal;
+  pointer-events: auto;
+}
+@media print {
+  .hint-info,
+  .action-tooltip {
+    display: none !important;
+  }
+}
 .copy-success {
   font-size: 11px;
   color: var(--green);

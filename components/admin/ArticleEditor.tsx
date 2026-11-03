@@ -359,6 +359,22 @@ export function ArticleEditor({
                 onChange={(e) => field('prerequisites', lines(e.target.value))}
               />
             </label>
+            <label className="full-width">
+              عرض متطلبات البداية للعميل
+              <select
+                value={content.prerequisitesMode || 'details'}
+                onChange={(e) =>
+                  field('prerequisitesMode', e.target.value as 'important' | 'details' | 'hidden')
+                }
+              >
+                <option value="important">مهمة: تظهر قبل الخطوات</option>
+                <option value="details">توضيحات: زر يفتح نافذة عند الحاجة</option>
+                <option value="hidden">إخفاء: غير لازمة للعميل</option>
+              </select>
+              <small>
+                أظهر فقط الشروط المؤثرة في التنفيذ؛ الإرشادات العامة مكانها نافذة التوضيح.
+              </small>
+            </label>
           </div>
           <div className="section-title">
             <h3>الخطوات المصوّرة</h3>

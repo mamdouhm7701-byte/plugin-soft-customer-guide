@@ -37,6 +37,7 @@ export async function contentWorkbook(records: DraftRecord[], origin: string) {
     ['النسخة', 12],
     ['آخر تعديل', 24],
     ['رابط معاينة الفريق', 65],
+    ['عرض متطلبات البداية', 35],
   ].map(([header, width]) => ({ header: String(header), width: Number(width) }));
   steps.columns = [
     ['كود الشرح', 22],
@@ -67,6 +68,11 @@ export async function contentWorkbook(records: DraftRecord[], origin: string) {
       record.revision,
       record.updatedAt,
       !record.archived && record.publishedRevision ? origin + '/help/' + record.id : '',
+      c.prerequisitesMode === 'important'
+        ? 'مهم قبل الخطوات'
+        : c.prerequisitesMode === 'hidden'
+          ? 'مخفي'
+          : 'نافذة توضيح',
     ]);
     c.steps.forEach((s, i) =>
       steps.addRow([

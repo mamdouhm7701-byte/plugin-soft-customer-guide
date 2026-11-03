@@ -1,5 +1,6 @@
 import { getPack, packArticles } from '@/lib/guide-server';
 import { CUSTOMER_COOKIE } from '@/lib/customer-access';
+import { REPLY_COOKIE } from '@/lib/reply-access';
 export const dynamic = 'force-dynamic';
 export async function GET(request: Request) {
   const url = new URL(request.url),
@@ -13,7 +14,7 @@ export async function GET(request: Request) {
   const article = url.searchParams.get('article');
   if (article && !(await packArticles(pack)).some((x) => x.id === article))
     return new Response('الشرح غير متاح.', { status: 404 });
-  return new Response(null, {
+  const response = new Response(null, {
     status: 303,
     headers: {
       Location: article
@@ -24,4 +25,9 @@ export async function GET(request: Request) {
       'Referrer-Policy': 'no-referrer',
     },
   });
+  response.headers.append(
+    'Set-Cookie',
+    `${REPLY_COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${url.protocol === 'https:' ? '; Secure' : ''}`,
+  );
+  return response;
 }

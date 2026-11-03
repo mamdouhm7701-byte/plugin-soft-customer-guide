@@ -20,6 +20,7 @@ import { api, useResource, explain } from './api';
 import { ContentReadiness } from './ContentReadiness';
 import { CatalogCoverage } from './CatalogCoverage';
 import { ContentExport } from './ContentExport';
+import { ActionHint } from '@/components/guide/ActionHint';
 const statusNames: Record<string, string> = {
   draft: 'مسودة',
   review: 'بانتظار المراجعة',
@@ -45,10 +46,13 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
     [shown, setShown] = useState(30),
     [reply, setReply] = useState<Article | null>(null),
     [replyError, setReplyError] = useState(''),
+    [customerPath, setCustomerPath] = useState(''),
+    [makingLink, setMakingLink] = useState(false),
     [loadingCatalog, setLoadingCatalog] = useState(false),
     [catalogMessage, setCatalogMessage] = useState(''),
     dialog = useRef<HTMLDialogElement>(null),
     replyRequest = useRef<AbortController | null>(null);
+  const linkRequest = useRef(0);
   useEffect(() => () => replyRequest.current?.abort(), []);
   const list = (r.data?.articles || []).filter(
     (a) =>
@@ -82,6 +86,9 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
     replyRequest.current = request;
     setReply(null);
     setPackId('');
+    setCustomerPath('');
+    linkRequest.current++;
+    setMakingLink(false);
     packs.reload();
     setReplyError('');
     dialog.current?.showModal();
@@ -107,8 +114,24 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
       )
     : [];
   const selectedPack = eligiblePacks.find((p) => p.id === packId);
-  const customerPath =
-    reply && selectedPack ? '/help/' + reply.id + '?guide=' + selectedPack.id : '';
+  async function makeReplyLink() {
+    if (!reply || !selectedPack) return;
+    const generation = ++linkRequest.current;
+    setMakingLink(true);
+    setReplyError('');
+    setCustomerPath('');
+    try {
+      const result = await api<{ path: string }>('replies', {
+        method: 'POST',
+        body: JSON.stringify({ articleId: reply.id, packId: selectedPack.id }),
+      });
+      if (generation === linkRequest.current) setCustomerPath(result.path);
+    } catch (e) {
+      if (generation === linkRequest.current) setReplyError(explain(e));
+    } finally {
+      if (generation === linkRequest.current) setMakingLink(false);
+    }
+  }
   return (
     <section>
       <div className="section-title">
@@ -301,17 +324,26 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
             <X size={19} />
           </button>
         </div>
-        {replyError ? (
+        {replyError && !reply ? (
           <p className="error-line">{replyError}</p>
         ) : reply ? (
           <>
             <h3>{reply.content.title}</h3>
+            {replyError && (
+              <p className="error-line" role="alert">
+                {replyError}
+              </p>
+            )}
             <label>
               دليل العميل
               <select
                 aria-label="اختيار دليل العميل للرد"
                 value={packId}
-                onChange={(e) => setPackId(e.target.value)}
+                disabled={makingLink}
+                onChange={(e) => {
+                  setPackId(e.target.value);
+                  setCustomerPath('');
+                }}
               >
                 <option value="">اختار دليل العميل قبل نسخ الرابط</option>
                 {eligiblePacks.map((p) => (
@@ -321,6 +353,19 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
                 ))}
               </select>
             </label>
+            <ActionHint text="اختار دليل العميل، وبعدها جهّز رابط يفتح الإجابة دي بس. الرابط يقف لو دليل العميل اتوقف أو اتحذف.">
+              <button
+                className="button secondary small"
+                disabled={!selectedPack || makingLink}
+                onClick={makeReplyLink}
+              >
+                {makingLink ? 'جارٍ تجهيز الرابط…' : 'تجهيز رابط الإجابة فقط'}
+              </button>
+            </ActionHint>
+            <p className="soft-note">
+              رابط الرد يفتح الإجابة دي بس، من غير باقي دليل العميل. إيقاف دليل العميل أو حذفه يوقف
+              الرابط.
+            </p>
             {packs.error && <p className="error-line">{packs.error}</p>}
             {!packs.loading && !eligiblePacks.length && (
               <p className="soft-note">
@@ -343,10 +388,22 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
                 <>
                   <CopyButton
                     label="نسخ الرد والرابط"
+                    hint="ينسخ نص الرد ورابط الإجابة فقط؛ العميل يفتحه من غير تسجيل دخول ومن غير الوصول لباقي الدليل."
                     className="button primary"
                     text={() => reply.content.reply + '\n' + location.origin + customerPath}
                   />
-                  <CopyButton text={() => location.origin + customerPath} />
+                  <CopyButton
+                    text={() => location.origin + customerPath}
+                    hint="ينسخ رابط الإجابة الواحدة من غير نص الرد؛ ما بيديش وصول لباقي الدليل."
+                  />
+                  <a
+                    className="button secondary small"
+                    href={customerPath}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    فتح رابط العميل
+                  </a>
                 </>
               ) : (
                 <CopyButton label="نسخ الرد فقط" text={reply.content.reply} />

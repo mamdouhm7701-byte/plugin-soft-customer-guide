@@ -3,13 +3,29 @@ import { redirect } from 'next/navigation';
 import { CUSTOMER_COOKIE } from '@/lib/customer-access';
 import { customerPack, allowedCustomerArticle } from '@/lib/customer-access';
 import { notFound } from 'next/navigation';
-import { getPublished, listPublished, getPack, packArticles } from '@/lib/guide-server';
+import { getPublished, listPublished, packArticles } from '@/lib/guide-server';
 import { ACTIVITIES, matchesActivity } from '@/lib/guide-model';
 import { ArticleView } from '@/components/guide/ArticleView';
+import { customerReply, REPLY_COOKIE } from '@/lib/reply-access';
 export const dynamic = 'force-dynamic';
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-  const a = await getPublished((await params).id);
-  return { title: a?.content.title || 'الشرح غير متاح' };
+export async function generateMetadata({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<Record<string, string | undefined>>;
+}) {
+  const id = (await params).id,
+    p = await searchParams;
+  const allowed = p.reply
+    ? (await customerReply(p.reply))?.article.id === id
+    : await allowedCustomerArticle(id, p.guide);
+  const a = allowed ? await getPublished(id) : null;
+  return {
+    title: a?.content.title || 'Ø§Ù„Ø´Ø±Ø­ ØºÙŠØ± Ù…ØªØ§Ø­',
+    robots: { index: false, follow: false },
+    referrer: 'no-referrer',
+  };
 }
 export default async function Help({
   params,
@@ -21,6 +37,20 @@ export default async function Help({
   const { id } = await params,
     p = await searchParams,
     a = await getPublished(id);
+  if (p.reply || (!p.guide && (await cookies()).get(REPLY_COOKIE)?.value)) {
+    const scope = await customerReply(p.reply);
+    if (!a || !scope || scope.article.id !== id) notFound();
+    if ((await cookies()).get(REPLY_COOKIE)?.value !== scope.token)
+      redirect('/api/customer/reply?token=' + encodeURIComponent(scope.token));
+    return (
+      <ArticleView
+        article={a}
+        related={[]}
+        activity={scope.pack.activity}
+        replyToken={scope.token}
+      />
+    );
+  }
   if (!a || !(await allowedCustomerArticle(id, p.guide))) notFound();
   const activity = ACTIVITIES.some((v) => v.id === p.activity) ? p.activity! : 'general';
   const pack = await customerPack(p.guide);

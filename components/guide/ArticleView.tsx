@@ -5,7 +5,16 @@ import { type Article, type ArticleSummary, activityName, moduleName } from '@/l
 import { Header, Footer, CopyButton, shortDate } from './common';
 import { Photo } from './Photo';
 import { Feedback } from './Feedback';
-export function ArticleBody({ article, draft = false }: { article: Article; draft?: boolean }) {
+import { BeforeStart, beforeStartMode } from './BeforeStart';
+export function ArticleBody({
+  article,
+  draft = false,
+  replyToken,
+}: {
+  article: Article;
+  draft?: boolean;
+  replyToken?: string;
+}) {
   const c = article.content;
   return (
     <div className="article-prose">
@@ -19,16 +28,7 @@ export function ArticleBody({ article, draft = false }: { article: Article; draf
           <span>{c.scopeNote}</span>
         </div>
       )}
-      {c.prerequisites.length > 0 && (
-        <section className="before-section" id="before">
-          <h2>قبل ما تبدأ</h2>
-          <ul>
-            {c.prerequisites.map((s, i) => (
-              <li key={i}>{s}</li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <BeforeStart content={c} />
       <h2 id="steps">{draft ? 'الخطوات ونقاط المراجعة' : 'الخطوات بالصور'}</h2>
       {c.steps.map((s, i) => (
         <section className="article-step" key={i} id={'step-' + (i + 1)}>
@@ -39,7 +39,7 @@ export function ArticleBody({ article, draft = false }: { article: Article; draf
               <p>{s.text}</p>
             </div>
           </div>
-          <Photo step={s} n={i + 1} />
+          <Photo step={s} n={i + 1} replyToken={replyToken} />
         </section>
       ))}
       <section className="outcome-box" id="outcome">
@@ -71,20 +71,25 @@ export function ArticleView({
   related,
   activity = 'general',
   packId,
+  replyToken,
 }: {
   article: Article;
   related: ArticleSummary[];
   activity?: string;
   packId?: string;
+  replyToken?: string;
 }) {
   const c = article.content,
-    back = packId ? '/guides/' + packId : '/?activity=' + activity;
+    back = replyToken ? '#answer' : packId ? '/guides/' + packId : '/?activity=' + activity,
+    scopeQuery = replyToken
+      ? '?reply=' + replyToken
+      : '?activity=' + activity + (packId ? '&guide=' + packId : '');
   return (
     <>
-      <Header homeHref={back} customerOnly={!!packId} />
+      <Header homeHref={back} customerOnly={!!packId || !!replyToken} articleOnly={!!replyToken} />
       <div className="container">
         <nav className="breadcrumbs" aria-label="مسار الصفحة">
-          <a href={back}>دليل {activityName(activity)}</a>
+          {replyToken ? <span>إجابة سؤالك</span> : <a href={back}>دليل {activityName(activity)}</a>}
           <span>‹</span>
           <span>{moduleName(c.module)}</span>
           <span>‹</span>
@@ -103,39 +108,38 @@ export function ArticleView({
               <div className="article-actions">
                 <CopyButton
                   className="button primary"
-                  text={() =>
-                    location.origin +
-                    '/help/' +
-                    article.id +
-                    '?activity=' +
-                    activity +
-                    (packId ? '&guide=' + packId : '')
-                  }
+                  text={() => location.origin + '/help/' + article.id + scopeQuery}
                   label="نسخ رابط الشرح"
                 />
                 <a
                   className="button secondary"
-                  href={'/print?article=' + article.id + (packId ? '&guide=' + packId : '')}
+                  href={
+                    '/print?article=' +
+                    article.id +
+                    (replyToken ? '&reply=' + replyToken : packId ? '&guide=' + packId : '')
+                  }
                   target="_blank"
                   rel="noreferrer"
                 >
                   <FileDown size={16} />
                   طباعة / حفظ PDF
                 </a>
-                <a href={back} className="button ghost">
-                  <ArrowLeft size={16} />
-                  الرجوع للدليل
-                </a>
+                {!replyToken && (
+                  <a href={back} className="button ghost">
+                    <ArrowLeft size={16} />
+                    الرجوع للدليل
+                  </a>
+                )}
               </div>
             </header>
-            <ArticleBody article={article} />
-            <Feedback articleId={article.id} />
+            <ArticleBody article={article} replyToken={replyToken} />
+            <Feedback articleId={article.id} replyToken={replyToken} />
           </main>
           <aside className="article-aside">
             <section className="aside-box toc">
               <h2>في الشرح ده</h2>
               <a href="#answer">الإجابة المختصرة</a>
-              {c.prerequisites.length > 0 && <a href="#before">قبل ما تبدأ</a>}
+              {beforeStartMode(c) === 'important' && <a href="#before">قبل ما تبدأ</a>}
               {c.steps.map((s, i) => (
                 <a href={'#step-' + (i + 1)} key={i}>
                   {i + 1}. {s.title}
@@ -166,7 +170,7 @@ export function ArticleView({
                 جهّز اسم الشاشة وخطواتك والنتيجة اللي ظهرت، وابعتهم لقناة الدعم المتفق عليها من غير
                 بيانات حساسة.
               </p>
-              {!packId && article.id !== 'support-request' && (
+              {!packId && !replyToken && article.id !== 'support-request' && (
                 <Link className="button secondary small" href="/help/support-request">
                   إزاي أجهّز سؤالي؟
                 </Link>
@@ -178,7 +182,7 @@ export function ArticleView({
           </aside>
         </div>
       </div>
-      <Footer customerOnly={!!packId} />
+      <Footer customerOnly={!!packId || !!replyToken} />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { customerArticles } from '@/lib/customer-access';
+import { customerReply } from '@/lib/reply-access';
 import { getPublished } from '@/lib/guide-server';
 import { database, bucket, resolveStaff, apiGuard, GuideError } from '@/lib/guide-server';
 export const dynamic = 'force-dynamic';
@@ -11,9 +12,12 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
         .prepare('SELECT media_id FROM guide_public_media WHERE media_id=? LIMIT 1')
         .bind(id)
         .first();
-    if (!(await resolveStaff())) {
+    const replyToken = new URL(request.url).searchParams.get('reply');
+    if (replyToken || !(await resolveStaff())) {
       if (!published) throw new GuideError(404, 'الصورة غير متاحة.');
-      const scoped = await customerArticles();
+      const reply = replyToken ? await customerReply(replyToken) : null;
+      if (replyToken && !reply) throw new GuideError(404, 'الصورة غير متاحة.');
+      const scoped = reply ? { articles: [reply.summary] } : await customerArticles();
       let allowed = false;
       for (const summary of scoped.articles) {
         const article = await getPublished(summary.id);

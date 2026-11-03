@@ -26,10 +26,13 @@ function Marks({ step, n }: { step: Step; n: number }) {
     </>
   ) : null;
 }
-export function Photo({ step, n }: { step: Step; n: number }) {
+export function Photo({ step, n, replyToken }: { step: Step; n: number; replyToken?: string }) {
   const dialog = useRef<HTMLDialogElement>(null),
     [zoom, setZoom] = useState(true);
   if (!step.image) return <div className="soft-note">صورة هذه الخطوة غير متاحة.</div>;
+  const source =
+    imageSrc(step.image) +
+    (replyToken && step.image.kind === 'media' ? '?reply=' + encodeURIComponent(replyToken) : '');
   const f = step.focus,
     z = f ? Math.max(1, Math.min(3.4, 80 / f.w)) : 1,
     left = f ? Math.max(100 - z * 100, Math.min(0, 50 - f.x * z)) : 0,
@@ -45,7 +48,7 @@ export function Photo({ step, n }: { step: Step; n: number }) {
           dialog.current?.showModal();
         }}
       >
-        <img src={imageSrc(step.image)} alt={step.caption} loading="lazy" />
+        <img src={source} alt={step.caption} loading="lazy" />
         <Marks step={step} n={n} />
         <span className="expand-corner">
           <Expand size={16} />
@@ -87,12 +90,12 @@ export function Photo({ step, n }: { step: Step; n: number }) {
                 top: `${top}%`,
               }}
             >
-              <img src={imageSrc(step.image)} alt={step.caption} />
+              <img src={source} alt={step.caption} />
               <Marks step={step} n={n} />
             </div>
           ) : (
             <>
-              <img src={imageSrc(step.image)} alt={step.caption} />
+              <img src={source} alt={step.caption} />
               <Marks step={step} n={n} />
             </>
           )}

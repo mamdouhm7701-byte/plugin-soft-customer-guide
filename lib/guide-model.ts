@@ -152,6 +152,7 @@ export const articleSchema = z.object({
   kind: z.enum(['خطوات تنفيذ', 'تشخيص مشكلة', 'شرح مفهوم', 'توضيح حسابات', 'التواصل مع الدعم']),
   scopeNote: cleanText(1200),
   prerequisites: z.array(cleanText(400)).max(12),
+  prerequisitesMode: z.enum(['important', 'details', 'hidden']).optional(),
   steps: z.array(stepSchema).max(24),
   outcome: cleanText(1200),
   warnings: z.array(cleanText(600)).max(12),

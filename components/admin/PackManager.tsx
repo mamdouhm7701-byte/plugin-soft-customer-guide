@@ -1,4 +1,5 @@
 'use client';
+import { ActionHint } from '@/components/guide/ActionHint';
 import { useEffect, useMemo, useState } from 'react';
 import { Archive, BookOpen, Check, ExternalLink, FileDown, Plus, Save, X } from 'lucide-react';
 import {
@@ -323,7 +324,10 @@ export function PackManager() {
                       <ExternalLink size={14} />
                       معاينة العميل
                     </a>
-                    <CopyButton text={() => location.origin + '/guides/' + p.id} />
+                    <CopyButton
+                      text={() => location.origin + '/guides/' + p.id}
+                      hint="ده رابط دليل العميل بكل الشروحات المختارة له. لو هتبعت إجابة واحدة فقط، استخدم الرد والرابط من مكتبة الإجابات."
+                    />
                     <CopyButton label="نسخ رسالة التسليم" text={() => handover(p)} />
                     <a
                       className="button ghost small"
@@ -339,21 +343,31 @@ export function PackManager() {
                 <button className="button ghost small" onClick={() => begin(p)}>
                   تعديل الدليل
                 </button>
-                <button
-                  className="button ghost small danger"
-                  disabled={busy}
-                  onClick={() => toggle(p)}
+                <ActionHint
+                  text={
+                    p.archived
+                      ? 'يرجع رابط الدليل وروابط إجاباته للعمل من جديد.'
+                      : 'يوقف فتح دليل العميل وروابط إجاباته. تقدر تفعله تاني في أي وقت.'
+                  }
                 >
-                  <Archive size={14} />
-                  {p.archived ? 'تفعيل الرابط' : 'إيقاف الرابط'}
-                </button>
-                <button
-                  className="button ghost small danger"
-                  disabled={busy}
-                  onClick={() => remove(p)}
-                >
-                  حذف الدليل
-                </button>
+                  <button
+                    className="button ghost small danger"
+                    disabled={busy}
+                    onClick={() => toggle(p)}
+                  >
+                    <Archive size={14} />
+                    {p.archived ? 'تفعيل الرابط' : 'إيقاف الرابط'}
+                  </button>
+                </ActionHint>
+                <ActionHint text="يحذف دليل العميل ويوقف روابطه بعد التأكيد؛ الشروحات الأصلية تفضل في المكتبة.">
+                  <button
+                    className="button ghost small danger"
+                    disabled={busy}
+                    onClick={() => remove(p)}
+                  >
+                    حذف الدليل
+                  </button>
+                </ActionHint>
               </div>
             </article>
           ))}

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Download, FileDown } from 'lucide-react';
 import { articleSchema, type DraftRecord } from '@/lib/guide-model';
 import { api, explain } from './api';
+import { ActionHint } from '@/components/guide/ActionHint';
 
 export function ContentExport() {
   const [busy, setBusy] = useState(false),
@@ -45,19 +46,23 @@ export function ContentExport() {
   return (
     <div>
       <div className="inline-actions">
-        <button className="button secondary small" disabled={busy} onClick={excel}>
-          <Download size={16} />
-          {busy ? 'جارٍ تجهيز Excel…' : 'تنزيل Excel'}
-        </button>
-        <a
-          className="button secondary small"
-          href="/admin/export/print"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FileDown size={16} />
-          طباعة / حفظ PDF
-        </a>
+        <ActionHint text="ينزل ملف Excel بالمحتوى والخطوات ومراجع الصور والملاحظات الداخلية. النسخة دي للفريق.">
+          <button className="button secondary small" disabled={busy} onClick={excel}>
+            <Download size={16} />
+            {busy ? 'جارٍ تجهيز Excel…' : 'تنزيل Excel'}
+          </button>
+        </ActionHint>
+        <ActionHint text="يفتح نسخة طباعة المحتوى للفريق؛ اختار حفظ PDF من نافذة الطباعة.">
+          <a
+            className="button secondary small"
+            href="/admin/export/print"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FileDown size={16} />
+            طباعة / حفظ PDF
+          </a>
+        </ActionHint>
       </div>
       {error && (
         <p className="error-line" role="alert">

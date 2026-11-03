@@ -1,3 +1,5 @@
+Current update: Site version 3 adds answer-only links, optional comments and lightweight guidance; see [single-answer sharing](SINGLE_ANSWER_SHARING.md). The content inventory below remains unchanged.
+
 # Reviewed ERP content expansion — 2026-11-03
 
 Published dedicated Site version 2: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .

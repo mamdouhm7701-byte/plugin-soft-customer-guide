@@ -1,4 +1,7 @@
 import businessRules from '@/lib/source-business-rules.json';
+import { env } from 'cloudflare:workers';
+import { createReplyToken } from '@/lib/reply-token';
+import { getPack, packArticles } from '@/lib/guide-server';
 import { issueActivation } from '@/lib/team-auth';
 import { z } from 'zod';
 import { canEdit, canManageStaff, publishIssues, type Role } from '@/lib/guide-model';
@@ -194,6 +197,17 @@ export async function POST(request: Request, context: Context) {
     const { path } = await context.params,
       user = await requireStaff(),
       db = database();
+    if (path[0] === 'replies' && path.length === 1) {
+      const v = z
+        .object({ packId: z.string().uuid(), articleId: z.string().regex(/^[a-zA-Z0-9-]{1,100}$/) })
+        .parse(await bodyJSON(request));
+      const pack = await getPack(v.packId);
+      if (!pack || !(await packArticles(pack)).some((a) => a.id === v.articleId))
+        throw new GuideError(404, 'الشرح غير متاح في دليل العميل المفعّل.');
+      if (!env.GUIDE_RATE_SECRET) throw new GuideError(503, 'إعداد روابط الرد غير مكتمل.');
+      const token = await createReplyToken(env.GUIDE_RATE_SECRET, pack.id, v.articleId);
+      return json({ path: '/help/' + v.articleId + '?reply=' + token });
+    }
     if (path[0] === 'media') {
       if (!canEdit(user.role)) throw new GuideError(403, 'رفع الصور متاح للمحررين فقط.');
       if (Number(request.headers.get('Content-Length') || 0) > 7 * 1024 * 1024)

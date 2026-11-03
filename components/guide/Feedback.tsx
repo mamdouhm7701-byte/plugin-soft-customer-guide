@@ -1,20 +1,26 @@
 'use client';
 import { useState } from 'react';
 import { ThumbsDown, ThumbsUp, CheckCircle2 } from 'lucide-react';
-export function Feedback({ articleId }: { articleId: string }) {
+import { ActionHint } from './ActionHint';
+export function Feedback({ articleId, replyToken }: { articleId: string; replyToken?: string }) {
   const [vote, setVote] = useState<'yes' | 'no' | ''>(''),
     [comment, setComment] = useState(''),
     [done, setDone] = useState(false),
     [busy, setBusy] = useState(false),
     [error, setError] = useState('');
-  async function send(v: 'yes' | 'no') {
+  async function send(v: 'yes' | 'no', skipComment = false) {
     setBusy(true);
     setError('');
     try {
       const r = await fetch('/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ articleId, vote: v, comment }),
+        body: JSON.stringify({
+          articleId,
+          vote: v,
+          comment: skipComment || v === 'yes' ? '' : comment,
+          replyToken,
+        }),
       });
       const d = (await r.json()) as { error?: string };
       if (!r.ok) throw Error(d.error || 'تعذر إرسال التقييم.');
@@ -37,26 +43,30 @@ export function Feedback({ articleId }: { articleId: string }) {
           <div className="feedback-question">
             <strong>الشرح وضّح لك الخطوات؟</strong>
             <div>
-              <button
-                className="button secondary small"
-                disabled={busy}
-                onClick={() => {
-                  setVote('yes');
-                  send('yes');
-                }}
-              >
-                <ThumbsUp size={15} />
-                أيوه، واضح
-              </button>
-              <button
-                className="button ghost small"
-                disabled={busy}
-                aria-expanded={vote === 'no'}
-                onClick={() => setVote('no')}
-              >
-                <ThumbsDown size={15} />
-                محتاج توضيح
-              </button>
+              <ActionHint text="يسجل إن الشرح واضح ومفيد، من غير ما تكتب تعليق.">
+                <button
+                  className="button secondary small"
+                  disabled={busy}
+                  onClick={() => {
+                    setVote('yes');
+                    send('yes');
+                  }}
+                >
+                  <ThumbsUp size={15} />
+                  أيوه، واضح
+                </button>
+              </ActionHint>
+              <ActionHint text="يفتح مكان للتعليق لو حابب توضّح المشكلة؛ تقدر تبعت التقييم من غير تعليق.">
+                <button
+                  className="button ghost small"
+                  disabled={busy}
+                  aria-expanded={vote === 'no'}
+                  onClick={() => setVote('no')}
+                >
+                  <ThumbsDown size={15} />
+                  لا، محتاج توضيح
+                </button>
+              </ActionHint>
             </div>
           </div>
           {vote === 'no' && (
@@ -72,7 +82,14 @@ export function Feedback({ articleId }: { articleId: string }) {
                 />
               </label>
               <button className="button primary small" disabled={busy} onClick={() => send('no')}>
-                {busy ? 'جارٍ الإرسال…' : 'إرسال الملاحظة'}
+                {busy ? 'جارٍ الإرسال…' : 'إرسال التقييم'}
+              </button>
+              <button
+                className="button ghost small"
+                disabled={busy}
+                onClick={() => send('no', true)}
+              >
+                تخطي التعليق وإرسال التقييم
               </button>
             </div>
           )}

@@ -55,3 +55,7 @@ Guide deletion uses revision-checked deletion plus an audit record in one databa
 ## Current regression checks (2026-11-03)
 
 Independent-login checks now use a temporary test owner, leaving the designated owner untouched. Nine auth groups, four role groups and eleven lifecycle groups passed with the per-customer access contract. Anonymous activity/print routes reject access. Customer revocation/delete regression passed. Support reply sharing requires choosing an active guide whose activity, module and optional article selection include the published answer. No eligible guide exposes a text-only copy action. Legacy unrestricted-public contracts are superseded.
+
+## Single-answer replies (2026-11-03)
+
+Support now selects an eligible guide and explicitly generates an opaque answer-only link before copying. It does not expose the parent guide identifier; it has no related/return-to-guide navigation. Every article, API, print, feedback and uploaded-media access rechecks current parent scope. Old full-guide links retain their full-guide meaning. See SINGLE_ANSWER_SHARING.md for security and regression evidence.

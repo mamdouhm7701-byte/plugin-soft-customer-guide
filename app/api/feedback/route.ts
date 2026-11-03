@@ -1,4 +1,5 @@
 import { allowedCustomerArticle } from '@/lib/customer-access';
+import { customerReply } from '@/lib/reply-access';
 import { z } from 'zod';
 import {
   apiGuard,
@@ -22,9 +23,13 @@ export async function POST(request: Request) {
         articleId: z.string().max(100),
         vote: z.enum(['yes', 'no']),
         comment: z.string().trim().max(600).default(''),
+        replyToken: z.string().max(1000).optional(),
       })
       .parse(await bodyJSON(request));
-    if (!(await allowedCustomerArticle(v.articleId)) || !(await getPublished(v.articleId)))
+    const allowed = v.replyToken
+      ? (await customerReply(v.replyToken))?.article.id === v.articleId
+      : await allowedCustomerArticle(v.articleId);
+    if (!allowed || !(await getPublished(v.articleId)))
       throw new GuideError(404, 'الشرح غير متاح حاليًا.');
     const cookie = request.headers.get('Cookie') || '',
       old = cookie.match(/(?:^|;\s*)guide_visitor=([a-f0-9-]{36})(?:;|$)/i)?.[1],
