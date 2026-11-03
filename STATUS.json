@@ -4,7 +4,7 @@
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
-  "current_source_pushed": false,
+  "current_source_pushed": true,
   "deployment_verified": true,
   "publication_instruction": "User requested HR deferred and completed content published; dedicated Site version 1 succeeded.",
   "last_connector_observation": "Dedicated Site created and published successfully; no ERP/EduPro Site modified.",
@@ -134,7 +134,7 @@
     "hosted_owner_password": "User must choose password through private one-use activation file; never set by agent."
   },
   "source_branch": "codex/code-quality-review",
-  "source_implementation_commit": "6b6222c",
+  "source_implementation_commit": "78743bb",
   "historical_site_project_id": "appgprj_6ae891cdafac8191a681f8c4691b0e02",
   "live_url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site",
   "hosted_version": 1,
