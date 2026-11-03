@@ -1,0 +1,11 @@
+{
+  "name": "live-category-name-field.png",
+  "route": "/items-category",
+  "capturedAt": "2026-11-03T12:55:34.909046200Z",
+  "mode": "native-element-screenshot",
+  "scope": "native bounded UI element only, no save or changes; no retouching; private company identifiers outside capture",
+  "visibleLabel": "الاسم العربي",
+  "sha256": "1eb7c64ba9b290d1205811ed69acced6ccb410212d9babffdfe470481d7e6d3e",
+  "review": "Individually visually reviewed original native capture, no save/send/mutation. Private company identifiers and tax/registration/contact details are not present. Only bounded field/card, status, empty criteria or synthetic QA home context.",
+  "label": "حقل الاسم العربي فقط من نموذج الفئة الفارغ"
+}

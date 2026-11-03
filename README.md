@@ -1,8 +1,8 @@
-Published release: 52 articles (47 reviewed ERP additions plus five original guides). Remaining 420 catalog records stay private; HR is deferred. Dedicated live Site: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site . Hosted login/access smoke checks passed; owner enrollment is configured and awaits the user choosing a password. See docs/RELEASE.md.
+Published dedicated Site version 2: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
 
 # Plugin Soft Customer Guide
 
-Arabic RTL training handover and support knowledge platform. Current local source: 2026-11-03. Dedicated Site version 1 is published; HR remains deferred.
+Arabic RTL training handover and support knowledge platform. Current local source: 2026-11-03. Dedicated Site version 2 is published; HR remains deferred.
 
 ## Stack and location
 
@@ -33,13 +33,13 @@ The platform includes illustrated answers, image focus overlays, Arabic search, 
 
 ## Content and verification boundaries
 
-- 467 catalog records, including 47 reviewed releases and 420 private drafts, plus five initial articles (472 total; 52 published).
-- 154 genuine screenshot assets: 127 current read-only native captures, 25 historical registry images and two original sales-form assets.
-- 349 catalog articles have at least one image reference; 260 have a reference in every step. A reference may illustrate the same form across steps; it is not proof those steps or financial outcomes were executed.
-- All 71 individual report criteria forms are captured, individually reviewed and linked to their exact report article. No report output was run or qualified.
-- 118 catalog articles have no image; 207 lack at least one step image. The reviewed release includes 52 published articles; remaining drafts stay private.
-- Written guidance maps 106 active screens, 71 reports, eleven modules and six activities. Twenty-one bounded source business rules retain exact source hashes; all hashes were rechecked against ERP source.
-- Independent team roles/password login, scoped customer packs, revocation/delete, XLSX and browser PDF layouts are implemented locally. A dedicated guide Site is live; the separate ERP/EduPro Site was not changed.
+- 401 published articles: 396 reviewed ERP catalog entries plus five original guides; 71 catalog entries remain private.
+- 178 genuine assets: 150 current native ERP captures, one actual guide preview, 25 historical registry images and two original images.
+- 438 catalog articles have an image reference; 415 have references on every step. References may repeat a form as context and do not prove transaction execution.
+- All 71 individual report criteria forms are captured and linked to their exact report guidance; report outputs were not executed.
+- HR (67 records) is deferred. Negative-stock policy, contract retention/milestones and vehicle financing/installments remain unconfirmed and private. Team reply sharing belongs to authenticated Team Help.
+- Responsive checks passed in 64 Chromium samples at 320/390/768/1280 widths, including team and customer report/finance pages. Physical Safari/iOS and full-catalog PDF pagination are not certified.
+- Dedicated public-audience hosting retains independent staff authentication and per-customer guide access. The separate ERP/EduPro Site was not changed.
 
 The importer preserves existing records and revisions. `scripts/add-live-ui-content.py` imports only the specifically reviewed native blank-modal captures with route/time/hash evidence. See [content provenance](docs/CONTENT_CATALOG.md), [current verification](docs/VERIFICATION.md), [team access](docs/TEAM_ACCESS.md) and `STATUS.json`.
 
@@ -62,6 +62,6 @@ Loopback integration/auth/role checks create their own temporary staff identitie
 
 Preserve the original Sites identity in `.openai/hosting.json`. Before publication, apply migrations through `0003_team_auth.sql`, configure server-only `GUIDE_RATE_SECRET`, provision the hosted owner through a reviewed operator procedure, and verify independent sign-in, guide revocation, storage and customer routes in the hosted environment. There is no public owner-bootstrap endpoint. GitHub Pages alone cannot run the application's server/D1/R2 features.
 
-Generate the source handoff with `python scripts/package-source.py`. See [operations](docs/OPERATIONS.md) and [GitHub handoff](docs/GITHUB_HANDOFF.md). Version 1 is published; see docs/RELEASE.md.
+Generate the source handoff with `python scripts/package-source.py`. See [operations](docs/OPERATIONS.md) and [GitHub handoff](docs/GITHUB_HANDOFF.md). Version 2 is published; see docs/RELEASE.md.
 
 The latest mobile/source-business pass is documented in docs/VERIFICATION.md. The dedicated guide Site is live; the separate ERP/EduPro Site must not be modified.

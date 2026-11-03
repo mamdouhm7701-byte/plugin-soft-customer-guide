@@ -1,0 +1,11 @@
+{
+  "name": "live-subscription-branch-card.png",
+  "route": "/subscription-data",
+  "capturedAt": "2026-11-03T12:55:33.548272100Z",
+  "mode": "native-element-screenshot",
+  "scope": "native bounded UI element only, no save or changes; no retouching; private company identifiers outside capture",
+  "visibleLabel": "الفروع",
+  "sha256": "7667c9e5933ca418e913b787f66698d7a55c3e5fde96bfbf035e43cb5d115068",
+  "review": "Individually visually reviewed original native capture, no save/send/mutation. Private company identifiers and tax/registration/contact details are not present. Only bounded field/card, status, empty criteria or synthetic QA home context.",
+  "label": "مؤشر الفروع فقط من الاشتراك؛ لا اسم شركة أو أرقام ضريبية أو بيانات اتصال"
+}

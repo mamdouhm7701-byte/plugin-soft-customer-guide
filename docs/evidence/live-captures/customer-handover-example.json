@@ -1,0 +1,9 @@
+{
+  "name": "guide-customer-handover-example.png",
+  "sha256": "75ed7581ef8c16e0e056d24b5446d221f145235499a5c10357f761920a238261",
+  "capturedAt": "2026-11-03T13:00:16.391618+00:00",
+  "mode": "native-viewport-screenshot",
+  "route": "/guides/<owned-local-preview-fixture>",
+  "scope": "Local guide application, task-owned temporary preview pack, genuine browser screenshot, no real customer data. Capture file write timestamp used; temporary bearer link removed with fixture.",
+  "review": "Visually reviewed: branded customer guide and published article, no activity/team/global navigation or private identity."
+}

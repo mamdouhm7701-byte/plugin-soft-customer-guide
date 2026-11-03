@@ -1,64 +1,12 @@
-Published release: 52 articles (47 reviewed ERP additions plus five original guides). Remaining 420 catalog records stay private; HR is deferred. Dedicated live Site: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site . Hosted login/access smoke checks passed; owner enrollment is configured and awaits the user choosing a password. See docs/RELEASE.md.
+# Reviewed ERP content expansion — 2026-11-03
 
-# GitHub source handoff
+Published dedicated Site version 2: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
 
-Target owner: `mamdouhm7701-byte`.
-Repository: `plugin-soft-customer-guide`.
-Repository URL: https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide
-Initial visibility: private. Creation was confirmed by the GitHub API on 2026-11-03 under the user-authorized account. Source upload is authorized and synchronized on codex/code-quality-review; website deployment remains deferred.
+Source is maintained on the private codex/code-quality-review branch; main is unchanged. The dedicated Site source checkout is C:/Users/pcx/Desktop/PluginSoft_Guide_Site; the GitHub working source is C:/Users/pcx/Desktop/PluginSoft_Customer_Guide. Runtime D1/R2 contents, team passwords and activation material are not part of source or ZIP backups.
 
-## Stack
 
-- TypeScript 5.9, React 19, Next.js App Router conventions.
-- Vinext 1.0 beta with Vite 8 is the actual build/runtime adapter.
-- Server route handlers run on a Cloudflare Workers-compatible runtime.
-- Cloudflare D1 (SQLite) with Drizzle ORM and migrations.
-- Cloudflare R2 for uploaded images; bundled reviewed screenshots in `public/assets`.
-- Zod validation, Lucide icons, custom RTL CSS; Tailwind 4 and UI components are included in the starter dependencies.
-- Team identity uses independent email/password sessions; see TEAM_ACCESS.md for trusted owner provisioning and deployment requirements.
+## Release behavior
 
-## Source map
+The approved snapshots and digests are in lib/released-articles.json and docs/evidence/release-review.json. Existing published, archived, reviewed or edited customer records win. On authenticated staff startup, only an untouched revision-one imported draft whose validated content matches a pinned pre-review baseline can receive this reviewed bundled release. The update, history and audit entry are guarded in one D1 batch. Changed/restored drafts are excluded, and publication never extends to HR. New installations seed only the reviewed release. Initialization uses bounded batches and skips existing articles/history.
 
-| Path | Responsibility |
-| --- | --- |
-| `app/` | Pages and server API handlers |
-| `components/guide/` | Public customer library, articles and images |
-| `components/admin/` | Team dashboard, editor, roles, packs and coverage map |
-| `lib/` | Business data model, server rules and authored FAQ catalog |
-| `db/`, `drizzle/` | Database schema and migrations |
-| `public/assets/` | Branding and genuine bundled screenshots |
-| `scripts/` | Local launch, build, database tools and source packaging |
-| `tests/` | Model/catalog contracts and loopback integration checks |
-| `docs/` | Architecture, operation, evidence and catalog provenance |
-
-## Local run
-
-Requires Node.js 22.13+ (verified here with Node 24). Install dependencies with `npm run install:ci`, then use `START_GUIDE.cmd` on Windows or `node scripts/local-preview.mjs`. The launcher prepares ignored local environment and database state. Read README and OPERATIONS for manual setup and verification limits.
-
-Run `npm run typecheck` and `npm test`. Live ERP tests are not part of this project. Integration/role checks are local-only and can change their owned guide fixtures; never target a hosted/ERP environment.
-
-## What GitHub stores
-
-Source, migration definitions, 467 editorial draft answers, five published seed articles, bundled images and documentation. `INSERT OR IGNORE` imports preserve existing content. New installations must import the shipped draft batch from the admin library.
-
-GitHub does not include live D1 records, R2 uploads, staff membership, content edits in the local database, secrets or local sessions. Use the administrative export and a separately authorized media/database backup for migrated runtime content. The source archive is not a live data backup.
-
-Excluded: `.dev.vars`, real `.env` files, `.wrangler`, `.sites-runtime`, `node_modules`, generated builds, QA outputs and credentials. `.env.example` contains empty server-only keys. The source package has been checked for these excluded paths.
-
-## Hosting boundary
-
-A GitHub repository stores source; GitHub Pages alone cannot execute the current server/auth/database/image-upload features. The present integration targets Sites with D1/R2. Another host needs explicit storage/runtime adaptation and HTTPS/session-origin verification. `.openai/hosting.json` preserves the existing Site identity. Site publication remains deferred by the user; uploading to GitHub does not publish the website or make drafts public.
-
-## Current readiness
-
-Current local source snapshot — 2026-11-03
-
-- 467 private catalog drafts and five separately published seed articles (472 shipped articles).
-- 154 genuine screenshot assets: 127 current read-only native captures, 25 historical registry images and two original sales-form assets.
-- 349 catalog articles have at least one image reference; 260 have a reference in every step. A reference may illustrate the same form across steps; it is not proof those steps or financial outcomes were executed.
-- All 71 individual report criteria forms are captured, individually reviewed and linked to their exact report article. No report output was run or qualified.
-- 118 catalog articles have no image; 207 lack at least one step image. Publication remains five seed articles; drafts are not silently exposed to customers.
-- Written guidance maps 106 active screens, 71 reports, eleven modules and six activities. Twenty-one bounded source business rules retain exact source hashes; all hashes were rechecked against ERP source.
-- Independent team roles/password login, scoped customer packs, revocation/delete, XLSX and browser PDF layouts are implemented locally. Website hosting remains the final, deferred stage; no separate ERP/EduPro Site was changed.
-
-TypeScript, production build and twenty pure contracts passed. Local lifecycle/role/auth and scoped-customer revocation checks passed. Desktop/mobile samples and a scoped four-page customer PDF were visually reviewed. Runtime database edits, owner activation material and R2 uploads are not part of this source handoff. See VERIFICATION.md and STATUS.json for precise remaining limits.
+The Actions screen was corrected from an assumed approval-definition screen to the actually observed copy/move tabs. Posting and ZATCA send buttons were not used. Full company, registration and tax-ID captures were excluded; native bounded field/card captures contain no company identifiers. No ERP save/delete/post/send operation ran.

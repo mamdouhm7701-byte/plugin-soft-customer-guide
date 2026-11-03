@@ -1,3 +1,21 @@
+# Reviewed ERP content expansion — 2026-11-03
+
+Published dedicated Site version 2: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
+
+
+Version 2 hosted smoke: health/login/new native image 200, anonymous admin 401, unscoped article library 404. Sites dispatch authorization was used for infrastructure access; no application staff session or owner password was used. Raw uncredentialed Python traffic encountered an edge 403. Native deployment succeeded independently.
+
+## Verification
+
+Twenty-two pure checks, TypeScript, ESLint and formatting passed. Eleven loopback lifecycle groups, four role groups, nine authentication groups and customer revocation/delete checks passed with owned temporary staff. The owner was not reset. Import replay preserved revisions and states; all registry image hashes were checked. A current 64-sample Chromium matrix covered 320/390/768/1280 widths across team and customer pages, including a new long report and finance answer, with no document overflow. Mobile PNGs were visually reviewed. A scoped customer PDF was generated; full-catalog PDF pagination and physical iOS/Safari are not certified.
+
+The first expanded visual probe needed an explicit search because the old initial article was no longer in the first 30 rows; its hidden-search locator was corrected to the observed accessible label. The first expanded image wait included offscreen lazy images and was corrected to wait for visible images. A dead local Vite/Miniflare worker was restarted without changing content. STOP_GUIDE now normalizes the trailing directory separator before checking checkout ownership; the corrected task-owned stop/restart was exercised.
+
+ERP reference remains 75fc13b0a0abe1b4f1d6bd0af541837f08b4f9f9 on TestCodeex with existing local changes. ERP source and analysis baseline were not changed. Guide review baseline was 6aab8db50af04cf1a6a63bcce963fe45eb197493 on codex/code-quality-review.
+
+
+## Prior verification history (superseded by the current release above)
+
 Latest hosted verification: native deployment succeeded; independent login rendered at 320/390/1280 with zero horizontal overflow, desktop/mobile PNGs visually reviewed, no password entered. Hosted health/login return 200, anonymous admin 401, out-of-guide article/library 404, invalid activation 400. Configured owner enrollment exists; user password is not set by the agent. Local role checks encountered ECONNRESET during dev refresh, then all four groups passed on retry.
 
 Published release: 52 articles (47 reviewed ERP additions plus five original guides). Remaining 420 catalog records stay private; HR is deferred. Dedicated live Site: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site . Hosted login/access smoke checks passed; owner enrollment is configured and awaits the user choosing a password. See docs/RELEASE.md.

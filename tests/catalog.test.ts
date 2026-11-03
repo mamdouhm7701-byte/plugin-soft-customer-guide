@@ -134,12 +134,15 @@ test('every active inventoried screen and catalogued report has linked draft gui
           asset.source.startsWith('docs/evidence/report-criteria/'),
       );
       const proof = JSON.parse(fs.readFileSync(asset.source, 'utf8'));
-      assert.equal(
-        proof.mode,
-        ['LIVE_EMPTY_DOCUMENT_UI', 'LIVE_REPORT_CRITERIA_ONLY'].includes(asset.scope)
-          ? 'native-viewport-screenshot'
-          : 'native-element-screenshot',
-      );
+      if (['LIVE_NATIVE_UI_REFERENCE', 'LIVE_GUIDE_PREVIEW_UI'].includes(asset.scope)) {
+        assert(['native-element-screenshot', 'native-viewport-screenshot'].includes(proof.mode));
+      } else
+        assert.equal(
+          proof.mode,
+          ['LIVE_EMPTY_DOCUMENT_UI', 'LIVE_REPORT_CRITERIA_ONLY'].includes(asset.scope)
+            ? 'native-viewport-screenshot'
+            : 'native-element-screenshot',
+        );
       assert.equal(proof.sha256, asset.sha256);
       assert.equal(proof.capturedAt, asset.capturedAt);
     } else {
@@ -153,7 +156,7 @@ test('the supplemental visual batch has complete illustrated steps and honest ve
   const illustrated = catalog.filter((x) => x.key.startsWith('illustrated-v3-'));
   assert.equal(illustrated.length, 36);
   for (const entry of illustrated) {
-    assert.equal(entry.content.verifiedAt, '');
+    assert.equal(entry.content.verifiedAt, released.has(entry.id) ? '2026-11-03' : '');
     assert.equal(entry.content.steps.length, 3);
     assert(entry.content.steps.every((s) => s.image && s.caption.includes('أرشيفية') && s.focus));
     assert(entry.content.verificationNote.includes('not LIVE'));

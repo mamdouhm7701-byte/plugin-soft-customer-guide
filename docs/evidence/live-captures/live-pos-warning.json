@@ -1,0 +1,10 @@
+{
+  "name": "live-pos-warning.png",
+  "capturedAt": "2026-11-03T12:37:05.975101800Z",
+  "route": "/point-of-sale",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "f1c420c9aad59b56d87f4ffd36e41b932fdd0e5132d1df3ee09382c2d61b4f36",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "تنبيه عدم تحديد عميل افتراضي للفرع؛ لم يُغير إعداد"
+}

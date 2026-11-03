@@ -1,0 +1,10 @@
+{
+  "name": "live-purchase-dashboard-review.png",
+  "capturedAt": "2026-11-03T12:46:29.668556100Z",
+  "route": "/purchase-dashboard",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "30d90060d651a6e83b3e5b2f880e83de9b3fc6cab355ae187e0b82f430e86fae",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "إحصائيات المشتريات التجريبية في بيئة QA"
+}

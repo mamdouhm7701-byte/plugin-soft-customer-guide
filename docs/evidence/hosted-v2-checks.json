@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/api/health",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "path": "/team/login",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "path": "/api/admin/articles",
+    "status": 401,
+    "expected": 401
+  },
+  {
+    "path": "/api/articles",
+    "status": 404,
+    "expected": 404
+  },
+  {
+    "path": "/assets/live-actions-review.png",
+    "status": 200,
+    "expected": 200
+  }
+]

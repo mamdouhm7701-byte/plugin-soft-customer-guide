@@ -1,0 +1,10 @@
+{
+  "name": "live-home-review.png",
+  "capturedAt": "2026-11-03T12:52:35.095498100Z",
+  "route": "/",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "d4d2daf9398442e6af3b537c0d326445bd73aec7e231d2347ab1b596c06c4ed9",
+  "review": "Individually visually reviewed original native capture, no save/send/mutation. Private company identifiers and tax/registration/contact details are not present. Only bounded field/card, status, empty criteria or synthetic QA home context.",
+  "label": "الصفحة الرئيسية بأسماء QA تجريبية؛ ليست أرقام العميل"
+}

@@ -8,9 +8,9 @@
   "screenGuidance": 106,
   "excluded": 1,
   "reports": 71,
-  "screensWithImages": 73,
-  "articlesWithImages": 349,
-  "additionalScreenshots": 152,
+  "screensWithImages": 95,
+  "articlesWithImages": 438,
+  "additionalScreenshots": 176,
   "verifiedBusinessProcedures": 0,
   "liveCapturePerformed": true,
   "publication": "DEFERRED",
@@ -31,9 +31,9 @@
         "c81ca4ab-3a90-5051-a0b6-f2ddd744bb92",
         "52cc8f81-23fb-5e0c-8325-98541cd07164"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/Items",
@@ -119,9 +119,9 @@
         "e2b513ea-94b6-50d3-91e4-44fe35be090a",
         "3a8d59f2-349d-5128-b4f8-bfe80467abf4"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/addition-order/new",
@@ -287,9 +287,9 @@
         "e8e4b352-1390-5245-9c6b-ecd18259af05",
         "7bb35cfc-23e7-55be-8f16-01f7bcff75a3"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/bulk-invoices",
@@ -307,9 +307,9 @@
         "1f2cf555-b557-525e-aa72-8be77884a863",
         "bb18a69e-f2c3-55ed-b1fe-56e380b5f7f6"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/car-colors",
@@ -391,9 +391,9 @@
         "2946354a-d199-5e6b-a08a-2cff17751753",
         "b28c6624-dfef-50fe-8fde-8822357b2597"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/collection-transactions",
@@ -431,9 +431,9 @@
         "c4214571-c2ef-5815-9d12-6a9aab9f9f92",
         "57f798f3-3ae2-5c38-9768-84b87abaf6b6"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/concrete-dashboard",
@@ -447,9 +447,9 @@
         "5e31c7fb-d03a-5c60-8ff2-d937124e81d3",
         "56823055-8ae3-56f1-a6fe-a262c9bd0af6"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/concrete-exchange-order/new",
@@ -483,9 +483,9 @@
         "06f4a28a-2019-5c4f-a491-a91cc0b5ff24",
         "60b980a8-add8-5f4e-9782-0044ce485bb3"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/concrete-sales-invoice/new",
@@ -551,9 +551,9 @@
         "72bd348e-e5ca-5115-aaf8-acb98f0a484a",
         "565eb055-7e87-524c-b7da-f76f8a9879a5"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/customer-discount",
@@ -911,9 +911,9 @@
         "3175f47e-1c21-5e2f-afbc-3a589cd71d6c",
         "a2d155fb-c0f5-5ec7-9677-8542778dce1c"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/items-reports",
@@ -1022,9 +1022,9 @@
         "8f200f34-1b61-58be-a5ec-df4555fc1fbb",
         "d275318c-8168-593f-8be8-b5f07fefdfe7"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/overflow-adjustment",
@@ -1106,9 +1106,9 @@
         "2bce8b54-d61e-5859-9168-2df394732aa1",
         "ebb24344-ac8a-5ff5-a029-653591fc137f"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/posConfigurations",
@@ -1126,9 +1126,9 @@
         "cf1a119d-99c4-567a-9d1e-fbbf6289fd66",
         "98db5d87-3a49-5305-9d2c-8a45d197ae2e"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/post-vouchers",
@@ -1146,9 +1146,9 @@
         "bd66b3d8-798a-582a-b3e7-14b5a7500c5e",
         "9f8cc2d0-a69f-542e-a463-70114c17c604"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/price-list",
@@ -1203,9 +1203,9 @@
         "d942c81d-6ba8-5c4a-9dc5-d2dcd660db5c",
         "3d2060a4-96fc-596e-9f09-4ae0c454b5a1"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/purch-invoice/new",
@@ -1263,9 +1263,9 @@
         "56d655ba-5c31-57d9-9b71-0ca12138a719",
         "7078a50f-47e4-51c5-a654-2649e5f78614"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/purchase-reports",
@@ -1331,9 +1331,9 @@
         "fb593a7c-61ed-5a4f-97b6-17696085762e",
         "d87486d3-f91a-5582-8375-582c195bd603"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/restaurant-menu",
@@ -1367,9 +1367,9 @@
         "19b4d936-4a86-55b9-b8b2-05e11a9fb01a",
         "4b4de787-2fd8-5aba-8a49-6418a7808fdf"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/return-purch/new",
@@ -1471,9 +1471,9 @@
         "61a48afb-6b44-5eaf-8b16-38b7988344f3",
         "201ea67e-1d9d-580b-8cb5-a39a1237d5c6"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/sales-order/new",
@@ -1531,9 +1531,9 @@
         "acaefaeb-e304-50e4-a929-d2ae153dffe0",
         "e1b3117f-c778-57f3-bbbd-82da8caaedf2"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/shortage-adjustment",
@@ -1591,9 +1591,9 @@
         "e806a5da-75a2-530f-9707-be540d902b14",
         "fcf03ef3-4ffc-560f-94c2-d0b5761de870"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/supplier-discount",
@@ -1751,9 +1751,9 @@
         "f4d31c9b-7498-5928-926b-399e20cfb95b",
         "7c1403ef-ac63-52d1-ae5a-7fc9c9705afb"
       ],
-      "image": false,
+      "image": true,
       "businessVerified": false,
-      "liveUiCaptured": false
+      "liveUiCaptured": true
     },
     {
       "route": "#/vouchers",
@@ -2102,10 +2102,10 @@
   "historicalImageSupplementVersion": "v3",
   "sourceHead": "75fc13b0a0abe1b4f1d6bd0af541837f08b4f9f9",
   "newBrowserCapture": true,
-  "liveReadOnlyScreenshots": 127,
+  "liveReadOnlyScreenshots": 151,
   "liveIllustratedArticles": 20,
   "sourceReviewedBusinessArticles": 21,
   "sourceReviewedRules": 21,
-  "fullyIllustratedArticles": 260,
+  "fullyIllustratedArticles": 415,
   "reportCriteriaImages": 71
 }

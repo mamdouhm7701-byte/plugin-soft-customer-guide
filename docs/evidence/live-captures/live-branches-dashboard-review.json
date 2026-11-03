@@ -1,0 +1,10 @@
+{
+  "name": "live-branches-dashboard-review.png",
+  "capturedAt": "2026-11-03T12:44:14.817207100Z",
+  "route": "/branches-dashboard",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "c9fea0c4ab7af623c08609578fa3eff53eb47ab239aae32042b023b3819571a0",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "إحصائيات الفروع في بيئة QA بأسماء أصناف وفروع تجريبية"
+}

@@ -3,6 +3,8 @@ import { teamSession } from './team-auth';
 import { redirect } from 'next/navigation';
 import seedData from './seed-articles.json';
 import releasedData from './released-articles.json';
+import releaseBaselines from './release-baselines.json';
+import { matchesReviewedBaseline } from './release-policy';
 import {
   articleSchema,
   codeFor,
@@ -42,32 +44,103 @@ export const seeds = [...seedData, ...releasedData].map((s) => ({
 const seededAt = '2026-11-03T00:00:00.000Z';
 export async function seedInitialContent() {
   const db = database();
-  await db.batch(
-    seeds.map((s) =>
+  const existing = await db.prepare('SELECT id FROM guide_articles').all<{ id: string }>();
+  const present = new Set(existing.results.map((r) => r.id));
+  const missing = seeds.filter((s) => !present.has(s.id));
+  for (let offset = 0; offset < missing.length; offset += 20) {
+    const chunk = missing.slice(offset, offset + 20);
+    await db.batch(
+      chunk.map((s) =>
+        db
+          .prepare(
+            `INSERT OR IGNORE INTO guide_articles (id,draft_json,draft_summary,published_json,published_summary,status,revision,published_revision,archived,review_note,updated_by,updated_at,published_at) VALUES (?,?,?,?,?,'published',1,1,0,'','initial-screenshot-content',?,?)`,
+          )
+          .bind(
+            s.id,
+            JSON.stringify(s.content),
+            JSON.stringify(summaryOf(s.id, s.content, 1, seededAt)),
+            JSON.stringify({ ...s.content, verificationNote: '' }),
+            JSON.stringify(summaryOf(s.id, s.content, 1, seededAt)),
+            seededAt,
+            seededAt,
+          ),
+      ),
+    );
+  }
+  const baselineHashes = releaseBaselines as Record<string, string>;
+  const candidates = await db
+    .prepare(
+      "SELECT id,draft_json,revision FROM guide_articles WHERE status='draft' AND archived=0 AND published_json IS NULL",
+    )
+    .all<{ id: string; draft_json: string; revision: number }>();
+  for (const row of candidates.results) {
+    const expected = baselineHashes[row.id],
+      seed = seeds.find((s) => s.id === row.id);
+    if (
+      row.revision !== 1 ||
+      !expected ||
+      !seed ||
+      !(await matchesReviewedBaseline(row.draft_json, expected))
+    )
+      continue;
+    const op = crypto.randomUUID(),
+      revision = row.revision + 1,
+      content = JSON.stringify(seed.content),
+      stamp = now();
+    const summary = JSON.stringify(summaryOf(seed.id, seed.content, revision, stamp));
+    await db.batch([
       db
         .prepare(
-          `INSERT OR IGNORE INTO guide_articles (id,draft_json,draft_summary,published_json,published_summary,status,revision,published_revision,archived,review_note,updated_by,updated_at,published_at) VALUES (?,?,?,?,?,'published',1,1,0,'','initial-screenshot-content',?,?)`,
+          `INSERT INTO guide_revisions (id,article_id,revision,content_json,action,actor_id,note,created_at)
+        SELECT ?,id,revision+1,?,'publish','bundled-reviewed-release','Reviewed ERP source release',? FROM guide_articles
+        WHERE id=? AND revision=? AND draft_json=? AND status='draft' AND archived=0 AND published_json IS NULL`,
+        )
+        .bind(op, content, stamp, row.id, row.revision, row.draft_json),
+      db
+        .prepare(
+          `UPDATE guide_articles SET draft_json=?,draft_summary=?,published_json=?,published_summary=?,status='published',revision=?,published_revision=?,review_note='',updated_by='bundled-reviewed-release',updated_at=?,published_at=?
+        WHERE id=? AND revision=? AND draft_json=? AND status='draft' AND archived=0 AND published_json IS NULL AND EXISTS(SELECT 1 FROM guide_revisions WHERE id=?)`,
         )
         .bind(
-          s.id,
-          JSON.stringify(s.content),
-          JSON.stringify(summaryOf(s.id, s.content, 1, seededAt)),
-          JSON.stringify({ ...s.content, verificationNote: '' }),
-          JSON.stringify(summaryOf(s.id, s.content, 1, seededAt)),
-          seededAt,
-          seededAt,
+          content,
+          summary,
+          JSON.stringify({ ...seed.content, verificationNote: '' }),
+          summary,
+          revision,
+          revision,
+          stamp,
+          stamp,
+          row.id,
+          row.revision,
+          row.draft_json,
+          op,
         ),
-    ),
-  );
-  await db.batch(
-    seeds.map((s) =>
       db
         .prepare(
-          `INSERT INTO guide_revisions (id,article_id,revision,content_json,action,actor_id,note,created_at) SELECT ?,id,1,draft_json,'initial','initial-screenshot-content','Initial screenshot-backed content',? FROM guide_articles WHERE id=? AND revision=1 AND updated_by='initial-screenshot-content' AND NOT EXISTS(SELECT 1 FROM guide_revisions WHERE article_id=? AND revision=1)`,
+          `INSERT INTO guide_audit (id,actor_id,action,entity_id,detail,created_at)
+        SELECT ?,'bundled-reviewed-release','article.publish',?,'Reviewed source release; unchanged baseline draft',? WHERE EXISTS(SELECT 1 FROM guide_revisions WHERE id=?)`,
         )
-        .bind(crypto.randomUUID(), seededAt, s.id, s.id),
-    ),
-  );
+        .bind(crypto.randomUUID(), row.id, stamp, op),
+    ]);
+  }
+  const histories = await db
+    .prepare('SELECT article_id FROM guide_revisions WHERE revision=1')
+    .all<{ article_id: string }>();
+  const recorded = new Set(histories.results.map((r) => r.article_id));
+  const missingHistory = seeds.filter((s) => !recorded.has(s.id));
+  for (let offset = 0; offset < missingHistory.length; offset += 20) {
+    await db.batch(
+      missingHistory
+        .slice(offset, offset + 20)
+        .map((s) =>
+          db
+            .prepare(
+              `INSERT INTO guide_revisions (id,article_id,revision,content_json,action,actor_id,note,created_at) SELECT ?,id,1,draft_json,'initial','initial-screenshot-content','Initial screenshot-backed content',? FROM guide_articles WHERE id=? AND revision=1 AND updated_by='initial-screenshot-content' AND NOT EXISTS(SELECT 1 FROM guide_revisions WHERE article_id=? AND revision=1)`,
+            )
+            .bind(crypto.randomUUID(), seededAt, s.id, s.id),
+        ),
+    );
+  }
 }
 type Row = Record<string, unknown>;
 export function draftFromRow(r: Row): DraftRecord {

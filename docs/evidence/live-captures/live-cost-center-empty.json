@@ -1,0 +1,10 @@
+{
+  "name": "live-cost-center-empty.png",
+  "capturedAt": "2026-11-03T12:35:33.314534500Z",
+  "route": "/cost-center",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "8929faa532d3b008294a6a487f02bd5c228de0c9efde0ade851a6478ac4ac806",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "نموذج مركز تكلفة فارغ"
+}

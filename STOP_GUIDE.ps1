@@ -3,7 +3,9 @@ $guideRoot = $PSScriptRoot
 $guideRecordPath = Join-Path $guideRoot '.sites-runtime/local-preview-process.json'
 if (-not (Test-Path -LiteralPath $guideRecordPath)) { Write-Output 'No launcher-owned guide process was recorded.'; exit }
 $guideRecord = Get-Content -LiteralPath $guideRecordPath -Raw | ConvertFrom-Json
-if ([IO.Path]::GetFullPath($guideRecord.root) -ne [IO.Path]::GetFullPath($guideRoot)) { throw 'Preview process belongs to a different project.' }
+$guideRecordedRoot = [IO.Path]::GetFullPath($guideRecord.root).TrimEnd([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
+$guideExpectedRoot = [IO.Path]::GetFullPath($guideRoot).TrimEnd([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
+if ($guideRecordedRoot -ne $guideExpectedRoot) { throw 'Preview process belongs to a different project.' }
 $guideProcess = Get-CimInstance Win32_Process -Filter "ProcessId = $($guideRecord.pid)"
 if ($null -eq $guideProcess) { Write-Output 'Guide process already stopped.'; exit }
 $guideCommand = [string]$guideProcess.CommandLine

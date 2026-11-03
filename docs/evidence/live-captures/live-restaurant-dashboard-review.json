@@ -1,0 +1,10 @@
+{
+  "name": "live-restaurant-dashboard-review.png",
+  "capturedAt": "2026-11-03T12:47:44.218683800Z",
+  "route": "/restaurant-dashboard",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "9996ed93eedaa6f0cd0a5a5bf8547850b8a60ffcc294bb3477c2a583f3c78365",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "إحصائيات مطعم فارغة في النطاق الظاهر"
+}

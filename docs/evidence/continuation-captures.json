@@ -1,0 +1,104 @@
+[
+  {
+    "asset": "live-voucher-empty.png",
+    "route": "#/vouchers",
+    "source": "docs/evidence/live-captures/live-voucher-empty.json",
+    "sha256": "aadf88bb0decbf22715764c0001e64b8b4f95be5e6ff22044377bc69afce7c68"
+  },
+  {
+    "asset": "live-posting-criteria.png",
+    "route": "#/post-vouchers",
+    "source": "docs/evidence/live-captures/live-posting-criteria.json",
+    "sha256": "730aaabb6cb69c3e08b61bac9a90ead35acb30417379109aa4ac44fd8ec26e3f"
+  },
+  {
+    "asset": "live-account-tree-empty.png",
+    "route": "#/chart-of-account",
+    "source": "docs/evidence/live-captures/live-account-tree-empty.json",
+    "sha256": "b4bc4904150c6853dc86be098c1a9ef65702df78df3b6bf2f98b3ea28b770277"
+  },
+  {
+    "asset": "live-cost-center-empty.png",
+    "route": "#/cost-center",
+    "source": "docs/evidence/live-captures/live-cost-center-empty.json",
+    "sha256": "8929faa532d3b008294a6a487f02bd5c228de0c9efde0ade851a6478ac4ac806"
+  },
+  {
+    "asset": "live-pos-warning.png",
+    "route": "#/point-of-sale",
+    "source": "docs/evidence/live-captures/live-pos-warning.json",
+    "sha256": "f1c420c9aad59b56d87f4ffd36e41b932fdd0e5132d1df3ee09382c2d61b4f36"
+  },
+  {
+    "asset": "live-orders-list-review.png",
+    "route": "#/orders",
+    "source": "docs/evidence/live-captures/live-orders-list-review.json",
+    "sha256": "0d3b33f161f91a0d1d9486e8ae1e53db5ab78058a756e3dc5858d9771c40a6c4"
+  },
+  {
+    "asset": "live-purchase-list-review.png",
+    "route": "#/purch-invoice-list",
+    "source": "docs/evidence/live-captures/live-purchase-list-review.json",
+    "sha256": "4b9249d497b3d0cfa13944246abfd3dbce4d31212cc8bbf6775d8b14749097dd"
+  },
+  {
+    "asset": "live-actions-review.png",
+    "route": "#/actions",
+    "source": "docs/evidence/live-captures/live-actions-review.json",
+    "sha256": "c0e56635297cca5bca77db8641e6269fdc27eef9df7a9f94ff26f51eb47919cc"
+  },
+  {
+    "asset": "live-bulk-invoices-review.png",
+    "route": "#/bulk-invoices",
+    "source": "docs/evidence/live-captures/live-bulk-invoices-review.json",
+    "sha256": "56a3923baa122942533627269cf75e6035ccd3afb8ed8b0e136b3024694b6dff"
+  },
+  {
+    "asset": "live-concrete-report-criteria.png",
+    "route": "#/concrete-reports",
+    "source": "docs/evidence/live-captures/live-concrete-report-criteria.json",
+    "sha256": "05d2a923b960e543cc5038087102b51830cf37032a557c1ba6c5b42768f5ea32"
+  },
+  {
+    "asset": "live-kitchen-review.png",
+    "route": "#/restaurant-orders",
+    "source": "docs/evidence/live-captures/live-kitchen-review.json",
+    "sha256": "c31fe5aa15f6351b58c4aa051997e82fe5a5a66e52e79b9b154df5fdd2043747"
+  },
+  {
+    "asset": "live-branches-dashboard-review.png",
+    "route": "#/branches-dashboard",
+    "source": "docs/evidence/live-captures/live-branches-dashboard-review.json",
+    "sha256": "c9fea0c4ab7af623c08609578fa3eff53eb47ab239aae32042b023b3819571a0"
+  },
+  {
+    "asset": "live-sales-dashboard-review.png",
+    "route": "#/sales-dashboard",
+    "source": "docs/evidence/live-captures/live-sales-dashboard-review.json",
+    "sha256": "b3da02dbab61250ff507741d9e3ee276152ccb30e45bd9a718fc6b8643308b25"
+  },
+  {
+    "asset": "live-purchase-dashboard-review.png",
+    "route": "#/purchase-dashboard",
+    "source": "docs/evidence/live-captures/live-purchase-dashboard-review.json",
+    "sha256": "30d90060d651a6e83b3e5b2f880e83de9b3fc6cab355ae187e0b82f430e86fae"
+  },
+  {
+    "asset": "live-users-dashboard-review.png",
+    "route": "#/usersAndAgents-dashboard",
+    "source": "docs/evidence/live-captures/live-users-dashboard-review.json",
+    "sha256": "54737feb0c50509f486df831b4a7115e3a16a42643cbf667defbfba43457bc73"
+  },
+  {
+    "asset": "live-restaurant-dashboard-review.png",
+    "route": "#/restaurant-dashboard",
+    "source": "docs/evidence/live-captures/live-restaurant-dashboard-review.json",
+    "sha256": "9996ed93eedaa6f0cd0a5a5bf8547850b8a60ffcc294bb3477c2a583f3c78365"
+  },
+  {
+    "asset": "live-concrete-dashboard-review.png",
+    "route": "#/concrete-dashboard",
+    "source": "docs/evidence/live-captures/live-concrete-dashboard-review.json",
+    "sha256": "44e4a21374195a9eabad0873c79433ecd395c2d3528a440e4e34e7de2ea4d94e"
+  }
+]

@@ -1,8 +1,8 @@
 {
   "date": "2026-11-03",
   "total": 467,
-  "withAnyImages": 349,
-  "allStepsIllustrated": 260,
+  "withAnyImages": 438,
+  "allStepsIllustrated": 415,
   "articles": [
     {
       "id": "e16238a4-bf16-5366-a96e-bed973bdeda8",
@@ -10,11 +10,9 @@
       "title": "إزاي أختار الفرع الصحيح؟",
       "module": "settings",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -23,11 +21,9 @@
       "title": "ليه شاشة مش ظاهرة عندي؟",
       "module": "settings",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -36,11 +32,9 @@
       "title": "إزاي أطلب صلاحية لموظف؟",
       "module": "settings",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -49,11 +43,9 @@
       "title": "إيه البيانات اللي أراجعها قبل بداية التشغيل؟",
       "module": "settings",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -62,11 +54,9 @@
       "title": "إيه الفرق بين الخزنة والبنك وطريقة الدفع؟",
       "module": "settings",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -75,11 +65,9 @@
       "title": "إزاي أتعامل مع رسالة حقل مطلوب؟",
       "module": "settings",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -88,12 +76,9 @@
       "title": "هل أقدر أحذف تعريف مستخدم في حركات؟",
       "module": "settings",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -102,12 +87,9 @@
       "title": "إزاي أبحث عن صنف بالاسم أو الباركود؟",
       "module": "products",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -116,12 +98,9 @@
       "title": "إيه الفرق بين الوحدة الأساسية والوحدة الإضافية؟",
       "module": "products",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -130,11 +109,9 @@
       "title": "ليه سعر الصنف مختلف في الفاتورة؟",
       "module": "products",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -143,12 +120,9 @@
       "title": "إزاي أراجع صنف معفى من الضريبة؟",
       "module": "products",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -157,11 +131,9 @@
       "title": "ليه الصنف مش ظاهر للاختيار؟",
       "module": "products",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -170,11 +142,9 @@
       "title": "إزاي أراجع مكونات صنف تصنيع؟",
       "module": "products",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -183,11 +153,9 @@
       "title": "إزاي أتجنب تكرار تعريف الأصناف؟",
       "module": "products",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -196,11 +164,9 @@
       "title": "إيه الفرق بين العميل والمورد؟",
       "module": "dealers",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -209,11 +175,9 @@
       "title": "ليه العميل مش ظاهر في الفاتورة؟",
       "module": "dealers",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -222,12 +186,9 @@
       "title": "إزاي أراجع رصيد العميل؟",
       "module": "dealers",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -236,12 +197,9 @@
       "title": "إزاي أراجع رصيد المورد؟",
       "module": "dealers",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -250,12 +208,9 @@
       "title": "إزاي أسجّل رصيد افتتاحي لطرف؟",
       "module": "dealers",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -264,11 +219,9 @@
       "title": "إزاي أغيّر بيانات العميل بأمان؟",
       "module": "dealers",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -277,12 +230,10 @@
       "title": "إيه الفرق بين عرض السعر وأمر البيع والفاتورة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "cab624e6-0aad-5c3a-9050-03f1ccaba340",
@@ -290,12 +241,10 @@
       "title": "هل أمر البيع بيخصم أو يحجز المخزون؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "a12138e9-7347-57ed-8e21-d657d15645d1",
@@ -303,12 +252,9 @@
       "title": "ليه فاتورة البيع المحفوظة مش بتتعدل؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -317,11 +263,9 @@
       "title": "إزاي أرجع جزء من فاتورة بيع؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -330,12 +274,10 @@
       "title": "إيه الفرق بين المرتجع المرتبط والحر؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "9b03c017-2108-5646-89e7-106b7da61a7a",
@@ -343,12 +285,10 @@
       "title": "إزاي أراجع إجمالي فاتورة قبل الحفظ؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "a1e75126-5b99-5bfa-8d86-0460d473e5e7",
@@ -356,11 +296,9 @@
       "title": "ليه الخصم اترفض؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -369,12 +307,10 @@
       "title": "ليه رصيد العميل اتغير من أمر بيع نقدي؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "99fda4bd-1c95-54d2-bd0a-51c4afb13fdf",
@@ -382,12 +318,10 @@
       "title": "إزاي أراجع ضريبة فاتورة مختلطة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "c4b35f01-818b-5af8-9a94-7708f4e71e69",
@@ -395,12 +329,9 @@
       "title": "إزاي أطبع نسخة من مستند بيع؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -409,11 +340,9 @@
       "title": "إيه معنى مستند تحت المراجعة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -422,12 +351,10 @@
       "title": "إيه الفرق بين أمر الشراء وفاتورة الشراء؟",
       "module": "purchases",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "74ebeac9-42ed-5d0c-8306-7ab796fb4848",
@@ -435,11 +362,9 @@
       "title": "إزاي أراجع فاتورة مورد قبل الحفظ؟",
       "module": "purchases",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -448,11 +373,9 @@
       "title": "إزاي أعمل مرتجع مشتريات مرتبط؟",
       "module": "purchases",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -461,11 +384,9 @@
       "title": "ليه مخزون الصنف ما زادش بعد أمر الشراء؟",
       "module": "purchases",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -474,11 +395,9 @@
       "title": "إزاي أراجع دفعة مقدمة للمورد؟",
       "module": "purchases",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -487,12 +406,9 @@
       "title": "إزاي أصحح بيانات فاتورة شراء؟",
       "module": "purchases",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -501,12 +417,10 @@
       "title": "ليه خصم المشتريات مش بيتحفظ؟",
       "module": "purchases",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "d5a960c0-8d8a-58d0-9310-7dbd1154e4ec",
@@ -514,12 +428,10 @@
       "title": "إيه الفرق بين الإضافة والصرف والتالف؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "b9c38c30-8c3b-52be-a3e6-837d1c5385af",
@@ -527,12 +439,10 @@
       "title": "إزاي أراجع تحويل بين مخزنين؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "dc7d3c7c-8b8e-551d-823f-e5efcb5f334a",
@@ -540,12 +450,9 @@
       "title": "ليه رصيد المخزن مختلف عن المتوقع؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -554,11 +461,9 @@
       "title": "إزاي أجهّز جرد مخزون؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -567,11 +472,9 @@
       "title": "إزاي أتعامل مع عجز أو زيادة الجرد؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -580,12 +483,10 @@
       "title": "إزاي أراجع حركة تصنيع؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "c0d370aa-64da-5045-ba37-ad69b1083773",
@@ -593,12 +494,9 @@
       "title": "ليه كمية الصنف بالوحدة الإضافية مختلفة؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -621,11 +519,9 @@
       "title": "إيه الفرق بين تحصيل عميل وسداد مورد؟",
       "module": "finance",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -634,11 +530,9 @@
       "title": "إزاي أربط تحصيل بفاتورة عميل؟",
       "module": "finance",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -647,11 +541,9 @@
       "title": "ليه الفاتورة لسه عليها متبقي بعد التحصيل؟",
       "module": "finance",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -660,11 +552,9 @@
       "title": "إزاي أراجع مصروف أو إيراد آخر؟",
       "module": "finance",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -673,11 +563,9 @@
       "title": "إيه الفرق بين الخصم والتحصيل؟",
       "module": "finance",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -686,11 +574,9 @@
       "title": "إزاي أراجع حركة نقل نقدية؟",
       "module": "finance",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -699,12 +585,9 @@
       "title": "إزاي أصحح سند مالي غلط؟",
       "module": "finance",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -713,12 +596,9 @@
       "title": "إيه الفرق بين حفظ المستند وترحيله؟",
       "module": "accounting",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -727,12 +607,9 @@
       "title": "ليه القيد مش متوازن؟",
       "module": "accounting",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -741,12 +618,9 @@
       "title": "إزاي أختار حساب في القيد؟",
       "module": "accounting",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -755,13 +629,10 @@
       "title": "إيه الفرق بين الجرد الدوري والمستمر؟",
       "module": "accounting",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "f8a3cd8f-afe5-5e6e-8d69-824eeb4e650d",
@@ -769,12 +640,9 @@
       "title": "ليه قيد الضريبة مختلف عن المتوقع؟",
       "module": "accounting",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -783,12 +651,9 @@
       "title": "إزاي أراجع مركز تكلفة؟",
       "module": "accounting",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -797,12 +662,9 @@
       "title": "إزاي أتعامل مع إلغاء الترحيل؟",
       "module": "accounting",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -811,12 +673,9 @@
       "title": "ليه التقرير فاضي؟",
       "module": "reports",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -825,12 +684,9 @@
       "title": "ليه نفس التقرير مختلف عند موظفين؟",
       "module": "reports",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -839,12 +695,9 @@
       "title": "إزاي أطابق تقرير حركة صنف؟",
       "module": "reports",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -853,12 +706,9 @@
       "title": "إزاي أطابق كشف خزنة؟",
       "module": "reports",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -867,12 +717,9 @@
       "title": "ليه التصدير مختلف عن الشاشة؟",
       "module": "reports",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -881,12 +728,9 @@
       "title": "إزاي أبعت تقرير للدعم؟",
       "module": "reports",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -895,11 +739,9 @@
       "title": "إيه اللي أراجعه قبل استخدام كاشير المطعم؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -908,11 +750,9 @@
       "title": "إزاي أراجع طلب مرتبط بترابيزة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -921,11 +761,9 @@
       "title": "ليه إجمالي طلب المطعم مختلف؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -934,12 +772,10 @@
       "title": "إزاي أراجع ضريبة إضافية في المطعم؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "6bf90de3-ce94-5563-a919-e47b97012d8e",
@@ -947,13 +783,10 @@
       "title": "إزاي أراجع مرتجع كاشير؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "607c4145-ef97-5f35-b3c0-7740605c9575",
@@ -961,12 +794,9 @@
       "title": "الطلب مش ظاهر في المطبخ، أعمل إيه؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -975,11 +805,9 @@
       "title": "إزاي أراجع عقد مقاولات قبل الفوترة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -988,12 +816,9 @@
       "title": "إزاي أراجع فاتورة مرتبطة بعقد؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1002,11 +827,9 @@
       "title": "ليه الكمية المتبقية في العقد مختلفة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1015,11 +838,9 @@
       "title": "هل أقدر أفوتر العقد على مراحل؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1041,11 +862,9 @@
       "title": "إيه البيانات المطلوبة لتشغيل نشاط الخرسانة؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1054,11 +873,9 @@
       "title": "إزاي أراجع حجز خرسانة؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1067,11 +884,9 @@
       "title": "إزاي أطابق الصرف والبيع في الخرسانة؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1080,12 +895,9 @@
       "title": "إزاي أراجع تقرير تشغيل الخرسانة؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1094,11 +906,9 @@
       "title": "ليه تعديل مستند خرسانة تحت المراجعة مش ظاهر؟",
       "module": "inventory",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md; docs/testing/KNOWN_BUSINESS_ISSUES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1107,12 +917,10 @@
       "title": "إزاي أتأكد إني ببيع العربية الصحيحة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
-      "sourceReviewed": true
+      "hasVerificationDate": true,
+      "sourceReviewed": false
     },
     {
       "id": "cc7ccaa3-0e89-5e5d-8d70-27b1ef163047",
@@ -1120,11 +928,9 @@
       "title": "ليه عربية مش ظاهرة في البيع؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1133,11 +939,9 @@
       "title": "إزاي أراجع مرتجع سيارة؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1146,11 +950,9 @@
       "title": "إزاي أراجع ألوان السيارات؟",
       "module": "sales",
       "routes": [],
-      "missingImageSteps": [
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1359,12 +1161,9 @@
       "title": "إيه اللي أبعتُه للدعم عشان المشكلة تتحل أسرع؟",
       "module": "support",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1373,12 +1172,9 @@
       "title": "ضغطت حفظ ومش عارف العملية اتحفظت ولا لأ؟",
       "module": "support",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1387,12 +1183,9 @@
       "title": "إزاي أصور المشكلة بدون كشف بيانات العميل؟",
       "module": "support",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1401,12 +1194,9 @@
       "title": "إيه اللي أستلمه بعد التدريب؟",
       "module": "support",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1429,12 +1219,9 @@
       "title": "المشكلة رجعت بعد ما اتبعت الشرح، أعمل إيه؟",
       "module": "support",
       "routes": [],
-      "missingImageSteps": [
-        1,
-        2
-      ],
+      "missingImageSteps": [],
       "source": "docs/project/MODULE_MAP.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1445,13 +1232,9 @@
       "routes": [
         "#/"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1462,13 +1245,9 @@
       "routes": [
         "#/"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1494,7 +1273,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1507,7 +1286,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1520,7 +1299,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1531,13 +1310,9 @@
       "routes": [
         "#/accounts-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1548,47 +1323,35 @@
       "routes": [
         "#/accounts-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
       "id": "e2b513ea-94b6-50d3-91e4-44fe35be090a",
       "key": "expanded-screen-#/actions-overview",
-      "title": "إيه استخدام شاشة «الاجراءات» وإيه اللي أراجعه فيها؟",
+      "title": "إيه اللي بتعمله شاشة الإجراءات قبل النسخ أو النقل؟",
       "module": "settings",
       "routes": [
         "#/actions"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
       "id": "3a8d59f2-349d-5128-b4f8-bfe80467abf4",
       "key": "expanded-screen-#/actions-business",
-      "title": "هل تعريف إجراء معناه إن فيه اعتماد تلقائي؟",
+      "title": "هل فتح شاشة الإجراءات بينسخ مستندًا أو ينقل بيانات تلقائيًا؟",
       "module": "settings",
       "routes": [
         "#/actions"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1601,7 +1364,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1614,7 +1377,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1627,7 +1390,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1640,7 +1403,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1651,12 +1414,9 @@
       "routes": [
         "#/agentItinerary"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1667,12 +1427,9 @@
       "routes": [
         "#/agentItinerary"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1685,7 +1442,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1698,7 +1455,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1711,7 +1468,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1724,7 +1481,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1737,7 +1494,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1750,7 +1507,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1776,7 +1533,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1787,13 +1544,9 @@
       "routes": [
         "#/branches-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1804,13 +1557,9 @@
       "routes": [
         "#/branches-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1821,13 +1570,9 @@
       "routes": [
         "#/bulk-invoices"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1838,13 +1583,9 @@
       "routes": [
         "#/bulk-invoices"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1857,7 +1598,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1870,7 +1611,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1896,7 +1637,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1909,7 +1650,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1922,7 +1663,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1935,7 +1676,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1948,7 +1689,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1959,13 +1700,9 @@
       "routes": [
         "#/chart-of-account"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -1976,13 +1713,9 @@
       "routes": [
         "#/chart-of-account"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2008,7 +1741,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2019,13 +1752,9 @@
       "routes": [
         "#/company"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2036,13 +1765,9 @@
       "routes": [
         "#/company"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2053,13 +1778,9 @@
       "routes": [
         "#/concrete-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2070,13 +1791,9 @@
       "routes": [
         "#/concrete-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2089,7 +1806,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2102,7 +1819,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2113,13 +1830,9 @@
       "routes": [
         "#/concrete-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2130,13 +1843,9 @@
       "routes": [
         "#/concrete-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2149,7 +1858,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2162,7 +1871,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2175,7 +1884,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2188,7 +1897,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2201,7 +1910,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2214,7 +1923,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2225,13 +1934,9 @@
       "routes": [
         "#/cost-center"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2242,13 +1947,9 @@
       "routes": [
         "#/cost-center"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2259,12 +1960,9 @@
       "routes": [
         "#/customer-discount"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2275,12 +1973,9 @@
       "routes": [
         "#/customer-discount"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2306,7 +2001,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2317,12 +2012,9 @@
       "routes": [
         "#/customers-and-suppliers"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2333,12 +2025,9 @@
       "routes": [
         "#/customers-and-suppliers"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2364,7 +2053,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2377,7 +2066,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2390,7 +2079,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2416,7 +2105,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2442,7 +2131,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2455,7 +2144,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2468,7 +2157,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2481,7 +2170,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2494,7 +2183,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2520,7 +2209,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2533,7 +2222,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2546,7 +2235,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2572,7 +2261,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2585,7 +2274,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2598,7 +2287,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2624,7 +2313,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2635,12 +2324,9 @@
       "routes": [
         "#/invoice-list"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2651,12 +2337,9 @@
       "routes": [
         "#/invoice-list"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2669,7 +2352,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2682,7 +2365,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2693,13 +2376,9 @@
       "routes": [
         "#/items-category"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2710,13 +2389,9 @@
       "routes": [
         "#/items-category"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2727,13 +2402,9 @@
       "routes": [
         "#/items-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2744,13 +2415,9 @@
       "routes": [
         "#/items-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2763,7 +2430,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2776,7 +2443,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2789,7 +2456,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2802,7 +2469,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2815,7 +2482,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2828,7 +2495,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2839,13 +2506,9 @@
       "routes": [
         "#/orders"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2856,13 +2519,9 @@
       "routes": [
         "#/orders"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2888,7 +2547,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2901,7 +2560,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2914,7 +2573,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2940,7 +2599,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2951,13 +2610,9 @@
       "routes": [
         "#/point-of-sale"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2968,13 +2623,9 @@
       "routes": [
         "#/point-of-sale"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -2985,13 +2636,9 @@
       "routes": [
         "#/posConfigurations"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3002,13 +2649,9 @@
       "routes": [
         "#/posConfigurations"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3019,13 +2662,9 @@
       "routes": [
         "#/post-vouchers"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3036,13 +2675,9 @@
       "routes": [
         "#/post-vouchers"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3068,7 +2703,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3081,7 +2716,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3094,7 +2729,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3105,13 +2740,9 @@
       "routes": [
         "#/purch-invoice-list"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3122,13 +2753,9 @@
       "routes": [
         "#/purch-invoice-list"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3141,7 +2768,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3154,7 +2781,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3167,7 +2794,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3180,7 +2807,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3191,13 +2818,9 @@
       "routes": [
         "#/purchase-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3208,13 +2831,9 @@
       "routes": [
         "#/purchase-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3225,13 +2844,9 @@
       "routes": [
         "#/purchase-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3242,13 +2857,9 @@
       "routes": [
         "#/purchase-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3261,7 +2872,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3274,7 +2885,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3287,7 +2898,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3300,7 +2911,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3311,13 +2922,9 @@
       "routes": [
         "#/restaurant-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3328,13 +2935,9 @@
       "routes": [
         "#/restaurant-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3345,13 +2948,9 @@
       "routes": [
         "#/restaurant-menu"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3362,13 +2961,9 @@
       "routes": [
         "#/restaurant-menu"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3379,13 +2974,9 @@
       "routes": [
         "#/restaurant-orders"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3396,13 +2987,9 @@
       "routes": [
         "#/restaurant-orders"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3415,7 +3002,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3428,7 +3015,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3441,7 +3028,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3454,7 +3041,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3480,7 +3067,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3493,7 +3080,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3506,7 +3093,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3517,13 +3104,9 @@
       "routes": [
         "#/sales-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3534,13 +3117,9 @@
       "routes": [
         "#/sales-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3553,7 +3132,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3566,7 +3145,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3577,13 +3156,9 @@
       "routes": [
         "#/sales-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3594,13 +3169,9 @@
       "routes": [
         "#/sales-reports"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3611,13 +3182,9 @@
       "routes": [
         "#/sendInvoiceToZatca"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3628,13 +3195,9 @@
       "routes": [
         "#/sendInvoiceToZatca"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3660,7 +3223,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3686,7 +3249,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3697,13 +3260,9 @@
       "routes": [
         "#/subscription-data"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3714,13 +3273,9 @@
       "routes": [
         "#/subscription-data"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3731,12 +3286,9 @@
       "routes": [
         "#/supplier-discount"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3747,12 +3299,9 @@
       "routes": [
         "#/supplier-discount"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3778,7 +3327,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3804,7 +3353,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3830,7 +3379,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3843,7 +3392,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3856,7 +3405,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3869,7 +3418,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3882,7 +3431,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3908,7 +3457,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3919,13 +3468,9 @@
       "routes": [
         "#/usersAndAgents-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3936,13 +3481,9 @@
       "routes": [
         "#/usersAndAgents-dashboard"
       ],
-      "missingImageSteps": [
-        1,
-        2,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3953,12 +3494,9 @@
       "routes": [
         "#/vouchers"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3969,12 +3507,9 @@
       "routes": [
         "#/vouchers"
       ],
-      "missingImageSteps": [
-        1,
-        3
-      ],
+      "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -3987,7 +3522,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4000,7 +3535,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/SCREEN_DEPTH_AUDIT.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4579,7 +4114,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4592,7 +4127,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4605,7 +4140,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4618,7 +4153,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4631,7 +4166,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4644,7 +4179,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4657,7 +4192,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4670,7 +4205,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4683,7 +4218,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4696,7 +4231,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4709,7 +4244,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4722,7 +4257,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4735,7 +4270,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4748,7 +4283,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4761,7 +4296,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4774,7 +4309,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4787,7 +4322,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4800,7 +4335,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4813,7 +4348,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4826,7 +4361,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4839,7 +4374,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4852,7 +4387,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4865,7 +4400,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4878,7 +4413,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4891,7 +4426,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4904,7 +4439,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4917,7 +4452,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4930,7 +4465,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4943,7 +4478,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4956,7 +4491,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4969,7 +4504,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4982,7 +4517,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -4995,7 +4530,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5008,7 +4543,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5021,7 +4556,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5034,7 +4569,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5047,7 +4582,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5060,7 +4595,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5073,7 +4608,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5086,7 +4621,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5099,7 +4634,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5112,7 +4647,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5125,7 +4660,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5138,7 +4673,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5151,7 +4686,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5164,7 +4699,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5177,7 +4712,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5190,7 +4725,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5203,7 +4738,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5216,7 +4751,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5229,7 +4764,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5242,7 +4777,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5255,7 +4790,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5268,7 +4803,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5281,7 +4816,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5294,7 +4829,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5307,7 +4842,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5320,7 +4855,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5333,7 +4868,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5346,7 +4881,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5359,7 +4894,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5372,7 +4907,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5385,7 +4920,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5398,7 +4933,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5411,7 +4946,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5424,7 +4959,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5437,7 +4972,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5450,7 +4985,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5463,7 +4998,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5476,7 +5011,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5489,7 +5024,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/testing/REPORT_CONTENT_GAPS.csv; docs/project/MODULE_MAP.md; docs/project/BUSINESS_RULES.md",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5502,7 +5037,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_savesOwnedItemFromPicker-2026-11-03_10-08-31-3408834a-d780-4f80-b6b9-ce0fccdf7f8c.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5515,7 +5050,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_savesOwnedItemFromPicker-2026-11-03_10-08-31-3408834a-d780-4f80-b6b9-ce0fccdf7f8c.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5528,7 +5063,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectAllocationFormWithoutSavingInvoice-2026-11-03_08-33-03-099ca915-5ea2-463c-b5d1-ae04eab679eb.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5541,7 +5076,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectAllocationFormWithoutSavingInvoice-2026-11-03_08-33-03-099ca915-5ea2-463c-b5d1-ae04eab679eb.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5554,7 +5089,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_selectedTableNumberMatchesAndQrElementHasNoRenderingError-2026-11-03_08-27-48-b49b52c2-9cf6-4713-8f92-ddac6d316330.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5567,7 +5102,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_selectedTableNumberMatchesAndQrElementHasNoRenderingError-2026-11-03_08-27-48-b49b52c2-9cf6-4713-8f92-ddac6d316330.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5580,7 +5115,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_closedPaidRestaurantInvoicePreservesSelectedDiscountType-2026-11-03_02-21-31-da4d11c4-f3a5-4fb1-ad8c-ea7cde45ed5c.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5593,7 +5128,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_closedPaidRestaurantInvoicePreservesSelectedDiscountType-2026-11-03_02-21-31-da4d11c4-f3a5-4fb1-ad8c-ea7cde45ed5c.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5606,7 +5141,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectOwnedCarSalesReport-2026-11-03_02-25-49-3d39e4bc-56dc-4ffe-ada9-8f1aa369bcee.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5619,7 +5154,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectOwnedCarSalesReport-2026-11-03_02-25-49-3d39e4bc-56dc-4ffe-ada9-8f1aa369bcee.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5632,7 +5167,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectOwnedSelectedItemStagnationContent-2026-11-03_08-47-21-0f07188f-6739-481e-bc44-b6a09703f384.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5645,7 +5180,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectOwnedSelectedItemStagnationContent-2026-11-03_08-47-21-0f07188f-6739-481e-bc44-b6a09703f384.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5658,7 +5193,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectOwnedJournalReportLinesAndExcludedControl-2026-11-03_00-16-02-8cfe5fe9-ce14-40d3-ac14-117ea652d3bb.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5671,7 +5206,7 @@
       ],
       "missingImageSteps": [],
       "source": "screenshots/FAIL_inspectOwnedJournalReportLinesAndExcludedControl-2026-11-03_00-16-02-8cfe5fe9-ce14-40d3-ac14-117ea652d3bb.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5684,7 +5219,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/concrete-delivery-native-click-results/78d68f20-85c1-4496-a5cb-7accd5ee5b86-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5697,7 +5232,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/concrete-delivery-native-click-results/78d68f20-85c1-4496-a5cb-7accd5ee5b86-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5710,7 +5245,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/business-complete-concrete-results/fdaf6794-f182-46b3-b77b-1018cd0c165f-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5723,7 +5258,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/business-complete-concrete-results/fdaf6794-f182-46b3-b77b-1018cd0c165f-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5736,7 +5271,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/business-complete-car_showroom-results/8880a521-815f-4c25-bc05-06d5790826ca-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5749,7 +5284,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/business-complete-car_showroom-results/8880a521-815f-4c25-bc05-06d5790826ca-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5762,7 +5297,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/concrete-customer-project-native-link-results/b2feeb5f-7f07-4e37-b93a-21668c12ee77-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5775,7 +5310,7 @@
       ],
       "missingImageSteps": [],
       "source": "target/concrete-customer-project-native-link-results/b2feeb5f-7f07-4e37-b93a-21668c12ee77-attachment.png",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -5983,7 +5518,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/units.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6009,7 +5544,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/banks.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6035,7 +5570,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/safes.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6061,7 +5596,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/areas.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6087,7 +5622,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/expense-type.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6113,7 +5648,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/income-type.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6139,7 +5674,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/payment-methods.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6165,7 +5700,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/account-groups.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6191,7 +5726,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/warehouses.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {
@@ -6217,7 +5752,7 @@
       ],
       "missingImageSteps": [],
       "source": "docs/evidence/live-captures/exchange-destinations.json",
-      "hasVerificationDate": false,
+      "hasVerificationDate": true,
       "sourceReviewed": false
     },
     {

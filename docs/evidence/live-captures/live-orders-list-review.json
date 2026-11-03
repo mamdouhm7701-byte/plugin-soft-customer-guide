@@ -1,0 +1,10 @@
+{
+  "name": "live-orders-list-review.png",
+  "capturedAt": "2026-11-03T12:38:23.696801Z",
+  "route": "/orders",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "0d3b33f161f91a0d1d9486e8ae1e53db5ab78058a756e3dc5858d9771c40a6c4",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "قائمة الأذونات دون صفوف في النطاق الظاهر"
+}

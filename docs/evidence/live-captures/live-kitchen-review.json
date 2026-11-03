@@ -1,0 +1,10 @@
+{
+  "name": "live-kitchen-review.png",
+  "capturedAt": "2026-11-03T12:43:51.982733500Z",
+  "route": "/restaurant-orders",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "c31fe5aa15f6351b58c4aa051997e82fe5a5a66e52e79b9b154df5fdd2043747",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "طلبات المطبخ دون طلبات ظاهرة؛ لم يتم إغلاق فواتير"
+}

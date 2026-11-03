@@ -1,0 +1,10 @@
+{
+  "name": "live-purchase-list-review.png",
+  "capturedAt": "2026-11-03T12:39:44.633338200Z",
+  "route": "/purch-invoice-list",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "4b9249d497b3d0cfa13944246abfd3dbce4d31212cc8bbf6775d8b14749097dd",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "قائمة المشتريات دون صفوف في النطاق الظاهر"
+}

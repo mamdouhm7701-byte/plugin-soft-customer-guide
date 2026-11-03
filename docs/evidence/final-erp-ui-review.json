@@ -1,0 +1,32 @@
+[
+  {
+    "name": "live-zatca-config-status.png",
+    "route": "#/posConfigurations",
+    "source": "docs/evidence/live-captures/live-zatca-config-status.json"
+  },
+  {
+    "name": "live-zatca-submissions-review.png",
+    "route": "#/sendInvoiceToZatca",
+    "source": "docs/evidence/live-captures/live-zatca-submissions-review.json"
+  },
+  {
+    "name": "live-home-review.png",
+    "route": "#/",
+    "source": "docs/evidence/live-captures/live-home-review.json"
+  },
+  {
+    "name": "live-company-tax-field.png",
+    "route": "#/company",
+    "source": "docs/evidence/live-captures/live-company-tax-field.json"
+  },
+  {
+    "name": "live-subscription-branch-card.png",
+    "route": "#/subscription-data",
+    "source": "docs/evidence/live-captures/live-subscription-branch-card.json"
+  },
+  {
+    "name": "live-category-name-field.png",
+    "route": "#/items-category",
+    "source": "docs/evidence/live-captures/live-category-name-field.json"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "name": "live-actions-review.png",
+  "capturedAt": "2026-11-03T12:40:28.236460Z",
+  "route": "/actions",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "c0e56635297cca5bca77db8641e6269fdc27eef9df7a9f94ff26f51eb47919cc",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "تبويبات النسخ والنقل؛ لم يتم تنفيذ بحث أو نسخ أو نقل"
+}

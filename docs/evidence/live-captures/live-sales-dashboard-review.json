@@ -1,0 +1,10 @@
+{
+  "name": "live-sales-dashboard-review.png",
+  "capturedAt": "2026-11-03T12:46:02.022255700Z",
+  "route": "/sales-dashboard",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "b3da02dbab61250ff507741d9e3ee276152ccb30e45bd9a718fc6b8643308b25",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "إحصائيات المبيعات التجريبية في بيئة QA؛ ليست أرقام عميل"
+}

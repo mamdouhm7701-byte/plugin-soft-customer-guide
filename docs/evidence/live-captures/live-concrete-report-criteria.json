@@ -1,0 +1,10 @@
+{
+  "name": "live-concrete-report-criteria.png",
+  "capturedAt": "2026-11-03T12:42:57.884206400Z",
+  "route": "/concrete-reports",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "05d2a923b960e543cc5038087102b51830cf37032a557c1ba6c5b42768f5ea32",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "معايير تقرير حركة السيارات في الخرسانة؛ بدون استعراض نتائج"
+}

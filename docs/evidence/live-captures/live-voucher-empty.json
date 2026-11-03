@@ -1,0 +1,10 @@
+{
+  "name": "live-voucher-empty.png",
+  "capturedAt": "2026-11-03T12:31:24.308150200Z",
+  "route": "/vouchers/new",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "aadf88bb0decbf22715764c0001e64b8b4f95be5e6ff22044377bc69afce7c68",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "نموذج قيد اليومية الفارغ"
+}

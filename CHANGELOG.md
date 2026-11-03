@@ -1,3 +1,9 @@
+# Reviewed ERP content expansion — 2026-11-03
+
+Published dedicated Site version 2: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
+
+Completed 349 additional reviewed ERP entries beyond the previous 47-item release, added 24 genuine current captures, corrected Actions copy/move context, protected imported drafts with exact pre-review hashes and revision guards, and exercised 64 responsive layouts.
+
 # Reviewed ERP release published — 2026-11-03
 
 Published 47 bounded reviewed additions, left HR deferred, created a dedicated public-audience Site with independent staff login and scoped customer links. Added operator-configured one-use owner activation; passwords remain user-selected. Native deployment succeeded and hosted deny/access probes passed.

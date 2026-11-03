@@ -1,0 +1,10 @@
+{
+  "name": "live-posting-criteria.png",
+  "capturedAt": "2026-11-03T12:33:47.495960700Z",
+  "route": "/post-vouchers",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "730aaabb6cb69c3e08b61bac9a90ead35acb30417379109aa4ac44fd8ec26e3f",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "معايير الترحيل دون تنفيذ"
+}

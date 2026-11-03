@@ -1214,5 +1214,197 @@
     "capturedAt": "2026-11-03T11:31:29.794300800Z",
     "scope": "LIVE_EMPTY_DOCUMENT_UI",
     "caption": "صورة فعلية حالية لنموذج تعريف سائق؛ نموذج فارغ غير محفوظ."
+  },
+  {
+    "name": "live-voucher-empty.png",
+    "caption": "صورة فعلية حالية · نموذج قيد اليومية الفارغ؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-voucher-empty.json",
+    "sha256": "aadf88bb0decbf22715764c0001e64b8b4f95be5e6ff22044377bc69afce7c68",
+    "capturedAt": "2026-11-03T12:31:24.308150200Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-posting-criteria.png",
+    "caption": "صورة فعلية حالية · معايير الترحيل دون تنفيذ؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-posting-criteria.json",
+    "sha256": "730aaabb6cb69c3e08b61bac9a90ead35acb30417379109aa4ac44fd8ec26e3f",
+    "capturedAt": "2026-11-03T12:33:47.495960700Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-account-tree-empty.png",
+    "caption": "صورة فعلية حالية · نموذج دليل الحسابات؛ شجرة بأسماء QA تجريبية وتصنيفات نظامية؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-account-tree-empty.json",
+    "sha256": "b4bc4904150c6853dc86be098c1a9ef65702df78df3b6bf2f98b3ea28b770277",
+    "capturedAt": "2026-11-03T12:34:33.061801700Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-cost-center-empty.png",
+    "caption": "صورة فعلية حالية · نموذج مركز تكلفة فارغ؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-cost-center-empty.json",
+    "sha256": "8929faa532d3b008294a6a487f02bd5c228de0c9efde0ade851a6478ac4ac806",
+    "capturedAt": "2026-11-03T12:35:33.314534500Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-pos-warning.png",
+    "caption": "صورة فعلية حالية · تنبيه عدم تحديد عميل افتراضي للفرع؛ لم يُغير إعداد؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-pos-warning.json",
+    "sha256": "f1c420c9aad59b56d87f4ffd36e41b932fdd0e5132d1df3ee09382c2d61b4f36",
+    "capturedAt": "2026-11-03T12:37:05.975101800Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-orders-list-review.png",
+    "caption": "صورة فعلية حالية · قائمة الأذونات دون صفوف في النطاق الظاهر؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-orders-list-review.json",
+    "sha256": "0d3b33f161f91a0d1d9486e8ae1e53db5ab78058a756e3dc5858d9771c40a6c4",
+    "capturedAt": "2026-11-03T12:38:23.696801Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-purchase-list-review.png",
+    "caption": "صورة فعلية حالية · قائمة المشتريات دون صفوف في النطاق الظاهر؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-purchase-list-review.json",
+    "sha256": "4b9249d497b3d0cfa13944246abfd3dbce4d31212cc8bbf6775d8b14749097dd",
+    "capturedAt": "2026-11-03T12:39:44.633338200Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-actions-review.png",
+    "caption": "صورة فعلية حالية · تبويبات النسخ والنقل؛ لم يتم تنفيذ بحث أو نسخ أو نقل؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-actions-review.json",
+    "sha256": "c0e56635297cca5bca77db8641e6269fdc27eef9df7a9f94ff26f51eb47919cc",
+    "capturedAt": "2026-11-03T12:40:28.236460Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-bulk-invoices-review.png",
+    "caption": "صورة فعلية حالية · معايير التجميع وقائمة فارغة؛ لم يتم تجميع أو ترحيل؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-bulk-invoices-review.json",
+    "sha256": "56a3923baa122942533627269cf75e6035ccd3afb8ed8b0e136b3024694b6dff",
+    "capturedAt": "2026-11-03T12:41:52.237427900Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-concrete-report-criteria.png",
+    "caption": "صورة فعلية حالية · معايير تقرير حركة السيارات في الخرسانة؛ بدون استعراض نتائج؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-concrete-report-criteria.json",
+    "sha256": "05d2a923b960e543cc5038087102b51830cf37032a557c1ba6c5b42768f5ea32",
+    "capturedAt": "2026-11-03T12:42:57.884206400Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-kitchen-review.png",
+    "caption": "صورة فعلية حالية · طلبات المطبخ دون طلبات ظاهرة؛ لم يتم إغلاق فواتير؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-kitchen-review.json",
+    "sha256": "c31fe5aa15f6351b58c4aa051997e82fe5a5a66e52e79b9b154df5fdd2043747",
+    "capturedAt": "2026-11-03T12:43:51.982733500Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-branches-dashboard-review.png",
+    "caption": "صورة فعلية حالية · إحصائيات الفروع في بيئة QA بأسماء أصناف وفروع تجريبية؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-branches-dashboard-review.json",
+    "sha256": "c9fea0c4ab7af623c08609578fa3eff53eb47ab239aae32042b023b3819571a0",
+    "capturedAt": "2026-11-03T12:44:14.817207100Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-sales-dashboard-review.png",
+    "caption": "صورة فعلية حالية · إحصائيات المبيعات التجريبية في بيئة QA؛ ليست أرقام عميل؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-sales-dashboard-review.json",
+    "sha256": "b3da02dbab61250ff507741d9e3ee276152ccb30e45bd9a718fc6b8643308b25",
+    "capturedAt": "2026-11-03T12:46:02.022255700Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-purchase-dashboard-review.png",
+    "caption": "صورة فعلية حالية · إحصائيات المشتريات التجريبية في بيئة QA؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-purchase-dashboard-review.json",
+    "sha256": "30d90060d651a6e83b3e5b2f880e83de9b3fc6cab355ae187e0b82f430e86fae",
+    "capturedAt": "2026-11-03T12:46:29.668556100Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-users-dashboard-review.png",
+    "caption": "صورة فعلية حالية · إحصائيات المستخدمين بأصناف QA التجريبية؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-users-dashboard-review.json",
+    "sha256": "54737feb0c50509f486df831b4a7115e3a16a42643cbf667defbfba43457bc73",
+    "capturedAt": "2026-11-03T12:47:11.750361100Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-restaurant-dashboard-review.png",
+    "caption": "صورة فعلية حالية · إحصائيات مطعم فارغة في النطاق الظاهر؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-restaurant-dashboard-review.json",
+    "sha256": "9996ed93eedaa6f0cd0a5a5bf8547850b8a60ffcc294bb3477c2a583f3c78365",
+    "capturedAt": "2026-11-03T12:47:44.218683800Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-concrete-dashboard-review.png",
+    "caption": "صورة فعلية حالية · إحصائيات الخرسانة في النطاق الظاهر؛ مرجع للواجهة فقط.",
+    "source": "docs/evidence/live-captures/live-concrete-dashboard-review.json",
+    "sha256": "44e4a21374195a9eabad0873c79433ecd395c2d3528a440e4e34e7de2ea4d94e",
+    "capturedAt": "2026-11-03T12:48:37.885633100Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-zatca-config-status.png",
+    "caption": "صورة فعلية حالية · حالة تهيئة جهاز الربط فقط؛ لا مفاتيح أو أسرار في الصورة",
+    "source": "docs/evidence/live-captures/live-zatca-config-status.json",
+    "sha256": "b5e12fca56f7549477826dd74e3c34bbabc75e9310dd5e90366b5535d2310703",
+    "capturedAt": "2026-11-03T12:50:47.090419300Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-zatca-submissions-review.png",
+    "caption": "صورة فعلية حالية · معايير إرسال الفواتير؛ لم يتم الضغط على إرسال",
+    "source": "docs/evidence/live-captures/live-zatca-submissions-review.json",
+    "sha256": "4231cca49ad31f5e5bb7872214a06c5df52c37fab9d4ddcd7009118b2f7833d2",
+    "capturedAt": "2026-11-03T12:51:23.236150400Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-home-review.png",
+    "caption": "صورة فعلية حالية · الصفحة الرئيسية بأسماء QA تجريبية؛ ليست أرقام العميل",
+    "source": "docs/evidence/live-captures/live-home-review.json",
+    "sha256": "d4d2daf9398442e6af3b537c0d326445bd73aec7e231d2347ab1b596c06c4ed9",
+    "capturedAt": "2026-11-03T12:52:35.095498100Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-company-tax-field.png",
+    "caption": "صورة فعلية حالية · حقل نسبة الضريبة فقط من إعدادات الشركة؛ بقية بيانات الشركة خارج الصورة",
+    "source": "docs/evidence/live-captures/live-company-tax-field.json",
+    "sha256": "be739b8d64b6bd19558c4b4f466420541e0907dcb3fe9037f4d0e982a61aa4de",
+    "capturedAt": "2026-11-03T12:55:30.711312400Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-subscription-branch-card.png",
+    "caption": "صورة فعلية حالية · مؤشر الفروع فقط من الاشتراك؛ لا اسم شركة أو أرقام ضريبية أو بيانات اتصال",
+    "source": "docs/evidence/live-captures/live-subscription-branch-card.json",
+    "sha256": "7667c9e5933ca418e913b787f66698d7a55c3e5fde96bfbf035e43cb5d115068",
+    "capturedAt": "2026-11-03T12:55:33.548272100Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "live-category-name-field.png",
+    "caption": "صورة فعلية حالية · حقل الاسم العربي فقط من نموذج الفئة الفارغ",
+    "source": "docs/evidence/live-captures/live-category-name-field.json",
+    "sha256": "1eb7c64ba9b290d1205811ed69acced6ccb410212d9babffdfe470481d7e6d3e",
+    "capturedAt": "2026-11-03T12:55:34.909046200Z",
+    "scope": "LIVE_NATIVE_UI_REFERENCE"
+  },
+  {
+    "name": "guide-customer-handover-example.png",
+    "caption": "صورة فعلية لدليل عميل تجريبي داخل المنصة؛ الرابط التجريبي أُلغي بعد الفحص.",
+    "source": "docs/evidence/live-captures/customer-handover-example.json",
+    "sha256": "75ed7581ef8c16e0e056d24b5446d221f145235499a5c10357f761920a238261",
+    "capturedAt": "2026-11-03T13:00:16.391618+00:00",
+    "scope": "LIVE_GUIDE_PREVIEW_UI"
   }
 ]

@@ -1,0 +1,10 @@
+{
+  "name": "live-users-dashboard-review.png",
+  "capturedAt": "2026-11-03T12:47:11.750361100Z",
+  "route": "/usersAndAgents-dashboard",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "54737feb0c50509f486df831b4a7115e3a16a42643cbf667defbfba43457bc73",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "إحصائيات المستخدمين بأصناف QA التجريبية"
+}

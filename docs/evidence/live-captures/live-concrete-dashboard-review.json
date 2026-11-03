@@ -1,0 +1,10 @@
+{
+  "name": "live-concrete-dashboard-review.png",
+  "capturedAt": "2026-11-03T12:48:37.885633100Z",
+  "route": "/concrete-dashboard",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "44e4a21374195a9eabad0873c79433ecd395c2d3528a440e4e34e7de2ea4d94e",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "إحصائيات الخرسانة في النطاق الظاهر"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "live-company-tax-field.png",
+  "route": "/company",
+  "capturedAt": "2026-11-03T12:55:30.711312400Z",
+  "mode": "native-element-screenshot",
+  "scope": "native bounded UI element only, no save or changes; no retouching; private company identifiers outside capture",
+  "visibleLabel": "نسبة الضريبة",
+  "sha256": "be739b8d64b6bd19558c4b4f466420541e0907dcb3fe9037f4d0e982a61aa4de",
+  "review": "Individually visually reviewed original native capture, no save/send/mutation. Private company identifiers and tax/registration/contact details are not present. Only bounded field/card, status, empty criteria or synthetic QA home context.",
+  "label": "حقل نسبة الضريبة فقط من إعدادات الشركة؛ بقية بيانات الشركة خارج الصورة"
+}

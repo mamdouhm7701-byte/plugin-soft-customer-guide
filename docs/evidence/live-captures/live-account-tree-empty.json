@@ -1,0 +1,10 @@
+{
+  "name": "live-account-tree-empty.png",
+  "capturedAt": "2026-11-03T12:34:33.061801700Z",
+  "route": "/chart-of-account",
+  "mode": "native-viewport-screenshot",
+  "scope": "read-only form/navigation, no save or mutation",
+  "sha256": "b4bc4904150c6853dc86be098c1a9ef65702df78df3b6bf2f98b3ea28b770277",
+  "review": "Individually visually reviewed. Read-only native UI, no save/post/copy/move/closing/report-output execution. Blank forms/lists or explicitly synthetic QA dashboard labels and values. No credentials, private customer names or real personal records.",
+  "label": "نموذج دليل الحسابات؛ شجرة بأسماء QA تجريبية وتصنيفات نظامية"
+}
