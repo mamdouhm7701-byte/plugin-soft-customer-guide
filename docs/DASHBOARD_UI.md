@@ -15,3 +15,7 @@ Source baseline eed19dc; working tree was clean before this task. tests/dashboar
 ## Publication
 
 The configured dedicated Site lookup returned project_not_found on 2026-11-04 under the current account. No replacement Site was created and deployed version 5 identity was preserved. Source is prepared for publication when account access is restored. No claim of a hosted UI update is made.
+
+## Publication completed
+
+2026-11-04: owner access restored; dedicated Site version 6 deployed successfully from 04078865064bf3c326275af364c4ba01cd8e058b. Deployment appgdep_6aeb40bdc9208191b858754e5a55ec05. Earlier access blocker is resolved. Audience, authentication and storage bindings were retained. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .

@@ -1,13 +1,13 @@
 {
   "date": "2026-11-04",
-  "status": "DASHBOARD_UI_READY_HOSTING_ACCESS_UNAVAILABLE",
+  "status": "DASHBOARD_UI_PUBLISHED",
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
   "current_source_pushed": true,
   "deployment_verified": true,
-  "publication_instruction": "Existing interface refined and staff charts implemented; deployment pending because configured Site is not found under the current account.",
-  "last_connector_observation": "2026-11-04 get_site returned project_not_found; existing Site identity and deployed version 5 preserved.",
+  "publication_instruction": "Existing UI refinements and D1-backed team charts deployed on the dedicated Site.",
+  "last_connector_observation": "Owner access restored; native version 6 deployment succeeded on 2026-11-04.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
     "typescript": "passed 2026-11-03",
@@ -151,7 +151,7 @@
   "source_implementation_commit": "See Git HEAD for this release; hosted application commit is hosted_source_commit.",
   "historical_site_project_id": "appgprj_6ae891cdafac8191a681f8c4691b0e02",
   "live_url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site",
-  "hosted_version": 5,
-  "hosted_source_commit": "de7d7c15b34a268e11a7f938f528f8670e72ca7a",
-  "hosted_deployment_id": "appgdep_6aea5b4d61508191b9fe3e71935270fe"
+  "hosted_version": 6,
+  "hosted_source_commit": "04078865064bf3c326275af364c4ba01cd8e058b",
+  "hosted_deployment_id": "appgdep_6aeb40bdc9208191b858754e5a55ec05"
 }
