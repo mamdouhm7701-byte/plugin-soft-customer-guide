@@ -45,6 +45,7 @@ export default async function Admin({
       user={user}
       initialTab={allowed.includes(p.tab || '') ? p.tab : 'dashboard'}
       initialId={p.id || ''}
+      initialQuery={(p.q || '').slice(0, 500)}
     />
   );
 }

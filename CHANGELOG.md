@@ -1,3 +1,7 @@
+# Completed daily work and customer flows — 2026-11-04
+
+Added home search, grouped navigation, three-step training handover, compact scoped customer navigation and contextual help. Preserved classic fallback, themes, real charts and independent support links. Local functional/mobile/regression checks passed. Publication blocked by existing Site NOT_FOUND in current account; see docs/UX_FLOWS_COMPLETION.md.
+
 # Reversible modern library and appearance — 2026-11-04
 
 Implemented approved compact question rows, optional filters, action menus and focused WhatsApp/copy sharing. Preserved classic library behind a per-browser header switch. Added application-wide light/dark preference and subtle reduced-motion-aware UI transitions. Kept actual dashboard charts and all server scopes. Verified six mobile/desktop theme combinations, rollback/theme persistence, reduced motion and customer dark views. Deployment pending current account access; see docs/MODERN_INTERFACE.md.

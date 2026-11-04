@@ -1,11 +1,10 @@
 'use client';
 import { ActionHint } from '@/components/guide/ActionHint';
 import { WhatsAppShare } from './WhatsAppShare';
+import { PackWizard } from './PackWizard';
 import { useEffect, useMemo, useState } from 'react';
-import { Archive, BookOpen, Check, ExternalLink, FileDown, Plus, Save, X } from 'lucide-react';
+import { Archive, BookOpen, Check, ExternalLink, FileDown, Plus } from 'lucide-react';
 import {
-  ACTIVITIES,
-  MODULES,
   matchesActivity,
   activityName,
   type GuidePack,
@@ -15,7 +14,7 @@ import { api, useResource, explain } from './api';
 import { CopyButton, shortDate } from '@/components/guide/common';
 const defaultWelcome =
   'أهلًا بيك بعد انتهاء التدريب على Plugin Soft. جمعنالك هنا الشروحات المناسبة لنشاطك، تقدر ترجع لها في أي وقت. ولو احتجت مساعدة، ابعت سؤالك لقناة الدعم المتفق عليها.';
-export function PackManager() {
+export function PackManager({ onDirty }: { onDirty?: (dirty: boolean) => void }) {
   const r = useResource<{ packs: GuidePack[] }>('packs'),
     [articles, setArticles] = useState<ArticleSummary[]>([]),
     [open, setOpen] = useState(false),
@@ -28,7 +27,12 @@ export function PackManager() {
     [welcome, setWelcome] = useState(defaultWelcome),
     [busy, setBusy] = useState(false),
     [message, setMessage] = useState(''),
-    [error, setError] = useState('');
+    [error, setError] = useState(''),
+    [saved, setSaved] = useState<GuidePack | null>(null);
+  useEffect(() => {
+    onDirty?.(open);
+    return () => onDirty?.(false);
+  }, [open, onDirty]);
   useEffect(() => {
     fetch('/api/articles')
       .then((r) => r.json())
@@ -43,6 +47,8 @@ export function PackManager() {
     ? available.length
     : available.filter((a) => selected.includes(a.id)).length;
   function begin(p: GuidePack | null) {
+    if (open && !confirm('فيه دليل مفتوح لسه متحفظش. تبدأ من جديد؟')) return;
+    setSaved(null);
     setEditing(p);
     setTitle(p?.title || 'دليلك بعد التدريب');
     setActivity(p?.activity || 'general');
@@ -59,7 +65,7 @@ export function PackManager() {
     setBusy(true);
     setError('');
     try {
-      await api<GuidePack>('packs' + (editing ? '/' + editing.id : ''), {
+      const result = await api<GuidePack>('packs' + (editing ? '/' + editing.id : ''), {
         method: editing ? 'PUT' : 'POST',
         body: JSON.stringify({
           title,
@@ -70,8 +76,13 @@ export function PackManager() {
           ...(editing ? { revision: editing.revision } : {}),
         }),
       });
+      setSaved(result);
       setOpen(false);
-      setMessage('اتحفظ دليل التسليم. الرابط ثابت ويعرض النسخ المنشورة الأحدث.');
+      setMessage(
+        result.archived
+          ? 'اتحفظ الدليل الموقوف. فعّل رابطه من بطاقة الدليل لما تكون جاهز للتسليم.'
+          : 'اتحفظ دليل التسليم. الرابط ثابت ويعرض النسخ المنشورة الأحدث.',
+      );
       r.reload();
     } catch (e) {
       setError(explain(e));
@@ -162,145 +173,59 @@ export function PackManager() {
         </p>
       )}
       {open && (
-        <form className="panel pack-form" onSubmit={save}>
-          <div className="section-title">
-            <h3>{editing ? 'تعديل دليل التسليم' : 'تجهيز دليل جديد'}</h3>
-            <button
-              type="button"
-              className="icon-button"
-              onClick={() => setOpen(false)}
-              aria-label="إغلاق"
-            >
-              <X size={20} />
-            </button>
+        <PackWizard
+          key={editing?.id || 'new'}
+          title={title}
+          activity={activity}
+          modules={modules}
+          selected={selected}
+          includeAll={includeAll}
+          welcome={welcome}
+          available={available}
+          articles={articles}
+          count={count}
+          busy={busy}
+          editing={!!editing}
+          archived={editing?.archived}
+          setTitle={setTitle}
+          setActivity={setActivity}
+          setModules={setModules}
+          setSelected={setSelected}
+          setIncludeAll={setIncludeAll}
+          setWelcome={setWelcome}
+          onSave={save}
+          onClose={() => {
+            if (confirm('تقفل تجهيز الدليل من غير حفظ؟')) setOpen(false);
+          }}
+        />
+      )}
+      {saved && !saved.archived && !open && (
+        <section className="panel saved-handover" aria-label="دليل جاهز للتسليم">
+          <div>
+            <Check size={22} />
+            <h3>دليل {saved.title} جاهز للتسليم</h3>
+            <p>عاين نسخة العميل الأول، وبعدها ابعت الرابط في قناة التواصل المناسبة.</p>
           </div>
-          <div className="form-grid">
-            <label>
-              اسم العميل أو الاسم المختصر للدليل
-              <input
-                required
-                minLength={4}
-                maxLength={160}
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-              />
-            </label>
-            <label>
-              النشاط
-              <select
-                value={activity}
-                onChange={(e) => {
-                  setActivity(e.target.value);
-                  setSelected([]);
-                }}
-              >
-                {ACTIVITIES.map((a) => (
-                  <option key={a.id} value={a.id}>
-                    {a.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <fieldset className="full-width">
-              <legend>الأقسام التي يتضمنها التدريب</legend>
-              <div className="check-grid">
-                {MODULES.map((m) => (
-                  <label className="check-label" key={m.id}>
-                    <input
-                      type="checkbox"
-                      checked={modules.includes(m.id)}
-                      onChange={(e) => {
-                        setModules(
-                          e.target.checked ? [...modules, m.id] : modules.filter((x) => x !== m.id),
-                        );
-                        setSelected([]);
-                      }}
-                    />
-                    {m.name}
-                    <small>
-                      (
-                      {
-                        articles.filter((a) => a.module === m.id && matchesActivity(a, activity))
-                          .length
-                      }
-                      )
-                    </small>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-            <label className="full-width">
-              رسالة الترحيب داخل الدليل
-              <textarea
-                rows={3}
-                maxLength={1400}
-                value={welcome}
-                onChange={(e) => setWelcome(e.target.value)}
-              />
-            </label>
-          </div>
-          <div className="section-title">
-            <h3>شروحات الدليل</h3>
-            <button
-              className="button ghost small"
-              type="button"
-              onClick={() => {
-                setSelected([]);
-                setIncludeAll(true);
-              }}
-            >
-              كل المنشور المناسب
-            </button>
-          </div>
-          <p className="muted">
-            عدم تحديد شروحات بعينها يضم كل المنشور المناسب للنشاط والأقسام، بما في ذلك الشروحات التي
-            تُنشر لاحقًا. حد أقصى ٦٠ شرحًا.
-          </p>
-          <div className="pack-choices">
-            {available.map((a) => (
-              <label className="check-label" key={a.id}>
-                <input
-                  type="checkbox"
-                  checked={includeAll || selected.includes(a.id)}
-                  onChange={(e) => {
-                    const current = includeAll ? available.map((x) => x.id) : selected;
-                    setIncludeAll(false);
-                    setSelected(
-                      e.target.checked
-                        ? [...new Set([...current, a.id])]
-                        : current.filter((x) => x !== a.id),
-                    );
-                  }}
-                />
-                {a.title}
-                <small>{a.code}</small>
-              </label>
-            ))}
-          </div>
-          {!available.length && (
-            <p className="warning-note">
-              لا توجد شروحات منشورة تنطبق على الاختيار ده. محتوى الأنشطة بيتجهّز تدريجيًا، ومينفعش
-              نسلّم دليل فارغ.
-            </p>
-          )}
-          <div className="editor-bottom">
-            <span>{count} شروحات هتظهر للعميل</span>
-            <button
+          <div className="inline-actions">
+            <a
               className="button primary"
-              disabled={busy || !modules.length || !count || count > 60}
+              href={'/guides/' + saved.id}
+              target="_blank"
+              rel="noreferrer"
             >
-              <Save size={16} />
-              {busy ? 'جارٍ الحفظ…' : 'حفظ دليل التسليم'}
-            </button>
+              معاينة العميل
+            </a>
+            <WhatsAppShare text={() => handover(saved)} />
+            <CopyButton label="نسخ رسالة التسليم" text={() => handover(saved)} />
           </div>
-        </form>
+        </section>
       )}
       {r.loading ? (
         <p className="muted">جارٍ تحميل الأدلة…</p>
       ) : r.data?.packs.length ? (
         <div className="packs-grid">
           {r.data.packs.map((p) => (
-            <article className="panel pack-card" key={p.id}>
+            <article className="panel pack-card" key={p.id} data-pack-id={p.id}>
               <div className="section-title">
                 <div className="pack-icon">
                   <BookOpen size={23} />

@@ -35,12 +35,14 @@ type AdminSummary = ArticleSummary & {
 export function ClassicArticleList({
   user,
   onEdit,
+  initialQuery = '',
 }: {
   user: StaffUser;
   onEdit: (id: string) => void;
+  initialQuery?: string;
 }) {
   const r = useResource<{ articles: AdminSummary[]; limit: number }>('articles'),
-    [q, setQ] = useState(''),
+    [q, setQ] = useState(initialQuery),
     [status, setStatus] = useState('all'),
     [activity, setActivity] = useState('all'),
     [module, setModule] = useState('all'),

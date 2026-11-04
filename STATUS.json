@@ -1,17 +1,17 @@
 {
   "date": "2026-11-04",
-  "status": "REVERSIBLE_MODERN_UI_THEME_PUBLISHED",
+  "status": "UX_FLOWS_COMPLETE_PUBLICATION_PENDING_ACCOUNT_ACCESS",
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
   "current_source_pushed": true,
-  "deployment_verified": true,
-  "publication_instruction": "Modern library/share UI, classic fallback, light/dark appearance and subtle animations deployed on the existing dedicated Site.",
-  "last_connector_observation": "Native version 7 deployment succeeded on 2026-11-04; previous saved version 6 remains the full deployment rollback target.",
+  "deployment_verified": false,
+  "publication_instruction": "Publish completed UX flows to the existing dedicated Site when owner account access is restored.",
+  "last_connector_observation": "2026-11-04: existing Site returns NOT_FOUND; latest verified hosted release remains version 7.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
-    "typescript": "passed 2026-11-03",
-    "production_build": "passed 2026-11-03",
+    "typescript": "passed 2026-11-04",
+    "production_build": "passed 2026-11-04",
     "model_tests": {
       "passed": 7,
       "failed": 0
@@ -37,7 +37,7 @@
     "team_auth": "Nine local groups passed with temporary UUID owner, designated owner untouched; independent email/password.",
     "content_supplement": "396 reviewed catalog snapshots published; 67 HR, three unconfirmed business topics and one team-only entry withheld.",
     "pure_tests": {
-      "passed": 25,
+      "passed": 26,
       "failed": 0
     },
     "lint": "Focused changed-file ESLint: zero errors; existing image-optimization warnings.",
@@ -55,7 +55,8 @@
     "contextual_help": "Passed: six exact 390/1280 customer viewport samples; automatic team reply with no pack selector; row hover and mobile help mode interception; contextual help in ten team sections. PNGs visually reviewed. Focused ESLint and TypeScript passed.",
     "whatsapp": "Arabic message and scoped URL round-trip test passed; TypeScript and focused ESLint passed. No WhatsApp recipient selected or message sent; logged-in WhatsApp session not tested.",
     "dashboard": "Passed live loopback D1 comparison: authenticated dashboard, exclusive workflow totals, actual yes/no feedback, unresolved negative feedback and top-five open-question frequencies. TypeScript, focused ESLint, production build passed; 320/390/1280 Chromium dashboard/library checks passed; PNGs visually reviewed.",
-    "modern_interface": "Six 320/390/1280 light/dark Chromium combinations passed: filters, share, rollback preference, theme persistence and charts; reduced motion and customer dark views passed. PNGs visually reviewed. Dashboard/single-answer integration passed; 26 pure tests, TypeScript, build and focused ESLint zero errors."
+    "modern_interface": "Six 320/390/1280 light/dark Chromium combinations passed: filters, share, rollback preference, theme persistence and charts; reduced motion and customer dark views passed. PNGs visually reviewed. Dashboard/single-answer integration passed; 26 pure tests, TypeScript, build and focused ESLint zero errors.",
+    "ux_flows": "Six Chromium 320/390/1280 light/dark flows passed, plus classic fallback, archived-save and menu-bound checks. 26 pure tests; four role groups; answer/customer revocation and D1 dashboard checks passed. Owned local QA records cleaned."
   },
   "content": {
     "articles": 472,
@@ -159,5 +160,6 @@
     "source_baseline": "6f0b5c5c5a5ee31b7e335cd3b96d5f3b85b28e0f",
     "classic_toggle": "Per-browser header toggle; content and authorization unchanged",
     "last_verified_hosted_version": 6
-  }
+  },
+  "ux_flows_document": "docs/UX_FLOWS_COMPLETION.md"
 }

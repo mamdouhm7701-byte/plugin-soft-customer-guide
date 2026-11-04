@@ -21,6 +21,7 @@ import { ArticleEditor } from './ArticleEditor';
 import { MediaLibrary } from './MediaLibrary';
 import { AccountSettings } from './AccountSettings';
 import { PackManager } from './PackManager';
+import { ClassicPackManager } from './ClassicPackManager';
 import { StaffManager } from './StaffManager';
 import { Questions } from './Questions';
 import { TeamHelp } from './TeamHelp';
@@ -46,16 +47,19 @@ export function AdminApp({
   user,
   initialTab = 'dashboard',
   initialId = '',
+  initialQuery = '',
 }: {
   user: StaffUser;
   initialTab?: string;
   initialId?: string;
+  initialQuery?: string;
 }) {
   const { mode, setMode } = useTeamInterface();
   const [tab, setTab] = useState<Tab>(initialTab as Tab),
     [editId, setEditId] = useState(initialId),
     [dirty, setDirty] = useState(false),
     [menuOpen, setMenuOpen] = useState(false);
+  const [libraryQuery, setLibraryQuery] = useState(initialQuery);
   useEffect(() => {
     if (!dirty) return;
     const protect = (event: BeforeUnloadEvent) => {
@@ -85,13 +89,21 @@ export function AdminApp({
     });
     if (response.ok) location.assign('/team/login');
   }
-  function navigate(next: Tab, id = '') {
+  function navigate(next: Tab, id = '', query = '') {
     if (dirty && !confirm('فيه تعديلات غير محفوظة. تخرج من المسودة وتفقد التعديلات؟')) return;
     setDirty(false);
     setMenuOpen(false);
     setEditId(id);
     setTab(next);
-    history.replaceState(null, '', '/admin?tab=' + next + (id ? '&id=' + id : ''));
+    setLibraryQuery(query);
+    history.replaceState(
+      null,
+      '',
+      '/admin?tab=' +
+        next +
+        (id ? '&id=' + encodeURIComponent(id) : '') +
+        (query ? '&q=' + encodeURIComponent(query) : ''),
+    );
     window.scrollTo(0, 0);
   }
   return (
@@ -114,19 +126,50 @@ export function AdminApp({
           className={menuOpen ? 'is-open' : 'is-closed'}
           aria-label="إدارة الدليل"
         >
-          {nav.map((n) => (
-            <button
-              className={tab === n.id || (tab === 'editor' && n.id === 'articles') ? 'active' : ''}
-              aria-current={
-                tab === n.id || (tab === 'editor' && n.id === 'articles') ? 'page' : undefined
-              }
-              key={n.id}
-              onClick={() => navigate(n.id as Tab)}
-            >
-              <n.icon size={18} />
-              {n.name}
-            </button>
-          ))}
+          {mode === 'modern'
+            ? [
+                { name: 'الشغل اليومي', ids: ['dashboard', 'articles', 'packs'] },
+                { name: 'المحتوى والمتابعة', ids: ['questions', 'feedback', 'media', 'help'] },
+                { name: 'الإدارة والحساب', ids: ['audit', 'staff', 'account'] },
+              ].map((group) => (
+                <div className="team-nav-group" key={group.name}>
+                  <span className="team-nav-label">{group.name}</span>
+                  {nav
+                    .filter((n) => group.ids.includes(n.id))
+                    .map((n) => (
+                      <button
+                        key={n.id}
+                        className={
+                          tab === n.id || (tab === 'editor' && n.id === 'articles') ? 'active' : ''
+                        }
+                        aria-current={
+                          tab === n.id || (tab === 'editor' && n.id === 'articles')
+                            ? 'page'
+                            : undefined
+                        }
+                        onClick={() => navigate(n.id as Tab)}
+                      >
+                        <n.icon size={18} />
+                        {n.name}
+                      </button>
+                    ))}
+                </div>
+              ))
+            : nav.map((n) => (
+                <button
+                  className={
+                    tab === n.id || (tab === 'editor' && n.id === 'articles') ? 'active' : ''
+                  }
+                  aria-current={
+                    tab === n.id || (tab === 'editor' && n.id === 'articles') ? 'page' : undefined
+                  }
+                  key={n.id}
+                  onClick={() => navigate(n.id as Tab)}
+                >
+                  <n.icon size={18} />
+                  {n.name}
+                </button>
+              ))}
         </nav>
         <div className="admin-side-bottom">
           <span className="role-tag">
@@ -186,12 +229,25 @@ export function AdminApp({
           </div>
         </header>
         <main className="admin-main">
-          {tab === 'dashboard' && <Dashboard onNavigate={navigate} />}{' '}
+          {tab === 'dashboard' && (
+            <Dashboard
+              onNavigate={navigate}
+              onSearch={(query) => navigate('articles', '', query)}
+            />
+          )}{' '}
           {tab === 'articles' &&
             (mode === 'classic' ? (
-              <ClassicArticleList user={user} onEdit={(id) => navigate('editor', id)} />
+              <ClassicArticleList
+                initialQuery={libraryQuery}
+                user={user}
+                onEdit={(id) => navigate('editor', id)}
+              />
             ) : (
-              <ArticleList user={user} onEdit={(id) => navigate('editor', id)} />
+              <ArticleList
+                initialQuery={libraryQuery}
+                user={user}
+                onEdit={(id) => navigate('editor', id)}
+              />
             ))}{' '}
           {tab === 'editor' && canEdit(user.role) && (
             <ArticleEditor
@@ -218,7 +274,9 @@ export function AdminApp({
               <MediaLibrary />
             </>
           )}{' '}
-          {tab === 'packs' && <PackManager />} {tab === 'questions' && <Questions />}{' '}
+          {tab === 'packs' &&
+            (mode === 'classic' ? <ClassicPackManager /> : <PackManager onDirty={setDirty} />)}{' '}
+          {tab === 'questions' && <Questions />}{' '}
           {tab === 'account' && <AccountSettings user={user} />} {tab === 'help' && <TeamHelp />}{' '}
           {tab === 'feedback' && <FeedbackList />}{' '}
           {tab === 'staff' && user.role === 'owner' && <StaffManager />}{' '}

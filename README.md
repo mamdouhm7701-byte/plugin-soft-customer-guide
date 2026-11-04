@@ -1,3 +1,5 @@
+Current UX flow update is prepared and locally verified; publication is pending access to the existing Sites project. See [completed flows and rollback](docs/UX_FLOWS_COMPLETION.md). The last verified live release is version 7.
+
 Published dedicated Site version 7: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
 
 # Plugin Soft Customer Guide
@@ -8,7 +10,7 @@ Arabic RTL training handover and support knowledge platform. Current local sourc
 
 React 19 and TypeScript, Vinext/Vite with App Router conventions, Cloudflare Workers, D1/SQLite with Drizzle, R2 uploads, and Zod validation. Excel export uses ExcelJS; PDF delivery uses browser print layouts. This is a standalone application, separate from the ERP Java/Selenium automation repository.
 
-Workstation source: `C:/Users/pcx/Desktop/PluginSoft_Customer_Guide`. Private GitHub repository: [plugin-soft-customer-guide](https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide). Reviewed source is synchronized on the private codex/code-quality-review branch; main remains unchanged; the dedicated Site is deployed from its separate source repository.
+Workstation source: `C:/Users/pcx/Desktop/PluginSoft_Customer_Guide`. Public GitHub repository: [plugin-soft-customer-guide](https://github.com/mamdouhm7701-byte/plugin-soft-customer-guide). Reviewed source is synchronized on the codex/code-quality-review branch; main remains unchanged; the dedicated Site is deployed from its separate source repository.
 
 ## Run locally
 

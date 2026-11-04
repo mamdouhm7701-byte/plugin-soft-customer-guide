@@ -10,8 +10,10 @@ export function ArticleBody({
   article,
   draft = false,
   replyToken,
+  guided = false,
 }: {
   article: Article;
+  guided?: boolean;
   draft?: boolean;
   replyToken?: string;
 }) {
@@ -35,11 +37,25 @@ export function ArticleBody({
           <div className="step-heading">
             <span className="step-bubble">{i + 1}</span>
             <div>
+              {guided && (
+                <span className="step-position">
+                  الخطوة {i + 1} من {c.steps.length}
+                </span>
+              )}
               <h3>{s.title}</h3>
               <p>{s.text}</p>
             </div>
           </div>
           <Photo step={s} n={i + 1} replyToken={replyToken} />
+          {guided && (
+            <a
+              className="step-next button ghost small"
+              href={i + 1 < c.steps.length ? '#step-' + (i + 2) : '#outcome'}
+            >
+              {i + 1 < c.steps.length ? 'الخطوة التالية' : 'راجع النتيجة المتوقعة'}{' '}
+              <ArrowLeft size={15} />
+            </a>
+          )}
         </section>
       ))}
       <section className="outcome-box" id="outcome">
@@ -95,7 +111,7 @@ export function ArticleView({
           <span>‹</span>
           <bdi>{article.code}</bdi>
         </nav>
-        <div className="article-layout">
+        <div className="article-layout customer-article-layout">
           <main className="article-paper">
             <header className="article-header">
               <div className="article-tags">
@@ -105,35 +121,68 @@ export function ArticleView({
                 <span>تحديث {shortDate(article.publishedAt)}</span>
               </div>
               <h1>{c.title}</h1>
-              <div className="article-actions">
-                <CopyButton
-                  className="button primary"
-                  text={() => location.origin + '/help/' + article.id + scopeQuery}
-                  label="نسخ رابط الشرح"
-                />
-                <a
-                  className="button secondary"
-                  href={
-                    '/print?article=' +
-                    article.id +
-                    (replyToken ? '&reply=' + replyToken : packId ? '&guide=' + packId : '')
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FileDown size={16} />
-                  طباعة / حفظ PDF
+              <div className="article-actions customer-article-actions">
+                <a className="button primary" href="#steps">
+                  ابدأ الخطوات <ArrowLeft size={15} />
                 </a>
-                {!replyToken && (
-                  <a href={back} className="button ghost">
-                    <ArrowLeft size={16} />
-                    الرجوع للدليل
-                  </a>
-                )}
+                <details className="article-options">
+                  <summary>خيارات الشرح</summary>
+                  <div className="inline-actions">
+                    <CopyButton
+                      className="button secondary small"
+                      text={() => location.origin + '/help/' + article.id + scopeQuery}
+                      label="نسخ رابط الشرح"
+                    />
+                    <a
+                      className="button secondary"
+                      href={
+                        '/print?article=' +
+                        article.id +
+                        (replyToken ? '&reply=' + replyToken : packId ? '&guide=' + packId : '')
+                      }
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FileDown size={16} />
+                      طباعة / حفظ PDF
+                    </a>
+                    {!replyToken && (
+                      <a href={back} className="button ghost">
+                        <ArrowLeft size={16} />
+                        الرجوع للدليل
+                      </a>
+                    )}
+                  </div>
+                </details>
               </div>
             </header>
-            <ArticleBody article={article} replyToken={replyToken} />
+            <details className="mobile-article-toc">
+              <summary>محتويات الشرح · {c.steps.length} خطوات</summary>
+              <nav aria-label="التنقل في خطوات الشرح">
+                <a href="#answer">الإجابة المختصرة</a>
+                {beforeStartMode(c) === 'important' && <a href="#before">مهم قبل ما تبدأ</a>}
+                {c.steps.map((step, i) => (
+                  <a key={i} href={'#step-' + (i + 1)}>
+                    {i + 1}. {step.title}
+                  </a>
+                ))}
+                <a href="#outcome">النتيجة المتوقعة</a>
+              </nav>
+            </details>
+            <ArticleBody article={article} replyToken={replyToken} guided />
             <Feedback articleId={article.id} replyToken={replyToken} />
+            <details className="customer-help-details">
+              <summary>لسه محتاج مساعدة؟</summary>
+              <p>
+                جهّز اسم الشاشة وخطواتك والنتيجة اللي ظهرت، وابعتهم لقناة الدعم المتفق عليها من غير
+                بيانات حساسة.
+              </p>
+              {!packId && !replyToken && article.id !== 'support-request' && (
+                <Link className="button secondary small" href="/help/support-request">
+                  إزاي أجهّز سؤالي؟
+                </Link>
+              )}
+            </details>
           </main>
           <aside className="article-aside">
             <section className="aside-box toc">
@@ -164,18 +213,6 @@ export function ArticleView({
                 ))}
               </section>
             )}
-            <section className="aside-box support-tint">
-              <h2>لسه محتاج مساعدة؟</h2>
-              <p>
-                جهّز اسم الشاشة وخطواتك والنتيجة اللي ظهرت، وابعتهم لقناة الدعم المتفق عليها من غير
-                بيانات حساسة.
-              </p>
-              {!packId && !replyToken && article.id !== 'support-request' && (
-                <Link className="button secondary small" href="/help/support-request">
-                  إزاي أجهّز سؤالي؟
-                </Link>
-              )}
-            </section>
             <p className="aside-footnote">
               الرابط ده يفتح الشرح فقط. مفيش دخول لبياناتك على البرنامج من خلال الدليل.
             </p>

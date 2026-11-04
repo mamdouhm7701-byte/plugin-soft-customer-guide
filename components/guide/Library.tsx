@@ -100,7 +100,7 @@ export function Library({
     .sort()
     .at(-1);
   return (
-    <>
+    <div className={pack ? 'customer-library' : undefined}>
       <Header
         homeHref={pack && !pack.id.startsWith('activity-') ? '/guides/' + pack.id : '/'}
         customerOnly={!!pack}
@@ -193,6 +193,25 @@ export function Library({
           </a>
         </div>
       </section>
+      {pack && (
+        <div className="container customer-module-picker">
+          <label>
+            اختار القسم
+            <select
+              aria-label="القسم في دليل العميل"
+              value={module}
+              onChange={(e) => setModule(e.target.value)}
+            >
+              <option value="all">كل الشروحات ({scoped.length})</option>
+              {presentModules.map((m) => (
+                <option key={m.id} value={m.id}>
+                  {m.name} ({scoped.filter((a) => a.module === m.id).length})
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+      )}
       <div className="container library-layout">
         <aside className="library-sidebar">
           <span className="sidebar-eyebrow">أقسام الدليل</span>
@@ -297,6 +316,6 @@ export function Library({
         </main>
       </div>
       <Footer customerOnly={!!pack} />
-    </>
+    </div>
   );
 }
