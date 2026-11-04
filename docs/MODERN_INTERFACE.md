@@ -33,3 +33,7 @@ Only task-owned temporary browser pack, staff and sessions were removed. The rea
 ## Publication state
 
 The current Sites account returned project_not_found for the dedicated Site. This update is prepared locally and in GitHub; it has not been deployed. Last verified production remains version 6. Reuse the existing Site identity when account access is restored.
+
+## Publication completed — 2026-11-04
+
+Owner access restored. Dedicated Site version 7 deployed successfully from b884ed19a70b3015a9a1d38843ca00058928b1c9. Deployment appgdep_6aeb45e9e0448191a273700d621141e8. Existing authentication, public audience and storage bindings were retained. Earlier access blocker is resolved. Per-browser classic display and saved version 6 rollback remain available. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .

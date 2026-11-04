@@ -1,8 +1,8 @@
-Published dedicated Site version 4: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
+Published dedicated Site version 7: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .
 
 # Plugin Soft Customer Guide
 
-Arabic RTL training handover and support knowledge platform. Current local source: 2026-11-03. Dedicated Site version 4 is published; HR remains deferred.
+Arabic RTL training handover and support knowledge platform. Current local source: 2026-11-03. Dedicated Site version 7 is published; HR remains deferred.
 
 ## Stack and location
 
@@ -62,10 +62,10 @@ Loopback integration/auth/role checks create their own temporary staff identitie
 
 Preserve the original Sites identity in `.openai/hosting.json`. Before publication, apply migrations through `0003_team_auth.sql`, configure server-only `GUIDE_RATE_SECRET`, provision the hosted owner through a reviewed operator procedure, and verify independent sign-in, guide revocation, storage and customer routes in the hosted environment. There is no public owner-bootstrap endpoint. GitHub Pages alone cannot run the application's server/D1/R2 features.
 
-Generate the source handoff with `python scripts/package-source.py`. See [operations](docs/OPERATIONS.md) and [GitHub handoff](docs/GITHUB_HANDOFF.md). Version 4 is published; see docs/RELEASE.md.
+Generate the source handoff with `python scripts/package-source.py`. See [operations](docs/OPERATIONS.md) and [GitHub handoff](docs/GITHUB_HANDOFF.md). Version 7 is published; see docs/RELEASE.md.
 
 The latest mobile/source-business pass is documented in docs/VERIFICATION.md. The dedicated guide Site is live; the separate ERP/EduPro Site must not be modified.
 
 See [single-answer sharing and lightweight guidance](docs/SINGLE_ANSWER_SHARING.md) for the answer-only link, optional feedback and prerequisite display controls.
 
-Prepared UI update: compact team library/share workflow, classic-interface fallback, light/dark appearance and subtle motion. See [interface and rollback](docs/MODERN_INTERFACE.md). This update is not yet deployed; hosting remains version 6.
+Prepared UI update: compact team library/share workflow, classic-interface fallback, light/dark appearance and subtle motion. See [interface and rollback](docs/MODERN_INTERFACE.md). This update is deployed in hosting version 7; saved version 6 remains the full deployment rollback target.
