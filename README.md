@@ -1,3 +1,5 @@
+Unlimited handover selections and appearance refinements are prepared; publication is pending restored Sites account access. Latest verified live release remains version 8.
+
 Completed UX flows are published as version 8 on the existing dedicated Site. See [completed flows and rollback](docs/UX_FLOWS_COMPLETION.md).
 
 Published dedicated Site version 7: **401 articles** (396 reviewed ERP catalog articles plus five initial guides) and **178 genuine assets**. HR remains deferred. Native deployment succeeded on 2026-11-03. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site .

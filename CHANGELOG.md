@@ -1,6 +1,6 @@
 # Unlimited handover articles and brand appearance — 2026-11-04
 
-Removed the 60-article limit from schema, server save, modern/classic forms, hints and staff print truncation. Preserved nonempty, publication and activity/module scope validation and request-size protections. Local explicit/all-matching guides each saved, exposed and printed 327 scoped articles. Schema regression covers 61/401/2000 IDs; 27 pure tests and TypeScript passed. Replaced appearance text with an accessible 44px sun/moon button and added restrained blue/purple background glows. Browser visual verification blocked by Work browser setting.
+Removed the 60-article limit from schema, server save, modern/classic forms, hints and staff print truncation. Preserved nonempty, publication and activity/module scope validation and request-size protections. Local explicit/all-matching guides each saved, exposed and printed 327 scoped articles. Schema regression covers 61/401/2000 IDs; 27 pure tests and TypeScript passed. Replaced appearance text with an accessible 44px sun/moon button and added restrained blue/purple background glows. Browser visual verification blocked by Work browser setting. Production build passed and Sites source pushed as d43e7bb17875516fc13b9a9068bfb21cf0785b35; version save and subsequent project lookup returned NOT_FOUND. Publication pending, latest verified live release remains version 8.
 
 # UX flows version 8 published — 2026-11-04
 
