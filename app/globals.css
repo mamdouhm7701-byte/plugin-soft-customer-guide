@@ -17,6 +17,206 @@
   line-height: 1.75;
   color-scheme: light;
 }
+.dashboard-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+.dashboard-heading .welcome-heading {
+  margin-bottom: 0;
+}
+.metric-panel {
+  position: relative;
+}
+.metric-panel .metric-icon {
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+.dashboard-actions .action-panel {
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+  text-align: start;
+}
+.dashboard-actions .action-panel:hover {
+  border-color: var(--purple);
+  transform: translateY(-2px);
+}
+.dashboard-actions .action-panel > svg {
+  padding: 9px;
+  box-sizing: content-box;
+  background: var(--purple-light);
+  border-radius: 12px;
+}
+.dashboard-actions .action-panel > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+.dashboard-chart {
+  min-width: 0;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 22px;
+  border-radius: 16px;
+}
+.dashboard-chart header,
+.dashboard-chart header > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.dashboard-chart header {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dashboard-chart header > div > svg {
+  color: var(--purple);
+}
+.dashboard-chart h2 {
+  font-size: 16px;
+}
+.chart-description,
+.chart-footnote {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+  line-height: 1.8;
+}
+.chart-link {
+  background: transparent;
+  color: var(--purple-dark);
+  font-size: 12px;
+  padding: 6px 0;
+}
+.dashboard-bars {
+  list-style: none;
+  margin: 22px 0 16px;
+  padding: 0;
+  display: grid;
+  gap: 17px;
+}
+.chart-row-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: start;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+.chart-row-label span {
+  overflow-wrap: anywhere;
+}
+.chart-row-label strong {
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+.chart-track {
+  height: 9px;
+  border-radius: 8px;
+  background: var(--bg);
+  overflow: hidden;
+}
+.chart-track > span {
+  display: block;
+  height: 100%;
+  border-radius: 8px;
+}
+.chart-empty {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+}
+.chart-wide {
+  grid-column: 1/-1;
+}
+.chart-followup {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  font-size: 13px;
+}
+.library-tools {
+  position: relative;
+  max-width: 100%;
+}
+.library-tools summary,
+.library-review-tools > summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--purple-dark);
+  padding: 11px 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.library-tools[open] > .inline-actions {
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+.library-review-tools {
+  margin: 0 0 20px;
+}
+.library-review-tools > summary {
+  display: list-item;
+  list-style-position: inside;
+}
+.library-review-tools > summary span {
+  font-size: 11px;
+  color: var(--muted);
+  margin-inline-start: 12px;
+}
+.library-review-tools[open] > summary {
+  margin-bottom: 12px;
+}
+@media (max-width: 700px) {
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .dashboard-chart {
+    padding: 17px;
+  }
+  .chart-wide {
+    grid-column: auto;
+  }
+  .dashboard-heading {
+    align-items: start;
+  }
+  .library-tools {
+    width: 100%;
+  }
+  .library-tools[open] > .inline-actions {
+    justify-content: flex-start;
+  }
+  .chart-row-label {
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-actions .action-panel {
+    transition: none;
+  }
+  .dashboard-actions .action-panel:hover {
+    transform: none;
+  }
+}
 * {
   box-sizing: border-box;
 }

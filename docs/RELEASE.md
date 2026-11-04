@@ -1,3 +1,5 @@
+Pending update — 2026-11-04: preserved existing UI and brand; added three staff dashboard charts backed by D1, refreshed action/icon hierarchy and collapsed library administration tools. Prepared and checked locally; not deployed because the configured Site is unavailable to the current account. Version 5 remains the last verified deployment.
+
 Current update: Site version 4 separates support answer sharing from training handover and adds app-wide contextual help. See SINGLE_ANSWER_SHARING.md. Earlier version-specific notes below are history; content inventory is unchanged.
 
 Current update: Site version 3 adds answer-only links, optional comments and lightweight guidance; see [single-answer sharing](SINGLE_ANSWER_SHARING.md). The content inventory below remains unchanged.

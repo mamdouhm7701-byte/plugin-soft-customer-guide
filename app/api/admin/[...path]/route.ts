@@ -118,21 +118,30 @@ export async function GET(request: Request, context: Context) {
       return json({ feedback: rows.results });
     }
     if (path[0] === 'dashboard') {
-      const [articleCounts, packCounts, feedbackCounts] = await db.batch([
-        db.prepare(
-          `SELECT COUNT(*) AS total,SUM(CASE WHEN published_json IS NOT NULL AND archived=0 THEN 1 ELSE 0 END) AS published,SUM(CASE WHEN status='review' THEN 1 ELSE 0 END) AS review,SUM(CASE WHEN status='draft' THEN 1 ELSE 0 END) AS draft FROM guide_articles`,
-        ),
-        db.prepare(
-          'SELECT COUNT(*) AS total,COALESCE(SUM(CASE WHEN archived=0 THEN 1 ELSE 0 END),0) AS active FROM guide_packs',
-        ),
-        db.prepare(
-          `SELECT COUNT(*) AS total,COALESCE(SUM(CASE WHEN vote='no' AND resolved=0 THEN 1 ELSE 0 END),0) AS needs_attention FROM guide_feedback`,
-        ),
-      ]);
+      const [articleCounts, packCounts, feedbackCounts, workflowCounts, questionCounts] =
+        await db.batch([
+          db.prepare(
+            `SELECT COUNT(*) AS total,SUM(CASE WHEN published_json IS NOT NULL AND archived=0 THEN 1 ELSE 0 END) AS published,SUM(CASE WHEN status='review' THEN 1 ELSE 0 END) AS review,SUM(CASE WHEN status='draft' THEN 1 ELSE 0 END) AS draft FROM guide_articles`,
+          ),
+          db.prepare(
+            'SELECT COUNT(*) AS total,COALESCE(SUM(CASE WHEN archived=0 THEN 1 ELSE 0 END),0) AS active FROM guide_packs',
+          ),
+          db.prepare(
+            `SELECT COUNT(*) AS total,COALESCE(SUM(CASE WHEN vote='no' AND resolved=0 THEN 1 ELSE 0 END),0) AS needs_attention,COALESCE(SUM(CASE WHEN vote='yes' THEN 1 ELSE 0 END),0) AS yes,COALESCE(SUM(CASE WHEN vote='no' THEN 1 ELSE 0 END),0) AS no FROM guide_feedback`,
+          ),
+          db.prepare(
+            `SELECT CASE WHEN archived=1 THEN 'archived' ELSE status END AS status,COUNT(*) AS count FROM guide_articles GROUP BY CASE WHEN archived=1 THEN 'archived' ELSE status END`,
+          ),
+          db.prepare(
+            `SELECT id,question,frequency FROM guide_questions WHERE status='open' ORDER BY frequency DESC,updated_at DESC LIMIT 5`,
+          ),
+        ]);
       return json({
         articles: articleCounts.results[0],
         packs: packCounts.results[0],
         feedback: feedbackCounts.results[0],
+        workflow: workflowCounts.results,
+        questions: questionCounts.results,
       });
     }
     if (path[0] === 'staff') {

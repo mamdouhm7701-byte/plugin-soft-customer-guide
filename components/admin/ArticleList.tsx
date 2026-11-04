@@ -113,23 +113,29 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
           <p className="muted">رابط واحد لكل شرح. تعديل المسودة لا يغيّر نسخة العميل قبل النشر.</p>
         </div>
         {canPublish(user.role) && (
-          <div className="inline-actions">
-            <button
-              className="button primary small"
-              disabled={loadingCatalog}
-              onClick={importCatalog}
-            >
-              {loadingCatalog ? 'جارٍ تحميل الحزمة…' : 'إضافة كل الأسئلة المتاحة'}
-            </button>
-            <ContentExport />
-          </div>
+          <details className="library-tools">
+            <summary>أدوات المحتوى والتصدير</summary>
+            <div className="inline-actions">
+              <button
+                className="button primary small"
+                disabled={loadingCatalog}
+                onClick={importCatalog}
+              >
+                {loadingCatalog ? 'جارٍ تحميل الحزمة…' : 'إضافة كل الأسئلة المتاحة'}
+              </button>
+              <ContentExport />
+            </div>
+          </details>
         )}
       </div>
       {canEdit(user.role) && (
-        <>
+        <details className="library-review-tools">
+          <summary>
+            الجاهزية وتغطية الشروحات <span>للمراجعة والتحرير</span>
+          </summary>
           <ContentReadiness onEdit={onEdit} />
           <CatalogCoverage onEdit={onEdit} />
-        </>
+        </details>
       )}{' '}
       {catalogMessage && (
         <p className="inline-message" role="status">
