@@ -23,3 +23,7 @@ Native Chromium exercised 320/390/1280 widths in both themes: home search/refres
 The header classic switch restores the previous library, navigation and handover form per browser. Full source rollback target is cd94609af37663c58f980cc072d24cd2bb15649e. The last verified hosted release is version 7, version ID appgprj_6ae9cb66ef2c8191891528ada54e7c38~appgver_53a842f93da0819197d47620af627d0f, deployment appgdep_6aeb45e9e0448191a273700d621141e8; that is the full deployment rollback target for these changes.
 
 Publication of these new flows is pending: the existing dedicated Site appgprj_6ae9cb66ef2c8191891528ada54e7c38 returns NOT_FOUND in the current Sites account. No replacement site was created and no production deployment or database was changed. Resume deployment from the account/workspace that owns the existing Site.
+
+## Publication completed
+
+On 2026-11-04 owner access was restored. Native deployment succeeded for version 8 (appgprj_6ae9cb66ef2c8191891528ada54e7c38~appgver_7541659024a08191b1ee0eeedadb4240), deployment appgdep_6aeb4ca70e04819186236684bfe3d622, source d405edfe8432f33949bd590cbee2365fbdf91661. Live: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site . Existing public audience and environment revision 1 retained; version 7 remains rollback. Earlier account blocker above is historical.

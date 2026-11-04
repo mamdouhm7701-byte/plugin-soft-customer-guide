@@ -1,3 +1,7 @@
+# UX flows version 8 published — 2026-11-04
+
+Published the completed daily team work, handover wizard and scoped customer navigation to the existing dedicated Site. Native deployment succeeded; version 7 retained as rollback.
+
 # Completed daily work and customer flows — 2026-11-04
 
 Added home search, grouped navigation, three-step training handover, compact scoped customer navigation and contextual help. Preserved classic fallback, themes, real charts and independent support links. Local functional/mobile/regression checks passed. Publication blocked by existing Site NOT_FOUND in current account; see docs/UX_FLOWS_COMPLETION.md.
