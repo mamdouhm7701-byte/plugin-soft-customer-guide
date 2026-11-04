@@ -33,9 +33,13 @@ type Props = {
 export function PackWizard(p: Props) {
   const [step, setStep] = useState(1),
     [query, setQuery] = useState(''),
+    [onlySelected, setOnlySelected] = useState(false),
+    [limit, setLimit] = useState(40),
     [error, setError] = useState('');
   const heading = useRef<HTMLHeadingElement>(null);
   const chosen = p.includeAll ? p.available : p.available.filter((a) => p.selected.includes(a.id));
+  const matching = p.available.filter((a) => matchesSearch(a, query));
+  const choices = matching.filter((a) => !onlySelected || p.selected.includes(a.id));
   function titleError() {
     return p.title.trim().length < 4 || p.title.trim().length > 160
       ? 'اكتب اسمًا للدليل من ٤ إلى ١٦٠ حرفًا.'
@@ -224,7 +228,10 @@ export function PackWizard(p: Props) {
                       aria-label="البحث في شروحات التسليم"
                       placeholder="دَوّر على سؤال أو كود…"
                       value={query}
-                      onChange={(e) => setQuery(e.target.value)}
+                      onChange={(e) => {
+                        setQuery(e.target.value);
+                        setLimit(40);
+                      }}
                     />
                   </label>
                   <button
@@ -235,29 +242,74 @@ export function PackWizard(p: Props) {
                     مسح الاختيار
                   </button>
                 </div>
-                <div className="pack-choices">
-                  {p.available
-                    .filter((a) => matchesSearch(a, query))
-                    .map((a) => (
-                      <label className="check-label" key={a.id} data-article-id={a.id}>
-                        <input
-                          type="checkbox"
-                          checked={p.selected.includes(a.id)}
-                          onChange={(e) =>
-                            p.setSelected(
-                              e.target.checked
-                                ? [...new Set([...p.selected, a.id])]
-                                : p.selected.filter((x) => x !== a.id),
-                            )
-                          }
-                        />
-                        <span>
-                          {a.title}
-                          <small>{a.code}</small>
-                        </span>
-                      </label>
-                    ))}
+                <div className="selection-tools">
+                  <button
+                    type="button"
+                    className="button secondary small"
+                    onClick={() =>
+                      p.setSelected([...new Set([...p.selected, ...matching.map((a) => a.id)])])
+                    }
+                  >
+                    تحديد نتائج البحث ({matching.length})
+                  </button>
+                  <button
+                    type="button"
+                    className="button ghost small"
+                    onClick={() => {
+                      const ids = new Set(matching.map((a) => a.id));
+                      p.setSelected(p.selected.filter((id) => !ids.has(id)));
+                    }}
+                  >
+                    إلغاء تحديد النتائج
+                  </button>
+                  <label className="check-label">
+                    <input
+                      type="checkbox"
+                      checked={onlySelected}
+                      onChange={(e) => {
+                        setOnlySelected(e.target.checked);
+                        setLimit(40);
+                      }}
+                    />
+                    المختار فقط ({chosen.length})
+                  </label>
+                  <span role="status">
+                    {choices.length} نتيجة · {chosen.length} مختار
+                  </span>
                 </div>
+                <div className="pack-choices">
+                  {choices.slice(0, limit).map((a) => (
+                    <label className="check-label" key={a.id} data-article-id={a.id}>
+                      <input
+                        type="checkbox"
+                        checked={p.selected.includes(a.id)}
+                        onChange={(e) =>
+                          p.setSelected(
+                            e.target.checked
+                              ? [...new Set([...p.selected, a.id])]
+                              : p.selected.filter((x) => x !== a.id),
+                          )
+                        }
+                      />
+                      <span>
+                        {a.title}
+                        <small>{a.code}</small>
+                      </span>
+                    </label>
+                  ))}
+                </div>
+                {!choices.length && (
+                  <p className="soft-note">مفيش شروحات مطابقة للفلاتر الحالية.</p>
+                )}
+                {choices.length > limit && (
+                  <button
+                    type="button"
+                    className="button secondary small"
+                    onClick={() => setLimit((n) => n + 40)}
+                  >
+                    عرض المزيد من الاختيارات
+                  </button>
+                )}
               </>
             )}
             {!p.count && <p className="warning-note">{selectionError()}</p>}

@@ -3883,3 +3883,117 @@ form.panel label {
     outline-offset: 3px;
   }
 }
+
+/* Shared utility controls stay together on the left, clear of page actions. */
+@media screen {
+  .appearance-toggle {
+    right: auto;
+    left: 16px;
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+  .context-help-mode {
+    bottom: calc(126px + env(safe-area-inset-bottom, 0px));
+  }
+  .context-help-toggle {
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+  .admin-sidebar {
+    background: linear-gradient(165deg, #173d78, #242e60 65%, #343062);
+    color: #f1f6ff;
+    border-color: #3c5686;
+  }
+  .admin-sidebar :is(.sidebar-eyebrow, .team-nav-label, .admin-caption, p, small) {
+    color: #c3d7f7;
+  }
+  .admin-sidebar nav button {
+    color: #e6efff;
+  }
+  .admin-sidebar nav button:is(:hover, .active) {
+    background: #ffffff1f;
+    color: #fff;
+  }
+  .admin-sidebar nav button.active {
+    box-shadow: inset -3px 0 #88caff;
+  }
+  .admin-sidebar .brand {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+  }
+}
+.selection-tools,
+.template-tools,
+.preview-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+.load-more {
+  text-align: center;
+  margin: 24px 0;
+}
+.template-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.preview-dialog {
+  width: min(1180px, calc(100vw - 24px));
+  max-width: none;
+  height: 90dvh;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--bg);
+  color: var(--ink);
+  padding: 16px;
+}
+.preview-dialog::backdrop {
+  background: #10182db3;
+}
+.preview-dialog iframe {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--panel);
+  height: calc(100% - 100px);
+  max-width: 100%;
+  margin: 0 auto;
+}
+.preview-dialog .preview-toolbar {
+  justify-content: space-between;
+}
+.effectiveness-list {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+.effectiveness-list li {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.preview-viewport {
+  height: calc(100% - 150px);
+  min-height: 180px;
+  overflow: auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
+.preview-viewport iframe {
+  height: 100%;
+  max-width: none;
+  min-height: 100%;
+}
+@media (max-width: 650px) {
+  .preview-dialog {
+    padding: 12px;
+  }
+  .preview-viewport {
+    height: calc(100% - 210px);
+  }
+}

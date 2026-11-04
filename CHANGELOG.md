@@ -1,3 +1,7 @@
+# Complete handover and follow-up workflow improvements — 2026-11-04
+
+Added customer card batches, bulk handover selection, shared D1 templates, actual customer device preview and feedback/question follow-up. Moved theme control left above help; themed navigation with Plugin Soft blue. Additive template migration; no ERP writes. Local integration/typecheck/build and 27 pure tests passed; browser QA unavailable and hosted publication blocked by existing Site NOT_FOUND. See docs/UX_WORKFLOW_ENHANCEMENTS.md.
+
 # Unlimited handover articles and brand appearance — 2026-11-04
 
 Removed the 60-article limit from schema, server save, modern/classic forms, hints and staff print truncation. Preserved nonempty, publication and activity/module scope validation and request-size protections. Local explicit/all-matching guides each saved, exposed and printed 327 scoped articles. Schema regression covers 61/401/2000 IDs; 27 pure tests and TypeScript passed. Replaced appearance text with an accessible 44px sun/moon button and added restrained blue/purple background glows. Browser visual verification blocked by Work browser setting. Production build passed and Sites source pushed as d43e7bb17875516fc13b9a9068bfb21cf0785b35; version save and subsequent project lookup returned NOT_FOUND. Publication pending, latest verified live release remains version 8.

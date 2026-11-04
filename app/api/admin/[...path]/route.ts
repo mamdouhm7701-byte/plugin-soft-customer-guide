@@ -1,10 +1,10 @@
 import businessRules from '@/lib/source-business-rules.json';
 import { env } from 'cloudflare:workers';
 import { createReplyToken } from '@/lib/reply-token';
-import { getPublished } from '@/lib/guide-server';
+import { getPublished, listPublished } from '@/lib/guide-server';
 import { issueActivation } from '@/lib/team-auth';
 import { z } from 'zod';
-import { canEdit, canManageStaff, publishIssues, type Role } from '@/lib/guide-model';
+import { canEdit, canManageStaff, publishIssues, packSchema, type Role } from '@/lib/guide-model';
 import {
   requireStaff,
   database,
@@ -102,6 +102,47 @@ export async function GET(request: Request, context: Context) {
         .bind(page * 60)
         .all();
       return json({ media: rows.results, page });
+    }
+    if (path[0] === 'templates' && path.length === 1) {
+      const rows = await db
+        .prepare(
+          'SELECT id,name,content_json,created_at FROM guide_templates ORDER BY created_at DESC',
+        )
+        .all<{ id: string; name: string; content_json: string; created_at: string }>();
+      return json({
+        templates: rows.results.map((r) => ({
+          id: r.id,
+          name: r.name,
+          content: JSON.parse(r.content_json),
+          createdAt: r.created_at,
+        })),
+      });
+    }
+    if (path[0] === 'effectiveness' && path.length === 1) {
+      const [negative, questions] = await db.batch([
+        db.prepare(
+          `SELECT f.article_id,COUNT(*) AS total,SUM(CASE WHEN f.vote='no' THEN 1 ELSE 0 END) AS negative,SUM(CASE WHEN f.vote='no' AND f.resolved=0 THEN 1 ELSE 0 END) AS unresolved FROM guide_feedback f GROUP BY f.article_id HAVING SUM(CASE WHEN f.vote='no' THEN 1 ELSE 0 END)>0 ORDER BY unresolved DESC,negative DESC,total DESC LIMIT 10`,
+        ),
+        db.prepare(
+          `SELECT id,question,frequency,activity,module,article_id FROM guide_questions WHERE status='open' ORDER BY frequency DESC,updated_at DESC LIMIT 10`,
+        ),
+      ]);
+      const titles = new Map((await listPublished()).map((a) => [a.id, a.title]));
+      return json({
+        negative: (
+          negative.results as {
+            article_id: string;
+            total: number;
+            negative: number;
+            unresolved: number;
+          }[]
+        ).map((r) => ({
+          ...r,
+          title: titles.get(String(r.article_id)) || 'شرح غير منشور حاليًا',
+          published: titles.has(String(r.article_id)),
+        })),
+        questions: questions.results,
+      });
     }
     if (path[0] === 'packs') {
       const rows = await db
@@ -206,6 +247,28 @@ export async function POST(request: Request, context: Context) {
     const { path } = await context.params,
       user = await requireStaff(),
       db = database();
+    if (path[0] === 'templates' && path.length === 1) {
+      const raw = await bodyJSON(request);
+      const v = z
+        .object({ name: z.string().trim().min(4).max(120), content: packSchema })
+        .parse(raw);
+      const id = crypto.randomUUID();
+      await db.batch([
+        db
+          .prepare(
+            'INSERT INTO guide_templates (id,name,content_json,created_by,created_at) VALUES (?,?,?,?,?)',
+          )
+          .bind(
+            id,
+            v.name,
+            JSON.stringify({ ...v.content, title: 'دليلك بعد التدريب' }),
+            user.userId,
+            now(),
+          ),
+        auditStatement(user.userId, 'template.create', id),
+      ]);
+      return json({ id }, 201);
+    }
     if (path[0] === 'replies' && path.length === 1) {
       const v = z
         .object({ articleId: z.string().regex(/^[a-zA-Z0-9-]{1,100}$/) })
@@ -341,6 +404,21 @@ export async function PUT(request: Request, context: Context) {
       user = await requireStaff(),
       db = database(),
       raw = await bodyJSON(request);
+    if (path[0] === 'templates' && path.length === 2) {
+      z.object({ action: z.literal('delete') }).parse(raw);
+      const existing = await db
+        .prepare('SELECT created_by FROM guide_templates WHERE id=?')
+        .bind(path[1])
+        .first<{ created_by: string }>();
+      if (!existing) throw new GuideError(404, 'القالب غير موجود.');
+      if (existing.created_by !== user.userId && !canManageStaff(user.role))
+        throw new GuideError(403, 'حذف القالب لصاحبه أو مسؤول الفريق فقط.');
+      await db.batch([
+        db.prepare('DELETE FROM guide_templates WHERE id=?').bind(path[1]),
+        auditStatement(user.userId, 'template.delete', path[1]),
+      ]);
+      return json({ ok: true });
+    }
     if (path[0] === 'articles' && path.length === 2) {
       if (!canEdit(user.role)) throw new GuideError(403, 'الحفظ متاح للمحررين فقط.');
       const v = z.object({ revision: z.number().int().min(1), content: z.unknown() }).parse(raw);

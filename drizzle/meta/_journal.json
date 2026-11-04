@@ -29,6 +29,13 @@
       "when": 1793695129453,
       "tag": "0003_team_auth",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793808000000,
+      "tag": "0004_handover_templates",
+      "breakpoints": true
     }
   ]
 }

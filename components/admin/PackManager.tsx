@@ -1,6 +1,8 @@
 'use client';
 import { ActionHint } from '@/components/guide/ActionHint';
 import { WhatsAppShare } from './WhatsAppShare';
+import { CustomerPreview } from './CustomerPreview';
+import { HandoverTemplates, type TemplateContent } from './HandoverTemplates';
 import { PackWizard } from './PackWizard';
 import { useEffect, useMemo, useState } from 'react';
 import { Archive, BookOpen, Check, ExternalLink, FileDown, Plus } from 'lucide-react';
@@ -59,6 +61,29 @@ export function PackManager({ onDirty }: { onDirty?: (dirty: boolean) => void })
     setOpen(true);
     setError('');
     setMessage('');
+  }
+  function applyTemplate(c: TemplateContent) {
+    if (open && !confirm('تطبيق القالب بدل تجهيز الدليل المفتوح؟ التعديلات غير المحفوظة هتتبدل.'))
+      return;
+    const allowed = articles.filter(
+      (a) => matchesActivity(a, c.activity) && c.modules.includes(a.module),
+    );
+    const selected = c.articleIds.filter((id) => allowed.some((a) => a.id === id));
+    setEditing(null);
+    setSaved(null);
+    setTitle('دليلك بعد التدريب');
+    setActivity(c.activity);
+    setModules(c.modules);
+    setSelected(selected);
+    setIncludeAll(c.articleIds.length === 0);
+    setWelcome(c.welcome);
+    setOpen(true);
+    setError('');
+    setMessage(
+      selected.length < c.articleIds.length
+        ? 'اتطبق القالب؛ شروحات لم تعد منشورة أو مناسبة تم استبعادها. راجع الاختيارات قبل الحفظ.'
+        : 'اتطبق القالب كدليل جديد. اكتب اسم العميل وراجع الشروحات.',
+    );
   }
   async function save(e: React.FormEvent) {
     e.preventDefault();
@@ -172,6 +197,15 @@ export function PackManager({ onDirty }: { onDirty?: (dirty: boolean) => void })
           {message}
         </p>
       )}
+      <HandoverTemplates
+        ready={articles.length > 0}
+        current={
+          open
+            ? { title, activity, modules, articleIds: includeAll ? [] : selected, welcome }
+            : null
+        }
+        onApply={applyTemplate}
+      />
       {open && (
         <PackWizard
           key={editing?.id || 'new'}
@@ -213,8 +247,9 @@ export function PackManager({ onDirty }: { onDirty?: (dirty: boolean) => void })
               target="_blank"
               rel="noreferrer"
             >
-              معاينة العميل
+              فتح رابط العميل
             </a>
+            <CustomerPreview id={saved.id} />
             <WhatsAppShare text={() => handover(saved)} />
             <CopyButton label="نسخ رسالة التسليم" text={() => handover(saved)} />
           </div>
@@ -239,6 +274,7 @@ export function PackManager({ onDirty }: { onDirty?: (dirty: boolean) => void })
                 {activityName(p.activity)} · تجهيز {shortDate(p.createdAt)}
               </p>
               <div className="pack-actions">
+                {!p.archived && <CustomerPreview id={p.id} />}
                 {!p.archived && (
                   <>
                     <a

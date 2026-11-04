@@ -1,4 +1,5 @@
 'use client';
+import { ContentEffectiveness } from './ContentEffectiveness';
 import { useState } from 'react';
 
 import {
@@ -118,6 +119,7 @@ export function Dashboard({
         </p>
       )}
       {r.data && <DashboardCharts data={r.data} onNavigate={onNavigate} />}
+      <ContentEffectiveness onSearch={onSearch} onNavigate={onNavigate} />
     </section>
   );
 }

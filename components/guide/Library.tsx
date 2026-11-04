@@ -69,7 +69,14 @@ export function Library({
 }) {
   const [activity, setActivity] = useState(pack?.activity || initialActivity),
     [module, setModule] = useState('all'),
-    [query, setQuery] = useState('');
+    [query, setQuery] = useState(''),
+    [limit, setLimit] = useState(24);
+  const filterKey = activity + ':' + module + ':' + query;
+  const [lastFilter, setLastFilter] = useState(filterKey);
+  if (lastFilter !== filterKey) {
+    setLastFilter(filterKey);
+    setLimit(24);
+  }
   useEffect(() => {
     if (pack) return;
     const p = new URLSearchParams(location.hash.slice(1)),
@@ -277,7 +284,7 @@ export function Library({
           )}
           {visible.length ? (
             <div className="article-grid">
-              {visible.map((a) => (
+              {visible.slice(0, limit).map((a) => (
                 <ArticleCard
                   key={a.id}
                   a={a}
@@ -306,6 +313,16 @@ export function Library({
                 </button>
               )}
             </Empty>
+          )}
+          {visible.length > limit && (
+            <div className="load-more">
+              <p role="status">
+                معروض {Math.min(limit, visible.length)} من {visible.length} شرح
+              </p>
+              <button className="button primary" onClick={() => setLimit((n) => n + 24)}>
+                عرض المزيد من الشروحات
+              </button>
+            </div>
           )}
           <div className="library-meta">
             {latest

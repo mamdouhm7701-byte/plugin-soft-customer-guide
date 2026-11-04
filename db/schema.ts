@@ -186,3 +186,11 @@ export const activationTokens = sqliteTable(
   },
   (t) => [index('guide_activation_user_idx').on(t.userId)],
 );
+
+export const templates = sqliteTable('guide_templates', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(),
+  contentJson: text('content_json').notNull(),
+  createdBy: text('created_by').notNull(),
+  createdAt: text('created_at').notNull(),
+});
