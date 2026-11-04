@@ -1,13 +1,13 @@
 {
   "date": "2026-11-04",
-  "status": "UX_WORKFLOW_ENHANCEMENTS_COMPLETE_PUBLICATION_PENDING",
+  "status": "UX_WORKFLOW_ENHANCEMENTS_VERSION_9_PUBLISHED",
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
   "current_source_pushed": true,
-  "deployment_verified": false,
-  "publication_instruction": "Publish prepared unlimited-handover and brand appearance update when existing Sites owner access is restored; last verified live version is 8.",
-  "last_connector_observation": "2026-11-04: owner access confirmed at start; source helper built and pushed d43e7bb17875516fc13b9a9068bfb21cf0785b35. Save-version returned NOT_FOUND; repeat get_site also NOT_FOUND. No version 9 deployment confirmed.",
+  "deployment_verified": true,
+  "publication_instruction": "Latest unlimited handover and workflow enhancements published as version 9 on the existing dedicated Site.",
+  "last_connector_observation": "2026-11-04: native version 9 deployment succeeded; public audience and environment revision 1 retained.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
     "typescript": "passed 2026-11-04",
@@ -183,6 +183,12 @@
     "local_migration_applied": true,
     "verification": "TypeScript, 27 pure tests, production build, template/feedback integration, customer revocation and independent-answer regression passed",
     "browser_qa": "Unavailable: Work browser use disabled",
-    "publication": "Existing Site NOT_FOUND; latest verified live version 8; no hosted mutation"
+    "publication": {
+      "version": 9,
+      "source_commit": "6407f775b78aa3b740812c49a5fc075c8ec01b21",
+      "version_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38~appgver_0292d52517a88191aa20e9864e247a4b",
+      "deployment_id": "appgdep_6aeb5522db608191945c91e56bbfc2ec",
+      "url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site"
+    }
   }
 }

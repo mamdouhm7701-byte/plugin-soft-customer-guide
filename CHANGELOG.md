@@ -1,3 +1,7 @@
+# Version 9 published — 2026-11-04
+
+Native deployment succeeded for unlimited handover size, batched customer library, bulk selection, team templates, customer device preview, content follow-up, left-side theme control and blue navigation. Existing Site/audience/environment retained.
+
 # Complete handover and follow-up workflow improvements — 2026-11-04
 
 Added customer card batches, bulk handover selection, shared D1 templates, actual customer device preview and feedback/question follow-up. Moved theme control left above help; themed navigation with Plugin Soft blue. Additive template migration; no ERP writes. Local integration/typecheck/build and 27 pure tests passed; browser QA unavailable and hosted publication blocked by existing Site NOT_FOUND. See docs/UX_WORKFLOW_ENHANCEMENTS.md.

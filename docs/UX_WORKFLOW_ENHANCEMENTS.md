@@ -23,3 +23,7 @@ TypeScript and 27 pure tests passed. Focused ESLint has no errors (existing lazy
 Browser interaction/visual QA is unavailable because Work browser use is disabled. Modal switching, bulk checkbox interaction, colors and overflow have not been newly browser-verified in this turn; build/HTTP evidence does not replace that verification.
 
 Publication is pending access to the original dedicated Site: get_site returned NOT_FOUND. No replacement Site or production database operation was performed. Last verified live release remains version 8; the newer unlimited-handover and current workflow updates are local/GitHub work until deployed.
+
+## Publication completed
+
+Owner access restored on 2026-11-04. Native deployment of version 9 succeeded: appgdep_6aeb5522db608191945c91e56bbfc2ec, source 6407f775b78aa3b740812c49a5fc075c8ec01b21. Existing public audience and environment revision 1 retained. Sites applies schema migrations before Worker upload. Last known rollback is version 8; leave the additive template table intact on source rollback. Browser UI verification remains bounded by the previously documented Work setting.

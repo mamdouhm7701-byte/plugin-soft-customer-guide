@@ -1,3 +1,5 @@
+Latest workflow and unlimited handover updates are published as version 9: https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site . Earlier publication blockers below are historical.
+
 Workflow improvements are implemented locally: large-guide batches, bulk selections, shared templates, actual customer device preview and D1 content follow-up. See [workflow details and verification](docs/UX_WORKFLOW_ENHANCEMENTS.md). Hosted publication is pending original Sites account access.
 
 Unlimited handover selections and appearance refinements are prepared; publication is pending restored Sites account access. Latest verified live release remains version 8.
