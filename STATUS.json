@@ -168,5 +168,10 @@
     "version_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38~appgver_7541659024a08191b1ee0eeedadb4240",
     "deployment_id": "appgdep_6aeb4ca70e04819186236684bfe3d622",
     "url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site"
+  },
+  "unlimited_handover": {
+    "status": "implemented",
+    "verification": "27 pure tests; TypeScript; local explicit/all matching 327-article save, customer listing and print passed; owned fixtures cleaned",
+    "appearance": "Icon-only accessible theme toggle, 44px target, brand blue/purple background; browser visual QA unavailable"
   }
 }

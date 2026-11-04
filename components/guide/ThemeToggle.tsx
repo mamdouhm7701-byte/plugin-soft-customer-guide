@@ -43,7 +43,6 @@ export function ThemeToggle() {
       }}
     >
       {mode === 'light' ? <Moon size={16} /> : <Sun size={16} />}
-      <span>{mode === 'light' ? 'داكن' : 'فاتح'}</span>
     </button>
   );
 }

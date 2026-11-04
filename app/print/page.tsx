@@ -37,7 +37,6 @@ export default async function Print({
     ? [p.article]
     : (await listPublished())
         .filter((a) => matchesActivity(a, activity) && (!p.module || a.module === p.module))
-        .slice(0, 60)
         .map((a) => a.id);
   const articles = (await Promise.all(list.map((id) => getPublished(id)))).filter(
     (a): a is Article => !!a,

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {
   articleSchema,
+  packSchema,
   publishIssues,
   matchesActivity,
   matchesSearch,
@@ -81,4 +82,18 @@ test('verification dates reject impossible dates and future evidence', () => {
   const c = articleSchema.parse(seeds[0].content);
   assert(publishIssues({ ...c, verifiedAt: '2026-02-31' }).length > 0);
   assert(publishIssues({ ...c, verifiedAt: '2099-01-01' }).length > 0);
+});
+
+test('handover accepts large explicit selections and all-matching mode', () => {
+  const base = {
+    title: 'Large customer guide',
+    activity: 'general',
+    modules: ['sales'],
+    welcome: '',
+  };
+  for (const count of [61, 401, 2000]) {
+    const articleIds = Array.from({ length: count }, (_, i) => `article-${i}`);
+    assert.equal(packSchema.parse({ ...base, articleIds }).articleIds.length, count);
+  }
+  assert.deepEqual(packSchema.parse({ ...base, articleIds: [] }).articleIds, []);
 });

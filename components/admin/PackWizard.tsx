@@ -48,9 +48,7 @@ export function PackWizard(p: Props) {
       ? 'اختار قسمًا واحدًا على الأقل.'
       : !p.count
         ? 'اختار شرحًا منشورًا واحدًا على الأقل؛ مينفعش نسلّم دليل فارغ.'
-        : p.count > 60
-          ? 'الدليل بحد أقصى ٦٠ شرحًا. اختار «شروحات أحددها» وحدّد المطلوب.'
-          : '';
+        : '';
   }
   function go(next: number) {
     const issue = next > 1 ? titleError() : '';
@@ -262,7 +260,7 @@ export function PackWizard(p: Props) {
                 </div>
               </>
             )}
-            {(!p.count || p.count > 60) && <p className="warning-note">{selectionError()}</p>}
+            {!p.count && <p className="warning-note">{selectionError()}</p>}
           </div>
         )}
         {step === 3 && (

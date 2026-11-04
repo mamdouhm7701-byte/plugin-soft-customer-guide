@@ -221,7 +221,6 @@ export async function savePack(user: StaffUser, raw: unknown, id?: string, expec
       400,
       'لا توجد شروحات منشورة مناسبة. أضف محتوى موثّقًا للنشاط قبل إنشاء دليل العميل.',
     );
-  if (selected.length > 60) throw new GuideError(400, 'اختر حتى ٦٠ شرحًا لكل دليل تسليم.');
   const db = database(),
     stamp = now();
   if (id) {

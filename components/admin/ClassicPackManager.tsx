@@ -254,7 +254,7 @@ export function ClassicPackManager() {
           </div>
           <p className="muted">
             عدم تحديد شروحات بعينها يضم كل المنشور المناسب للنشاط والأقسام، بما في ذلك الشروحات التي
-            تُنشر لاحقًا. حد أقصى ٦٠ شرحًا.
+            تُنشر لاحقًا، بدون حد أقصى لعدد الشروحات.
           </p>
           <div className="pack-choices">
             {available.map((a) => (
@@ -285,10 +285,7 @@ export function ClassicPackManager() {
           )}
           <div className="editor-bottom">
             <span>{count} شروحات هتظهر للعميل</span>
-            <button
-              className="button primary"
-              disabled={busy || !modules.length || !count || count > 60}
-            >
+            <button className="button primary" disabled={busy || !modules.length || !count}>
               <Save size={16} />
               {busy ? 'جارٍ الحفظ…' : 'حفظ دليل التسليم'}
             </button>

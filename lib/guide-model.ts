@@ -230,14 +230,12 @@ export const packSchema = z.object({
     .min(1)
     .max(11)
     .transform((v) => [...new Set(v)]),
-  articleIds: z
-    .array(
-      z
-        .string()
-        .regex(/^[a-zA-Z0-9-]+$/)
-        .max(100),
-    )
-    .max(60),
+  articleIds: z.array(
+    z
+      .string()
+      .regex(/^[a-zA-Z0-9-]+$/)
+      .max(100),
+  ),
   welcome: cleanText(1400),
 });
 export function publishIssues(c: ArticleContent): string[] {

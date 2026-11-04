@@ -1,3 +1,7 @@
+# Unlimited handover articles and brand appearance — 2026-11-04
+
+Removed the 60-article limit from schema, server save, modern/classic forms, hints and staff print truncation. Preserved nonempty, publication and activity/module scope validation and request-size protections. Local explicit/all-matching guides each saved, exposed and printed 327 scoped articles. Schema regression covers 61/401/2000 IDs; 27 pure tests and TypeScript passed. Replaced appearance text with an accessible 44px sun/moon button and added restrained blue/purple background glows. Browser visual verification blocked by Work browser setting.
+
 # UX flows version 8 published — 2026-11-04
 
 Published the completed daily team work, handover wizard and scoped customer navigation to the existing dedicated Site. Native deployment succeeded; version 7 retained as rollback.
