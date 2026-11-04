@@ -17,8 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" suppressHydrationWarning>
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{document.documentElement.dataset.theme=localStorage.getItem('plugin-guide-color-mode-v1')==='dark'?'dark':'light'}catch(e){}",
+          }}
+        />
         {children}
         <ContextHints />
       </body>

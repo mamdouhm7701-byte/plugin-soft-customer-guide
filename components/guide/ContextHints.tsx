@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { createPortal } from 'react-dom';
 import { CircleHelp, X } from 'lucide-react';
 import { controlHint } from '@/lib/context-hints';
+import { ThemeToggle } from './ThemeToggle';
 function subscribeModal(callback: () => void) {
   const observer = new MutationObserver(callback);
   observer.observe(document.body, {
@@ -140,6 +141,7 @@ export function ContextHints() {
   if (!host) return null;
   return createPortal(
     <div data-context-hints="true">
+      <ThemeToggle />
       <button
         className={'context-help-toggle' + (touchHelp ? ' active' : '')}
         type="button"

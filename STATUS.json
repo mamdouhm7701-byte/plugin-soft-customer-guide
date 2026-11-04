@@ -1,13 +1,13 @@
 {
   "date": "2026-11-04",
-  "status": "DASHBOARD_UI_PUBLISHED",
+  "status": "REVERSIBLE_MODERN_UI_THEME_READY",
   "application_version": "1.0.0",
   "site_project_id": "appgprj_6ae9cb66ef2c8191891528ada54e7c38",
   "initial_source_push": "697e60269c3eecdc2ce92ac56fa650271f48f8cc",
   "current_source_pushed": true,
   "deployment_verified": true,
-  "publication_instruction": "Existing UI refinements and D1-backed team charts deployed on the dedicated Site.",
-  "last_connector_observation": "Owner access restored; native version 6 deployment succeeded on 2026-11-04.",
+  "publication_instruction": "Modern library/share UI, classic fallback, light/dark appearance and reduced-motion-aware animations prepared; deployment pending access to the existing dedicated Site.",
+  "last_connector_observation": "2026-11-04: configured Site returned project_not_found under current account. Last verified deployed version remains 6.",
   "browser_qa": "LOCAL_SELENIUM_DESKTOP_MOBILE_AND_CUSTOMER_PDF_VISUALLY_REVIEWED",
   "verification": {
     "typescript": "passed 2026-11-03",
@@ -54,7 +54,8 @@
     "prerequisite_and_hint_ui": "Six exact Chromium viewport samples: important/details/hidden at 390/1280; no overflow; modal, mouse hover/tap hints, optional comment skip and team reply-link generation passed; mobile PNGs visually reviewed.",
     "contextual_help": "Passed: six exact 390/1280 customer viewport samples; automatic team reply with no pack selector; row hover and mobile help mode interception; contextual help in ten team sections. PNGs visually reviewed. Focused ESLint and TypeScript passed.",
     "whatsapp": "Arabic message and scoped URL round-trip test passed; TypeScript and focused ESLint passed. No WhatsApp recipient selected or message sent; logged-in WhatsApp session not tested.",
-    "dashboard": "Passed live loopback D1 comparison: authenticated dashboard, exclusive workflow totals, actual yes/no feedback, unresolved negative feedback and top-five open-question frequencies. TypeScript, focused ESLint, production build passed; 320/390/1280 Chromium dashboard/library checks passed; PNGs visually reviewed."
+    "dashboard": "Passed live loopback D1 comparison: authenticated dashboard, exclusive workflow totals, actual yes/no feedback, unresolved negative feedback and top-five open-question frequencies. TypeScript, focused ESLint, production build passed; 320/390/1280 Chromium dashboard/library checks passed; PNGs visually reviewed.",
+    "modern_interface": "Six 320/390/1280 light/dark Chromium combinations passed: filters, share, rollback preference, theme persistence and charts; reduced motion and customer dark views passed. PNGs visually reviewed. Dashboard/single-answer integration passed; 26 pure tests, TypeScript, build and focused ESLint zero errors."
   },
   "content": {
     "articles": 472,
@@ -153,5 +154,10 @@
   "live_url": "https://pluginsoft-customer-guide.biggerfrond1.chatgpt.site",
   "hosted_version": 6,
   "hosted_source_commit": "04078865064bf3c326275af364c4ba01cd8e058b",
-  "hosted_deployment_id": "appgdep_6aeb40bdc9208191b858754e5a55ec05"
+  "hosted_deployment_id": "appgdep_6aeb40bdc9208191b858754e5a55ec05",
+  "interface_rollback": {
+    "source_baseline": "6f0b5c5c5a5ee31b7e335cd3b96d5f3b85b28e0f",
+    "classic_toggle": "Per-browser header toggle; content and authorization unchanged",
+    "last_verified_hosted_version": 6
+  }
 }

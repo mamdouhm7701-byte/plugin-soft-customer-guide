@@ -1,3 +1,7 @@
+# Reversible modern library and appearance — 2026-11-04
+
+Implemented approved compact question rows, optional filters, action menus and focused WhatsApp/copy sharing. Preserved classic library behind a per-browser header switch. Added application-wide light/dark preference and subtle reduced-motion-aware UI transitions. Kept actual dashboard charts and all server scopes. Verified six mobile/desktop theme combinations, rollback/theme persistence, reduced motion and customer dark views. Deployment pending current account access; see docs/MODERN_INTERFACE.md.
+
 # Existing interface refinement and staff charts — 2026-11-04
 
 Added D1-backed content workflow, customer feedback and top-five open repeated-question bar charts with explicit empty states and readable counts. Workflow states are exclusive and separate from live published-snapshot counts. Refined existing dashboard icons/actions, added refresh and collapsed library export/readiness tools to prioritize search and sharing. Preserved Plugin Soft identity and current navigation. Local SQL/HTTP, typecheck, focused lint, build and native Chromium 320/390/1280 checks passed. Deployment pending current Sites account access.

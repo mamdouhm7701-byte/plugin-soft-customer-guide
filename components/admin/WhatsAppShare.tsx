@@ -3,14 +3,20 @@ import { MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 import { whatsappLink } from '@/lib/whatsapp';
 import { ActionHint } from '@/components/guide/ActionHint';
-export function WhatsAppShare({ text }: { text: () => string }) {
+export function WhatsAppShare({
+  text,
+  primary = false,
+}: {
+  text: () => string;
+  primary?: boolean;
+}) {
   const [error, setError] = useState('');
   return (
     <span className="copy-control">
       <ActionHint text="يفتح واتساب ويب على الكمبيوتر، أو واتساب على الموبايل، بالرسالة والرابط جاهزين. اختار المحادثة وراجع الرسالة واضغط إرسال بنفسك.">
         <button
           type="button"
-          className="button secondary small"
+          className={primary ? 'button primary' : 'button secondary small'}
           onClick={() => {
             setError('');
             const mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);

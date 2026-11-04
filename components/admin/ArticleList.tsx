@@ -1,6 +1,15 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Search, X } from 'lucide-react';
+import {
+  ExternalLink,
+  Search,
+  X,
+  SlidersHorizontal,
+  FileText,
+  MoreHorizontal,
+  ShieldCheck,
+  ArrowUpLeft,
+} from 'lucide-react';
 import {
   ACTIVITIES,
   MODULES,
@@ -40,6 +49,7 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
     [module, setModule] = useState('all'),
     [imagesOnly, setImagesOnly] = useState(false),
     [shown, setShown] = useState(30),
+    [filtersOpen, setFiltersOpen] = useState(false),
     [reply, setReply] = useState<Article | null>(null),
     [replyError, setReplyError] = useState(''),
     [customerPath, setCustomerPath] = useState(''),
@@ -105,12 +115,28 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
     }
   }
 
+  const filterCount =
+    Number(status !== 'all') +
+    Number(activity !== 'all') +
+    Number(module !== 'all') +
+    Number(imagesOnly);
+  function clearFilters() {
+    setStatus('all');
+    setActivity('all');
+    setModule('all');
+    setImagesOnly(false);
+    setShown(30);
+  }
+  function closeReply() {
+    replyRequest.current?.abort();
+    dialog.current?.close();
+  }
   return (
-    <section>
+    <section className="answer-workspace">
       <div className="section-title">
         <div>
           <h2>مكتبة الإجابات</h2>
-          <p className="muted">رابط واحد لكل شرح. تعديل المسودة لا يغيّر نسخة العميل قبل النشر.</p>
+          <p className="muted">دَوّر على السؤال، راجع الإجابة، وشارك رابطها في لحظات.</p>
         </div>
         {canPublish(user.role) && (
           <details className="library-tools">
@@ -128,21 +154,12 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
           </details>
         )}
       </div>
-      {canEdit(user.role) && (
-        <details className="library-review-tools">
-          <summary>
-            الجاهزية وتغطية الشروحات <span>للمراجعة والتحرير</span>
-          </summary>
-          <ContentReadiness onEdit={onEdit} />
-          <CatalogCoverage onEdit={onEdit} />
-        </details>
-      )}{' '}
       {catalogMessage && (
         <p className="inline-message" role="status">
           {catalogMessage}
         </p>
       )}
-      <div className="admin-filters">
+      <div className="answer-searchline">
         <label className="search-control">
           <Search size={18} />
           <input
@@ -156,7 +173,26 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
             }}
           />
         </label>
-        <select aria-label="حالة الشرح" value={status} onChange={(e) => setStatus(e.target.value)}>
+        <button
+          type="button"
+          className="button secondary filter-toggle"
+          aria-expanded={filtersOpen}
+          aria-controls="answer-filters"
+          onClick={() => setFiltersOpen((v) => !v)}
+        >
+          <SlidersHorizontal size={17} />
+          تصفية {filterCount > 0 && <span className="filter-count">{filterCount}</span>}
+        </button>
+      </div>
+      <div id="answer-filters" className="answer-filterpanel" hidden={!filtersOpen}>
+        <select
+          aria-label="حالة الشرح"
+          value={status}
+          onChange={(e) => {
+            setStatus(e.target.value);
+            setShown(30);
+          }}
+        >
           <option value="all">كل الحالات</option>
           {Object.entries(statusNames).map(([k, v]) => (
             <option key={k} value={k}>
@@ -167,7 +203,10 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
         <select
           aria-label="نشاط الشرح"
           value={activity}
-          onChange={(e) => setActivity(e.target.value)}
+          onChange={(e) => {
+            setActivity(e.target.value);
+            setShown(30);
+          }}
         >
           <option value="all">كل الأنشطة</option>
           {ACTIVITIES.map((a) => (
@@ -202,7 +241,18 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
           />{' '}
           بصور فعلية
         </label>
+        <button className="button ghost small" onClick={clearFilters}>
+          مسح الفلاتر
+        </button>
       </div>
+      {filterCount > 0 && !filtersOpen && (
+        <div className="answer-active-filter">
+          <span>التصفية مفعّلة · {filterCount} اختيارات</span>
+          <button className="chart-link" onClick={clearFilters}>
+            مسح الفلاتر
+          </button>
+        </div>
+      )}
       {r.error && (
         <p className="error-line" role="alert">
           {r.error}
@@ -215,81 +265,79 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
       {r.loading ? (
         <p>جارٍ تحميل الشروحات…</p>
       ) : (
-        <div className="table-wrap">
-          <table className="data-table articles-table">
-            <thead>
-              <tr>
-                <th>السؤال</th>
-                <th>النشاط والقسم</th>
-                <th>حالة المسودة</th>
-                <th>الإجراء</th>
-              </tr>
-            </thead>
-            <tbody>
-              {list.slice(0, shown).map((a) => (
-                <tr key={a.id}>
-                  <td data-label="السؤال">
-                    <strong>{a.title || 'مسودة بدون عنوان'}</strong>
-                    <small>
-                      <bdi>{a.code}</bdi> · {a.stepCount} خطوات · {shortDate(a.updatedAt)}
-                    </small>
-                  </td>
-                  <td data-label="النشاط والقسم">
-                    {a.activities.includes('all')
-                      ? 'كل الأنشطة'
-                      : a.activities.map(activityName).join('، ')}
-                    <small>{moduleName(a.module)}</small>
-                  </td>
-                  <td data-label="حالة الشرح">
-                    <span className={'status-tag ' + a.status}>
-                      {statusNames[a.status] || a.status}
-                    </span>
-                    {a.hasPublished && a.status !== 'published' && (
-                      <small>نسخة منشورة ما زالت متاحة</small>
+        <div className="answer-list">
+          {list.slice(0, shown).map((a) => (
+            <article className="answer-row" key={a.id} data-article-id={a.id}>
+              <span className="answer-file" aria-hidden="true">
+                <FileText size={20} />
+              </span>
+              <div className="answer-row-body">
+                <h3>{a.title || 'مسودة بدون عنوان'}</h3>
+                <p className="answer-summary">{a.summary}</p>
+                <div className="answer-row-meta">
+                  <span>{moduleName(a.module)}</span>
+                  <span>{a.stepCount} خطوات</span>
+                  <bdi>{a.code}</bdi>
+                  <span className={'status-tag ' + a.status}>
+                    {statusNames[a.status] || a.status}
+                  </span>
+                </div>
+                {a.hasPublished && a.status !== 'published' && !a.archived && (
+                  <small className="muted">نسخة منشورة سابقة ما زالت متاحة للعميل</small>
+                )}
+              </div>
+              <div className="answer-row-actions">
+                {a.hasPublished && !a.archived ? (
+                  <button
+                    className="button primary small"
+                    data-hint="يفتح الرسالة ورابط الإجابة المستقل؛ اختار واتساب أو النسخ."
+                    onClick={() => openReply(a.id)}
+                  >
+                    <ArrowUpLeft size={15} />
+                    مشاركة الإجابة
+                  </button>
+                ) : (
+                  canEdit(user.role) && (
+                    <button className="button secondary small" onClick={() => onEdit(a.id)}>
+                      استكمال الشرح
+                    </button>
+                  )
+                )}
+                <details className="answer-row-more">
+                  <summary aria-label={'إجراءات ' + a.title}>
+                    <MoreHorizontal size={19} />
+                  </summary>
+                  <div className="answer-more-menu">
+                    {a.hasPublished && !a.archived && (
+                      <a href={'/help/' + a.id} target="_blank" rel="noreferrer">
+                        <ExternalLink size={14} />
+                        معاينة الشرح
+                      </a>
                     )}
-                  </td>
-                  <td data-label="الإجراءات">
-                    <div className="table-actions">
-                      {canEdit(user.role) && (
-                        <button
-                          data-hint="يفتح تعديل ومراجعة الشرح؛ نسخة العميل مش بتتغير إلا بعد النشر."
-                          className="button secondary small"
-                          onClick={() => onEdit(a.id)}
-                        >
-                          تحرير / مراجعة
-                        </button>
-                      )}
-                      {a.hasPublished && (
-                        <>
-                          <button
-                            data-hint="يفتح الرد ويجهز رابط الإجابة تلقائيًا، من غير اختيار عميل أو دليل تسليم."
-                            className="button secondary small"
-                            onClick={() => openReply(a.id)}
-                          >
-                            مشاركة الإجابة
-                          </button>
-
-                          <a
-                            className="icon-button"
-                            href={'/help/' + a.id}
-                            target="_blank"
-                            rel="noreferrer"
-                            data-hint="معاينة الشرح للفريق. لمشاركة إجابة مستقلة للعميل استخدم مشاركة الإجابة."
-                            aria-label={'فتح ' + a.title}
-                          >
-                            <ExternalLink size={16} />
-                          </a>
-                        </>
-                      )}
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                    {canEdit(user.role) && (
+                      <button onClick={() => onEdit(a.id)}>تحرير / مراجعة</button>
+                    )}
+                    <span>آخر تعديل {shortDate(a.updatedAt)}</span>
+                    <span>
+                      {a.activities.includes('all')
+                        ? 'كل الأنشطة'
+                        : a.activities.map(activityName).join('، ')}
+                    </span>
+                  </div>
+                </details>
+              </div>
+            </article>
+          ))}
           {!list.length && (
             <div className="empty-state compact">
-              <p>لا توجد شروحات مطابقة.</p>
+              <Search size={28} />
+              <h3>مفيش شروحات مطابقة</h3>
+              <p>جرّب صياغة أبسط للسؤال أو امسح الفلاتر.</p>
+              {filterCount > 0 && (
+                <button className="button secondary small" onClick={clearFilters}>
+                  مسح الفلاتر
+                </button>
+              )}
             </div>
           )}
         </div>
@@ -299,14 +347,24 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
           عرض المزيد
         </button>
       )}
-      <dialog ref={dialog} className="reply-dialog">
+      {canEdit(user.role) && (
+        <details className="library-review-tools">
+          <summary>
+            الجاهزية وتغطية الشروحات <span>للمراجعة والتحرير</span>
+          </summary>
+          <ContentReadiness onEdit={onEdit} />
+          <CatalogCoverage onEdit={onEdit} />
+        </details>
+      )}{' '}
+      <dialog
+        ref={dialog}
+        className="reply-dialog modern-reply"
+        onCancel={() => replyRequest.current?.abort()}
+        onClose={() => replyRequest.current?.abort()}
+      >
         <div className="dialog-heading">
-          <h2>الرد الجاهز للعميل</h2>
-          <button
-            className="icon-button"
-            aria-label="إغلاق الرد"
-            onClick={() => dialog.current?.close()}
-          >
+          <h2>مشاركة الإجابة</h2>
+          <button className="icon-button" aria-label="إغلاق الرد" onClick={closeReply}>
             <X size={19} />
           </button>
         </div>
@@ -320,9 +378,7 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
                 {replyError}
               </p>
             )}
-            <p className="soft-note">
-              رابط مستقل للإجابة دي بس؛ مش محتاج عميل أو دليل تسليم، ولا يفتح باقي المكتبة.
-            </p>
+            <p className="reply-intro">الرسالة جاهزة ومعاها رابط الإجابة الواحدة.</p>
             {makingLink && <p role="status">جارٍ تجهيز الرابط تلقائيًا…</p>}
             {!makingLink && !customerPath && (
               <button className="button secondary small" onClick={() => openReply(reply.id)}>
@@ -330,9 +386,10 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
               </button>
             )}
             <textarea
+              aria-label="نص الرد والرابط الجاهز للمشاركة"
               className="reply-text"
               readOnly
-              rows={7}
+              rows={5}
               value={
                 reply.content.reply +
                 (customerPath
@@ -340,18 +397,33 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
                   : '')
               }
             />
-            <div className="inline-actions">
+            <div className="reply-main-actions">
               {customerPath ? (
                 <>
                   <WhatsAppShare
+                    primary
                     text={() => reply.content.reply + '\n' + location.origin + customerPath}
                   />
                   <CopyButton
                     label="نسخ الرد والرابط"
                     hint="ينسخ نص الرد ورابط الإجابة فقط؛ العميل يفتحه من غير تسجيل دخول ومن غير الوصول لباقي الدليل."
-                    className="button primary"
+                    className="button secondary"
                     text={() => reply.content.reply + '\n' + location.origin + customerPath}
                   />
+                </>
+              ) : (
+                <CopyButton label="نسخ الرد فقط" text={reply.content.reply} />
+              )}
+            </div>
+            <p className="reply-scope">
+              <ShieldCheck size={15} />
+              يفتح الإجابة دي بس، من غير باقي المكتبة.
+            </p>
+            {customerPath && (
+              <details className="reply-extra">
+                <summary>خيارات أخرى</summary>
+                <div className="inline-actions">
+                  {' '}
                   <CopyButton
                     text={() => location.origin + customerPath}
                     hint="ينسخ رابط الإجابة الواحدة من غير نص الرد؛ ما بيديش وصول لباقي الدليل."
@@ -364,14 +436,10 @@ export function ArticleList({ user, onEdit }: { user: StaffUser; onEdit: (id: st
                   >
                     فتح رابط العميل
                   </a>
-                </>
-              ) : (
-                <CopyButton label="نسخ الرد فقط" text={reply.content.reply} />
-              )}
-            </div>
-            <p className="muted">
-              انسخ الرد وابعتُه في قناة الدعم. الموقع لا يرسل رسائل للعميل تلقائيًا.
-            </p>
+                </div>
+              </details>
+            )}
+            <p className="reply-footnote">اختار المحادثة وراجع الرسالة قبل الإرسال في واتساب.</p>
           </>
         ) : (
           <p>جارٍ تحميل الرد المنشور…</p>

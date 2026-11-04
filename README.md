@@ -67,3 +67,5 @@ Generate the source handoff with `python scripts/package-source.py`. See [operat
 The latest mobile/source-business pass is documented in docs/VERIFICATION.md. The dedicated guide Site is live; the separate ERP/EduPro Site must not be modified.
 
 See [single-answer sharing and lightweight guidance](docs/SINGLE_ANSWER_SHARING.md) for the answer-only link, optional feedback and prerequisite display controls.
+
+Prepared UI update: compact team library/share workflow, classic-interface fallback, light/dark appearance and subtle motion. See [interface and rollback](docs/MODERN_INTERFACE.md). This update is not yet deployed; hosting remains version 6.

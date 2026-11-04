@@ -28,6 +28,8 @@ import { Dashboard } from './Dashboard';
 import { ArticleList } from './ArticleList';
 import { FeedbackList } from './FeedbackList';
 import { AuditLog } from './AuditLog';
+import { ClassicArticleList } from './ClassicArticleList';
+import { useTeamInterface } from './interface-preference';
 type Tab =
   | 'account'
   | 'dashboard'
@@ -49,6 +51,7 @@ export function AdminApp({
   initialTab?: string;
   initialId?: string;
 }) {
+  const { mode, setMode } = useTeamInterface();
   const [tab, setTab] = useState<Tab>(initialTab as Tab),
     [editId, setEditId] = useState(initialId),
     [dirty, setDirty] = useState(false),
@@ -92,7 +95,7 @@ export function AdminApp({
     window.scrollTo(0, 0);
   }
   return (
-    <div className="admin-shell">
+    <div className={'admin-shell ' + (mode === 'modern' ? 'team-modern' : 'team-classic')}>
       <aside className="admin-sidebar">
         <div className="admin-nav-heading">
           <Brand compact />
@@ -153,6 +156,17 @@ export function AdminApp({
           </div>
           <div className="inline-actions">
             <button
+              className="button ghost small interface-toggle"
+              data-hint="يغير شكل مساحة الفريق على المتصفح ده فقط؛ المحتوى والروابط والصلاحيات تفضل كما هي."
+              onClick={() => {
+                if (dirty && !confirm('فيه تعديلات غير محفوظة. احفظها قبل تغيير الواجهة. تكمل؟'))
+                  return;
+                setMode(mode === 'modern' ? 'classic' : 'modern');
+              }}
+            >
+              {mode === 'modern' ? 'الواجهة السابقة' : 'الواجهة المحسّنة'}
+            </button>
+            <button
               className="icon-button admin-mobile-logout"
               onClick={logout}
               aria-label="تسجيل الخروج"
@@ -173,9 +187,12 @@ export function AdminApp({
         </header>
         <main className="admin-main">
           {tab === 'dashboard' && <Dashboard onNavigate={navigate} />}{' '}
-          {tab === 'articles' && (
-            <ArticleList user={user} onEdit={(id) => navigate('editor', id)} />
-          )}{' '}
+          {tab === 'articles' &&
+            (mode === 'classic' ? (
+              <ClassicArticleList user={user} onEdit={(id) => navigate('editor', id)} />
+            ) : (
+              <ArticleList user={user} onEdit={(id) => navigate('editor', id)} />
+            ))}{' '}
           {tab === 'editor' && canEdit(user.role) && (
             <ArticleEditor
               key={editId || 'new'}
