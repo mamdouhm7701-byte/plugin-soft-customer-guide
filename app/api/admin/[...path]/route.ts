@@ -56,6 +56,11 @@ export async function GET(request: Request, context: Context) {
       });
     }
     if (path[0] === 'business' && path.length === 1) return json({ rules: businessRules });
+    if (path[0] === 'published' && path.length === 2) {
+      const article = await getPublished(path[1]);
+      if (!article) throw new GuideError(404, 'الشرح غير منشور حاليًا.');
+      return json(article);
+    }
     if (path[0] === 'session') return json({ user });
     if (path[0] === 'articles' && path.length === 1) {
       const rows = await db
@@ -153,7 +158,7 @@ export async function GET(request: Request, context: Context) {
     if (path[0] === 'feedback') {
       const rows = await db
         .prepare(
-          'SELECT id,article_id,vote,comment,resolved,created_at FROM guide_feedback ORDER BY created_at DESC LIMIT 300',
+          'SELECT id,article_id,vote,comment,resolved,created_at,step_number,article_revision,step_title FROM guide_feedback ORDER BY created_at DESC LIMIT 300',
         )
         .all();
       return json({ feedback: rows.results });

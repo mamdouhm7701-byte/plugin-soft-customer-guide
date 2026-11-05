@@ -111,12 +111,21 @@ export const feedback = sqliteTable(
     comment: text('comment').notNull().default(''),
     visitorHash: text('visitor_hash').notNull(),
     voteDay: text('vote_day').notNull().default(''),
+    stepNumber: integer('step_number').notNull().default(0),
+    articleRevision: integer('article_revision').notNull().default(0),
+    stepTitle: text('step_title').notNull().default(''),
     resolved: integer('resolved').notNull().default(0),
     createdAt: text('created_at').notNull(),
   },
   (t) => [
     index('guide_feedback_article_idx').on(t.articleId, t.createdAt),
-    uniqueIndex('guide_feedback_daily_unique').on(t.articleId, t.visitorHash, t.voteDay),
+    uniqueIndex('guide_feedback_daily_unique').on(
+      t.articleId,
+      t.visitorHash,
+      t.voteDay,
+      t.stepNumber,
+      t.articleRevision,
+    ),
   ],
 );
 export const rateLimits = sqliteTable('guide_rate_limits', {

@@ -1,4 +1,5 @@
 'use client';
+import { QuickAnswerShare } from '@/components/admin/QuickAnswerShare';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle2, FileDown, Info } from 'lucide-react';
 import { type Article, type ArticleSummary, activityName, moduleName } from '@/lib/guide-model';
@@ -47,6 +48,14 @@ export function ArticleBody({
             </div>
           </div>
           <Photo step={s} n={i + 1} replyToken={replyToken} />
+          {guided && !draft && (
+            <Feedback
+              articleId={article.id}
+              articleRevision={article.revision}
+              stepNumber={i + 1}
+              replyToken={replyToken}
+            />
+          )}
           {guided && (
             <a
               className="step-next button ghost small"
@@ -128,11 +137,15 @@ export function ArticleView({
                 <details className="article-options">
                   <summary>خيارات الشرح</summary>
                   <div className="inline-actions">
-                    <CopyButton
-                      className="button secondary small"
-                      text={() => location.origin + '/help/' + article.id + scopeQuery}
-                      label="نسخ رابط الشرح"
-                    />
+                    {!replyToken && !packId ? (
+                      <QuickAnswerShare articleId={article.id} reply={c.reply} />
+                    ) : (
+                      <CopyButton
+                        className="button secondary small"
+                        text={() => location.origin + '/help/' + article.id + scopeQuery}
+                        label="نسخ رابط الشرح"
+                      />
+                    )}
                     <a
                       className="button secondary"
                       href={

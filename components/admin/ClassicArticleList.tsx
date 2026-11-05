@@ -1,4 +1,5 @@
 'use client';
+import { arabicScore } from '@/lib/arabic-search';
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Search, X } from 'lucide-react';
 import {
@@ -57,14 +58,21 @@ export function ClassicArticleList({
     dialog = useRef<HTMLDialogElement>(null),
     replyRequest = useRef<AbortController | null>(null);
   useEffect(() => () => replyRequest.current?.abort(), []);
-  const list = (r.data?.articles || []).filter(
-    (a) =>
-      matchesSearch(a, q) &&
-      (status === 'all' || a.status === status) &&
-      (activity === 'all' || a.activities.includes('all') || a.activities.includes(activity)) &&
-      (module === 'all' || a.module === module) &&
-      (!imagesOnly || !!a.image),
-  );
+  const list = (r.data?.articles || [])
+    .filter(
+      (a) =>
+        matchesSearch(a, q) &&
+        (status === 'all' || a.status === status) &&
+        (activity === 'all' || a.activities.includes('all') || a.activities.includes(activity)) &&
+        (module === 'all' || a.module === module) &&
+        (!imagesOnly || !!a.image),
+    )
+    .sort((a, b) =>
+      q.trim()
+        ? arabicScore([b.title, b.summary, ...b.aliases, b.code].join(' '), q) -
+          arabicScore([a.title, a.summary, ...a.aliases, a.code].join(' '), q)
+        : 0,
+    );
   async function importCatalog() {
     setLoadingCatalog(true);
     setCatalogMessage('');
@@ -93,7 +101,7 @@ export function ClassicArticleList({
     setReplyError('');
     dialog.current?.showModal();
     try {
-      const response = await fetch('/api/articles/' + id, {
+      const response = await fetch('/api/admin/published/' + id, {
         signal: request.signal,
         cache: 'no-store',
       });

@@ -2,7 +2,17 @@
 import { useState } from 'react';
 import { ThumbsDown, ThumbsUp, CheckCircle2 } from 'lucide-react';
 import { ActionHint } from './ActionHint';
-export function Feedback({ articleId, replyToken }: { articleId: string; replyToken?: string }) {
+export function Feedback({
+  articleId,
+  replyToken,
+  stepNumber,
+  articleRevision,
+}: {
+  articleId: string;
+  replyToken?: string;
+  stepNumber?: number;
+  articleRevision?: number;
+}) {
   const [vote, setVote] = useState<'yes' | 'no' | ''>(''),
     [comment, setComment] = useState(''),
     [done, setDone] = useState(false),
@@ -20,6 +30,8 @@ export function Feedback({ articleId, replyToken }: { articleId: string; replyTo
           vote: v,
           comment: skipComment || v === 'yes' ? '' : comment,
           replyToken,
+          stepNumber,
+          articleRevision,
         }),
       });
       const d = (await r.json()) as { error?: string };
@@ -41,21 +53,23 @@ export function Feedback({ articleId, replyToken }: { articleId: string; replyTo
       ) : (
         <>
           <div className="feedback-question">
-            <strong>الشرح وضّح لك الخطوات؟</strong>
+            <strong>{stepNumber ? 'الخطوة ' + stepNumber : 'الشرح وضّح لك الخطوات؟'}</strong>
             <div>
-              <ActionHint text="يسجل إن الشرح واضح ومفيد، من غير ما تكتب تعليق.">
-                <button
-                  className="button secondary small"
-                  disabled={busy}
-                  onClick={() => {
-                    setVote('yes');
-                    send('yes');
-                  }}
-                >
-                  <ThumbsUp size={15} />
-                  أيوه، واضح
-                </button>
-              </ActionHint>
+              {!stepNumber && (
+                <ActionHint text="يسجل إن الشرح واضح ومفيد، من غير ما تكتب تعليق.">
+                  <button
+                    className="button secondary small"
+                    disabled={busy}
+                    onClick={() => {
+                      setVote('yes');
+                      send('yes');
+                    }}
+                  >
+                    <ThumbsUp size={15} />
+                    أيوه، واضح
+                  </button>
+                </ActionHint>
+              )}
               <ActionHint text="يفتح مكان للتعليق لو حابب توضّح المشكلة؛ تقدر تبعت التقييم من غير تعليق.">
                 <button
                   className="button ghost small"
@@ -64,7 +78,7 @@ export function Feedback({ articleId, replyToken }: { articleId: string; replyTo
                   onClick={() => setVote('no')}
                 >
                   <ThumbsDown size={15} />
-                  لا، محتاج توضيح
+                  {stepNumber ? 'الخطوة دي مش واضحة' : 'لا، محتاج توضيح'}
                 </button>
               </ActionHint>
             </div>

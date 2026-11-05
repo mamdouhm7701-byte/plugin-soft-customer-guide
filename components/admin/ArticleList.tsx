@@ -1,4 +1,5 @@
 'use client';
+import { arabicScore } from '@/lib/arabic-search';
 import { useEffect, useRef, useState } from 'react';
 import {
   ExternalLink,
@@ -67,14 +68,21 @@ export function ArticleList({
     dialog = useRef<HTMLDialogElement>(null),
     replyRequest = useRef<AbortController | null>(null);
   useEffect(() => () => replyRequest.current?.abort(), []);
-  const list = (r.data?.articles || []).filter(
-    (a) =>
-      matchesSearch(a, q) &&
-      (status === 'all' || a.status === status) &&
-      (activity === 'all' || a.activities.includes('all') || a.activities.includes(activity)) &&
-      (module === 'all' || a.module === module) &&
-      (!imagesOnly || !!a.image),
-  );
+  const list = (r.data?.articles || [])
+    .filter(
+      (a) =>
+        matchesSearch(a, q) &&
+        (status === 'all' || a.status === status) &&
+        (activity === 'all' || a.activities.includes('all') || a.activities.includes(activity)) &&
+        (module === 'all' || a.module === module) &&
+        (!imagesOnly || !!a.image),
+    )
+    .sort((a, b) =>
+      q.trim()
+        ? arabicScore([b.title, b.summary, ...b.aliases, b.code].join(' '), q) -
+          arabicScore([a.title, a.summary, ...a.aliases, a.code].join(' '), q)
+        : 0,
+    );
   async function importCatalog() {
     setLoadingCatalog(true);
     setCatalogMessage('');
@@ -103,7 +111,7 @@ export function ArticleList({
     setReplyError('');
     dialog.current?.showModal();
     try {
-      const response = await fetch('/api/articles/' + id, {
+      const response = await fetch('/api/admin/published/' + id, {
         signal: request.signal,
         cache: 'no-store',
       });
@@ -386,7 +394,9 @@ export function ArticleList({
                 {replyError}
               </p>
             )}
-            <p className="reply-intro">الرسالة جاهزة ومعاها رابط الإجابة الواحدة.</p>
+            <p className="reply-intro">
+              رد السؤال جاهز. الرابط يفتح السؤال ده فقط، من غير دليل عميل أو أي أسئلة تانية.
+            </p>
             {makingLink && <p role="status">جارٍ تجهيز الرابط تلقائيًا…</p>}
             {!makingLink && !customerPath && (
               <button className="button secondary small" onClick={() => openReply(reply.id)}>

@@ -10,6 +10,9 @@ export function FeedbackList() {
         id: string;
         article_id: string;
         vote: string;
+        step_number: number;
+        article_revision: number;
+        step_title: string;
         comment: string;
         resolved: number;
         created_at: string;
@@ -58,6 +61,11 @@ export function FeedbackList() {
               >
                 فتح الشرح المرتبط ↗
               </a>
+              {!!f.step_number && (
+                <p className="soft-note">
+                  الخطوة {f.step_number}: {f.step_title} · النسخة {f.article_revision}
+                </p>
+              )}
               <p>{f.comment || 'لم تُضف ملاحظة مكتوبة.'}</p>
               <button
                 className="button secondary small"

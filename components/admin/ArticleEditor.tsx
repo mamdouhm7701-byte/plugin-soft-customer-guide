@@ -29,6 +29,7 @@ import {
   type Step,
 } from '@/lib/guide-model';
 import { api, useResource, explain } from './api';
+import { similarity } from '@/lib/arabic-search';
 import { MediaLibrary } from './MediaLibrary';
 import { ArticleBody } from '@/components/guide/ArticleView';
 import { shortDate } from '@/components/guide/common';
@@ -55,6 +56,10 @@ export function ArticleEditor({
     [mediaStep, setMediaStep] = useState<number | null>(null),
     [showHistory, setShowHistory] = useState(false),
     [reviewNote, setReviewNote] = useState(''),
+    [similarOptions, setSimilarOptions] = useState<{ id: string; title: string; status: string }[]>(
+      [],
+    ),
+    [similarError, setSimilarError] = useState(''),
     [relatedOptions, setRelatedOptions] = useState<{ id: string; title: string }[]>([]);
   const mediaDialog = useRef<HTMLDialogElement>(null);
   useEffect(() => {
@@ -181,7 +186,28 @@ export function ArticleEditor({
       )
       .catch(() => {});
   }, []);
+  useEffect(() => {
+    const controller = new AbortController();
+    api<{ articles: { id: string; title: string; status: string }[] }>('articles', {
+      signal: controller.signal,
+    })
+      .then((d) => setSimilarOptions(d.articles))
+      .catch(() => {
+        if (!controller.signal.aborted)
+          setSimilarError('تعذر فحص الشروحات المتشابهة؛ راجع المكتبة قبل الإضافة.');
+      });
+    return () => controller.abort();
+  }, []);
   const issues = publishIssues(content);
+  const similar =
+    content.title.trim().length >= 6
+      ? similarOptions
+          .filter((a) => a.id !== id)
+          .map((a) => ({ ...a, score: similarity(content.title, a.title) }))
+          .filter((a) => a.score >= 0.45)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 5)
+      : [];
   if (loading)
     return (
       <div className="panel">
@@ -234,6 +260,26 @@ export function ArticleEditor({
         <p className="error-line" role="alert">
           {error}
         </p>
+      )}
+      {similarError && <p className="warning-note">{similarError}</p>}
+      {!!similar.length && (
+        <aside className="panel similar-articles" aria-label="شروحات متشابهة">
+          <h3>فيه شروحات قريبة من العنوان ده</h3>
+          <p>اقتراحات للمراجعة، مش تأكيد إن المحتوى مكرر. تقدر تكمل الشرح عادي.</p>
+          <ul>
+            {similar.map((a) => (
+              <li key={a.id}>
+                <a
+                  href={'/admin?tab=editor&id=' + encodeURIComponent(a.id)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {a.title} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
       )}
       {message && (
         <p className="success-line" role="status">

@@ -19,6 +19,7 @@ import {
   type ArticleSummary,
   type GuidePack,
 } from '@/lib/guide-model';
+import { arabicScore } from '@/lib/arabic-search';
 import { Header, Footer, Empty, CopyButton, shortDate } from './common';
 export function ArticleCard({
   a,
@@ -93,9 +94,14 @@ export function Library({
     () => articles.filter((a) => matchesActivity(a, activity)),
     [articles, activity],
   );
-  const visible = scoped.filter(
-    (a) => (module === 'all' || a.module === module) && matchesSearch(a, query),
-  );
+  const visible = scoped
+    .filter((a) => (module === 'all' || a.module === module) && matchesSearch(a, query))
+    .sort((a, b) =>
+      query.trim()
+        ? arabicScore([b.title, b.summary, ...b.aliases, b.code].join(' '), query) -
+          arabicScore([a.title, a.summary, ...a.aliases, a.code].join(' '), query)
+        : 0,
+    );
   const presentModules = MODULES.filter((m) => scoped.some((a) => a.module === m.id));
   const printLink = pack
     ? pack.id.startsWith('activity-')

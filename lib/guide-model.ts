@@ -1,3 +1,4 @@
+import { arabicScore } from './arabic-search.ts';
 import { z } from 'zod';
 import archivedScreenshots from './screenshot-assets.json' with { type: 'json' };
 export const BUNDLED_SCREENSHOTS = [
@@ -312,11 +313,7 @@ export function matchesActivity(a: { activities: string[] }, activity: string) {
   return a.activities.includes('all') || a.activities.includes(activity);
 }
 export function matchesSearch(a: ArticleSummary, q: string) {
-  const text = normalize([a.title, a.summary, ...a.aliases, a.code].join(' '));
-  return normalize(q)
-    .split(/\s+/)
-    .filter(Boolean)
-    .every((t) => text.includes(t));
+  return arabicScore([a.title, a.summary, ...a.aliases, a.code].join(' '), q) > 0;
 }
 export function imageSrc(img: ArticleImage | null) {
   return !img ? '' : img.kind === 'asset' ? '/assets/' + img.name : '/api/media/' + img.id;

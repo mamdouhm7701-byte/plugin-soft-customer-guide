@@ -1,3 +1,7 @@
+# Arabic discovery and step-level clarification — 2026-11-05
+
+Added local Arabic synonym/typo matching and ranked library results, editor duplicate-title suggestions, step/revision feedback and team visibility. Fixed team share loading interference from customer cookies and added direct standalone answer sharing. Hosting deferred. See docs/ARABIC_SEARCH_AND_STEP_FEEDBACK.md.
+
 # Version 9 published — 2026-11-04
 
 Native deployment succeeded for unlimited handover size, batched customer library, bulk selection, team templates, customer device preview, content follow-up, left-side theme control and blue navigation. Existing Site/audience/environment retained.
